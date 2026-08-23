@@ -1,0 +1,72 @@
+{
+  "product": "Auth",
+  "owner": "SDK Enterprises",
+  "architecture": {
+    "parent": "SDK.",
+    "subBrand": "auth.",
+    "familyDevice": "circular green period #2cdb16 on every mark"
+  },
+  "palette": {
+    "dark": { "hex": "#082003", "role": "primary text on light; dark section surfaces" },
+    "brand": { "hex": "#2cdb16", "role": "actions and meaningful highlights only; background always carries dark text; as text only on dark surfaces" },
+    "light": { "hex": "#d7e8d3", "role": "page background; primary text on dark surfaces" },
+    "paper": { "hex": "#f8fbf7", "role": "card and panel surface on light pages" },
+    "muted": { "hex": "#536b4f", "role": "secondary text on light surfaces (AA >= 4.5:1)" },
+    "fog": { "hex": "#abc4a6", "role": "secondary text on dark surfaces" },
+    "line": { "hex": "#9db497", "role": "1px borders and separators on light surfaces" },
+    "lineDark": { "hex": "#2d4b28", "role": "1px borders on dark surfaces" },
+    "surfaceDarkCard": { "hex": "#0c2b07", "role": "derived elevation surface on dark (Auth extension)" },
+    "success": { "hex": "#166534", "role": "positive status text/icons on light (AA >= 4.5:1)" },
+    "warning": { "hex": "#92400e", "role": "cautionary status text/icons on light (AA >= 4.5:1)" },
+    "destructive": { "hex": "#9a3412", "role": "error text on light (AA >= 4.5:1); solid fills carry paper text" }
+  },
+  "typography": {
+    "family": "JetBrains Mono",
+    "weights": [400, 500, 600, 700, 800],
+    "bodyFloorPx": 14,
+    "maxMeasureCh": 65,
+    "ramp": {
+      "display": { "sizePx": 76, "lineHeight": 0.95, "letterSpacingEm": -0.065 },
+      "title": { "sizePx": 52, "lineHeight": 1.0, "letterSpacingEm": -0.05 },
+      "h1": { "sizePx": 42, "lineHeight": 1.04, "letterSpacingEm": -0.045 },
+      "h3": { "sizePx": 23, "lineHeight": 1.12 },
+      "lead": { "sizePx": 18, "lineHeight": 1.7 },
+      "body": { "sizePx": 14, "lineHeight": 1.7 },
+      "label": { "sizePx": 11, "lineHeight": 1.0, "letterSpacingEm": 0.14, "case": "uppercase reserved for eyebrows/nav/buttons/labels" },
+      "micro": { "sizePx": 10, "lineHeight": 1.0, "letterSpacingEm": 0.11 }
+    }
+  },
+  "space": {
+    "containerMaxPx": 1220,
+    "gutterPx": 24,
+    "sectionPaddingY": { "desktop": 84, "tablet": 56, "mobile": 48 }
+  },
+  "radius": { "card": 10, "control": 8, "navItem": 7, "pill": 999 },
+  "borders": { "widthPx": 1 },
+  "motion": {
+    "transitionMs": 150,
+    "properties": ["color", "background-color", "opacity"],
+    "reducedMotion": "disable all transitions and animations"
+  },
+  "logo": {
+    "wordmark": "auth.",
+    "mark": "a.",
+    "periodDiameterUnits": 18,
+    "clearSpace": ">= 1x period diameter on all sides; 1.5-2x preferred for hero use",
+    "minWidthRecommendedPx": 100,
+    "minWidthAbsolutePx": 72,
+    "belowMinUse": "compact mark a.",
+    "approvedPairings": [
+      { "surface": "#082003", "letters": "#d7e8d3", "period": "#2cdb16" },
+      { "surface": "#d7e8d3", "letters": "#082003", "period": "#2cdb16" }
+    ],
+    "watermark": {
+      "onLight": { "letters": "#082003 @ 0.10", "period": "#2cdb16 @ 0.35" },
+      "onDark": { "letters": "#d7e8d3 @ 0.12", "period": "#2cdb16 @ 0.45" }
+    },
+    "pattern": {
+      "onLight": { "rings": "#082003 @ 0.05", "dots": "#2cdb16 @ 0.30" },
+      "onDark": { "rings": "#d7e8d3 @ 0.07", "dots": "#2cdb16 @ 0.40" }
+    }
+  }
+}

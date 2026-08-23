@@ -32,6 +32,7 @@ export function tryServerEnv(): ServerEnv | { error: z.ZodError } {
 export const mailEnvSchema = z.object({
   MAIL_SMTP_URL: z.string().default("smtp://localhost:1025"),
   MAIL_FROM: z.string().default("SDK-E Auth <no-reply@sdk.enterprises>"),
+  RESEND_API_KEY: z.string().min(1).optional(),
 });
 
 export type MailEnv = z.infer<typeof mailEnvSchema>;

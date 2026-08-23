@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     if (!result.ok) {
       return redirectTo(
         request,
-        `/u/login?error=${encodeURIComponent("Sign-in email could not be sent. Is the local mail sink running (pnpm mail)?")}`,
+        `/u/login?error=${encodeURIComponent("We could not send your sign-in code right now. Please try again in a moment.")}`,
       );
     }
 
