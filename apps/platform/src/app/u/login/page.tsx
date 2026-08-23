@@ -1,9 +1,9 @@
+import Image from "next/image";
 import type { Metadata } from "next";
-import { safeReturnTo } from "@/lib/auth/login-flow";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Sign in · SDK-E Auth" };
+export const metadata: Metadata = { title: "Sign in" };
 
 type SearchParams = Promise<{ return_to?: string; error?: string; email?: string }>;
 
@@ -15,16 +15,20 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
   const returnTo = safeReturnTo(params.return_to);
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-zinc-50 px-4">
-      <div className="w-full max-w-sm rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm">
-        <h1 className="text-xl font-semibold text-zinc-900">Sign in</h1>
-        <p className="mt-1 text-sm text-zinc-500">
+    <main className="flex min-h-dvh flex-col items-center justify-center bg-background px-4 py-12">
+      <Image src="/brand/auth-mark-light.svg" alt="auth." width={40} height={40} unoptimized className="h-10 w-auto" />
+      <div className="mt-8 w-full max-w-sm rounded-lg border border-border bg-card p-8">
+        <h1 className="text-h3 font-bold">Sign in</h1>
+        <p className="mt-2 text-body text-muted-foreground">
           We&apos;ll email you a one-time code. No password needed.
         </p>
         <form method="POST" action="/u/api/login/email" className="mt-6 space-y-4">
           <input type="hidden" name="return_to" value={returnTo} />
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-zinc-700">
+            <label
+              htmlFor="email"
+              className="block text-label uppercase text-muted-foreground"
+            >
               Email
             </label>
             <input
@@ -34,20 +38,29 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
               autoComplete="email"
               required
               defaultValue={email}
-              className="mt-1 w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-zinc-900 focus:ring-2 focus:ring-zinc-900/10"
               placeholder="you@company.com"
+              className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2.5 text-body outline-none transition-colors duration-150 placeholder:text-muted-foreground/60 focus:border-ring"
             />
           </div>
-          {error ? <p className="text-sm text-red-600">{error}</p> : null}
+          {error ? <p className="text-body text-destructive">{error}</p> : null}
           <button
             type="submit"
-            className="w-full rounded-lg bg-zinc-900 px-3 py-2 text-sm font-medium text-white hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-900/30"
+            className="w-full rounded-md bg-primary px-3 py-2.5 text-label uppercase font-bold text-primary-foreground transition-opacity duration-150 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
           >
             Continue with code
           </button>
         </form>
       </div>
+      <p className="mt-6 text-micro uppercase text-muted-foreground">
+        Secured by auth.
+      </p>
     </main>
   );
 }
 
+function safeReturnTo(value: string | undefined | null): string {
+  if (!value) return "/dashboard";
+  if (!value.startsWith("/") || value.startsWith("//")) return "/dashboard";
+  if (value.startsWith("/oauth") || value.startsWith("/u/")) return "/dashboard";
+  return value;
+}

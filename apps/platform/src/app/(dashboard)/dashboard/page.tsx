@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 import { eq } from "drizzle-orm";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
@@ -6,7 +8,9 @@ import { loadActiveSession } from "@/lib/auth/sessions";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Dashboard · SDK-E Auth" };
+export const metadata: Metadata = { title: "Dashboard" };
+
+const statCard = "rounded-lg border border-border bg-card p-5";
 
 export default async function DashboardPage() {
   const headerList = await headers();
@@ -20,44 +24,62 @@ export default async function DashboardPage() {
     : undefined;
 
   return (
-    <main className="min-h-screen bg-zinc-50">
-      <header className="border-b border-zinc-200 bg-white">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <span className="font-semibold tracking-tight text-zinc-900">SDK-E Auth</span>
-          <div className="flex items-center gap-4 text-sm">
-            {user?.email ? <span className="text-zinc-500">{user.email}</span> : null}
-            <a
+    <main className="min-h-dvh">
+      <header className="border-b border-border">
+        <div className="mx-auto flex h-16 max-w-[1220px] items-center justify-between px-6">
+          <Link
+            href="/"
+            aria-label="auth. home"
+            className="flex items-center transition-opacity duration-150 hover:opacity-90"
+          >
+            <Image
+              src="/brand/auth-wordmark-light.svg"
+              alt="auth."
+              width={140}
+              height={28}
+              priority
+              unoptimized
+              className="h-7 w-auto"
+            />
+          </Link>
+          <div className="flex items-center gap-4">
+            {user?.email ? (
+              <span className="text-body text-muted-foreground">{user.email}</span>
+            ) : null}
+            <Link
               href="/u/logout"
-              className="rounded-lg border border-zinc-300 px-3 py-1.5 font-medium text-zinc-700 hover:bg-zinc-100"
+              className="rounded-md border border-input px-3 py-2 text-label uppercase text-foreground transition-colors duration-150 hover:bg-secondary"
             >
               Sign out
-            </a>
+            </Link>
           </div>
         </div>
       </header>
-      <section className="mx-auto max-w-5xl px-6 py-16">
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-900">
+
+      <section className="mx-auto max-w-[1220px] px-6 py-16">
+        <p className="text-label uppercase text-muted-foreground">Session</p>
+        <h1 className="mt-3 text-h1 font-bold text-balance">
           Welcome{user ? `, ${user.email}` : ""}
         </h1>
-        <p className="mt-3 max-w-2xl text-zinc-600">
-          This session was issued by your own platform: email OTP login created a session row,
-          signed an RS256 cookie JWT, and this page verified it through the same trust chain used
-          by every tenant application.
+        <p className="mt-4 max-w-[65ch] text-body text-muted-foreground">
+          This session was issued by your own platform: the email code created a
+          session row, signed an RS256 cookie JWT, and this page verified it
+          through the same trust chain every tenant application uses.
         </p>
         <dl className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <div className="rounded-xl border border-zinc-200 bg-white p-5">
-            <dt className="text-sm font-medium text-zinc-500">Session</dt>
-            <dd className="mt-1 truncate font-mono text-sm text-zinc-900">{auth?.session.id ?? "-"}</dd>
+          <div className={statCard}>
+            <dt className="text-label uppercase text-muted-foreground">Session</dt>
+            <dd className="mt-2 truncate font-bold">{auth?.session.id ?? "—"}</dd>
           </div>
-          <div className="rounded-xl border border-zinc-200 bg-white p-5">
-            <dt className="text-sm font-medium text-zinc-500">AMR</dt>
-            <dd className="mt-1 font-mono text-sm text-zinc-900">
-              {(auth?.session.amr ?? []).join(", ") || "-"}
+          <div className={statCard}>
+            <dt className="text-label uppercase text-muted-foreground">Method</dt>
+            <dd className="mt-2 font-bold">
+              {(auth?.session.amr ?? []).join(", ") || "—"}
             </dd>
           </div>
-          <div className="rounded-xl border border-zinc-200 bg-white p-5">
-            <dt className="text-sm font-medium text-zinc-500">Logins</dt>
-            <dd className="mt-1 font-mono text-sm text-zinc-900">{user?.loginCount ?? 0}</dd>
+          <div className={statCard}>
+            <dt className="text-label uppercase text-muted-foreground">Logins</dt>
+            <dd className="mt-2 font-bold">{user?.loginCount ?? 0}</dd>
           </div>
         </dl>
       </section>
