@@ -1,12 +1,23 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { SESSION_COOKIE_NAME, classifyHost, HEADER_HOST_KIND, HEADER_TENANT_SLUG } from "@sdk-e/shared";
+import { locales } from "@/i18n";
 import { verifySignedJwt } from "@/lib/auth/verify";
 
 const PUBLIC_PATHS = new Set(["/", "/u/login", "/u/login/verify", "/u/logout", "/security", "/sitemap.xml"]);
 const PUBLIC_PREFIXES = ["/u/", "/authorize", "/oauth/", "/api/health", "/.well-known/", "/legal/"];
 
 function isPublicPath(pathname: string): boolean {
-  return PUBLIC_PATHS.has(pathname) || PUBLIC_PREFIXES.some((prefix) => pathname.startsWith(prefix));
+  const segments = pathname.split("/");
+  const first = segments[1];
+  let path = pathname;
+  if (first && locales.includes(first as (typeof locales)[number])) {
+    path = pathname.slice(first.length + 1) || "/";
+  }
+  return (
+    PUBLIC_PATHS.has(path) ||
+    PUBLIC_PREFIXES.some((prefix) => path.startsWith(prefix)) ||
+    (path !== pathname && PUBLIC_PATHS.has("/"))
+  );
 }
 
 function readCookie(cookieHeader: string | null, name: string): string | undefined {

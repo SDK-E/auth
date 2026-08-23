@@ -1,0 +1,104 @@
+{
+  "legal": {
+    "dpa": {
+      "meta": {
+        "title": "Tillæg vedrørende databehandling",
+        "description": "Tillægget, i henhold til hvilket SDK Enterprises behandler slutbrugeres personoplysninger på vegne af Auth-kunder, i overensstemmelse med artikel 28 i GDPR."
+      },
+      "title": "Tillæg vedrørende databehandling",
+      "description": "Dette tillæg beskriver de vilkår, på hvilke SDK Enterprises behandler personoplysninger på vegne af brugere af Auth-tjenesten. Det afspejler de krav, der gælder for databehandlere i henhold til databeskyttelseslovgivningen, herunder artikel 28 i den generelle forordning om databeskyttelse.",
+      "updated": "23. august 2026",
+      "sections": [
+        {
+          "heading": "1. Parter og roller",
+          "content": [
+            "Dette tillæg er indgået mellem dig (den dataansvarlige, »Kunden«) og SDK Enterprises (databehandleren). Det gælder for personoplysninger, som SDK Enterprises behandler på dine vegne, når du bruger Tjenesten til at autentificere dine slutbrugere. Det udgør en del af Aftalen og har forrang for denne i spørgsmål vedrørende databeskyttelse."
+          ]
+        },
+        {
+          "heading": "2. Nærmere oplysninger om behandlingen",
+          "content": [
+            [
+              "Emne: Autentificerings- og identitetstjenester til kundernes applikationer.",
+              "Varighed: aftalens løbetid samt de nedenfor beskrevne opbevaringsforpligtelser.",
+              "Formål og anvendelse: levering af log-in-processer, identitetsverifikation via engangskoder, oprettelse og administration af sessioner og tokens, forebyggelse af misbrug, sikkerhedslogning samt tilhørende support.",
+              "Kategorier af registrerede: Kundens slutbrugere samt kundens medarbejdere, der administrerer tenantet.",
+              "Kategorier af personoplysninger: identifikationsoplysninger (især e-mail-adresser), autentificerings- og brugslogfiler, tekniske metadata såsom IP-adresse og user-agent, sikkerheds- og revisionslogfiler samt midlertidige indikatorer til forebyggelse af misbrug.",
+              "Særlige kategorier: Der anmodes ikke om eller forventes nogen; kunden må ikke indsende dem."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Forpligtelser for databehandleren",
+          "content": [
+            "SDK Enterprises behandler kun personoplysninger på grundlag af dokumenterede instrukser fra kunden — som består af dette tillæg og kundens konfiguration af tjenesten — medmindre andet følger af EU-retten eller medlemsstaternes lovgivning; i så fald underretter SDK Enterprises kunden om dette lovkrav inden behandlingen, medmindre dette er forbudt ved lov. SDK Enterprises underretter kunden straks, hvis selskabet mener, at en instruks strider mod gældende databeskyttelseslovgivning."
+          ]
+        },
+        {
+          "heading": "4. Fortrolighed",
+          "content": [
+            "Personer, der har tilladelse til at behandle personoplysninger, gør dette kun i det omfang, det er nødvendigt for Tjenesten, og er underlagt tavshedspligt, der fortsætter efter afslutningen af deres ansættelsesforhold."
+          ]
+        },
+        {
+          "heading": "5. Sikkerhedsforanstaltninger",
+          "content": [
+            "Under hensyntagen til den aktuelle tekniske udvikling og implementeringsomkostningerne iværksætter SDK Enterprises passende tekniske og organisatoriske foranstaltninger, herunder: kryptering af data under overførsel og passende kryptering af data i hvile; streng adgangskontrol baseret på »need-to-know«-princippet; adskillelse af brugermiljøer; foranstaltninger til at sikre tilgængelighed og robusthed, herunder sikkerhedskopiering og gendannelsesprocedurer; detektering af misbrug og begrænsning af trafikmængden; logning af sikkerhedsrelevante hændelser, der gør det muligt at påvise manipulation; samt regelmæssig gennemgang af disse foranstaltninger i takt med, at tjenesten udvikler sig. En oversigt i letforståeligt sprog er offentliggjort på /security."
+          ]
+        },
+        {
+          "heading": "6. Underbehandlere",
+          "content": [
+            "Kunden giver en generel skriftlig tilladelse til at inddrage underdatabehandlere, hvis identitet, roller og placeringer er offentliggjort på /legal/subprocessors. SDK Enterprises pålægger hver enkelt underdatabehandler skriftligt databeskyttelsesforpligtelser, der ikke er mindre beskyttende end dem, der er fastsat i dette tillæg, og forbliver ansvarlig over for kunden for underdatabehandleres manglende opfyldelse af forpligtelserne. Senest fjorten (14) dage før en ny underdatabehandler behandler personoplysninger, opdaterer SDK Enterprises den offentliggjorte liste, hvilket giver kunden mulighed for at gøre indsigelse på rimelige, databeskyttelsesrelaterede grunde; hvis en indsigelse ikke med rimelighed kan løses, kan kunden opsige den berørte del af tjenesten."
+          ]
+        },
+        {
+          "heading": "7. Kundesupport",
+          "content": [
+            [
+              "Anmodninger fra registrerede (indsigt, berigtigelse, sletning, begrænsning, indsigelse, dataportabilitet): SDK Enterprises imødekommer disse anmodninger uden unødig forsinkelse, hvor det er muligt ved hjælp af de tilgængelige lejer-værktøjer.",
+              "Vurderinger af indvirkningen på databeskyttelsen og forudgående høringer: SDK Enterprises indeholder de oplysninger om tjenesten, der med rimelighed kan fremskaffes.",
+              "Sikkerhedshændelser: SDK Enterprises underretter kunden uden unødig forsinkelse, så snart selskabet bliver opmærksom på et brud på persondatasikkerheden, der berører kundens data, stiller de oplysninger til rådighed, der med rimelighed er nødvendige for, at kunden kan opfylde sine egne forpligtelser, og samarbejder om håndteringen af hændelsen."
+            ]
+          ]
+        },
+        {
+          "heading": "8. Internationale overførsler",
+          "content": [
+            "I tilfælde, hvor personoplysninger overføres uden for Det Europæiske Økonomiske Samarbejdsområde til et land, der ikke er omfattet af en afgørelse om tilstrækkelighed, sikrer SDK Enterprises, at der er indført passende sikkerhedsforanstaltninger — hovedsageligt de standardkontraktbestemmelser, som Europa-Kommissionen har vedtaget, og som indgås mellem den relevante eksportør og importør — sammen med supplerende tekniske foranstaltninger, hvor det er nødvendigt. De aktuelle overførselsdestinationer er beskrevet på siden om underdatabehandlere."
+          ]
+        },
+        {
+          "heading": "9. Ansvarlighed og revisioner",
+          "content": [
+            "SDK Enterprises fører register over behandlingsaktiviteter inden for sit anvendelsesområde og stiller dokumentation til rådighed, der påviser overholdelse af dette tillæg. Kunden kan anmode om sådanne oplysninger én gang om året samt i tilfælde af et brud på persondatasikkerheden eller en velbegrundet bekymring vedrørende overholdelse. Audit på stedet, hvor dette er tilladt, finder sted på kundens regning, med rimeligt varsel og under iagttagelse af fortrolighed og den beskyttelse, der skyldes andre kunder."
+          ]
+        },
+        {
+          "heading": "10. Returnering og sletning",
+          "content": [
+            "Ved aftalens ophør stiller SDK Enterprises kundens personoplysninger til rådighed til eksport og sletter dem derefter, herunder i underdatabehandleres systemer, inden for en forretningsmæssigt rimelig frist — medmindre opbevaring er påkrævet i henhold til lovgivningen, i hvilket tilfælde oplysningerne forbliver beskyttet i henhold til dette tillæg, indtil sletning bliver mulig."
+          ]
+        },
+        {
+          "heading": "11. Ansvar, lovgivning og tvister",
+          "content": [
+            "Ansvaret i henhold til dette tillæg fordeles og begrænses som angivet i servicevilkårene. Dette tillæg er underlagt fransk lov, og tvister afgøres i henhold til den der aftalte tvistbilæggelsesordning."
+          ]
+        },
+        {
+          "heading": "12. Ret til privatlivsbeskyttelse i Californien",
+          "content": [
+            "For personoplysninger, der er omfattet af den californiske forbrugerbeskyttelseslov (California Consumer Privacy Act) i dens nuværende lydelse, fungerer SDK Enterprises som tjenesteudbyder: Virksomheden sælger eller videregiver ikke personoplysninger, opbevarer, anvender eller videregiver dem ikke uden for det direkte forretningsforhold, medmindre loven tillader det, og sammenkobler dem ikke med personoplysninger modtaget fra andre kilder."
+          ]
+        },
+        {
+          "heading": "13. Prioritet og ændringer",
+          "content": [
+            "Hvis enkelte bestemmelser i dette tillæg er i strid med de standardkontraktbestemmelser, der er indarbejdet i henhold til afsnit 8, har disse bestemmelser forrang for de overførsler, de regulerer. Vi forbeholder os ret til at ændre dette tillæg med virkning for fremtiden for at afspejle ændringer i Tjenesten eller lovgivningen, og vi vil offentliggøre væsentlige ændringer på denne side, inden de træder i kraft."
+          ]
+        }
+      ]
+    }
+  }
+}

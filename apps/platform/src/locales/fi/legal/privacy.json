@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Tietosuojakäytäntö",
+        "description": "Miten Auth by SDK Enterprises käsittelee henkilötietoja: mitä tietoja keräämme, miksi, kuinka kauan, kenelle niitä luovutetaan ja mitkä ovat käyttäjän oikeudet niihin."
+      },
+      "title": "Tietosuojakäytäntö",
+      "description": "Tässä tietosuojakäytännössä selitetään, mitä henkilötietoja Auth-palvelu käsittelee, miksi niitä käsitellään, kuinka kauan niitä säilytetään, kenelle niitä luovutetaan sekä mitkä oikeudet asianomaisilla henkilöillä on. Olemme laatineet tämän asiakirjan niin, että se on helppo lukea ja ymmärtää, eikä pelkästään näytettäväksi.",
+      "updated": "23. elokuuta 2026",
+      "sections": [
+        {
+          "heading": "1. Keitä me olemme",
+          "content": [
+            "Auth-palvelua (jäljempänä ”Palvelu”) ylläpitää SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, jonka kotipaikka on 44 Rue Pasquier, 75008 Paris, France — ”SDK Enterprises”, ”me”, ”meitä”). Asiakkaamme käyttävät Palvelua omien käyttäjiensä todentamiseen; tässä asiakirjassa kuvataan, miten henkilötiedot kulkevat kyseisen järjestelyn kautta ja mistä kukin osapuoli on vastuussa."
+          ]
+        },
+        {
+          "heading": "2. Roolimme riippuu tilanteesta",
+          "content": [
+            [
+              "Tämän verkkosivuston kävijöiden sekä niiden henkilöiden osalta, jotka avaavat tai hallinnoivat tiliä palvelussamme, SDK Enterprises päättää, miksi ja miten henkilötietoja käsitellään, ja toimii rekisterinpitäjänä.",
+              "Niiden loppukäyttäjien osalta, jotka kirjautuvat sisään Auth-alustalla toimivaan tuotteeseen tai palveluun, asiakkaamme on edelleen vastuussa kyseisestä käsittelystä rekisterinpitäjänä, ja SDK Enterprises käsittelee henkilötietoja asiakkaan kirjallisten ohjeiden mukaisesti tietojenkäsittelijänä tietojenkäsittelyliitteemme mukaisesti. Jos olet tällainen loppukäyttäjä, ensisijainen yhteyspisteesi on se tuote, johon kirjauduit sisään; autamme kyseistä tuotetta vastaamaan pyyntöösi ilman aiheetonta viivytystä."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Käsittelemämme henkilötietoryhmät",
+          "content": [
+            [
+              "Tilitiedot. Sähköpostiosoite ja profiilin perustiedot, jotka sinä tai palveluntarjoajasi päätätte toimittaa; tilisi todennusajankohdat ja käyttölaskurit.",
+              "Todentamistiedot. Kirjautumisyrityksiä ja niiden tuloksia, tunnisteiden ja istuntojen myöntämistä ja peruuttamista sekä niihin liittyviä teknisiä metatietoja (mukaan lukien IP-osoite, selaimen käyttäjäagentti ja tarkat aikaleimat) koskevat tiedot säilytetään turvallisuussyistä, väärinkäytön estämiseksi sekä todisteina.",
+              "Turvallisuustiedot. Väärennöksiltä suojatut lokit, jotka sisältävät tilisi tai ympäristösi turvallisuuteen liittyvät tapahtumat.",
+              "Väärinkäytön ehkäisyyn liittyvät tiedot. Lyhytaikaiset tekniset laskurit, joita käytetään väärinkäytöksiin liittyvän liikenteen havaitsemiseen ja rajoittamiseen.",
+              "Viestintätiedot. Meille lähettämiesi viestien sisältö (esimerkiksi tukipyynnöt tai oikeuksien käyttäminen) sekä vastauksemme.",
+              "Kaupalliset tiedot. Laskutus- ja maksutiedot, kun kyseessä on maksullinen tilaus, käsitellään laskutusprosessimme kautta."
+            ],
+            "Emme vaadi emmekä tallenna salasanoja palveluun kirjautumista varten. Herkkiä henkilötietoryhmiä (terveys, biometriset tiedot, poliittiset mielipiteet ja vastaavat) ei pyydetä, eikä niitä saa toimittaa meille."
+          ]
+        },
+        {
+          "heading": "4. Tarkoitukset ja oikeusperusteet",
+          "content": [
+            [
+              "Palvelun käyttö ja tarjoaminen — sopimuksen täyttäminen tai sopimuksen tekemistä edeltävät toimet.",
+              "Tilien suojaaminen, petosten ja väärinkäytösten havaitseminen sekä turvallisuustietojen säilyttäminen — meidän oikeutettu etumme luotettavan infrastruktuurin ylläpitämisessä, ottaen huomioon sinun oikeutesi ja odotuksesi.",
+              "Kirjanpito-, vero- ja muiden lakisääteisten velvoitteiden täyttäminen — lakisääteisen velvoitteen noudattaminen.",
+              "Tiliisi tai siihen vaikuttaviin tapahtumiin liittyvien palveluviestien lähettäminen — sopimuksen täyttäminen; emme lähetä markkinointisähköposteja ilman erillistä suostumusta."
+            ],
+            "Jos tietojen käsittely perustuu suostumukseen, voit peruuttaa suostumuksesi milloin tahansa ilman, että se vaikuttaa ennen peruuttamista suoritettujen käsittelytoimenpiteiden laillisuuteen. Emme harjoita sovellettavan lainsäädännön mukaista automatisoitua päätöksentekoa, jolla on oikeudellisia vaikutuksia."
+          ]
+        },
+        {
+          "heading": "5. Pysyvyys",
+          "content": [
+            "Henkilötietoja säilytetään vain niin kauan kuin on tarpeen edellä mainittujen tarkoitusten saavuttamiseksi. Tilitietoja säilytetään niin kauan kuin tili tai käyttäjä on aktiivinen; turvallisuus- ja tarkastustietoja säilytetään niin kauan kuin on tarpeen palvelun luotettavuuden osoittamiseksi ja lakisääteisten vaatimusten täyttämiseksi; väärinkäytön estämiseen liittyvät tiedot ovat luonteeltaan väliaikaisia; kaupallisia tietoja säilytetään lakisääteisten kirjanpitovaatimusten mukaisina aikoina. Tiedot, joita ei enää tarvita, poistetaan tai anonymisoidaan peruuttamattomasti."
+          ]
+        },
+        {
+          "heading": "6. Tietojen vastaanottajat ja alihankkijat",
+          "content": [
+            "Jaamme henkilötietoja ainoastaan seuraaville tahoille: sopimusperusteisesti puolestamme toimiville tietojenkäsittelijöille (palvelin-, tietokanta-, välimuisti- ja sähköpostinjakelupalvelujen tarjoajille – jotka on mainittu erikseen alihankkijoidemme sivulla); salassapitovelvollisuuden alaisille ammatillisille neuvonantajille; sekä viranomaisille, jos sitova lakisääteinen pyyntö sitä edellyttää, jolloin ilmoitamme asiasta asianomaisille, ellei se ole lain mukaan kielletty. Emme koskaan myy, vuokraa tai välitä henkilötietoja, emmekä käytä asiakas- tai loppukäyttäjätietoja mainostarkoituksiin tai koneoppimismallien kouluttamiseen."
+          ]
+        },
+        {
+          "heading": "7. Kansainväliset siirrot",
+          "content": [
+            "Osa palveluntarjoajistamme toimii Euroopan talousalueen (ETA) ulkopuolella. Kun henkilötietoja siirretään ETA:n ulkopuolelle, nojaudumme riittavuuspäätökseen tai asianmukaisiin suojatoimiin – erityisesti Euroopan komission vakiolausekkeisiin – sekä tarvittaessa täydentäviin toimenpiteisiin. Ajantasainen luettelo palveluntarjoajista ja niiden sijainneista on julkaistu alihankkijoidemme sivulla."
+          ]
+        },
+        {
+          "heading": "8. Käsittelyn turvallisuus",
+          "content": [
+            "Käytämme asianmukaisia teknisiä ja organisatorisia toimenpiteitä suojaamaan tietoja luvattomalta pääsyltä, katoamiselta, muuttamiselta tai paljastumiselta — mukaan lukien salaus sekä siirron aikana että tallennettuna, tiukat pääsynvalvontamenettelyt, jotka perustuvat ”tarpeen mukaisen tietämisen” periaatteeseen, asiakastietojen erottelu, pyyntöjen määrän rajoittaminen ja väärinkäytön havaitseminen sekä väärinkäytösten havaitsemiseen soveltuva tarkastuslokitus. Toimenpiteitä tarkistetaan palvelun kehittyessä; selkokielinen yleiskatsaus on saatavilla tietoturvasivullamme."
+          ]
+        },
+        {
+          "heading": "9. Oikeutesi",
+          "content": [
+            "Sovellettavan lainsäädännön, mukaan lukien yleisen tietosuoja-asetuksen (GDPR), mukaisesti, jos olet ETA-alueella, voit pyytää meitä:",
+            [
+              "antaa sinulle pääsyn niihin henkilötietoihin, joita meillä on sinusta;",
+              "korjata virheelliset tiedot tai täydentää puutteelliset tiedot;",
+              "poistaa tiedot, joiden käsittely ei enää ole lainmukaista;",
+              "rajoittaa tiettyä käsittelyä tai vastustaa sitä;",
+              "toimittaa tietosi jäsennellyssä, yleisesti käytetyssä ja siirrettävässä muodossa;",
+              "kertoa sinulle tietojesi vastaanottajista ja käytetyistä suojatoimenpiteistä."
+            ],
+            "Lähetä viesti osoitteeseen hello@sdk.enterprises. Vastaamme perusteltuun pyyntöön kuukauden kuluessa ja voimme tarvittaessa pyytää vähäistä henkilöllisyystodistusta. Voit myös tehdä valituksen valvontaviranomaiselle – Ranskassa se on Commission Nationale de l'Informatique et des Libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Lapset",
+          "content": [
+            "Palvelu on suunnattu yrityksille ja ammattilaisille. Emme tietoisesti käsittele sellaisten lasten henkilötietoja, jotka eivät ole saavuttaneet kyseisessä lainkäyttöalueessa määriteltyä digitaalisen suostumuksen ikää; jos epäilet, että näin on tapahtunut, ota meihin yhteyttä, niin poistamme tiedot viipymättä."
+          ]
+        },
+        {
+          "heading": "11. Tämän käytännön muutokset",
+          "content": [
+            "Päivitämme tämän käytännön, kun tietojenkäsittelytapamme muuttuvat. Merkittävistä muutoksista ilmoitetaan tällä sivulla, ja niihin liitetään uusi voimaantulopäivä ennen kuin ne astuvat voimaan. Aikaisemmat versiot ovat saatavilla pyynnöstä."
+          ]
+        },
+        {
+          "heading": "12. Yhteystiedot",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Notă legală",
+        "description": "Editor, gazdă și informații legale pentru auth.sdk.enterprises (mentions légales)."
+      },
+      "title": "Notă legală",
+      "description": "Informații impuse de legislația franceză pentru site-ul publicat la adresa auth.sdk.enterprises (mențiuni legale), stabilite în conformitate cu articolul 6-III din Legea nr. 2004-575 din 21 iunie 2004 (LCEN).",
+      "updated": "23 august 2026",
+      "sections": [
+        {
+          "heading": "Editura",
+          "content": [
+            "Acest site și serviciul Auth sunt publicate de SADDEK Entreprises, care își desfășoară activitatea sub denumirea comercială SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Sediul social: 44 Rue Pasquier, 75008 Paris, France",
+              "Forma juridică: auto-antreprenor (întreprinzător individual), fără capital social",
+              "Număr de înregistrare a societății: RCS Paris 850 513 912",
+              "Director de publicație: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Contact",
+          "content": [
+            "Întrebările referitoare la acest site sau la serviciu pot fi trimise la adresa hello@sdk.enterprises. Pentru raportarea problemelor de securitate, consultați politica noastră privind divulgarea responsabilă."
+          ]
+        },
+        {
+          "heading": "Găzduire",
+          "content": [
+            "Site-ul și serviciul sunt găzduite de Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Statele Unite ale Americii. Bazele de date ale aplicației sunt gestionate de Neon; detaliile privind toți furnizorii de infrastructură sunt enumerate pe pagina dedicată subprocesatorilor."
+          ]
+        },
+        {
+          "heading": "Proprietatea intelectuală",
+          "content": [
+            "Structura, textele, siglele și conținutul acestui site sunt proprietatea SDK Enterprises. Orice reproducere sau reprezentare, integrală sau parțială, fără autorizare prealabilă este interzisă, cu excepția cazurilor permise de legislația în vigoare."
+          ]
+        },
+        {
+          "heading": "Cadrul juridic",
+          "content": [
+            "Aceste notificări sunt reglementate de legislația franceză. Serviciul Auth este furnizat în conformitate cu termenii și condițiile noastre de utilizare, iar prelucrarea datelor cu caracter personal este descrisă în politica noastră de confidențialitate și în anexa privind prelucrarea datelor."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Cookies e rastreamento",
+        "description": "A lista completa do que o Auth define no seu navegador — e por que é mais curta do que a de quase todos os sites que já visitou."
+      },
+      "title": "Cookies e rastreamento",
+      "description": "As plataformas da Auth foram concebidas para funcionar sem o rastrear. Esta página apresenta todos os cookies e todos os mecanismos de análise, o que constitui uma lista muito curta.",
+      "updated": "23 de agosto de 2026",
+      "sections": [
+        {
+          "heading": "1. Cookies que definimos",
+          "content": [
+            {
+              "columns": [
+                "Nome",
+                "Onde",
+                "Objetivo"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Painel de controlo do Auth",
+                  "Essencial. Mantém-no com sessão ativa no painel do seu tenant; assinado, apenas HTTP, expira com a sessão."
+                ],
+                [
+                  "(cookie de sessão do utilizador)",
+                  "Início de sessão universal",
+                  "Essencial. Emitido apenas quando inicia sessão num produto que utilize o Auth, com âmbito limitado à autenticação desse produto."
+                ]
+              ]
+            },
+            "Não existe um banner de consentimento porque não há nada a que se deva dar consentimento: não há cookies publicitários, nem rastreadores entre sites, nem widgets sociais, nem scripts de identificação digital a serem executados no auth.sdk.enterprises ou nas páginas de início de sessão alojadas."
+          ]
+        },
+        {
+          "heading": "2. Análise",
+          "content": [
+            "As páginas de marketing utilizam o Vercel Analytics, que não utiliza cookies: conta as visualizações de páginas de forma agregada, sem armazenar identificadores nem criar perfis de indivíduos. Não são executadas análises nas páginas de início de sessão universal, nos pontos de extremidade API nem no interior das aplicações dos inquilinos."
+          ]
+        },
+        {
+          "heading": "3. Registos do lado do servidor",
+          "content": [
+            "Tal como qualquer servidor web, registamos os pedidos para fins de segurança (detecção de abusos, limitação de tráfego, provas de auditoria), de acordo com as nossas regras de retenção estabelecidas na política de privacidade. Estes registos não são utilizados para criar perfis dos visitantes deste site de marketing."
+          ]
+        },
+        {
+          "heading": "4. Perguntas",
+          "content": [
+            "Se alguma coisa aqui não estiver clara, escreva para hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

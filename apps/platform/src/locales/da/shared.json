@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Platform",
+    "quickstart": "Hurtigstart",
+    "pricing": "Priser",
+    "security": "Sikkerhed",
+    "status": "Status",
+    "signIn": "Log ind"
+  },
+  "footer": {
+    "tagline": "Infrastruktur til autentificering af flere brugere af SDK Enterprises.",
+    "productTitle": "Produkt",
+    "productLinks": [
+      "Platform",
+      "Hurtigstart",
+      "Priser",
+      "Servicestatus"
+    ],
+    "trustTitle": "Tillid",
+    "trustLinks": [
+      "Sikkerhed",
+      "Fortrolighedspolitik",
+      "Databehandling (DPA)",
+      "Underbehandlere",
+      "Cookies og sporing"
+    ],
+    "legalTitle": "Juridisk",
+    "legalLinks": [
+      "Brugsbetingelser",
+      "Juridisk meddelelse"
+    ],
+    "companyTitle": "Virksomhed",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Kontakt"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "underlagt fransk lovgivning",
+    "languageLabel": "Sprog"
+  },
+  "statusBadges": {
+    "available": "Tilgængelig",
+    "rollingOut": "Igangættelse",
+    "recommended": "Anbefalet"
+  },
+  "legalShell": {
+    "brandContext": "aut. · Juridisk",
+    "effectiveLine": "Gældende {date} · underlagt fransk lovgivning",
+    "documentsLabel": "Dokumenter",
+    "securityOverview": "Sikkerhedsoversigt",
+    "docs": [
+      "Fortrolighedspolitik",
+      "Brugsbetingelser",
+      "Tillæg vedrørende databehandling",
+      "Underbehandlere",
+      "Cookies og sporing",
+      "Juridisk meddelelse"
+    ]
+  }
+}

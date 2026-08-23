@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Securitate",
+      "description": "Cum asigură Auth securitatea infrastructurii de autentificare: arhitectura bazată pe tokenuri, rotația cheilor, limitarea ratei, registrul de audit cu lanț de hash-uri și cum se raportează o vulnerabilitate."
+    },
+    "hero": {
+      "eyebrow": "Încredere",
+      "title": "Securitatea reprezintă lista mecanismelor.",
+      "lead": "Nu vă cerem să vă bazați pe afirmațiile de marketing — fiecare măsură de protecție prezentată mai jos explică exact cum funcționează și unde se aplică. Dacă nu putem descrie mecanismul, nu facem acea afirmație."
+    },
+    "layers": [
+      {
+        "title": "Arhitectura tokenului",
+        "points": [
+          "Codurile de autorizare trebuie să conțină PKCE (S256) la fiecare solicitare și sunt de unică folosință, cu termen de valabilitate scurt.",
+          "Tokenurile de reîmprospătare se schimbă la fiecare utilizare; prezentarea unui token consumat duce la revocarea întregii familii de tokenuri.",
+          "Tokenurile de acces și de autentificare sunt RS256 și JWT, semnate pentru fiecare mediu în parte; cheile publice sunt publicate la adresa /.well-known/jwks.json.",
+          "Revocarea tokenurilor de reîmprospătare se poate efectua la adresa /oauth/revoke."
+        ]
+      },
+      {
+        "title": "Ședințe",
+        "points": [
+          "Cookie-urile de sesiune sunt de tip „http-only”, au setarea „SameSite=Lax”, sunt securizate în mediul de producție și conțin sesiuni semnate RS256 și JWT.",
+          "Fiecare sesiune are atât un interval de inactivitate, cât și o durată de valabilitate absolută.",
+          "Sesiunile pot fi revocate de către server; deconectarea duce la revocarea imediată a acestora."
+        ]
+      },
+      {
+        "title": "Chei și secrete",
+        "points": [
+          "Chei de semnare RS256 specifice fiecărui mediu; cheile private sunt criptate prin criptare de tip „envelope” în starea de repaus (AES-256-GCM) și nu sunt niciodată înregistrate.",
+          "Rotarea retrage cheile active, menținându-le totuși publicate, astfel încât tokenurile în circulație să poată fi verificate până la expirarea naturală.",
+          "Informațiile confidențiale ale clientului sunt stocate exclusiv sub formă criptată; verificarea se realizează într-un timp constant după decriptare."
+        ]
+      },
+      {
+        "title": "Măsuri de prevenire a abuzurilor",
+        "points": [
+          "Limite de rată cu ferestre fixe: numărul de coduri trimise pe adresă de e-mail și pe adresă IP, numărul de eșecuri de verificare pe adresă de e-mail, numărul de tokenuri emise pe client și pe adresă IP.",
+          "Eșecurile repetate ale verificării epuizează toate codurile unice rămase pentru adresa respectivă.",
+          "Mesajul de eroare afișat utilizatorului rămâne neutru; detaliile sunt înregistrate numai în jurnalele serverului."
+        ]
+      },
+      {
+        "title": "Posibilitatea de audit",
+        "points": [
+          "Evenimentele de securitate sunt înregistrate într-un registru cu lanț de hash specific fiecărui mediu: fiecare intrare se leagă de cea precedentă prin codul SHA-256.",
+          "Lanțul poate fi recalculat începând cu momentul genezei în orice moment; orice modificare retroactivă îl întrerupe.",
+          "Evenimentele standard de autentificare (autentificări, emiterea de tokenuri, detectarea reutilizării, revocarea, crearea cheilor) sunt înregistrate împreună cu registrul."
+        ]
+      },
+      {
+        "title": "Prelucrarea datelor",
+        "points": [
+          "Datele referitoare la chiriași sunt stocate într-o bază de date Postgres cu denumirea Neon, situată în regiunea selectată pentru implementare; accesul necesită transport criptat.",
+          "Secretele sunt criptate la nivel de plic înainte de stocare; cheia principală se află în afara bazei de date.",
+          "Pe interfețele de autentificare nu sunt rulate niciun fel de trackere sau pixeli publicitari ai unor terți; analizele de pe acest site de marketing se realizează fără cookie-uri și sunt agregate."
+        ]
+      }
+    ],
+    "complianceNote": "Situația conformității, sincer: Auth implementează măsuri de control aliniate la criteriile SOC 2 încă din prima zi, dar nu s-a finalizat încă niciun audit de certificare. Vom publica rezultatele aici când se va schimba această situație.",
+    "disclosure": {
+      "eyebrow": "Dezvăluirea responsabilă",
+      "title": "Ai găsit o eroare? Anunță-ne.",
+      "items": [
+        "Trimiteți un e-mail la adresa hello@sdk.enterprises, menționând [security] în câmpul „Subiect”.",
+        "Vă rugăm să includeți pașii de reproducere; confirmăm primirea rapoartelor în termen de 2 zile lucrătoare.",
+        "Vă rugăm să evitați scanarea automată a mediului de producție și să nu accesați date în afara celor necesare pentru a demonstra problema.",
+        "Cercetările efectuate cu bună-credință în conformitate cu această politică nu pot face obiectul unor acțiuni legale; menționăm numele reporterilor, cu excepția cazului în care aceștia preferă să rămână anonimi.",
+        "Politică în format lizibil de mașini: /.well-known/security.txt"
+      ],
+      "privacyLink": "Politica de confidențialitate →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Subprocesatori →"
+    }
+  }
+}

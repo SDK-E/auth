@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Säkerhet",
+      "description": "Hur Auth säkerställer autentiseringsinfrastrukturen: tokenarkitektur, nyckelrotation, hastighetsbegränsning, den hash-kedjade revisionsledgern och hur man rapporterar en sårbarhet."
+    },
+    "hero": {
+      "eyebrow": "Förtroende",
+      "title": "Säkerhet är listan över mekanismer.",
+      "lead": "Vi ber dig inte att lita på marknadsföringspåståenden – för varje skyddsfunktion nedan beskrivs exakt hur den fungerar och var den är aktiv. Om vi inte kan beskriva hur mekanismen fungerar, gör vi inte påståendet."
+    },
+    "layers": [
+      {
+        "title": "Tokenarkitektur",
+        "points": [
+          "Auktoriseringskoderna kräver PKCE (S256) vid varje förfrågan och är engångskoder med kort giltighetstid.",
+          "Uppdateringstoken byts ut vid varje användning; om ett använt token visas upp upphävs hela tokenfamiljen.",
+          "Åtkomst- och ID-tokens är RS256 och JWT, signerade per miljö; de offentliga nycklarna publiceras på /.well-known/jwks.json.",
+          "Återkallning av uppdateringstoken kan göras via /oauth/revoke."
+        ]
+      },
+      {
+        "title": "Sessioner",
+        "points": [
+          "Sessionscookies är endast HTTP-baserade, har inställningen SameSite=Lax, är säkra i produktionsmiljön och innehåller signerade sessions-RS256-värden JWT.",
+          "Varje session har både en timeout vid inaktivitet och en absolut giltighetstid.",
+          "Sessioner kan återkallas på serversidan; utloggning medför omedelbar återkallelse."
+        ]
+      },
+      {
+        "title": "Nycklar och hemligheter",
+        "points": [
+          "RS256-signeringsnycklar per miljö; privata nycklar krypteras med kuvertkryptering när de lagras (AES-256-GCM) och loggas aldrig.",
+          "Rotationen tar bort aktiva nycklar ur bruk samtidigt som de förblir publicerade, så att utestående token kan verifieras fram till dess att de löper ut av sig själva.",
+          "Klienthemligheter lagras endast i krypterad form; verifieringen sker på konstant tid efter dekryptering."
+        ]
+      },
+      {
+        "title": "Åtgärder mot missbruk",
+        "points": [
+          "Fasta gränsvärden: antal kodleveranser per e-postadress och per IP-adress, antal misslyckade verifieringar per e-postadress, antal utfärdade token per klient och per IP-adress.",
+          "Alltför många misslyckade verifieringsförsök förbrukar alla återstående engångskoder för den adressen.",
+          "Felmeddelanden som visas för användaren hålls neutrala; detaljerna sparas endast i serverloggarna."
+        ]
+      },
+      {
+        "title": "Spårbarhet",
+        "points": [
+          "Säkerhetshändelser skrivs in i en miljöspecifik, hash-kedjad huvudbok: varje post kopplas till sin föregångare med SHA-256.",
+          "Kedjan kan när som helst beräknas om från början; varje ändring som gäller retroaktivt bryter den.",
+          "Standardhändelser vid autentisering (inloggningar, utfärdande av token, upptäckt av återanvändning, återkallande, skapande av nycklar) registreras tillsammans med huvudboken."
+        ]
+      },
+      {
+        "title": "Datahantering",
+        "points": [
+          "Hyresgästuppgifterna lagras i en Postgres-databas med namnet Neon i den region som valts för driftsättningen; åtkomst kräver krypterad överföring.",
+          "Hemligheterna krypteras med en krypteringsnyckel innan de lagras; huvudnyckeln förvaras utanför databasen.",
+          "Inga spårningsverktyg eller annonspixlar från tredje part används på inloggningssidorna; analyserna på denna marknadsföringssajt sker utan cookies och i aggregerad form."
+        ]
+      }
+    ],
+    "complianceNote": "Status för regelefterlevnad, ärligt talat: Auth har från första början infört kontrollrutiner som överensstämmer med SOC 2-kriterierna, men ingen certifieringsrevision har ännu genomförts. Vi kommer att publicera resultaten här när det ändras.",
+    "disclosure": {
+      "eyebrow": "Ansvarsfull informationsdelning",
+      "title": "Har du hittat ett fel? Meddela oss.",
+      "items": [
+        "Skicka ett e-postmeddelande till hello@sdk.enterprises med [säkerhet] i ämnesraden.",
+        "Ange hur problemet kan återskapas; vi bekräftar mottagandet av rapporter inom två arbetsdagar.",
+        "Undvik automatiserad skanning av produktionsmiljön och ta inte del av mer data än vad som krävs för att bekräfta problemet.",
+        "Forskning som bedrivs i god tro enligt denna policy är skyddad mot rättsliga åtgärder; vi anger källorna om de inte önskar vara anonyma.",
+        "Maskinläsbar policy: /.well-known/security.txt"
+      ],
+      "privacyLink": "Integritetspolicy →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Underleverantörer →"
+    }
+  }
+}

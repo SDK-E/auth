@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Condiții de utilizare",
+        "description": "Condițiile care reglementează accesul la și utilizarea serviciului de autentificare Auth furnizat de SDK Enterprises."
+      },
+      "title": "Condiții de utilizare",
+      "description": "Acești termeni constituie acordul dintre dumneavoastră și SDK Enterprises privind utilizarea serviciului Auth. Sunt redactați în mod intenționat într-un stil concis, dar acoperă toate aspectele importante dintr-o relație profesională.",
+      "updated": "23 august 2026",
+      "sections": [
+        {
+          "heading": "1. Definiții",
+          "content": [
+            [
+              "„Serviciu” — platforma de autentificare multi-tenant Auth, operată la adresa auth.sdk.enterprises, inclusiv tablourile de bord, interfețele și documentația acesteia.",
+              "„Chiriaș” — spațiul dvs. de lucru izolat din cadrul Serviciului.",
+              "„Utilizator final” — o persoană fizică care se autentifică în produsele dumneavoastră prin intermediul Serviciului.",
+              "„Acord” — acești termeni, împreună cu orice comandă sau alegere de plan pe care o faceți, politica noastră de confidențialitate și (acolo unde este cazul) anexa noastră privind prelucrarea datelor."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Cine ești",
+          "content": [
+            "Reprezentați o persoană juridică sau acționați în calitate de profesionist. Confirmați că informațiile pe care le furnizați la înregistrare sunt corecte, că sunteți autorizat să angajați entitatea pe care o reprezentați și că utilizarea Serviciului de către dumneavoastră respectă legislația aplicabilă atât dumneavoastră, cât și utilizatorilor finali. Serviciul nu este oferit consumatorilor care acționează în afara calității lor profesionale, nici persoanelor fizice care nu au împlinit vârsta de consimțământ digital."
+          ]
+        },
+        {
+          "heading": "3. Chiriașul dumneavoastră și responsabilitățile dumneavoastră",
+          "content": [
+            [
+              "Sunteți responsabil pentru aplicațiile pe care le înregistrați, pentru adresele pe care le autorizați în vederea redirecționării și pentru confidențialitatea datelor de autentificare care v-au fost furnizate. Vă rugăm să ne anunțați fără întârziere în cazul în care acestea sunt compromise.",
+              "Sunteți responsabil pentru relația dumneavoastră cu utilizatorii finali, inclusiv pentru informarea acestora cu privire la prelucrarea datelor efectuată prin intermediul Serviciului și pentru obținerea tuturor permisiunilor necesare.",
+              "Trebuie să mențineți la zi datele de contact ale chiriașilor, astfel încât să vă putem contacta în legătură cu aspecte legate de securitate și servicii."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Utilizarea acceptabilă",
+          "content": [
+            "Sunteți de acord să nu:",
+            [
+              "să utilizeze Serviciul în scopuri ilegale sau într-un mod care încalcă drepturile altora;",
+              "să interfereze cu, să suprasolicite, să analizeze sau să testeze Serviciul în afara cadrului politicii noastre privind divulgarea responsabilă;",
+              "să eludeze măsurile de securitate, limitele de utilizare sau restricțiile de acces;",
+              "să revândă sau să comercializeze sub marcă albă Serviciul în sine ca o ofertă concurentă de identitate găzduită, fără un acord separat;",
+              "să trimită conținut ilegal prin e-mailurile transmise prin intermediul Serviciului sau să prezinte în mod eronat originea acestuia;",
+              "să încarce coduri rău intenționate sau conținut care nu are legătură cu autentificarea."
+            ],
+            "Putem investiga presupusele încălcări și putem suspenda accesul utilizatorilor vizați atunci când acest lucru este necesar în mod rezonabil — cu notificare prealabilă, acolo unde este posibil, și imediat, în cazul în care există un risc credibil de securitate."
+          ]
+        },
+        {
+          "heading": "5. Disponibilitatea serviciului",
+          "content": [
+            "Operăm Serviciul pe o infrastructură gestionată de încredere, dotată cu sisteme de monitorizare, copii de siguranță și redundanță adecvate nivelului său de maturitate. În perioada de acces anticipat nu se aplică niciun angajament formal privind nivelul serviciului; atunci când va exista un astfel de angajament, acesta va fi publicat aici și va face parte integrantă din Acord. Lucrările de întreținere planificate sunt anunțate în avans, acolo unde este posibil."
+          ]
+        },
+        {
+          "heading": "6. Taxe, facturare și impozite",
+          "content": [
+            [
+              "Tarifele sunt cele publicate în secțiunea „Tarife” a site-ului nostru la momentul abonării, fără taxele aplicabile.",
+              "Cu excepția cazului în care se specifică altfel, taxele se achită lunar, în avans, și nu sunt rambursabile odată ce perioada a început, cu excepția cazurilor prevăzute de lege.",
+              "Ne rezervăm dreptul de a modifica prețurile pentru viitor, cu un preaviz de cel puțin 30 de zile; modificările nu afectează niciodată o perioadă deja plătită.",
+              "Plata cu întârziere poate duce la suspendare, după o avertizare prealabilă în scris."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Proprietatea intelectuală",
+          "content": [
+            "SDK Enterprises își rezervă toate drepturile asupra Serviciului, inclusiv asupra software-ului, elementelor de identitate vizuală și documentației. Vă păstrați toate drepturile asupra aplicațiilor dvs. și asupra datelor care vă aparțin dvs. și utilizatorilor finali. Vi se acordă un drept personal, neexclusiv și netransferabil de a utiliza Serviciul în conformitate cu prezentul Acord pe durata acestuia. Feedback-ul pe care ni-l oferiți poate fi utilizat în mod liber pentru îmbunătățirea Serviciului, fără nicio obligație."
+          ]
+        },
+        {
+          "heading": "8. Garanții și exonerări de răspundere",
+          "content": [
+            "Garantăm că vom furniza Serviciul cu competență și grijă rezonabile. Cu excepția cazurilor menționate în mod expres și în măsura maximă permisă de lege, Serviciul este furnizat „așa cum este”, fără garanții suplimentare de niciun fel, fie ele exprese sau implicite, inclusiv garanția adecvării pentru un scop anume sau a funcționării neîntrerupte și fără erori. Nicio prevedere din prezentul Acord nu exclude răspunderea care nu poate fi exclusă în temeiul legislației franceze, inclusiv răspunderea pentru intenție sau neglijență gravă, vătămări corporale și protecțiile legale ale consumatorilor, acolo unde acestea se aplică."
+          ]
+        },
+        {
+          "heading": "9. Limitarea răspunderii",
+          "content": [
+            "În măsura permisă de lege, niciuna dintre părți nu este răspunzătoare pentru pierderi indirecte, accidentale sau consecvente, inclusiv pierderi de profit, venituri, fond comercial sau date, indiferent de cauza acestora. Răspunderea totală cumulată a fiecărei părți, care decurge din sau este legată de Prezentul Acord, este limitată la valoarea totală a comisioanelor plătite de dumneavoastră în cele douăsprezece luni anterioare evenimentului care a dat naștere pretenției. Aceste limite se aplică în mod solidar subprocesatorilor noștri numai în măsura permisă de lege."
+          ]
+        },
+        {
+          "heading": "10. Despăgubire",
+          "content": [
+            "Sunteți de acord să ne apărați și să ne despăgubiți împotriva pretențiilor formulate de terți care decurg din aplicațiile dvs., din utilizarea Serviciului de către dvs. cu încălcarea prezentului Acord sau din încălcarea de către dvs. a drepturilor terților — cu condiția ca noi să vă informăm fără întârziere cu privire la pretenție, să vă permitem să coordonați apărarea împotriva acesteia și să nu o soluționăm unilateral în numele dvs."
+          ]
+        },
+        {
+          "heading": "11. Confidențialitatea",
+          "content": [
+            "Fiecare parte protejează informațiile confidențiale ale celeilalte părți cu cel puțin aceeași grijă pe care o acordă propriilor informații similare, le utilizează exclusiv în scopul executării prezentului acord și le divulgă numai personalului și consilierilor care au nevoie de ele și care sunt supuși unor obligații echivalente. Această obligație rămâne în vigoare timp de trei ani după încetarea acordului."
+          ]
+        },
+        {
+          "heading": "12. Durata, suspendarea și încetarea",
+          "content": [
+            [
+              "Acordul intră în vigoare odată cu prima utilizare a Serviciului și rămâne valabil pe toată durata existenței contului dumneavoastră.",
+              "Oricare dintre părți poate rezilia contractul în orice moment, prin notificare scrisă; perioadele pentru care s-au achitat taxele se derulează până la data de încheiere prevăzută, cu excepția cazului în care legea prevede altfel.",
+              "Oricare dintre părți poate rezilia contractul în cazul unei încălcări grave care nu a fost remediată în termen de 30 de zile de la notificare sau cu efect imediat, în cazul în care continuarea executării ar fi ilegală sau ar cauza un prejudiciu grav.",
+              "La încetarea contractului, punem la dispoziție, la cerere, un fișier de export în format lizibil de către mașini cu datele contului dumneavoastră, disponibil timp de 30 de zile, după care ștergem contul, sub rezerva obligațiilor de păstrare descrise în politica de confidențialitate."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Furnizori terți",
+          "content": [
+            "Serviciul se bazează pe furnizori de infrastructură de renume, enumerați pe pagina noastră dedicată subprocesatorilor. Suntem responsabili pentru performanța acestora în temeiul prezentului acord; relațiile dumneavoastră cu aceștia se stabilesc exclusiv prin intermediul nostru."
+          ]
+        },
+        {
+          "heading": "14. Forță majoră",
+          "content": [
+            "Niciuna dintre părți nu este răspunzătoare pentru neîndeplinirea obligațiilor cauzată de evenimente care nu se află sub controlul său rezonabil — dezastre naturale, greve, război, defecțiuni ale rețelelor publice sau ale serviciilor de utilități publice sau măsuri luate de autoritățile publice — cu condiția ca partea afectată să notifice cealaltă parte și să-și reia îndeplinirea obligațiilor cât mai curând posibil."
+          ]
+        },
+        {
+          "heading": "15. Clauze generale",
+          "content": [
+            [
+              "Prezentul acord constituie întregul acord între părți cu privire la Serviciu și înlocuiește orice înțelegeri anterioare.",
+              "În cazul în care o clauză este declarată nulă, restul prevederilor rămân în vigoare, iar părțile înlocuiesc clauza respectivă cu una valabilă, care se apropie cel mai mult de intenția inițială.",
+              "Faptul că o parte întârzie să-și exercite un drept nu constituie o renunțare la acesta.",
+              "Nu aveți dreptul să cesionați prezentul acord fără consimțământul nostru; noi îl putem cesiona în cadrul unei reorganizări a activității noastre, cu notificare prealabilă.",
+              "Notificările se consideră valabile dacă sunt trimise prin e-mail la adresa hello@sdk.enterprises sau la ultima adresă de contact furnizată de chiriaș.",
+              "Prezentele condiții sunt redactate în limba engleză; pentru comoditate, poate fi furnizată o versiune în limba franceză. În cazul contractelor încheiate cu clienți profesioniști din Franța, versiunea în limba franceză prevalează, dacă aceasta există și în cazul în care există diferențe."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Legislația aplicabilă și soluționarea litigiilor",
+          "content": [
+            "Prezentul acord este reglementat de legislația franceză. Înainte de a recurge la calea judiciară, părțile vor încerca să ajungă la o soluționare de bună-credință în termen de 30 de zile de la notificarea scrisă a litigiului. În caz contrar, instanțele din Paris, Franța, sunt competente — cu excepția cazurilor în care normele imperative vă conferă dreptul la o altă instanță competentă."
+          ]
+        },
+        {
+          "heading": "17. Modificări aduse acestor condiții",
+          "content": [
+            "Modificările semnificative sunt anunțate pe această pagină cu cel puțin 30 de zile înainte de intrarea lor în vigoare. Utilizarea în continuare după acea dată constituie acceptare; dacă nu sunteți de acord, puteți rezilia contractul înainte de data intrării în vigoare."
+          ]
+        }
+      ]
+    }
+  }
+}

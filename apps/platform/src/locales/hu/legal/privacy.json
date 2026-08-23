@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Adatvédelmi nyilatkozat",
+        "description": "Hogyan kezeli a SDK Enterprises által üzemeltetett Auth a személyes adatokat: mit gyűjtünk, miért, mennyi ideig, kivel osztjuk meg azokat, és milyen jogai vannak Önnek ezekkel kapcsolatban."
+      },
+      "title": "Adatvédelmi nyilatkozat",
+      "description": "Ez az irányelv ismerteti, hogy az Auth szolgáltatás milyen személyes adatokat dolgoz fel, miért történik a feldolgozás, mennyi ideig tárolják az adatokat, kivel osztják meg azokat, valamint milyen jogok illetik meg az érintetteket. Az irányelvet úgy fogalmaztuk meg, hogy el lehessen olvasni és meg lehessen érteni, nem csupán megjelenítésre szántuk.",
+      "updated": "2026. augusztus 23.",
+      "sections": [
+        {
+          "heading": "1. Ki vagyunk mi?",
+          "content": [
+            "Az Auth szolgáltatást (a továbbiakban: „Szolgáltatás”) a SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, székhelye: 44 Rue Pasquier, 75008 Paris, France – „SDK Enterprises”, „mi”, „minket”). Ügyfeleink a Szolgáltatást saját felhasználóik hitelesítésére használják; ez a dokumentum leírja, hogyan áramlanak a személyes adatok ezen rendszer keretében, és mi a felek felelősségi köre."
+          ]
+        },
+        {
+          "heading": "2. A szerepünk a helyzettől függ",
+          "content": [
+            [
+              "A weboldal látogatói, valamint azok számára, akik nálunk fiókot nyitnak vagy kezelnek, a SDK Enterprises határozza meg, hogy milyen célból és milyen módon történik a személyes adatok feldolgozása, és adatkezelőként jár el.",
+              "Azoknál a végfelhasználóknál, akik az Auth által működtetett termékbe vagy szolgáltatásba jelentkeznek be, ügyfelünk továbbra is adatkezelőként felelős az adatkezelésért, míg a SDK Enterprises adatfeldolgozóként, az adatfeldolgozási kiegészítő megállapodásunk alapján, az ügyfél dokumentált utasításai szerint dolgozza fel a személyes adatokat. Ha Ön ilyen végfelhasználó, akkor elsődleges kapcsolattartója az a termék, amelybe bejelentkezett; mi segítünk nekik abban, hogy indokolatlan késedelem nélkül válaszoljanak az Ön kérésére."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Az általunk feldolgozott személyes adatok kategóriái",
+          "content": [
+            [
+              "Fiókadatok. Az e-mail-cím és azok az alapvető profiladatok, amelyeket Ön vagy szolgáltatója megad; a fiókjához kapcsolódó hitelesítési időbélyegek és használati statisztikák.",
+              "Hitelesítési adatok. A bejelentkezési kísérletek és azok eredményeiről, valamint a tokenek és munkamenetek kiadásáról és visszavonásáról szóló nyilvántartások, továbbá a kapcsolódó technikai metaadatok (beleértve az IP-címet, a böngésző felhasználói ügynökét és a pontos időbélyegeket) biztonsági, visszaélések megelőzésére és bizonyítékként történő felhasználás céljából kerülnek megőrzésre.",
+              "Biztonsági naplófájlok. A fiókjához vagy környezetéhez kapcsolódó, biztonsági szempontból fontos eseményekről készült, hamisításbiztos naplófájlok.",
+              "A visszaélések megelőzésére vonatkozó adatok. A visszaélésszerű forgalom felismerésére és korlátozására használt, rövid élettartamú technikai számlálók.",
+              "Kommunikációs adatok. Az Ön által nekünk elküldött üzenetek tartalma (például ügyfélszolgálati kérések vagy jogok érvényesítése) és a mi válaszaink.",
+              "Üzleti adatok. A fizetős csomagok esetében a számlázási és fizetési hivatkozások kezelése a számlázási folyamatunk keretében történik."
+            ],
+            "A Szolgáltatásba való bejelentkezéshez nem kérünk és nem tárolunk jelszavakat. Az érzékeny kategóriába tartozó személyes adatokat (egészségügyi adatok, biometrikus adatok, politikai vélemények és hasonló adatok) nem kérjük, és azokat nem szabad nekünk megadni."
+          ]
+        },
+        {
+          "heading": "4. Célok és jogalapok",
+          "content": [
+            [
+              "A Szolgáltatás üzemeltetése és nyújtása — szerződés teljesítése, illetve a szerződés megkötését megelőző lépések.",
+              "A fiókok védelme, a csalások és visszaélések felderítése, valamint a biztonsági nyilvántartások vezetése – a megbízható infrastruktúra üzemeltetéséhez fűződő jogos érdekünk, amelyet az Ön jogai és elvárásai figyelembevételével egyensúlyba hozunk.",
+              "A számviteli, adózási és egyéb törvényes kötelezettségek teljesítése – jogi kötelezettségnek való megfelelés.",
+              "A fiókjával kapcsolatos szolgáltatási értesítések vagy azt érintő eseményekről szóló értesítések küldése – a szerződés teljesítése; külön hozzájárulás hiányában nem küldünk marketingcélú e-maileket."
+            ],
+            "Amennyiben az adatkezelés hozzájáruláson alapul, azt bármikor visszavonhatja, anélkül hogy ez befolyásolná a visszavonás előtt végzett adatkezelés jogszerűségét. Nem folytatunk olyan automatizált döntéshozatalt, amely az alkalmazandó jog értelmében joghatással jár."
+          ]
+        },
+        {
+          "heading": "5. Megtartás",
+          "content": [
+            "A személyes adatokat kizárólag a fent meghatározott célokhoz szükséges ideig tároljuk. A fiókadatokat addig tároljuk, amíg a fiók vagy a bérlő aktív marad; a biztonsági és ellenőrzési naplókat addig tároljuk, amíg azok szükségesek a Szolgáltatás integritásának igazolásához és a jogi követelmények teljesítéséhez; a visszaélések megelőzésére szolgáló adatok jellegüknél fogva ideiglenesek; az üzleti nyilvántartásokat a törvényben előírt könyvelési időszakokig tároljuk. A már nem szükséges adatokat töröljük vagy visszafordíthatatlanul anonimizáljuk."
+          ]
+        },
+        {
+          "heading": "6. Adatátvevők és alvállalkozók",
+          "content": [
+            "Személyes adatokat kizárólag a következőkkel osztunk meg: a nevünkben szerződés alapján eljáró adatfeldolgozókkal (tárhely-, adatbázis-, gyorsítótár- és e-mail-küldő szolgáltatók – ezeket egyenként felsoroljuk az aladatfeldolgozók oldalunkon); titoktartási kötelezettség alá tartozó szakmai tanácsadókkal; valamint hatóságokkal, amennyiben ezt kötelező erejű jogi kérelem írja elő; ilyen esetben értesítjük az érintetteket, kivéve, ha ezt jogszabály tiltja. Soha nem adjuk el, nem adjuk bérbe és nem közvetítjük tovább a személyes adatokat, és nem használjuk fel az ügyfelek vagy a végfelhasználók adatait reklámozási célokra vagy gépi tanulási modellek betanítására."
+          ]
+        },
+        {
+          "heading": "7. Nemzetközi átutalások",
+          "content": [
+            "Szolgáltatóink közül néhány az Európai Gazdasági Térségen kívül működik. Amennyiben személyes adatokat továbbítunk az EGT-n kívülre, megfelelő megfelelőségi határozatra vagy megfelelő biztosítékokra támaszkodunk – különösen az Európai Bizottság általános szerződési feltételeire –, szükség esetén kiegészítő intézkedésekkel együtt. A szolgáltatók jelenlegi listája és székhelyeik a továbbfeldolgozóinkról szóló oldalunkon találhatók."
+          ]
+        },
+        {
+          "heading": "8. Az adatkezelés biztonsága",
+          "content": [
+            "Megfelelő technikai és szervezeti intézkedéseket alkalmazunk a jogosulatlan hozzáférés, az adatvesztés, az adatmódosítás vagy az adatok nyilvánosságra hozatala ellen – ideértve az adatátvitel közbeni és tárolás közbeni titkosítást, a „szükség szerinti” elven alapuló szigorú hozzáférés-ellenőrzést, a bérlői adatok elkülönítését, a forgalomkorlátozást és a visszaélések felderítését, valamint a manipulációt jelző ellenőrzési naplózást. Az intézkedéseket a Szolgáltatás fejlődésével összhangban felülvizsgáljuk; a biztonsági oldalunkon közérthető nyelvű áttekintés található."
+          ]
+        },
+        {
+          "heading": "9. A jogai",
+          "content": [
+            "Az alkalmazandó jogszabályok – ideértve az Általános Adatvédelmi Rendeletet is, amennyiben Ön az EGT-területén tartózkodik – figyelembevételével kérheti tőlünk, hogy:",
+            [
+              "hozzáférést biztosítunk az Önről tárolt személyes adatokhoz;",
+              "a pontatlan adatok kijavítása vagy a hiányos adatok kiegészítése;",
+              "törölni azokat az adatokat, amelyek feldolgozása már nem jogszerű;",
+              "korlátozni vagy tiltakozni bizonyos adatkezelés ellen;",
+              "az adatait strukturált, széles körben használt, hordozható formátumban bocsássa rendelkezésre;",
+              "tájékoztatjuk Önt az adatai címzettjeiről és az alkalmazott biztonsági intézkedésekről."
+            ],
+            "Írjon a hello@sdk.enterprises címre. Az indokolt kérelmekre egy hónapon belül válaszolunk, és szükség esetén minimális személyazonosság-igazolást kérhetünk. Panaszt is benyújthat egy felügyeleti hatósághoz – Franciaországban ez a Commission Nationale de l'Informatique et des Libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Gyerekek",
+          "content": [
+            "A Szolgáltatás vállalkozásoknak és szakembereknek szól. Nem dolgozzuk fel tudatosan az érintett joghatóságban a digitális hozzájáruláshoz szükséges életkort még el nem érő gyermekek személyes adatait; amennyiben úgy véli, hogy ez mégis megtörtént, vegye fel velünk a kapcsolatot, és az adatokat haladéktalanul töröljük."
+          ]
+        },
+        {
+          "heading": "11. A jelen irányelv módosításai",
+          "content": [
+            "A jelen irányelvet akkor frissítjük, ha adatkezelési gyakorlatunkban változás következik be. A lényeges változásokat – a hatálybalépés előtt – ezen az oldalon tesszük közzé, feltüntetve az új hatálybalépési dátumot. A korábbi verziók kérésre rendelkezésre állnak."
+          ]
+        },
+        {
+          "heading": "12. Kapcsolat",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

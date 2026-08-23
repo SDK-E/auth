@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Note legali",
+        "description": "Editore, gestore e note legali relative a auth.sdk.enterprises (mentions légales)."
+      },
+      "title": "Note legali",
+      "description": "Informazioni richieste dalla normativa francese relative al sito pubblicato all'indirizzo auth.sdk.enterprises (note legali), redatte ai sensi dell'articolo 6-III della legge n. 2004-575 del 21 giugno 2004 (LCEN).",
+      "updated": "23 agosto 2026",
+      "sections": [
+        {
+          "heading": "Editore",
+          "content": [
+            "Questo sito e il servizio di autenticazione sono gestiti da SADDEK Entreprises, che opera con il nome commerciale SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Sede legale: 44 Rue Pasquier, 75008 Paris, France",
+              "Forma giuridica: auto-imprenditore (imprenditore individuale), senza capitale sociale",
+              "Numero di registrazione della società: RCS Paris 850 513 912",
+              "Direttore editoriale: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Contatti",
+          "content": [
+            "Eventuali domande relative a questo sito o al servizio possono essere inviate all'indirizzo hello@sdk.enterprises. Per le segnalazioni relative alla sicurezza, consultare la nostra politica di divulgazione responsabile."
+          ]
+        },
+        {
+          "heading": "Hosting",
+          "content": [
+            "Il sito e il servizio sono ospitati da Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Stati Uniti. I database delle applicazioni sono gestiti da Neon; i dettagli relativi a tutti i fornitori di infrastrutture sono riportati nella pagina dedicata ai sub-responsabili del trattamento."
+          ]
+        },
+        {
+          "heading": "Proprietà intellettuale",
+          "content": [
+            "La struttura, i testi, i loghi e i contenuti del presente sito sono di proprietà di SDK Enterprises. È vietata qualsiasi riproduzione o rappresentazione, totale o parziale, senza previa autorizzazione, salvo quanto consentito dalla normativa vigente."
+          ]
+        },
+        {
+          "heading": "Quadro giuridico",
+          "content": [
+            "Le presenti note informative sono regolate dalla legge francese. Il servizio Auth è fornito in base alle nostre condizioni di servizio, mentre il trattamento dei dati personali è descritto nella nostra informativa sulla privacy e nell’allegato relativo al trattamento dei dati."
+          ]
+        }
+      ]
+    }
+  }
+}

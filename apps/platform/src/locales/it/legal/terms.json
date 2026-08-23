@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Condizioni di utilizzo",
+        "description": "Le condizioni che regolano l'accesso e l'utilizzo del servizio di autenticazione Auth fornito da SDK Enterprises."
+      },
+      "title": "Condizioni di utilizzo",
+      "description": "I presenti termini costituiscono l'accordo tra l'utente e SDK Enterprises relativo all'utilizzo del servizio Auth. Sono volutamente concisi, ma coprono tutti gli aspetti rilevanti di un rapporto professionale.",
+      "updated": "23 agosto 2026",
+      "sections": [
+        {
+          "heading": "1. Definizioni",
+          "content": [
+            [
+              "\"Servizio\" — la piattaforma di autenticazione multi-tenant Auth gestita all'indirizzo auth.sdk.enterprises, comprese le relative dashboard, interfacce e documentazione.",
+              "\"Tenant\" — il tuo spazio di lavoro isolato all'interno del Servizio.",
+              "\"Utente finale\" — una persona fisica che effettua l'autenticazione ai vostri prodotti tramite il Servizio.",
+              "\"Accordo\" — i presenti termini, unitamente a qualsiasi ordine o scelta di piano da parte dell’utente, alla nostra informativa sulla privacy e (ove applicabile) al nostro allegato sul trattamento dei dati."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Chi sei",
+          "content": [
+            "L'utente rappresenta un soggetto giuridico o agisce in qualità di professionista. L'utente conferma che le informazioni fornite al momento della registrazione sono accurate, di essere autorizzato a vincolare il soggetto che rappresenta e che l'utilizzo del Servizio da parte sua è conforme alle leggi applicabili a lui e ai suoi utenti finali. Il Servizio non è offerto ai consumatori che agiscono al di fuori di un contesto professionale, né a persone di età inferiore a quella prevista per il consenso digitale."
+          ]
+        },
+        {
+          "heading": "3. Il tuo inquilino e le tue responsabilità",
+          "content": [
+            [
+              "L'utente è responsabile delle applicazioni registrate, degli indirizzi autorizzati per il reindirizzamento e della riservatezza delle credenziali che gli sono state rilasciate. È tenuto a segnalarci tempestivamente qualsiasi violazione della sicurezza.",
+              "L'utente è responsabile del proprio rapporto con gli utenti finali, compreso l'obbligo di informarli in merito al trattamento dei dati effettuato tramite il Servizio e di ottenere le autorizzazioni necessarie.",
+              "È necessario mantenere aggiornati i dati di contatto dell'inquilino, in modo che possiamo contattarti per questioni relative alla sicurezza e ai servizi."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Condizioni d'uso",
+          "content": [
+            "L'utente si impegna a non:",
+            [
+              "utilizzare il Servizio per scopi illegali o in modo tale da violare i diritti altrui;",
+              "interferire con, sovraccaricare, sondare o testare il Servizio al di fuori della nostra politica di divulgazione responsabile;",
+              "eludere i controlli di sicurezza, i limiti di utilizzo o le restrizioni di accesso;",
+              "rivendere o commercializzare in white label il Servizio stesso come offerta concorrente di identità in hosting senza un accordo separato;",
+              "inviare contenuti illeciti tramite e-mail trasmesse dal Servizio, oppure fornire false indicazioni sulla loro provenienza;",
+              "caricare codice dannoso o contenuti non correlati all'autenticazione."
+            ],
+            "Ci riserviamo il diritto di indagare su presunte violazioni e di sospendere l'accesso interessato qualora ciò sia ragionevolmente necessario, dandone preavviso ove possibile e con effetto immediato qualora sussista un rischio credibile per la sicurezza."
+          ]
+        },
+        {
+          "heading": "5. Disponibilità del servizio",
+          "content": [
+            "Gestiamo il Servizio su un'infrastruttura gestita affidabile, dotata di sistemi di monitoraggio, backup e ridondanza adeguati al suo livello di maturità. Durante il periodo di accesso anticipato non si applica alcun impegno formale relativo al livello di servizio; quando ne verrà stabilito uno, esso sarà pubblicato qui e costituirà parte integrante del Contratto. La manutenzione programmata viene annunciata in anticipo, ove possibile."
+          ]
+        },
+        {
+          "heading": "6. Commissioni, fatturazione e imposte",
+          "content": [
+            [
+              "Le tariffe sono quelle pubblicate nella sezione \"Prezzi\" del nostro sito al momento della sottoscrizione, espresse al netto delle imposte applicabili.",
+              "Salvo diversa indicazione, le quote devono essere versate mensilmente in anticipo e non sono rimborsabili una volta iniziato il periodo di riferimento, salvo nei casi previsti dalla legge.",
+              "Ci riserviamo il diritto di modificare i prezzi con effetto futuro, previa comunicazione con almeno 30 giorni di anticipo; tali modifiche non incidono mai sui periodi già pagati.",
+              "Il ritardo nel pagamento può comportare la sospensione del servizio, previa comunicazione scritta."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Proprietà intellettuale",
+          "content": [
+            "SDK Enterprises detiene tutti i diritti relativi al Servizio, inclusi il software, gli elementi del marchio e la documentazione. L'utente detiene tutti i diritti sulle proprie applicazioni e sui dati che appartengono a lui e ai suoi utenti finali. All'utente viene concesso un diritto personale, non esclusivo e non trasferibile di utilizzare il Servizio in conformità con il presente Contratto per tutta la sua durata. Il feedback fornito dall'utente potrà essere utilizzato liberamente per migliorare il Servizio senza alcun obbligo."
+          ]
+        },
+        {
+          "heading": "8. Garanzie ed esclusioni di responsabilità",
+          "content": [
+            "Garantiamo che forniremo il Servizio con la dovuta competenza e diligenza. Salvo quanto espressamente indicato, e nella misura massima consentita dalla legge, il Servizio viene fornito “così com’è” senza garanzie aggiuntive di alcun tipo, espresse o implicite, ivi incluse l’idoneità per uno scopo particolare o il funzionamento ininterrotto e privo di errori. Nessuna disposizione del presente Contratto esclude la responsabilità che non può essere esclusa ai sensi della legge francese, compresa la responsabilità per dolo o colpa grave, lesioni personali e le tutele legali dei consumatori, ove applicabili."
+          ]
+        },
+        {
+          "heading": "9. Limitazione di responsabilità",
+          "content": [
+            "Nella misura consentita dalla legge, nessuna delle parti è responsabile per danni indiretti, incidentali o consequenziali, inclusi la perdita di profitti, ricavi, avviamento o dati, indipendentemente dalla causa. La responsabilità complessiva di ciascuna parte derivante dal Contratto o ad esso correlata è limitata all’importo totale dei canoni da te pagati nei dodici mesi precedenti l’evento che ha dato origine alla richiesta di risarcimento. Tali limiti si applicano in solido ai nostri sub-responsabili del trattamento solo nella misura consentita dalla legge."
+          ]
+        },
+        {
+          "heading": "10. Indennizzo",
+          "content": [
+            "L'utente accetta di difenderci e indennizzarci in caso di rivendicazioni da parte di terzi derivanti dalle sue applicazioni, dall'uso del Servizio in violazione del presente Contratto o dalla violazione dei diritti di terzi, a condizione che gli comunichiamo tempestivamente la rivendicazione, gli consentiamo di gestirne la difesa e non la risolviamo unilateralmente per suo conto."
+          ]
+        },
+        {
+          "heading": "11. Riservatezza",
+          "content": [
+            "Ciascuna parte tutela le informazioni riservate dell’altra con almeno la stessa cura che riserva alle proprie informazioni simili, le utilizza esclusivamente ai fini dell’esecuzione del Contratto e le comunica solo al personale e ai consulenti che ne hanno necessità e che sono vincolati da obblighi equivalenti. Tale obbligo permane per tre anni anche dopo la cessazione del Contratto."
+          ]
+        },
+        {
+          "heading": "12. Durata, sospensione e risoluzione",
+          "content": [
+            [
+              "Il Contratto ha inizio al momento del primo utilizzo del Servizio e rimane in vigore fintanto che il tuo tenant è attivo.",
+              "Ciascuna delle parti può recedere dal contratto in qualsiasi momento mediante comunicazione scritta; i periodi per i quali è stato corrisposto il canone proseguono fino alla scadenza prevista, salvo diversa disposizione di legge.",
+              "Ciascuna delle parti può risolvere il contratto in caso di violazione sostanziale non sanata entro 30 giorni dalla notifica, oppure con effetto immediato qualora la prosecuzione dell’adempimento risulti illegale o comporti un danno sostanziale.",
+              "Al momento della cessazione del contratto, su richiesta mettiamo a disposizione per 30 giorni un file di esportazione in formato leggibile da computer contenente i dati del tuo tenant; successivamente, provvederemo alla cancellazione del tenant nel rispetto degli obblighi di conservazione descritti nell'informativa sulla privacy."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Fornitori terzi",
+          "content": [
+            "Il Servizio si avvale di fornitori di infrastrutture affidabili elencati nella nostra pagina dedicata ai sub-responsabili del trattamento. Siamo responsabili delle loro prestazioni ai sensi del presente Accordo; i rapporti dell’utente con tali fornitori si instaurano esclusivamente tramite noi."
+          ]
+        },
+        {
+          "heading": "14. Forza maggiore",
+          "content": [
+            "Nessuna delle parti è responsabile per l’inadempimento causato da eventi al di fuori del proprio ragionevole controllo — calamità naturali, scioperi, guerre, interruzioni delle reti pubbliche o dei servizi di pubblica utilità, o provvedimenti delle autorità pubbliche — a condizione che la parte interessata ne dia comunicazione all’altra e riprenda l’adempimento non appena ragionevolmente possibile."
+          ]
+        },
+        {
+          "heading": "15. Clausole generali",
+          "content": [
+            [
+              "Il presente Contratto costituisce l’accordo completo tra le parti in merito al Servizio e sostituisce qualsiasi accordo precedente.",
+              "Qualora una clausola fosse dichiarata invalida, le restanti disposizioni rimangono in vigore e le parti sostituiscono la clausola con una valida che più si avvicini alla sua finalità.",
+              "Il ritardo di una parte nell'esercizio di un diritto non costituisce una rinuncia a tale diritto.",
+              "Non è consentito cedere il Contratto senza il nostro consenso; noi potremo cederlo nell’ambito di una riorganizzazione della nostra attività, previa comunicazione.",
+              "Le comunicazioni si considerano validamente inviate tramite e-mail all’indirizzo hello@sdk.enterprises o all’ultimo indirizzo di contatto fornito dal locatario.",
+              "I presenti termini sono redatti in inglese; a titolo di comodità, potrà essere fornita una versione in francese. Per i contratti stipulati con clienti professionali francesi, prevale la versione in francese, qualora esista e sussistano discrepanze."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Legge applicabile e controversie",
+          "content": [
+            "Il presente Contratto è regolato dalla legge francese. Prima di adire le vie legali, le parti cercheranno di raggiungere una soluzione in buona fede entro 30 giorni dalla notifica scritta della controversia. In caso contrario, la competenza spetterà ai tribunali di Parigi, in Francia, salvo nei casi in cui norme imperative prevedano un foro competente diverso."
+          ]
+        },
+        {
+          "heading": "17. Modifiche alle presenti condizioni",
+          "content": [
+            "Le modifiche sostanziali vengono comunicate su questa pagina almeno 30 giorni prima della loro entrata in vigore. L'uso continuato del servizio dopo tale data implica l'accettazione delle modifiche; se non sei d'accordo, puoi recedere dal contratto prima della data di entrata in vigore."
+          ]
+        }
+      ]
+    }
+  }
+}

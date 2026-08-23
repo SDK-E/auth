@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Seguridad",
+      "description": "Cómo protege Auth la infraestructura de autenticación: arquitectura de tokens, rotación de claves, limitación de frecuencia, el libro de auditoría con cadena de hash y cómo informar de una vulnerabilidad."
+    },
+    "hero": {
+      "eyebrow": "Confianza",
+      "title": "La seguridad es la lista de mecanismos.",
+      "lead": "No te pedimos que te fíes de las afirmaciones publicitarias: cada medida de protección que se detalla a continuación explica exactamente cómo funciona y dónde se aplica. Si no podemos describir el mecanismo, no hacemos esa afirmación."
+    },
+    "layers": [
+      {
+        "title": "Arquitectura de tokens",
+        "points": [
+          "Los códigos de autorización deben incluir «PKCE (S256)» en cada solicitud y son de un solo uso y tienen una validez limitada.",
+          "Los tokens de actualización se renuevan con cada uso; al presentar un token ya utilizado, se revoca toda la familia de tokens.",
+          "Los tokens de acceso e identificación son RS256 y JWT, firmados para cada entorno; las claves públicas se publican en /.well-known/jwks.json.",
+          "La revocación de los tokens de actualización se puede realizar en /oauth/revoke."
+        ]
+      },
+      {
+        "title": "Sesiones",
+        "points": [
+          "Las cookies de sesión son de tipo «http-only», con el atributo «SameSite=Lax», seguras en el entorno de producción y contienen sesiones firmadas RS256 y JWT.",
+          "Cada sesión tiene tanto un tiempo de espera por inactividad como un plazo de caducidad absoluto.",
+          "Las sesiones se pueden revocar desde el servidor; al cerrar sesión, la sesión se revoca de inmediato."
+        ]
+      },
+      {
+        "title": "Claves y secretos",
+        "points": [
+          "Claves de firma RS256 específicas para cada entorno; las claves privadas se cifran mediante cifrado de sobre cuando están en reposo (AES-256-GCM) y nunca se registran.",
+          "La rotación retira las claves activas, aunque las mantiene publicadas, de modo que los tokens pendientes se verifican hasta su vencimiento natural.",
+          "Los secretos del cliente se almacenan únicamente en formato cifrado; la verificación se realiza en tiempo constante tras el descifrado."
+        ]
+      },
+      {
+        "title": "Controles contra el abuso",
+        "points": [
+          "Límites de tasa con ventana fija: envío de códigos por correo electrónico y por dirección IP, errores de verificación por correo electrónico, emisión de tokens por cliente y por dirección IP.",
+          "Un número excesivo de errores de verificación agota todos los códigos de un solo uso pendientes para esa dirección.",
+          "El mensaje de error que se muestra al usuario se mantiene neutro; los detalles solo se registran en los registros del servidor."
+        ]
+      },
+      {
+        "title": "Auditabilidad",
+        "points": [
+          "Los eventos de seguridad se registran en un libro mayor encadenado mediante hash específico para cada entorno: cada entrada se vincula a la anterior mediante el valor SHA-256.",
+          "La cadena se puede volver a calcular desde el origen en cualquier momento; cualquier modificación retroactiva la rompe.",
+          "Los eventos de autenticación estándar (inicios de sesión, emisión de tokens, detección de reutilización, revocación y creación de claves) se registran junto con el libro mayor."
+        ]
+      },
+      {
+        "title": "Tratamiento de datos",
+        "points": [
+          "Los datos de los inquilinos se almacenan en una base de datos Postgres Neon en la región seleccionada para la implementación; el acceso requiere un transporte cifrado.",
+          "Los secretos se cifran mediante cifrado de envoltura antes de su almacenamiento; la clave maestra se almacena fuera de la base de datos.",
+          "En las superficies de autenticación no se ejecutan rastreadores ni píxeles publicitarios de terceros; los análisis de este sitio web de marketing se realizan sin cookies y de forma agregada."
+        ]
+      }
+    ],
+    "complianceNote": "Situación actual en materia de cumplimiento, con toda sinceridad: Auth aplica controles que se ajustan a los criterios de SOC 2 desde el primer día, pero aún no se ha llevado a cabo ninguna auditoría de certificación. Publicaremos los resultados aquí cuando eso cambie.",
+    "disclosure": {
+      "eyebrow": "Divulgación responsable",
+      "title": "¿Has encontrado un error? Avísanos.",
+      "items": [
+        "Envía un correo electrónico a hello@sdk.enterprises indicando [seguridad] en el asunto.",
+        "Incluye los pasos para reproducir el error; confirmaremos la recepción de los informes en un plazo de 2 días laborables.",
+        "Por favor, evita realizar análisis automáticos en el entorno de producción y no accedas a datos más allá de los necesarios para demostrar el problema.",
+        "La investigación realizada de buena fe en el marco de esta política está a salvo de acciones legales; citamos a los informantes, salvo que prefieran mantener el anonimato.",
+        "Política legible por máquina: /.well-known/security.txt"
+      ],
+      "privacyLink": "Política de privacidad →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Subencargados del tratamiento →"
+    }
+  }
+}

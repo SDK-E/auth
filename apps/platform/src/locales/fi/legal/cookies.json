@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Evästeet ja seuranta",
+        "description": "Täydellinen luettelo siitä, mitä Auth tallentaa selaimeesi – ja miksi se on lyhyempi kuin melkein millään muulla sivustolla, jolla olet käynyt."
+      },
+      "title": "Evästeet ja seuranta",
+      "description": "Auth-sivustot on suunniteltu toimimaan ilman käyttäjän seurantaa. Tällä sivulla on lueteltu kaikki evästeet ja analytiikkamenetelmät – luettelo on hyvin lyhyt.",
+      "updated": "23. elokuuta 2026",
+      "sections": [
+        {
+          "heading": "1. Asettamamme evästeet",
+          "content": [
+            {
+              "columns": [
+                "Nimi",
+                "Missä",
+                "Tarkoitus"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Auth-hallintapaneeli",
+                  "Välttämätön. Pitää sinut kirjautuneena vuokralaisen hallintapaneeliin; allekirjoitettu, vain HTTP, vanhenee istunnon päättyessä."
+                ],
+                [
+                  "(vuokralaisen istuntokeksi)",
+                  "Yleiskäyttöinen kirjautuminen",
+                  "Välttämätön. Myönnetään vain, kun kirjaudut sisään tuotteeseen, joka käyttää Auth-toimintoa, ja sen voimassaolo rajoittuu kyseisen tuotteen todennukseen."
+                ]
+              ]
+            },
+            "Suostumusilmoitusta ei ole, koska suostumusta ei tarvita: auth.sdk.enterprises-sivustolla tai sen isännöimillä kirjautumissivuilla ei käytetä mainosevästeitä, sivustojen välisiä seurantatyökaluja, sosiaalisen median widgettejä eikä sormenjälkitunnistusskriptejä."
+          ]
+        },
+        {
+          "heading": "2. Analytiikka",
+          "content": [
+            "Markkinointisivuilla käytetään Vercel Analytics-palvelua, joka toimii ilman evästeitä: se laskee sivun katselukertoja kokonaislukuna tallentamatta tunnisteita tai luomatta yksilökohtaisia profiileja. Yleisillä kirjautumissivuilla, API-päätelaitteissa tai asiakkaiden sovellusten sisällä ei suoriteta mitään analytiikkaa."
+          ]
+        },
+        {
+          "heading": "3. Palvelinpuolen tietueet",
+          "content": [
+            "Kuten kaikki muutkin verkkopalvelimet, myös me tallennamme pyynnöt tietoturvatoimenpiteitä varten (väärinkäytösten havaitseminen, pyyntöjen määrän rajoittaminen, auditointitodisteet) tietosuojakäytännössämme määriteltyjen säilytyskäytäntöjen mukaisesti. Näitä lokitietoja ei käytetä tämän markkinointisivuston kävijöiden profiloimiseen."
+          ]
+        },
+        {
+          "heading": "4. Kysymykset",
+          "content": [
+            "Jos tässä on jotain epäselvää, kirjoita osoitteeseen hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

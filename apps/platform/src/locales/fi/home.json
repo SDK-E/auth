@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — monikäyttäjäinen todennusinfrastruktuuri",
+      "description": "Auth tarjoaa tuotteellesi valmiiksi OIDC- ja OAuth 2.1-ominaisuudet – isännöidyt kirjautumissivut, istunnonhallinnan sekä hallintakonsolin API – jotta tiimisi voi keskittyä ominaisuuksien kehittämiseen identiteettihallinnan perusrakenteiden sijaan."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Monikäyttäjinen tunnistautumisinfrastruktuuri",
+      "title": "Yksi kirjautumisprosessi jokaiselle isännöimällesi asiakkaalle.",
+      "lead": "Auth tarjoaa tuotteellesi valmiiksi OIDC- ja OAuth 2.1-ominaisuudet – isännöidyt kirjautumissivut, istunnonhallinnan sekä hallintakonsolin API – jotta tiimisi voi keskittyä ominaisuuksien kehittämiseen identiteettihallinnan perusrakenteiden sijaan.",
+      "primaryCta": "Aloita rakentaminen",
+      "secondaryCta": "Luo vuokralaisesi",
+      "securityLink": "Turvallisuusmalli →",
+      "visual": {
+        "appTitle": "Sovelluksesi",
+        "appBody": "Ohjaa sivulle /authorize",
+        "loginTitle": "auth. yleinen kirjautuminen",
+        "loginBody": "Sähköpostipalvelun koodilla kirjautuminen",
+        "returnTitle": "Takaisin sovellukseesi",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE pakollinen · tunnisteet on vahvistettu julkisen JWKS:n avulla"
+      }
+    },
+    "standards": {
+      "eyebrow": "Standardit sisään, istunnot ulos",
+      "sentence": "Noudatamme vaatimuksia tarkasti: PKCE jokaisessa valtuutuskoodissa, kiertävät päivitystunnukset, peruutettavissa olevat allekirjoitetut istunnot sekä julkiset allekirjoitusavaimet."
+    },
+    "features": {
+      "eyebrow": "Alusta",
+      "title": "Identiteetin järjestelyt hoidettu.",
+      "intro": "Kaikki alla mainitut tuotteet ovat saatavilla tänään, ellei toisin mainita — jokaisessa kortissa mainitaan mekanismi, koska juuri sen olet itse asiassa ostamassa.",
+      "items": [
+        {
+          "status": "saatavilla",
+          "title": "Yleiskäyttöinen kirjautuminen",
+          "body": "Isännöity kirjautumisprosessi, johon käyttäjät ohjataan — kertakäyttöiset koodit lähetetään sähköpostitse, salasanoja ei tarvitse tallentaa eikä kirjautumiskäyttöliittymää ylläpitää."
+        },
+        {
+          "status": "saatavilla",
+          "title": "Istunnon hallinta",
+          "body": "Istunnot allekirjoitetaan tunnuksilla RS256 ja JWT http-only-evästeissä, joissa on lepotilan ja absoluuttinen voimassaoloaika, palvelinpuolen peruutus sekä ympäristökohtaiset avaimet."
+        },
+        {
+          "status": "saatavilla",
+          "title": "Tokenin turvallisuus",
+          "body": "Valtuuskoodit lähetetään aina yhdessä PKCE:n kanssa. Päivitystunnukset vaihtuvat jokaisen käytön yhteydessä, ja uudelleen käytetty tunnus mitätöi koko sen perheen."
+        },
+        {
+          "status": "saatavilla",
+          "title": "Tarkastuskirjanpito",
+          "body": "Jokainen tietoturvatapahtuma tallennetaan ympäristökohtaiseen, hajautusketjulla yhdistettyyn tarkastuslokiin — väärentäminen katkaisee ketjun, ja ketju lasketaan uudelleen alusta alkaen."
+        },
+        {
+          "status": "saatavilla",
+          "title": "Väärinkäytön hallinta",
+          "body": "Kiinteät aikarajat koodien toimittamiselle, vahvistusyrityksille ja tunnusten myöntämiselle. Käyttörajoitukset kuluttavat voimassa olevia koodeja; kopiointi ei vaikuta niihin."
+        },
+        {
+          "status": "käyttöönotto",
+          "title": "Johto API",
+          "body": "Yksi API-pinta sovelluksille, käyttäjille, istunnoille ja lokitiedoille osoitteessa /api/v2, jota hallitaan alueellisten laitetunnusten avulla."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Tietosuoja ennen kaikkea",
+      "title": "Vuokralaistesi tiedot pysyvät sinun hallussasi.",
+      "intro": "Auth on tunnistautumisinfrastruktuuri — käsittelemme tarkalleen sitä, mitä tunnistautuminen edellyttää, ja julkaisemme kaikki yksityiskohdat. Ei mainosseurantalaitteita, ei tietojen myyntiä, ei mallien kouluttamista asiakastiedoilla.",
+      "processedTitle": "Mitä tietoja käsittelemme",
+      "processed": [
+        "Tilin sähköpostiosoite, johon kertakäyttöiset koodit lähetetään",
+        "Todentamistapahtumat ja niihin liittyvät tekniset metatiedot, joita säilytetään turvallisuus- ja tarkastustarkoituksissa",
+        "Väliaikaiset väärinkäytön estolaskurit, jotka vanhenevat itsestään",
+        "Tunnistetiedot ja salausavaimet tallennetaan ainoastaan suojatussa muodossa"
+      ],
+      "neverTitle": "Mitä emme koskaan tee",
+      "never": [
+        "Myy, vuokraa tai jaa henkilötietoja – milloinkaan, mihinkään tarkoitukseen",
+        "Lataa kolmannen osapuolen seurantakoodit tai mainospikselit kirjautumissivuille",
+        "Kouluta malleja vuokralaisten tai loppukäyttäjien tietojen perusteella",
+        "Säilytä tiedot tilisi sulkemisen jälkeenkin, lakisääteisiä vähimmäisvaatimuksia pidempään"
+      ],
+      "privacyLink": "Tietosuojakäytäntö →",
+      "dpaLink": "Tietojenkäsittelyä koskeva liite →",
+      "subprocessorsLink": "Alisopimuskumppanien luettelo →"
+    },
+    "quickstart": {
+      "eyebrow": "Pikaopas",
+      "title": "Kolme pyyntöä toimivaan kirjautumistunnukseen.",
+      "intro": "Ei omaa protokollaa, ei toimittajariippuvuutta — kaikki alla oleva data on peräisin vakiomallisista OAuth 2.1- ja OIDC-laitteista, jotka on kytketty reaaliaikaisiin päätelaitteisiimme.",
+      "stepLabel": "Vaihe {index}",
+      "steps": [
+        {
+          "title": "Tutustu päätelaitteisiimme",
+          "body": "Sovelluksesi tunnistaa tavallisen OIDC-tunnisteen – SDK-tunnistetta ei tarvita, mikä tahansa kieli käy."
+        },
+        {
+          "title": "Ohjaa käyttäjät osoitteeseen /authorize tunnuksella PKCE",
+          "body": "Luo kooditehtävä, ohjaa selain uudelleen – me huolehdimme isännöidystä kirjautumisesta ja sähköpostikoodista."
+        },
+        {
+          "title": "Vaihda koodi rahakkeisiin",
+          "body": "Tarkista id_token julkista JWKS-varastoamme vastaan, säilytä päivitystunnus ja kutsu userinfo-toimintoa, kun tarvitset väitteitä."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Hinnasto",
+      "title": "Hinta määräytyy käyttäjien, ei lukkojen perusteella.",
+      "intro": "Ennakkokäyttöhinnat. Kuukausittain aktiivisena käyttäjänä pidetään käyttäjää, joka on kirjautunut sisään vähintään kerran kyseisen kuukauden aikana; tallennetuista mutta käyttämättömistä tileistä ei veloiteta mitään.",
+      "perMonth": "kuukaudessa",
+      "periodFree": "ikuisesti",
+      "plans": [
+        {
+          "includedMau": "1 000 kuukausittaista aktiivista käyttäjää",
+          "features": [
+            "Kaikki ympäristöt (kehitys, testaus, tuotanto)",
+            "Rajoittamaton määrä sovelluksia ympäristöä kohti",
+            "Kirjautuminen kertakäyttöisellä koodilla sähköpostitse",
+            "Tarkastuskirjanpito ja todennus tapahtumalokit",
+            "Yhteisön tuki"
+          ],
+          "cta": "Aloita ilmaiseksi"
+        },
+        {
+          "includedMau": "10 000 kuukausittaista aktiivista käyttäjää",
+          "features": [
+            "Kaikki ilmaiseksi",
+            "Asiakaskohtaiset verkkotunnukset",
+            "MFA, pääsykoodit ja yritystason SSO niiden toimitushetkellä",
+            "Tarkastustietojen pidempää säilytysaikaa",
+            "Ensisijainen tuki"
+          ],
+          "cta": "Aloita Pro-versiolla"
+        }
+      ],
+      "note": "Laskutus ei ole vielä automatisoitu — varhaiskäyttöoikeuden saaneille vuokralaisille laskutetaan manuaalisesti, ja he voivat irtisanoa vuokrasopimuksensa milloin tahansa."
+    },
+    "ctaBand": {
+      "title": "Kirjautumissivulle pääset yhden uudelleenohjauksen kautta.",
+      "body": "Löydä piste auth.sdk.enterprises:stä ja lähetä ensimmäinen virtauksesi tänä iltapäivänä.",
+      "button": "Avaa hallintapaneeli"
+    }
+  }
+}

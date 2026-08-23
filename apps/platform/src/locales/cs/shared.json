@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Platforma",
+    "quickstart": "Rychlý start",
+    "pricing": "Ceny",
+    "security": "Bezpečnost",
+    "status": "Stav",
+    "signIn": "Přihlásit se"
+  },
+  "footer": {
+    "tagline": "Infrastruktura pro ověřování více uživatelů od SDK Enterprises.",
+    "productTitle": "Produkt",
+    "productLinks": [
+      "Platforma",
+      "Rychlý start",
+      "Ceny",
+      "Stav služby"
+    ],
+    "trustTitle": "Důvěra",
+    "trustLinks": [
+      "Bezpečnost",
+      "Zásady ochrany osobních údajů",
+      "Zpracování osobních údajů (DPA)",
+      "Dále zpracovatelé",
+      "Soubory cookie a sledování"
+    ],
+    "legalTitle": "Právní informace",
+    "legalLinks": [
+      "Podmínky používání",
+      "Právní upozornění"
+    ],
+    "companyTitle": "Společnost",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Kontakt"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "podléhá francouzskému právu",
+    "languageLabel": "Jazyk"
+  },
+  "statusBadges": {
+    "available": "K dispozici",
+    "rollingOut": "Zavádění",
+    "recommended": "Doporučeno"
+  },
+  "legalShell": {
+    "brandContext": "autorská práva · Právní informace",
+    "effectiveLine": "Platné {date} · řídí se francouzským právem",
+    "documentsLabel": "Dokumenty",
+    "securityOverview": "Přehled zabezpečení",
+    "docs": [
+      "Zásady ochrany osobních údajů",
+      "Podmínky používání",
+      "Dodatek o zpracování údajů",
+      "Dále zpracovatelé",
+      "Soubory cookie a sledování",
+      "Právní upozornění"
+    ]
+  }
+}

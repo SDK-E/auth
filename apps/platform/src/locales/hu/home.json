@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — többfelhasználós hitelesítési infrastruktúra",
+      "description": "Az Auth már a telepítés után is biztosítja a OIDC és OAuth 2.1 termékeket — távoli bejelentkezési oldalakat, munkamenetkezelést és egy API nevű felügyeleti rendszert –, így a csapatod a funkciók fejlesztésére koncentrálhat, a belépéskezelés technikai részleteinek kidolgozása helyett."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Többbérlős hitelesítési infrastruktúra",
+      "title": "Minden általad üzemeltetett bérlőhöz egy bejelentkezési folyamat.",
+      "lead": "Az Auth már a telepítés után is biztosítja a OIDC és OAuth 2.1 termékeket — távoli bejelentkezési oldalakat, munkamenetkezelést és egy API nevű felügyeleti rendszert –, így a csapatod a funkciók fejlesztésére koncentrálhat, a belépéskezelés technikai részleteinek kidolgozása helyett.",
+      "primaryCta": "Kezdd el az építést!",
+      "secondaryCta": "Hozzon létre bérlőt",
+      "securityLink": "Biztonsági modell →",
+      "visual": {
+        "appTitle": "Az alkalmazásod",
+        "appBody": "Átirányít a /authorize oldalra",
+        "loginTitle": "auth. univerzális bejelentkezés",
+        "loginBody": "Kódalapú bejelentkezés a tárhelyes e-mail szolgáltatásba",
+        "returnTitle": "Vissza az alkalmazásodhoz",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE kötelező · a tokenek ellenőrzése nyilvános JWKS-ek alapján"
+      }
+    },
+    "standards": {
+      "eyebrow": "Szabványok be, munkamenetek ki",
+      "sentence": "Pontosan betartjuk a specifikációkat: PKCE minden engedélyezési kódban, rotáló frissítési tokenek, visszavonható aláírt munkamenetek, nyilvánosságra hozott aláírási kulcsok."
+    },
+    "features": {
+      "eyebrow": "A platform",
+      "title": "Az identitás-beállítások rendezve.",
+      "intro": "Az alábbiakban felsoroltak ma már elérhetők, hacsak másképp nincs jelölve — minden kártyán szerepel a mechanizmus neve, mivel valójában ezt vásárolod meg.",
+      "items": [
+        {
+          "status": "elérhető",
+          "title": "Univerzális bejelentkezés",
+          "body": "Egy olyan távoli bejelentkezési folyamat, ahová a felhasználók átirányításra kerülnek — egyszeri kódok e-mailben, nincs szükség jelszavak tárolására, és nem kell bejelentkezési felületet karbantartani."
+        },
+        {
+          "status": "elérhető",
+          "title": "Munkamenetkezelés",
+          "body": "A munkamenetek aláírása RS256 JWT formában történik, kizárólag HTTP-ben használt cookie-kban, „idle” és „absolute” lejárati idővel, szerveroldali visszavonással, valamint környezetenkénti kulcsokkal."
+        },
+        {
+          "status": "elérhető",
+          "title": "A token biztonsága",
+          "body": "Az engedélyezési kódok mindig a „PKCE” kóddal együtt kerülnek továbbításra. A frissítési tokenek minden használatkor kicserélődnek, és egy visszajátszott token az egész tokencsalád érvényességét megszünteti."
+        },
+        {
+          "status": "elérhető",
+          "title": "Ellenőrzési főkönyv",
+          "body": "Minden biztonsági esemény bekerül egy környezetenkénti, hash-láncba rendezett ellenőrzési naplóba — a manipuláció megszakítja a láncot, és a lánc a kezdetétől újra kiszámításra kerül."
+        },
+        {
+          "status": "elérhető",
+          "title": "Visszaélések elleni intézkedések",
+          "body": "A kódküldés, az ellenőrzési kísérletek és a token-kibocsátás tekintetében rögzített korlátok. A letiltások felhasználják a fennálló kódokat; a másolatokra ez nincs hatással."
+        },
+        {
+          "status": "bevezetés",
+          "title": "Vezetés API",
+          "body": "Egy API felület az alkalmazások, a felhasználók, a munkamenetek és a naplófájlok kezeléséhez az /api/v2 alatt, amelyet hatókörrel rendelkező gépi tokenek vezérelnek."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Első az adatvédelem",
+      "title": "A bérlői adatai továbbra is az Ön tulajdonában maradnak.",
+      "intro": "Az Auth egy identitáskezelő rendszer — pontosan csak azt dolgozzuk fel, ami a hitelesítéshez szükséges, és minden részletet nyilvánosságra hozunk. Nincsenek hirdetéskövetők, nincs adatértékesítés, és a bérlői adatok alapján nem képezzük ki a modelleket.",
+      "processedTitle": "Milyen adatokat kezelünk",
+      "processed": [
+        "Fiók e-mail-címe, az egyszeri kódok elküldéséhez",
+        "Hitelesítési események technikai metaadatokkal, amelyeket biztonsági és ellenőrzési célokra tárolnak",
+        "Önmaguktól lejáró, átmeneti visszaélés-megelőző számlálók",
+        "A hitelesítő adatok és a kriptográfiai kulcsok kizárólag védett formában kerülnek tárolásra"
+      ],
+      "neverTitle": "Amit soha nem teszünk",
+      "never": [
+        "Személyes adatok eladása, bérbeadása vagy megosztása – soha, semmilyen célból",
+        "Harmadik féltől származó nyomkövetők vagy hirdetési pixelek betöltése a bejelentkezési felületeken",
+        "A modellek betanítása bérlői vagy végfelhasználói adatok alapján",
+        "A fiók bezárása után is őrizze meg az adatokat, a törvényben előírt minimális időtartamon túl is"
+      ],
+      "privacyLink": "Adatvédelmi nyilatkozat →",
+      "dpaLink": "Adatkezelési kiegészítés →",
+      "subprocessorsLink": "Alvállalkozók listája →"
+    },
+    "quickstart": {
+      "eyebrow": "Gyors útmutató",
+      "title": "Három kérés egy működő bejelentkezési adathoz.",
+      "intro": "Nincs saját fejlesztésű protokoll, nincs gyártói függőség — az alábbiakban bemutatott adatok mind a gyári beállítású OAuth 2.1 és OIDC készülékekről származnak, amelyek az élő végpontjainkkal kommunikálnak.",
+      "stepLabel": "{index} lépés",
+      "steps": [
+        {
+          "title": "Fedezze fel végpontjainkat",
+          "body": "Az alkalmazásod a szabványos OIDC-felfedezést olvassa be – nincs szükség a SDK-re, bármilyen nyelv megfelel."
+        },
+        {
+          "title": "A felhasználókat a /authorize oldalra irányítsd a PKCE azonosítóval",
+          "body": "Készíts egy programozási feladatot, irányítsd át a böngészőt, mi pedig gondoskodunk a tárhelyen futó bejelentkezésről és az e-mail kódról."
+        },
+        {
+          "title": "Cserélje be a kódot tokenekre",
+          "body": "Ellenőrizd az id_token-t a nyilvános JWKS-ünkkel, őrizd meg a frissítési tokent, és hívd meg az userinfo-t, ha szükséged van az igényekre."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Árak",
+      "title": "Az árat a felhasználók határozzák meg, nem a zárak.",
+      "intro": "Korai hozzáférésre vonatkozó árazás. A havi aktív felhasználó az a felhasználó, aki az adott hónapban legalább egyszer bejelentkezett; a tárolt, de inaktív fiókok után soha nem számolunk fel díjat.",
+      "perMonth": "havonta",
+      "periodFree": "örökké",
+      "plans": [
+        {
+          "includedMau": "1 000 havi aktív felhasználó",
+          "features": [
+            "Minden környezet (fejlesztési, tesztelési, éles)",
+            "Korlátlan számú alkalmazás környezetenként",
+            "Bejelentkezés egyszeri kóddal e-mailben",
+            "Könyvvizsgálati főkönyv és hitelesítési eseménynaplók",
+            "Közösségi támogatás"
+          ],
+          "cta": "Kezdje el ingyen"
+        },
+        {
+          "includedMau": "10 000 havi aktív felhasználó",
+          "features": [
+            "Minden ingyenes",
+            "Bérlőnkénti egyéni domainnevek",
+            "MFA, jelszavak és vállalati SSO a szállításkor",
+            "Az audit-anyagok hosszabb ideig történő megőrzése",
+            "Elsőbbségi támogatás"
+          ],
+          "cta": "Kezdje a Pro verzióval"
+        }
+      ],
+      "note": "A számlázás még nem automatizált – a korai hozzáféréssel rendelkező bérlők számláját manuálisan állítják ki, és bármikor kiléphetnek."
+    },
+    "ctaBand": {
+      "title": "A bejelentkezési oldalad már csak egy átirányításnyira van.",
+      "body": "Határozz meg egy pontot a auth.sdk.enterprises-en, és még ma délután küldd el az első folyamatodat.",
+      "button": "Nyissa meg a műszerfalat"
+    }
+  }
+}

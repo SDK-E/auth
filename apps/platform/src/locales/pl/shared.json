@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Platforma",
+    "quickstart": "Szybki start",
+    "pricing": "Ceny",
+    "security": "Bezpieczeństwo",
+    "status": "Status",
+    "signIn": "Zaloguj się"
+  },
+  "footer": {
+    "tagline": "Infrastruktura uwierzytelniania dla wielu użytkowników autorstwa SDK Enterprises.",
+    "productTitle": "Produkt",
+    "productLinks": [
+      "Platforma",
+      "Szybki start",
+      "Ceny",
+      "Stan usługi"
+    ],
+    "trustTitle": "Zaufanie",
+    "trustLinks": [
+      "Bezpieczeństwo",
+      "Polityka prywatności",
+      "Przetwarzanie danych (DPA)",
+      "Podwykonawcy przetwarzania danych",
+      "Pliki cookie i śledzenie"
+    ],
+    "legalTitle": "Informacje prawne",
+    "legalLinks": [
+      "Warunki korzystania z serwisu",
+      "Informacje prawne"
+    ],
+    "companyTitle": "Firma",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Kontakt"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "podlegające prawu francuskiemu",
+    "languageLabel": "Język"
+  },
+  "statusBadges": {
+    "available": "Dostępne",
+    "rollingOut": "Wdrażanie",
+    "recommended": "Polecane"
+  },
+  "legalShell": {
+    "brandContext": "autoryzacja · Kwestie prawne",
+    "effectiveLine": "Ważne {date} · podlega prawu francuskiemu",
+    "documentsLabel": "Dokumenty",
+    "securityOverview": "Przegląd zabezpieczeń",
+    "docs": [
+      "Polityka prywatności",
+      "Warunki korzystania z serwisu",
+      "Załącznik dotyczący przetwarzania danych",
+      "Podwykonawcy przetwarzania danych",
+      "Pliki cookie i śledzenie",
+      "Informacja prawna"
+    ]
+  }
+}

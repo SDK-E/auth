@@ -1,91 +1,105 @@
 import Link from "next/link";
+import { LOCALE_LABELS, locales, type Locale } from "@/i18n";
+import type { FooterStrings } from "@/i18n/types";
 
-type FooterLink = { label: string; href: string; kind?: "route" | "anchor" | "external" };
+export function SiteFooter(params: { t: FooterStrings; base: string; locale: Locale }) {
+  const groups = [
+    {
+      title: params.t.productTitle,
+      links: [
+        { label: params.t.productLinks[0], href: `${params.base}/#platform` },
+        { label: params.t.productLinks[1], href: `${params.base}/#quickstart` },
+        { label: params.t.productLinks[2], href: `${params.base}/#pricing` },
+        { label: params.t.productLinks[3], href: "/api/health", external: true },
+      ],
+    },
+    {
+      title: params.t.trustTitle,
+      links: [
+        { label: params.t.trustLinks[0], href: `${params.base}/security` },
+        { label: params.t.trustLinks[1], href: `${params.base}/legal/privacy` },
+        { label: params.t.trustLinks[2], href: `${params.base}/legal/dpa` },
+        { label: params.t.trustLinks[3], href: `${params.base}/legal/subprocessors` },
+        { label: params.t.trustLinks[4], href: `${params.base}/legal/cookies` },
+      ],
+    },
+    {
+      title: params.t.legalTitle,
+      links: [
+        { label: params.t.legalLinks[0], href: `${params.base}/legal/terms` },
+        { label: params.t.legalLinks[1], href: `${params.base}/legal/legal-notice` },
+      ],
+    },
+    {
+      title: params.t.companyTitle,
+      links: [
+        { label: params.t.companyLinks[0], href: "https://sdk.enterprises", external: true },
+        { label: params.t.companyLinks[1], href: "mailto:hello@sdk.enterprises", external: true },
+      ],
+    },
+  ];
 
-const GROUPS: Array<{ title: string; links: FooterLink[] }> = [
-  {
-    title: "Product",
-    links: [
-      { label: "Platform", href: "/#platform", kind: "anchor" },
-      { label: "Quickstart", href: "/#quickstart", kind: "anchor" },
-      { label: "Pricing", href: "/#pricing", kind: "anchor" },
-      { label: "Service status", href: "/api/health", kind: "external" },
-    ],
-  },
-  {
-    title: "Trust",
-    links: [
-      { label: "Security", href: "/security" },
-      { label: "Privacy policy", href: "/legal/privacy" },
-      { label: "Data processing (DPA)", href: "/legal/dpa" },
-      { label: "Subprocessors", href: "/legal/subprocessors" },
-      { label: "Cookies & tracking", href: "/legal/cookies" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { label: "Terms of service", href: "/legal/terms" },
-      { label: "Legal notice", href: "/legal/legal-notice" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { label: "SDK Enterprises", href: "https://sdk.enterprises", kind: "external" },
-      { label: "Contact", href: "mailto:hello@sdk.enterprises", kind: "external" },
-    ],
-  },
-];
-
-function FooterItem(params: { link: FooterLink }) {
-  const className =
-    "text-body text-foreground underline-offset-4 transition-colors duration-150 hover:text-muted-foreground hover:underline";
-  if (params.link.kind === "route") {
-    return (
-      <Link href={params.link.href} className={className}>
-        {params.link.label}
-      </Link>
-    );
-  }
-  return (
-    <a
-      href={params.link.href}
-      rel={params.link.kind === "external" ? "noopener noreferrer" : undefined}
-      className={className}
-    >
-      {params.link.label}
-    </a>
-  );
-}
-
-export function SiteFooter() {
   return (
     <footer className="border-t border-border">
       <div className="mx-auto max-w-[1220px] px-6 py-14">
         <div className="grid gap-10 md:grid-cols-[1.4fr_repeat(4,1fr)]">
           <div>
             <p className="text-h3 font-bold">auth.</p>
-            <p className="mt-3 max-w-[32ch] text-body text-muted-foreground">
-              Multi-tenant authentication infrastructure by SDK Enterprises.
-            </p>
+            <p className="mt-3 max-w-[32ch] text-body text-muted-foreground">{params.t.tagline}</p>
           </div>
-          {GROUPS.map((group) => (
+          {groups.map((group) => (
             <nav key={group.title} aria-label={group.title}>
               <p className="text-label uppercase text-muted-foreground">{group.title}</p>
               <ul className="mt-4 space-y-2.5">
                 {group.links.map((link) => (
                   <li key={link.label}>
-                    <FooterItem link={link} />
+                    {link.external ? (
+                      <a
+                        href={link.href}
+                        rel="noopener noreferrer"
+                        className="text-body text-foreground underline-offset-4 transition-colors duration-150 hover:text-muted-foreground hover:underline"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-body text-foreground underline-offset-4 transition-colors duration-150 hover:text-muted-foreground hover:underline"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
             </nav>
           ))}
         </div>
-        <div className="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6 text-micro uppercase text-muted-foreground">
-          <span>© {new Date().getFullYear()} SDK Enterprises · SIREN 850 513 912 · RCS Paris</span>
-          <span className="normal-case">auth.sdk.enterprises — governed by French law</span>
+        <div className="mt-10 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-6">
+          <span className="text-micro uppercase text-muted-foreground">{params.t.languageLabel}</span>
+          <ul className="flex flex-wrap gap-x-3 gap-y-1">
+            {locales.map((locale) => (
+              <li key={locale}>
+                <a
+                  href={locale === "en" ? "/" : `/${locale}`}
+                  hrefLang={locale}
+                  className={
+                    locale === params.locale
+                      ? "text-micro uppercase font-bold text-foreground underline underline-offset-4"
+                      : "text-micro uppercase text-muted-foreground transition-colors duration-150 hover:text-foreground"
+                  }
+                >
+                  {LOCALE_LABELS[locale]}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6 text-micro uppercase text-muted-foreground">
+          <span>
+            © {new Date().getFullYear()} {params.t.entityLine}
+          </span>
+          <span>auth.sdk.enterprises — {params.t.frenchLawLine}</span>
         </div>
       </div>
     </footer>

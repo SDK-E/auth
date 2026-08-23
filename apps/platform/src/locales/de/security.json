@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Sicherheit",
+      "description": "So sichert Auth die Authentifizierungsinfrastruktur: Token-Architektur, Schlüsselrotation, Ratenbegrenzung, das Hash-Chained-Audit-Ledger und wie man eine Sicherheitslücke meldet."
+    },
+    "hero": {
+      "eyebrow": "Vertrauen",
+      "title": "„Sicherheit“ ist die Liste der Mechanismen.",
+      "lead": "Wir verlangen nicht, dass Sie Marketingversprechen einfach glauben – bei jeder der unten aufgeführten Schutzmaßnahmen wird genau beschrieben, wie sie funktioniert und wo sie zum Einsatz kommt. Wenn wir den Mechanismus nicht beschreiben können, geben wir auch keine entsprechende Zusicherung ab."
+    },
+    "layers": [
+      {
+        "title": "Token-Architektur",
+        "points": [
+          "Bei jeder Anfrage ist der Autorisierungscode PKCE (S256) anzugeben; dieser ist nur einmal verwendbar und hat eine kurze Gültigkeitsdauer.",
+          "Refresh-Token werden bei jeder Verwendung ausgetauscht; durch das Vorlegen eines bereits verwendeten Tokens wird die gesamte Token-Familie ungültig.",
+          "Zugriffs- und ID-Token lauten RS256 und JWT und sind für jede Umgebung signiert; die öffentlichen Schlüssel sind unter /.well-known/jwks.json veröffentlicht.",
+          "Die Widerrufung von Aktualisierungstoken ist unter /oauth/revoke möglich."
+        ]
+      },
+      {
+        "title": "Sitzungen",
+        "points": [
+          "Sitzungs-Cookies sind HTTP-only, SameSite=Lax, in der Produktionsumgebung sicher und enthalten signierte RS256-Sitzungen JWT.",
+          "Jede Sitzung verfügt sowohl über ein Inaktivitäts-Timeout als auch über eine absolute Ablaufzeit.",
+          "Sitzungen können serverseitig widerrufen werden; durch das Abmelden werden sie sofort widerrufen."
+        ]
+      },
+      {
+        "title": "Schlüssel & Geheimnisse",
+        "points": [
+          "RS256-Signaturschlüssel pro Umgebung; private Schlüssel werden im Ruhezustand mit einer „Envelope“-Verschlüsselung (AES-256-GCM) geschützt und niemals protokolliert.",
+          "Durch die Rotation werden aktive Schlüssel aus dem Verkehr gezogen, bleiben jedoch weiterhin veröffentlicht, sodass ausstehende Token bis zu ihrem natürlichen Ablaufdatum verifiziert werden können.",
+          "Client-Geheimnisse werden ausschließlich in verschlüsselter Form gespeichert; die Überprüfung erfolgt nach der Entschlüsselung in konstanter Zeit."
+        ]
+      },
+      {
+        "title": "Maßnahmen zur Missbrauchsbekämpfung",
+        "points": [
+          "Ratenbegrenzungen mit festem Zeitfenster: Code-Zustellung pro E-Mail-Adresse und pro IP-Adresse, fehlgeschlagene Verifizierungen pro E-Mail-Adresse, Token-Ausstellung pro Client und pro IP-Adresse.",
+          "Zu viele fehlgeschlagene Verifizierungsversuche verbrauchen alle noch verfügbaren Einmalcodes für diese Adresse.",
+          "Die für den Benutzer sichtbare Fehlermeldung bleibt neutral; Einzelheiten werden ausschließlich in den Serverprotokollen festgehalten."
+        ]
+      },
+      {
+        "title": "Nachprüfbarkeit",
+        "points": [
+          "Sicherheitsereignisse werden in ein umgebungsspezifisches, hash-verknüpftes Ledger geschrieben: Jeder Eintrag wird durch SHA-256 an seinen Vorgänger gebunden.",
+          "Die Kette kann jederzeit von Beginn an neu berechnet werden; jede rückwirkende Änderung unterbricht sie.",
+          "Standardmäßige Authentifizierungsereignisse (Anmeldungen, Token-Ausstellung, Erkennung von Wiederverwendung, Widerruf, Schlüsselerstellung) werden zusammen mit dem Ledger protokolliert."
+        ]
+      },
+      {
+        "title": "Datenverarbeitung",
+        "points": [
+          "Die Mieterdaten werden in einer Postgres-Datenbank vom Typ Neon in der für die Bereitstellung ausgewählten Region gespeichert; der Zugriff erfordert eine verschlüsselte Übertragung.",
+          "Geheimnisse werden vor der Speicherung mit einer Umschlagverschlüsselung verschlüsselt; der Hauptschlüssel wird außerhalb der Datenbank gespeichert.",
+          "Auf den Anmeldeoberflächen werden keine Tracker oder Werbepixel von Drittanbietern ausgeführt; die Analysen auf dieser Marketing-Website erfolgen ohne Cookies und in aggregierter Form."
+        ]
+      }
+    ],
+    "complianceNote": "Stand der Compliance, ganz ehrlich: Auth setzt vom ersten Tag an Kontrollmaßnahmen um, die den SOC-2-Kriterien entsprechen, allerdings wurde bislang noch kein Zertifizierungsaudit durchgeführt. Sobald sich dies ändert, werden wir die Ergebnisse hier veröffentlichen.",
+    "disclosure": {
+      "eyebrow": "Verantwortungsvolle Offenlegung",
+      "title": "Hast du einen Fehler gefunden? Sag es uns.",
+      "items": [
+        "Senden Sie eine E-Mail an hello@sdk.enterprises mit dem Betreff [Sicherheit].",
+        "Bitte geben Sie die Schritte zur Reproduktion an; wir bestätigen den Eingang Ihrer Meldung innerhalb von 2 Werktagen.",
+        "Bitte vermeiden Sie automatisierte Scans in der Produktionsumgebung und greifen Sie nur auf die Daten zu, die zum Nachweis des Problems erforderlich sind.",
+        "Recherchen, die im Rahmen dieser Richtlinie in gutem Glauben durchgeführt werden, sind vor rechtlichen Schritten geschützt; wir nennen die Quellen namentlich, sofern diese nicht anonym bleiben möchten.",
+        "Maschinenlesbare Richtlinie: /.well-known/security.txt"
+      ],
+      "privacyLink": "Datenschutzerklärung →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Unterauftragsverarbeiter →"
+    }
+  }
+}

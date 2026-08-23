@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Beveiliging",
+      "description": "Hoe Auth de authenticatie-infrastructuur beveiligt: tokenarchitectuur, sleutelrotatie, rate limiting, het auditledger met hash-keten, en hoe je een kwetsbaarheid kunt melden."
+    },
+    "hero": {
+      "eyebrow": "Vertrouwen",
+      "title": "Beveiliging is de lijst met mechanismen.",
+      "lead": "We vragen je niet om op marketingclaims af te gaan — bij elke beveiligingsmaatregel hieronder wordt precies beschreven hoe deze werkt en waar deze wordt toegepast. Als we het werkingsprincipe niet kunnen uitleggen, doen we geen uitspraak daarover."
+    },
+    "layers": [
+      {
+        "title": "Tokenarchitectuur",
+        "points": [
+          "Bij elk verzoek moet de autorisatiecode PKCE (S256) worden opgegeven; deze codes zijn voor eenmalig gebruik en hebben een korte geldigheidsduur.",
+          "Vernieuwingstokens worden bij elk gebruik vernieuwd; het tonen van een gebruikt token leidt tot intrekking van de gehele tokenreeks.",
+          "Toegangs- en ID-tokens zijn RS256 en JWT, ondertekend per omgeving; de openbare sleutels zijn gepubliceerd op /.well-known/jwks.json.",
+          "Voor vernieuwingstokens kan de machtiging worden ingetrokken via /oauth/revoke."
+        ]
+      },
+      {
+        "title": "Sessies",
+        "points": [
+          "Sessiecookies zijn http-only, SameSite=Lax, beveiligd in de productieomgeving en bevatten ondertekende RS256-sessies met JWT.",
+          "Elke sessie heeft zowel een time-out bij inactiviteit als een absolute vervaldatum.",
+          "Sessies kunnen aan de serverzijde worden ingetrokken; bij het uitloggen wordt de sessie onmiddellijk beëindigd."
+        ]
+      },
+      {
+        "title": "Sleutels en geheimen",
+        "points": [
+          "RS256-ondertekeningssleutels per omgeving; privésleutels worden in rust met een ‘envelope-encryption’ versleuteld (AES-256-GCM) en worden nooit geregistreerd.",
+          "Door rotatie worden actieve sleutels uit de roulatie gehaald, maar blijven ze gepubliceerd, zodat uitstaande tokens tot hun natuurlijke vervaldatum kunnen worden geverifieerd.",
+          "Gegevens van klanten worden uitsluitend in versleutelde vorm opgeslagen; de verificatie vindt plaats in constante tijd na ontsleuteling."
+        ]
+      },
+      {
+        "title": "Maatregelen tegen misbruik",
+        "points": [
+          "Tarieflimieten met vaste waarden: aantal verzonden codes per e-mailadres en per IP-adres, aantal mislukte verificaties per e-mailadres, aantal uitgegeven tokens per klant en per IP-adres.",
+          "Als er te vaak een verificatiefout optreedt, worden alle resterende eenmalige codes voor dat adres opgebruikt.",
+          "Foutmeldingen die de gebruiker te zien krijgt, blijven neutraal; details worden uitsluitend in de serverlogboeken vastgelegd."
+        ]
+      },
+      {
+        "title": "Controleerbaarheid",
+        "points": [
+          "Beveiligingsgebeurtenissen worden vastgelegd in een per omgeving bijgehouden, met een hash-keten gekoppeld register: elke vermelding wordt aan de voorgaande gekoppeld via SHA-256.",
+          "De keten kan op elk moment vanaf het begin opnieuw worden berekend; elke wijziging met terugwerkende kracht verstoort deze.",
+          "Standaard authenticatiegebeurtenissen (aanmeldingen, uitgifte van tokens, detectie van hergebruik, intrekking, aanmaak van sleutels) worden samen met het grootboek geregistreerd."
+        ]
+      },
+      {
+        "title": "Gegevensverwerking",
+        "points": [
+          "De gegevens van huurders worden opgeslagen in een Postgres-database met de naam Neon in de regio die voor de implementatie is geselecteerd; voor toegang is versleutelde communicatie vereist.",
+          "Gegevens worden vóór opslag met een envelopversleuteling beveiligd; de hoofdsleutel wordt buiten de database bewaard.",
+          "Op authenticatiepagina's worden geen trackers of advertentiepixels van derden gebruikt; de analyse op deze marketingsite vindt plaats zonder cookies en op geaggregeerde basis."
+        ]
+      }
+    ],
+    "complianceNote": "Status van de naleving, eerlijk gezegd: Auth past vanaf dag één controlemaatregelen toe die in overeenstemming zijn met de SOC 2-criteria, maar er is nog geen certificeringsaudit uitgevoerd. Zodra daar verandering in komt, zullen we de resultaten hier publiceren.",
+    "disclosure": {
+      "eyebrow": "Verantwoordelijke openbaarmaking",
+      "title": "Heb je een fout gevonden? Laat het ons weten.",
+      "items": [
+        "Stuur een e-mail naar hello@sdk.enterprises met [security] in de onderwerpregel.",
+        "Vermeld de stappen om het probleem te reproduceren; we bevestigen de ontvangst van meldingen binnen 2 werkdagen.",
+        "Vermijd alstublieft het automatisch scannen van de productieomgeving en raadpleeg geen gegevens die verder gaan dan wat nodig is om het probleem aan te tonen.",
+        "Onderzoek dat te goeder trouw wordt uitgevoerd in het kader van dit beleid is gevrijwaard van juridische stappen; we vermelden de namen van de informanten, tenzij zij anoniem willen blijven.",
+        "Machinaal leesbaar beleid: /.well-known/security.txt"
+      ],
+      "privacyLink": "Privacybeleid →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Subverwerkers →"
+    }
+  }
+}

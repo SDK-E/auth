@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Politique de confidentialité",
+        "description": "Comment Auth by SDK Enterprises traite les données à caractère personnel : quelles données nous collectons, pourquoi, pendant combien de temps, avec qui elles sont partagées, et quels sont vos droits à cet égard."
+      },
+      "title": "Politique de confidentialité",
+      "description": "La présente politique explique quelles données à caractère personnel le service Auth traite, pourquoi elles sont traitées, pendant combien de temps elles sont conservées, à qui elles sont communiquées, ainsi que les droits dont disposent les personnes concernées. Nous l'avons rédigée dans le but qu'elle soit lue et comprise, et non pas simplement affichée.",
+      "updated": "23 août 2026",
+      "sections": [
+        {
+          "heading": "1. Qui sommes-nous ?",
+          "content": [
+            "Le service Auth (ci-après dénommé le « Service ») est exploité par SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, dont le siège social est situé à 44 Rue Pasquier, 75008 Paris, France — « SDK Enterprises », « nous », « notre »). Nos clients utilisent le Service pour authentifier leurs propres utilisateurs ; ce document décrit le flux des données à caractère personnel dans le cadre de ce dispositif et les responsabilités de chaque partie."
+          ]
+        },
+        {
+          "heading": "2. Notre rôle dépend de la situation",
+          "content": [
+            [
+              "Pour les visiteurs de ce site web et pour les personnes qui ouvrent ou gèrent un compte chez nous, SDK Enterprises détermine les finalités et les modalités du traitement des données à caractère personnel et agit en tant que responsable du traitement.",
+              "Pour les utilisateurs finaux qui se connectent à un produit ou service utilisant Auth, notre client reste responsable de ce traitement en tant que responsable du traitement, et SDK Enterprises traite les données à caractère personnel conformément à ses instructions documentées en tant que sous-traitant, dans le cadre de notre avenant relatif au traitement des données. Si vous êtes un tel utilisateur final, votre premier interlocuteur est le produit auquel vous vous êtes connecté ; nous aidons ce dernier à répondre à votre demande sans retard injustifié."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Catégories de données à caractère personnel que nous traitons",
+          "content": [
+            [
+              "Données de compte. Adresse e-mail et éléments de profil de base que vous ou votre fournisseur choisissez de fournir ; horodatages d'authentification et compteurs d'utilisation liés à votre compte.",
+              "Données d'authentification. Les enregistrements des tentatives de connexion et de leurs résultats, de l'émission et de la révocation des jetons et des sessions, ainsi que les métadonnées techniques associées (notamment l'adresse IP, l'agent utilisateur du navigateur et les horodatages précis) sont conservés à des fins de sécurité, de prévention des abus et de preuve.",
+              "Historique de sécurité. Journaux inviolables répertoriant les événements liés à la sécurité associés à votre compte ou à votre environnement.",
+              "Données relatives à la prévention des abus. Compteurs techniques à durée de vie limitée utilisés pour détecter et limiter le trafic abusif.",
+              "Données de communication. Le contenu des messages que vous nous envoyez (par exemple, des demandes d'assistance ou l'exercice de vos droits) ainsi que nos réponses.",
+              "Données commerciales. Références de facturation et de paiement dans le cadre d'un abonnement payant, gérées via notre processus de facturation."
+            ],
+            "Nous ne demandons ni ne conservons aucun mot de passe pour la connexion au Service. Les catégories de données à caractère personnel sensibles (santé, données biométriques, opinions politiques et autres données similaires) ne sont pas demandées et ne doivent pas nous être communiquées."
+          ]
+        },
+        {
+          "heading": "4. Finalités et bases juridiques",
+          "content": [
+            [
+              "Exploitation et fourniture du Service — exécution d'un contrat ou mesures préalables à la conclusion d'un contrat.",
+              "Sécuriser les comptes, détecter les fraudes et les abus, et tenir à jour les registres de sécurité : notre intérêt légitime à exploiter une infrastructure fiable, mis en balance avec vos droits et vos attentes.",
+              "Respecter les obligations comptables, fiscales et autres obligations légales — se conformer à une obligation légale.",
+              "Envoi de communications de service concernant votre compte ou les incidents qui l'affectent — exécution du contrat ; nous n'envoyons pas d'e-mails marketing sans consentement distinct."
+            ],
+            "Lorsque le traitement repose sur votre consentement, vous pouvez le retirer à tout moment sans que cela n'affecte la licéité du traitement effectué avant ce retrait. Nous ne procédons à aucune prise de décision automatisée produisant des effets juridiques au sens de la législation applicable."
+          ]
+        },
+        {
+          "heading": "5. Fidélisation",
+          "content": [
+            "Les données à caractère personnel ne sont conservées que pendant la durée nécessaire aux fins énoncées ci-dessus. Les données relatives aux comptes sont conservées tant qu’un compte ou un locataire reste actif ; les registres de sécurité et d’audit sont conservés aussi longtemps que nécessaire pour attester de l’intégrité du Service et satisfaire aux exigences légales ; les données relatives à la prévention des abus sont, par nature, éphémères ; les registres commerciaux sont conservés pendant les durées comptables requises par la loi. Les données qui ne sont plus nécessaires sont supprimées ou anonymisées de manière irréversible."
+          ]
+        },
+        {
+          "heading": "6. Destinataires et sous-traitants secondaires",
+          "content": [
+            "Nous ne partageons des données à caractère personnel qu’avec : des sous-traitants agissant pour notre compte dans le cadre d’un contrat (fournisseurs d’hébergement, de bases de données, de mise en cache et d’envoi d’e-mails — identifiés individuellement sur notre page consacrée aux sous-traitants) ; des conseillers professionnels soumis à des obligations de confidentialité ; et des autorités publiques lorsqu’une demande légale contraignante l’exige, auquel cas nous en informons les personnes concernées, sauf si la loi l’interdit. Nous ne vendons, ne louons ni ne cédons jamais de données à caractère personnel, et nous n’utilisons pas les données des clients ou des utilisateurs finaux à des fins publicitaires ou pour l’entraînement de modèles d’apprentissage automatique."
+          ]
+        },
+        {
+          "heading": "7. Transferts internationaux",
+          "content": [
+            "Certains de nos prestataires exercent leurs activités en dehors de l'Espace économique européen. Lorsque des données à caractère personnel sont transférées hors de l'EEE, nous nous appuyons sur une décision d'adéquation ou sur des garanties appropriées — notamment les clauses contractuelles types de la Commission européenne —, ainsi que sur des mesures supplémentaires si nécessaire. La liste actualisée des prestataires et de leurs lieux d'implantation est publiée sur notre page consacrée aux sous-traitants."
+          ]
+        },
+        {
+          "heading": "8. Sécurité du traitement",
+          "content": [
+            "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour prévenir tout accès non autorisé, toute perte, toute altération ou toute divulgation — notamment le chiffrement des données en transit et au repos, des contrôles d’accès stricts fondés sur le principe du « besoin d’en connaître », la séparation des données des locataires, la limitation du débit et la détection des abus, ainsi que la journalisation des audits avec protection contre la falsification. Ces mesures sont réévaluées au fur et à mesure de l'évolution du Service ; un aperçu rédigé en langage clair est disponible sur notre page consacrée à la sécurité."
+          ]
+        },
+        {
+          "heading": "9. Vos droits",
+          "content": [
+            "Sous réserve de la législation applicable, y compris le Règlement général sur la protection des données si vous résidez dans l'EEE, vous pouvez nous demander :",
+            [
+              "vous permettre d'accéder aux données à caractère personnel que nous détenons à votre sujet ;",
+              "rectifier les données inexactes ou compléter les données incomplètes ;",
+              "effacer les données dont le traitement n'est plus licite ;",
+              "limiter ou s'opposer à certains traitements ;",
+              "vous fournir vos données dans un format structuré, couramment utilisé et interopérable ;",
+              "vous informer sur les destinataires de vos données et les mesures de sécurité mises en place."
+            ],
+            "Écrivez à l'adresse hello@sdk.enterprises. Nous répondons dans un délai d'un mois à toute demande justifiée et pouvons vous demander une preuve d'identité minimale si nécessaire. Vous pouvez également déposer une réclamation auprès d'une autorité de contrôle — en France, la Commission nationale de l'informatique et des libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Les enfants",
+          "content": [
+            "Ce service s'adresse aux entreprises et aux professionnels. Nous ne traitons pas sciemment les données à caractère personnel d'enfants n'ayant pas atteint l'âge du consentement numérique dans la juridiction concernée ; si vous pensez que cela s'est produit, contactez-nous et nous supprimerons ces données dans les plus brefs délais."
+          ]
+        },
+        {
+          "heading": "11. Modifications apportées à la présente politique",
+          "content": [
+            "Nous mettons à jour la présente politique lorsque nos pratiques de traitement évoluent. Les modifications importantes sont annoncées sur cette page, accompagnées d'une nouvelle date d'entrée en vigueur, avant leur application effective. Les versions antérieures sont disponibles sur simple demande."
+          ]
+        },
+        {
+          "heading": "12. Contact",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

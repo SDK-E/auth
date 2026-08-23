@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Plattform",
+    "quickstart": "Schnellstart",
+    "pricing": "Preise",
+    "security": "Sicherheit",
+    "status": "Status",
+    "signIn": "Anmelden"
+  },
+  "footer": {
+    "tagline": "Infrastruktur für die Multi-Tenant-Authentifizierung von SDK Enterprises.",
+    "productTitle": "Produkt",
+    "productLinks": [
+      "Plattform",
+      "Schnellstart",
+      "Preise",
+      "Servicestatus"
+    ],
+    "trustTitle": "Vertrauen",
+    "trustLinks": [
+      "Sicherheit",
+      "Datenschutzerklärung",
+      "Datenverarbeitung (DPA)",
+      "Unterauftragsverarbeiter",
+      "Cookies und Tracking"
+    ],
+    "legalTitle": "Rechtliches",
+    "legalLinks": [
+      "Nutzungsbedingungen",
+      "Rechtliche Hinweise"
+    ],
+    "companyTitle": "Unternehmen",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Kontakt"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "unterliegt französischem Recht",
+    "languageLabel": "Sprache"
+  },
+  "statusBadges": {
+    "available": "Verfügbar",
+    "rollingOut": "Einführung",
+    "recommended": "Empfohlen"
+  },
+  "legalShell": {
+    "brandContext": "Rechte · Rechtliches",
+    "effectiveLine": "Gültig ab {date} · Es gilt französisches Recht",
+    "documentsLabel": "Dokumente",
+    "securityOverview": "Sicherheitsübersicht",
+    "docs": [
+      "Datenschutzerklärung",
+      "Nutzungsbedingungen",
+      "Nachtrag zur Datenverarbeitung",
+      "Unterauftragsverarbeiter",
+      "Cookies und Tracking",
+      "Rechtliche Hinweise"
+    ]
+  }
+}

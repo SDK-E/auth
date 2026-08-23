@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Käyttöehdot",
+        "description": "Ehdot, jotka koskevat SDK Enterprises:n tarjoaman Auth-todentamispalvelun käyttöoikeutta ja käyttöä."
+      },
+      "title": "Käyttöehdot",
+      "description": "Nämä ehdot muodostavat sinun ja SDK Enterprises:n välisen sopimuksen Auth-palvelun käytöstä. Ne on tarkoituksella laadittu tiiviiksi, mutta ne kattavat kaikki ammattisuhteessa merkitykselliset seikat.",
+      "updated": "23. elokuuta 2026",
+      "sections": [
+        {
+          "heading": "1. Määritelmät",
+          "content": [
+            [
+              "”Palvelu” — osoitteessa auth.sdk.enterprises ylläpidettävä Auth-monikäyttäjäalusta, mukaan lukien sen hallintapaneelit, käyttöliittymät ja ohjeet.",
+              "\"Tenant\" — palvelun sisällä oleva erillinen työtilasi.",
+              "”Loppukäyttäjä” — henkilö, joka kirjautuu tuotteisiisi Palvelun kautta.",
+              "”Sopimus” — nämä ehdot sekä tekemäsi tilaukset tai valitsemasi paketit, tietosuojakäytäntömme ja (soveltuvin osin) tietojenkäsittelyliitteemme."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Kuka olet",
+          "content": [
+            "Edustat oikeushenkilöä tai toimit ammatinharjoittajana. Vahvistat, että rekisteröitymisen yhteydessä antamasi tiedot ovat paikkansapitäviä, että sinulla on valtuudet sitouttaa edustamasi yhteisö ja että palvelun käyttösi on sinua ja loppukäyttäjiäsi koskevien lakien mukaista. Palvelua ei tarjota kuluttajille, jotka toimivat muussa kuin ammatillisessa ominaisuudessa, eikä henkilöille, jotka eivät ole saavuttaneet digitaalisen suostumuksen ikärajaa."
+          ]
+        },
+        {
+          "heading": "3. Vuokralaisesi ja velvollisuutesi",
+          "content": [
+            [
+              "Olet vastuussa rekisteröimistäsi sovelluksista, uudelleenohjaukseen valtuuttamistasi osoitteista sekä sinulle myönnettyjen tunnistetietojen luottamuksellisuudesta. Ilmoita meille viipymättä, jos tietoturva on vaarantunut.",
+              "Olet vastuussa suhteestasi loppukäyttäjiin, mukaan lukien heidän informoimisensa Palvelun kautta suoritettavasta tietojen käsittelystä sekä tarvittavien lupien hankkiminen.",
+              "Sinun on pidettävä vuokralaisen yhteystiedot ajan tasalla, jotta voimme ottaa sinuun yhteyttä turvallisuus- ja huoltoasioissa."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Käyttöehdot",
+          "content": [
+            "Sitoudut olemaan tekemättä seuraavia asioita:",
+            [
+              "käyttää Palvelua laittomiin tarkoituksiin tai tavalla, joka loukkaa muiden oikeuksia;",
+              "häiritä, ylikuormittaa, tutkia tai testata Palvelua vastuullisen tietojen paljastamisen käytäntömme puitteiden ulkopuolella;",
+              "kiertää turvatoimia, käyttörajoituksia tai pääsyrajoituksia;",
+              "myydä palvelua edelleen tai tarjota sitä white label -tuotteena kilpailevana isännöitynä tunnistautumispalveluna ilman erillistä sopimusta;",
+              "lähettää laittomia sisältöjä Palvelun välityksellä lähetetyissä sähköposteissa tai antaa virheellisiä tietoja niiden alkuperästä;",
+              "ladata haitallista koodia tai sisältöä, joka ei liity tunnistautumiseen."
+            ],
+            "Voimme tutkia epäiltyjä rikkomuksia ja keskeyttää kyseisen käyttöoikeuden, mikäli se on kohtuudella tarpeen — ilmoittamalla asiasta, mikäli se on käytännössä mahdollista, ja välittömästi, jos kyseessä on uskottava turvallisuusriski."
+          ]
+        },
+        {
+          "heading": "5. Palvelun saatavuus",
+          "content": [
+            "Tarjoamme Palvelua luotettavalla hallinnoidulla infrastruktuurilla, jossa on palvelun kehitysvaiheeseen sopiva valvonta, varmuuskopiointi ja redundanssi. Varhaiskäyttövaiheen aikana palvelutasosta ei ole annettu virallista sitoumusta; kun sellainen annetaan, se julkaistaan täällä ja se tulee osaksi Sopimusta. Suunnitelluista huoltotöistä ilmoitetaan etukäteen, mikäli mahdollista."
+          ]
+        },
+        {
+          "heading": "6. Maksut, laskutus ja verot",
+          "content": [
+            [
+              "Maksut ovat ne, jotka on julkaistu verkkosivustomme hinnoitteluosiossa tilaushetkellä, ja ne on ilmoitettu ilman sovellettavia veroja.",
+              "Ellei toisin mainita, maksut erääntyvät kuukausittain etukäteen, eikä niitä palauteta jakson alettua, ellei laissa toisin määrätä.",
+              "Voimme muuttaa hinnoittelua tulevaisuudessa ilmoittamalla siitä vähintään 30 päivää etukäteen; muutokset eivät koskaan vaikuta jo maksettuun jaksoon.",
+              "Maksun viivästyminen voi johtaa palvelun keskeyttämiseen sen jälkeen, kun asiasta on annettu kirjallinen varoitus."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Immateriaalioikeudet",
+          "content": [
+            "SDK Enterprises pidättää kaikki oikeudet Palveluun, mukaan lukien sen ohjelmistot, brändivarat ja dokumentaatio. Sinulla on kaikki oikeudet sovelluksiisi sekä sinulle ja loppukäyttäjillesi kuuluviin tietoihin. Saat henkilökohtaisen, ei-yksinomaisen ja siirtokelvottoman oikeuden käyttää Palvelua tämän Sopimuksen mukaisesti sen voimassaoloajan. Antamaasi palautetta voidaan käyttää vapaasti Palvelun parantamiseen ilman velvoitteita."
+          ]
+        },
+        {
+          "heading": "8. Takuut ja vastuuvapauslausekkeet",
+          "content": [
+            "Takaamme, että tarjoamme Palvelua kohtuullisella ammattitaidolla ja huolellisuudella. Ellei nimenomaisesti toisin mainita, ja siinä laajuudessa kuin laki sallii, Palvelu tarjotaan ”sellaisenaan” ilman minkäänlaisia lisätakuita, olivatpa ne nimenomaisia tai implisiittisiä, mukaan lukien sopivuus tiettyyn tarkoitukseen tai keskeytyksetön ja virheetön toiminta. Mikään tässä sopimuksessa ei sulje pois vastuuta, jota ei voida sulkea pois Ranskan lainsäädännön nojalla, mukaan lukien vastuu tahallisesta tai törkeästä huolimattomuudesta, ruumiinvammoista sekä lakisääteisistä kuluttajansuojasäännöksistä, sikäli kuin ne ovat sovellettavissa."
+          ]
+        },
+        {
+          "heading": "9. Vastuurajoitus",
+          "content": [
+            "Siltä osin kuin laki sen sallii, kumpikaan osapuoli ei ole vastuussa välillisistä, satunnaisista tai seurannaisista menetyksistä, mukaan lukien menetetyt voitot, tulot, liikearvo tai tiedot, riippumatta niiden syystä. Kummankin osapuolen sopimuksesta johtuva tai siihen liittyvä kokonaisvastuu on rajoitettu enintään niihin kokonaismaksuihin, jotka olet maksanut kahdentoista kuukauden aikana ennen vahinkoa aiheuttanutta tapahtumaa. Nämä rajoitukset koskevat yhteisvastuullisesti alihankkijoitamme vain siinä laajuudessa kuin laki sallii."
+          ]
+        },
+        {
+          "heading": "10. Vastuuvapauslauseke",
+          "content": [
+            "Sitoudut puolustamaan ja korvaamaan meille kolmansien osapuolten vaatimukset, jotka johtuvat sovelluksistasi, Palvelun käytöstäsi tämän Sopimuksen vastaisesti tai kolmansien osapuolten oikeuksien loukkaamisesta — edellyttäen, että ilmoitamme sinulle vaatimuksesta viipymättä, annamme sinun hoitaa puolustuksen ja emme ratkaise asiaa yksipuolisesti puolestasi."
+          ]
+        },
+        {
+          "heading": "11. Luottamuksellisuus",
+          "content": [
+            "Kumpikin osapuoli suojaa toisen osapuolen luottamuksellisia tietoja vähintään yhtä huolellisesti kuin omia vastaavia tietojaan, käyttää niitä yksinomaan tämän sopimuksen täytäntöönpanemiseksi ja luovuttaa niitä vain niille työntekijöille ja neuvonantajille, jotka tarvitsevat niitä ja joihin sovelletaan vastaavia velvoitteita. Tämä velvoite pysyy voimassa kolmen vuoden ajan sopimuksen päättymisen jälkeen."
+          ]
+        },
+        {
+          "heading": "12. Voimassaoloaika, keskeyttäminen ja irtisanominen",
+          "content": [
+            [
+              "Sopimus astuu voimaan, kun käytät Palvelua ensimmäisen kerran, ja on voimassa niin kauan kuin vuokralaisesi on olemassa.",
+              "Kumpikin osapuoli voi irtisanoa sopimuksen milloin tahansa kirjallisella ilmoituksella; maksettuja kausia jatketaan niiden suunnitellun päättymisajankohdan asti, ellei laissa toisin määrätä.",
+              "Kumpikin osapuoli voi irtisanoa sopimuksen, jos olennaista sopimusrikkomusta ei ole korjattu 30 päivän kuluessa irtisanomisilmoituksen saamisesta, tai välittömästi, jos sopimuksen täytäntöönpanon jatkaminen olisi lainvastaista tai aiheuttaisi olennaista haittaa.",
+              "Sopimuksen päättyessä tarjoamme pyynnöstä koneellisesti luettavassa muodossa olevan viennin vuokralaisesi tiedoista 30 päivän ajan, minkä jälkeen poistamme vuokralaisen tiedot tietosuojakäytännössä kuvattujen säilytysvelvoitteiden mukaisesti."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Ulkopuoliset palveluntarjoajat",
+          "content": [
+            "Palvelu hyödyntää luotettavia infrastruktuuripalvelujen tarjoajia, jotka on lueteltu alihankkijoidemme sivulla. Olemme vastuussa niiden toiminnasta tämän sopimuksen mukaisesti; suhteesi niihin syntyy ainoastaan meidän välityksellämme."
+          ]
+        },
+        {
+          "heading": "14. Ylivoimainen este",
+          "content": [
+            "Kumpikaan osapuoli ei ole vastuussa suorituksen laiminlyönnistä, joka johtuu sen kohtuullisen hallinnan ulkopuolella olevista tapahtumista – luonnonkatastrofeista, lakoista, sodasta, julkisten verkkojen tai yleishyödyllisten palveluiden häiriöistä tai viranomaisten toimenpiteistä – edellyttäen, että vaikutuksen kohteeksi joutunut osapuoli ilmoittaa asiasta toiselle osapuolelle ja jatkaa suoritusta niin pian kuin kohtuudella on mahdollista."
+          ]
+        },
+        {
+          "heading": "15. Yleiset määräykset",
+          "content": [
+            [
+              "Tämä sopimus muodostaa osapuolten välisen koko sopimuksen palvelusta ja korvaa aiemmat järjestelyt.",
+              "Jos jokin ehto todetaan pätemättömäksi, muut ehdot pysyvät voimassa, ja osapuolet korvaavat kyseisen ehdon pätevällä ehdolla, joka vastaa parhaiten sen tarkoitusta.",
+              "Se, että osapuoli viivyttää oikeutensa käyttämistä, ei merkitse luopumista kyseisestä oikeudesta.",
+              "Et saa siirtää tätä sopimusta ilman suostumustamme; me voimme siirtää sen osana liiketoimintamme uudelleenjärjestelyä, kunhan siitä ilmoitetaan etukäteen.",
+              "Ilmoitukset toimitetaan pätevästi sähköpostitse osoitteeseen hello@sdk.enterprises tai vuokralaisen viimeksi ilmoittamaan yhteysosoitteeseen.",
+              "Nämä ehdot on laadittu englanniksi; ranskankielinen versio voidaan toimittaa lukemisen helpottamiseksi. Ranskalaisiin ammattimaisiin asiakkaisiin sovellettavissa sopimuksissa ranskankielinen versio on ensisijainen, mikäli sellainen on olemassa ja jos versioiden välillä on eroja."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Sovellettava laki ja riidat",
+          "content": [
+            "Tähän sopimukseen sovelletaan Ranskan lakia. Ennen oikeudenkäynnin vireillepanoa osapuolet pyrkivät ratkaisemaan asian vilpittömässä mielessä 30 päivän kuluessa riidan kirjallisesta ilmoittamisesta. Jos tämä ei onnistu, toimivalta kuuluu Pariisin tuomioistuimille Ranskassa – ellei pakottavat säännökset anna sinulle oikeutta valita toista oikeuspaikkaa."
+          ]
+        },
+        {
+          "heading": "17. Näiden ehtojen muutokset",
+          "content": [
+            "Merkittävistä muutoksista ilmoitetaan tällä sivulla vähintään 30 päivää ennen niiden voimaantuloa. Käytön jatkaminen kyseisen päivämäärän jälkeen katsotaan hyväksymiseksi; jos et hyväksy muutoksia, voit irtisanoa sopimuksen ennen muutosten voimaantuloa."
+          ]
+        }
+      ]
+    }
+  }
+}

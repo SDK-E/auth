@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Conditions d'utilisation",
+        "description": "Conditions régissant l'accès et l'utilisation du service d'authentification Auth fourni par SDK Enterprises."
+      },
+      "title": "Conditions d'utilisation",
+      "description": "Les présentes conditions constituent le contrat conclu entre vous et SDK Enterprises concernant l'utilisation du service Auth. Elles sont volontairement concises, mais couvrent tous les aspects essentiels d'une relation professionnelle.",
+      "updated": "23 août 2026",
+      "sections": [
+        {
+          "heading": "1. Définitions",
+          "content": [
+            [
+              "« Service » : la plateforme d'authentification multi-locataires Auth hébergée à l'adresse auth.sdk.enterprises, y compris ses tableaux de bord, ses interfaces et sa documentation.",
+              "« Locataire » : votre espace de travail isolé au sein du Service.",
+              "« Utilisateur final » : toute personne physique qui s'authentifie auprès de vos produits via le Service.",
+              "« Contrat » : les présentes conditions générales, ainsi que toute commande ou tout choix de forfait que vous effectuez, notre politique de confidentialité et (le cas échéant) notre avenant relatif au traitement des données."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Qui êtes-vous ?",
+          "content": [
+            "Vous représentez une personne morale ou agissez en tant que professionnel. Vous confirmez que les informations que vous fournissez lors de votre inscription sont exactes, que vous êtes habilité à engager la responsabilité de l’entité que vous représentez, et que votre utilisation du Service est conforme aux lois applicables à vous-même et à vos utilisateurs finaux. Le Service n’est pas proposé aux consommateurs agissant à titre privé, ni aux personnes n’ayant pas atteint l’âge du consentement numérique."
+          ]
+        },
+        {
+          "heading": "3. Votre locataire et vos responsabilités",
+          "content": [
+            [
+              "Vous êtes responsable des applications que vous enregistrez, des adresses que vous autorisez pour la redirection et de la confidentialité des identifiants qui vous ont été attribués. Veuillez nous signaler sans délai toute violation de sécurité.",
+              "Vous êtes responsable de vos relations avec les utilisateurs finaux, notamment en les informant des traitements effectués via le Service et en obtenant les autorisations nécessaires.",
+              "Vous devez veiller à ce que vos coordonnées de locataire soient à jour afin que nous puissions vous contacter pour toute question relative à la sécurité et aux services."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Conditions d'utilisation",
+          "content": [
+            "Vous vous engagez à ne pas :",
+            [
+              "utiliser le Service à des fins illégales ou d'une manière qui porte atteinte aux droits d'autrui ;",
+              "perturber, surcharger, sonder ou tester le Service en dehors du cadre de notre politique de divulgation responsable ;",
+              "contourner les contrôles de sécurité, les limites d'utilisation ou les restrictions d'accès ;",
+              "revendre ou proposer en marque blanche le Service lui-même en tant qu'offre concurrente d'identité hébergée sans accord distinct ;",
+              "envoyer des contenus illicites par le biais d'e-mails transmis par le Service, ou faire de fausses déclarations quant à leur origine ;",
+              "téléverser du code malveillant ou du contenu sans rapport avec l'authentification."
+            ],
+            "Nous pouvons mener des enquêtes sur les violations présumées et suspendre les accès concernés lorsque cela s'avère raisonnablement nécessaire — après notification lorsque cela est possible, et immédiatement en cas de risque de sécurité avéré."
+          ]
+        },
+        {
+          "heading": "5. Disponibilité du service",
+          "content": [
+            "Nous exploitons le Service sur une infrastructure gérée et fiable, dotée de systèmes de surveillance, de sauvegardes et de redondance adaptés à son niveau de maturité. Pendant la période d’accès anticipé, aucun engagement formel en matière de niveau de service ne s’applique ; lorsqu’un tel engagement sera en vigueur, il sera publié ici et fera partie intégrante du Contrat. Les opérations de maintenance planifiées sont annoncées à l’avance dans la mesure du possible."
+          ]
+        },
+        {
+          "heading": "6. Frais, facturation et taxes",
+          "content": [
+            [
+              "Les tarifs sont ceux publiés dans la rubrique « Tarifs » de notre site au moment de votre inscription, hors taxes applicables.",
+              "Sauf indication contraire, les frais sont dus mensuellement à l'avance et ne sont pas remboursables une fois la période commencée, sauf si la loi l'exige.",
+              "Nous nous réservons le droit de modifier nos tarifs avec effet futur, moyennant un préavis d'au moins 30 jours ; ces modifications n'ont jamais d'incidence sur une période déjà payée.",
+              "Tout retard de paiement peut entraîner une suspension après un avertissement écrit préalable."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Propriété intellectuelle",
+          "content": [
+            "SDK Enterprises conserve tous les droits sur le Service, y compris ses logiciels, ses éléments de marque et sa documentation. Vous conservez tous les droits sur vos applications et sur les données vous appartenant ainsi qu’à vos utilisateurs finaux. Vous bénéficiez d’un droit personnel, non exclusif et non transférable d’utiliser le Service conformément au présent Contrat pendant toute sa durée. Les commentaires que vous nous transmettez peuvent être utilisés librement pour améliorer le Service, sans aucune obligation de notre part."
+          ]
+        },
+        {
+          "heading": "8. Garanties et clauses de non-responsabilité",
+          "content": [
+            "Nous garantissons que nous fournirons le Service avec toute la compétence et le soin raisonnables. Sauf mention expresse contraire, et dans la mesure maximale autorisée par la loi, le Service est fourni « tel quel », sans aucune garantie supplémentaire, expresse ou implicite, y compris en matière d’adéquation à un usage particulier ou de fonctionnement ininterrompu et sans erreur. Aucune disposition du présent Contrat n'exclut la responsabilité qui ne peut être exclue en vertu du droit français, notamment la responsabilité en cas de faute intentionnelle ou de négligence grave, de dommages corporels et les protections légales des consommateurs lorsqu'elles s'appliquent."
+          ]
+        },
+        {
+          "heading": "9. Limitation de responsabilité",
+          "content": [
+            "Dans la mesure autorisée par la loi, aucune des parties ne peut être tenue responsable des pertes indirectes, accessoires ou consécutives, y compris le manque à gagner, la perte de chiffre d’affaires, la perte de clientèle ou la perte de données, quelle qu’en soit la cause. La responsabilité totale cumulée de chaque partie découlant du Contrat ou liée à celui-ci est plafonnée au montant total des frais que vous avez versés au cours des douze mois précédant l'événement à l'origine de la réclamation. Ces limites s'appliquent solidairement à nos sous-traitants uniquement dans la mesure autorisée par la loi."
+          ]
+        },
+        {
+          "heading": "10. Indemnisation",
+          "content": [
+            "Vous vous engagez à nous défendre et à nous indemniser contre toute réclamation de tiers découlant de vos applications, de votre utilisation du Service en violation du présent Contrat ou de votre atteinte aux droits de tiers — à condition que nous vous informions sans délai de cette réclamation, que nous vous permettions d’en assurer la défense et que nous ne la réglions pas unilatéralement en votre nom."
+          ]
+        },
+        {
+          "heading": "11. Confidentialité",
+          "content": [
+            "Chaque partie s'engage à protéger les informations confidentielles de l'autre partie avec au moins le même soin qu'elle apporte à la protection de ses propres informations similaires, à ne les utiliser que dans le cadre de l'exécution du Contrat et à ne les divulguer qu'au personnel et aux conseillers qui en ont besoin et qui sont soumis à des obligations équivalentes. Cette obligation subsiste pendant trois ans après la résiliation du Contrat."
+          ]
+        },
+        {
+          "heading": "12. Durée, suspension et résiliation",
+          "content": [
+            [
+              "Le Contrat prend effet dès votre première utilisation du Service et reste en vigueur tant que votre compte locataire existe.",
+              "Chacune des parties peut résilier le contrat à tout moment par notification écrite ; les périodes pour lesquelles les frais ont été acquittés se poursuivent jusqu'à leur date d'échéance prévue, sauf disposition contraire de la loi.",
+              "Chacune des parties peut résilier le contrat en cas de manquement grave non remédié dans les 30 jours suivant la notification, ou avec effet immédiat lorsque la poursuite de l'exécution serait illégale ou causerait un préjudice grave.",
+              "En cas de résiliation, nous mettons à votre disposition, sur demande, une exportation au format lisible par machine de vos données de locataire pendant 30 jours, puis nous supprimons ces données, sous réserve des obligations de conservation décrites dans la politique de confidentialité."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Prestataires tiers",
+          "content": [
+            "Le Service s'appuie sur des fournisseurs d'infrastructure réputés, répertoriés sur notre page consacrée aux sous-traitants. Nous sommes responsables de leurs prestations au titre du présent Contrat ; vos relations avec eux s'établissent exclusivement par notre intermédiaire."
+          ]
+        },
+        {
+          "heading": "14. Force majeure",
+          "content": [
+            "Aucune des parties ne saurait être tenue responsable d'un manquement à ses obligations résultant d'événements échappant à son contrôle raisonnable — catastrophes naturelles, grèves, guerre, défaillances des réseaux publics ou des services publics, ou mesures prises par les autorités publiques — à condition que la partie concernée en informe l'autre et reprenne l'exécution de ses obligations dès que cela est raisonnablement possible."
+          ]
+        },
+        {
+          "heading": "15. Clauses générales",
+          "content": [
+            [
+              "Le présent contrat constitue l'intégralité de l'accord entre les parties concernant le Service et remplace tous les accords antérieurs.",
+              "Si une clause est jugée nulle, les autres dispositions restent en vigueur et les parties remplacent ladite clause par une clause valide qui se rapproche le plus possible de son esprit.",
+              "Le fait qu'une partie tarde à faire valoir un droit ne constitue pas une renonciation à celui-ci.",
+              "Vous ne pouvez pas céder le présent contrat sans notre accord ; nous pouvons, quant à nous, le céder dans le cadre d'une réorganisation de notre activité, moyennant préavis.",
+              "Les notifications sont valablement transmises par e-mail à l'adresse hello@sdk.enterprises ou à la dernière adresse de contact fournie par le locataire.",
+              "Les présentes conditions générales sont rédigées en anglais ; une version française peut être fournie à titre indicatif. Pour les contrats conclus avec des clients professionnels français, la version française prévaut lorsqu’elle existe et en cas de divergences."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Droit applicable et litiges",
+          "content": [
+            "Le présent contrat est régi par le droit français. Avant toute action en justice, les parties s'efforceront de parvenir à un règlement à l'amiable de bonne foi pendant une période de 30 jours à compter de la notification écrite du litige. À défaut, les tribunaux de Paris, en France, sont compétents, sauf si des règles impératives vous accordent un autre for."
+          ]
+        },
+        {
+          "heading": "17. Modifications des présentes conditions",
+          "content": [
+            "Les modifications importantes sont annoncées sur cette page au moins 30 jours avant leur entrée en vigueur. La poursuite de l'utilisation après cette date vaut acceptation ; si vous n'êtes pas d'accord, vous pouvez résilier votre compte avant la date d'entrée en vigueur."
+          ]
+        }
+      ]
+    }
+  }
+}

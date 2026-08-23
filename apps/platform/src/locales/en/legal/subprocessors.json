@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Subprocessors",
+        "description": "The subprocessors SDK Enterprises engages to operate the Auth service, the role each one plays, where they operate, and the categories of data involved."
+      },
+      "title": "Subprocessors",
+      "description": "We keep this list current and publish additions before a new subprocessor processes personal data, giving our customers the opportunity to object on reasonable grounds.",
+      "updated": "August 23, 2026",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Each subprocessor operates under a written agreement imposing data protection obligations no less protective than those in our data processing addendum, and SDK Enterprises remains responsible to its customers for subprocessor performance. Objections to an announced addition may be raised within fourteen days of publication by writing to hello@sdk.enterprises."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Subprocessor",
+                "Role",
+                "Location",
+                "Categories of data involved"
+              ],
+              "rows": [
+                [
+                  "Vercel Inc.",
+                  "Application hosting and content delivery",
+                  "United States; global edge network",
+                  "All traffic to the Service passes through its network; processing is limited to transmission, caching, and serving of encrypted requests and responses."
+                ],
+                [
+                  "Neon (Neon Inc.)",
+                  "Managed database provider",
+                  "Cloud region selected per deployment; EEA-capable regions available",
+                  "Tenant configuration, account records, authentication records, security and audit logs. Credentials and cryptographic keys are stored only in protected form."
+                ],
+                [
+                  "Upstash Inc.",
+                  "Transient storage for abuse prevention",
+                  "United States",
+                  "Short-lived technical counters used to detect abusive traffic. Retained only for the brief lifetime of the counter."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Transactional email delivery",
+                  "United States",
+                  "Recipient email address and delivery metadata for service emails such as sign-in codes. Message content is limited to what is strictly required."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Change log",
+          "content": [
+            [
+              "August 2026 — Initial published list: Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

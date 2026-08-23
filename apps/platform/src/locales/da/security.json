@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Sikkerhed",
+      "description": "Sådan sikrer Auth autentificeringsinfrastrukturen: tokenarkitektur, nøglerotation, hastighedsbegrænsning, det hash-kædede revisionsregister, og hvordan man indberetter en sårbarhed."
+    },
+    "hero": {
+      "eyebrow": "Tillid",
+      "title": "Sikkerhed er listen over mekanismer.",
+      "lead": "Vi beder dig ikke om at stole på markedsføringspåstande — hver enkelt beskyttelsesfunktion nedenfor beskriver præcist, hvordan den fungerer, og hvor den er aktiv. Hvis vi ikke kan forklare mekanismen, fremsætter vi ikke påstanden."
+    },
+    "layers": [
+      {
+        "title": "Tokenarkitektur",
+        "points": [
+          "Autorisationskoder skal indeholde PKCE (S256) ved hver anmodning og er til engangsbrug med kort gyldighedsperiode.",
+          "Opdateringstokener udskiftes ved hver brug; fremlæggelse af et brugt token medfører, at hele tokenfamilien annulleres.",
+          "Adgangs- og ID-tokens er RS256 og JWT, der er signeret for hvert miljø; de offentlige nøgler er offentliggjort på /.well-known/jwks.json.",
+          "Opdateringstokener kan tilbagekaldes via /oauth/revoke."
+        ]
+      },
+      {
+        "title": "Sessioner",
+        "points": [
+          "Sessionscookies er http-only, SameSite=Lax, sikre i produktionsmiljøet og indeholder signerede RS256-sessioner med JWT.",
+          "Hver session har både en timeout ved inaktivitet og en absolut udløbsdato.",
+          "Sessioner kan tilbagekaldes på serversiden; ved udlogning tilbagekaldes de straks."
+        ]
+      },
+      {
+        "title": "Nøgler og hemmeligheder",
+        "points": [
+          "RS256-signeringsnøgler pr. miljø; private nøgler krypteres med en konvolut, når de er i hvile (AES-256-GCM), og logges aldrig.",
+          "Rotationen trækker aktive nøgler tilbage, men lader dem forblive offentliggjorte, så udestående tokens kan verificeres indtil deres naturlige udløb.",
+          "Klienthemmeligheder gemmes udelukkende i krypteret form; verifikationen foregår på konstant tid efter dekryptering."
+        ]
+      },
+      {
+        "title": "Kontrolforanstaltninger mod misbrug",
+        "points": [
+          "Faste begrænsninger: antal koder pr. e-mail og pr. IP-adresse, antal mislykkede verifikationer pr. e-mail, antal udstedte tokens pr. klient og pr. IP-adresse.",
+          "For mange mislykkede verifikationsforsøg opbruger alle udestående engangskoder for den pågældende adresse.",
+          "Fejlmeddelelser, der vises for brugeren, holdes neutrale; detaljerne registreres udelukkende i serverlogfilerne."
+        ]
+      },
+      {
+        "title": "Revisionsmuligheder",
+        "points": [
+          "Sikkerhedshændelser skrives til en hash-kædet protokol, der er specifik for hvert miljø: Hver post knyttes til sin forgænger ved hjælp af SHA-256.",
+          "Kæden kan til enhver tid genberegnes fra begyndelsen; enhver ændring med tilbagevirkende kraft bryder den.",
+          "Standardautentificeringshændelser (login, udstedelse af tokens, registrering af genbrug, tilbagekaldelse, oprettelse af nøgler) registreres sammen med hovedbogen."
+        ]
+      },
+      {
+        "title": "Databehandling",
+        "points": [
+          "Lejeroplysningerne er gemt i en Neon Postgres-database i den region, der er valgt til implementeringen; adgang kræver krypteret dataoverførsel.",
+          "Hemmeligheder krypteres ved hjælp af en krypteringsnøgle, inden de gemmes; hovednøglen opbevares uden for databasen.",
+          "Der kører ingen tredjeparts-trackere eller annoncepixler på login-siderne; analyserne på dette markedsføringswebsted foregår uden brug af cookies og er aggregerede."
+        ]
+      }
+    ],
+    "complianceNote": "Overholdelsesstatus, helt ærligt: Auth har fra første dag implementeret kontrolforanstaltninger, der er i overensstemmelse med SOC 2-kriterierne, men der er endnu ikke gennemført en certificeringsrevision. Vi vil offentliggøre resultaterne her, når det ændrer sig.",
+    "disclosure": {
+      "eyebrow": "Ansvarlig offentliggørelse",
+      "title": "Har du fundet en fejl? Giv os besked.",
+      "items": [
+        "Send en e-mail til hello@sdk.enterprises med [security] i emnefeltet.",
+        "Angiv trinene til gentagelse af fejlen; vi bekræfter modtagelsen af indberetninger inden for 2 arbejdsdage.",
+        "Undgå venligst automatiseret scanning af produktionsmiljøet, og tilgå ikke flere data end det, der er nødvendigt for at påvise problemet.",
+        "Forskning, der udføres i god tro i henhold til denne politik, er beskyttet mod retslige skridt; vi angiver kilderne, medmindre de foretrækker at forblive anonyme.",
+        "Maskinlæsbar politik: /.well-known/security.txt"
+      ],
+      "privacyLink": "Fortrolighedspolitik →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Underbehandlere →"
+    }
+  }
+}

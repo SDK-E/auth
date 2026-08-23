@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — infrastruktur för autentisering i fleranvändarmiljöer",
+      "description": "Auth förser din produkt med OIDC och OAuth 2.1 direkt från start – hostade inloggningssidor, sessionshantering och ett administrationsverktyg (API) – så att ditt team kan fokusera på att leverera funktioner istället för att ägna sig åt identitetshantering."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Autentifieringsinfrastruktur för flera användare",
+      "title": "Ett inloggningsflöde för varje kund som du är värd för.",
+      "lead": "Auth förser din produkt med OIDC och OAuth 2.1 direkt från start – hostade inloggningssidor, sessionshantering och ett administrationsverktyg (API) – så att ditt team kan fokusera på att leverera funktioner istället för att ägna sig åt identitetshantering.",
+      "primaryCta": "Börja bygga",
+      "secondaryCta": "Skapa din hyresgäst",
+      "securityLink": "Säkerhetsmodell →",
+      "visual": {
+        "appTitle": "Din app",
+        "appBody": "Omdirigerar till /authorize",
+        "loginTitle": "autentisering via universell inloggning",
+        "loginBody": "Inloggning med kod via webbaserad e-posttjänst",
+        "returnTitle": "Tillbaka till din app",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE obligatoriskt · token verifierade mot offentliga JWKS"
+      }
+    },
+    "standards": {
+      "eyebrow": "Standarder in, sessioner ut",
+      "sentence": "Vi följer specifikationerna till punkt och pricka: PKCE i varje auktoriseringskod, roterande uppdateringstoken, återkallbara signerade sessioner och publicerade signeringsnycklar."
+    },
+    "features": {
+      "eyebrow": "Plattformen",
+      "title": "Identitetshanteringen är klar.",
+      "intro": "Allt nedan gäller från och med idag, om inte annat anges — på varje kort anges mekanismen, eftersom det är just den du faktiskt köper.",
+      "items": [
+        {
+          "status": "tillgänglig",
+          "title": "Universell inloggning",
+          "body": "Ett webbaserat inloggningsflöde som dina användare omdirigeras till – engångskoder via e-post, inga lösenord att spara, inget inloggningsgränssnitt att underhålla."
+        },
+        {
+          "status": "tillgänglig",
+          "title": "Sessionshantering",
+          "body": "Sessionerna signeras med RS256 och JWT i http-only-cookies, med giltighetstid vid inaktivitet och absolut giltighetstid, återkallning på serversidan samt nycklar per miljö."
+        },
+        {
+          "status": "tillgänglig",
+          "title": "Token-säkerhet",
+          "body": "Auktoriseringskoder följer alltid med PKCE. Uppdateringstoken byts ut vid varje användning, och ett token som används på nytt upphäver hela sin familj."
+        },
+        {
+          "status": "tillgänglig",
+          "title": "Revisionsbok",
+          "body": "Varje säkerhetshändelse registreras i en revisionslogg med hashkedja för varje miljö – om någon försöker manipulera loggen bryts kedjan, och kedjan beräknas om från början."
+        },
+        {
+          "status": "tillgänglig",
+          "title": "Åtgärder mot missbruk",
+          "body": "Fasta gränsvärden för antalet kodleveranser, verifieringsförsök och utfärdande av token. Vid spärrning förbrukas utestående koder; kopian påverkas inte."
+        },
+        {
+          "status": "införande",
+          "title": "Ledning API",
+          "body": "En API-gränssnitt för applikationer, användare, sessioner och loggar på /api/v2, som styrs av maskin-token med begränsad räckvidd."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Integriteten först",
+      "title": "Dina hyresgästers uppgifter förblir dina.",
+      "intro": "Auth är en identitetsinfrastruktur – vi behandlar endast det som krävs för autentisering och offentliggör alla detaljer. Inga spårare för annonser, ingen försäljning av data, ingen modellträning baserad på kunddata.",
+      "processedTitle": "Vad vi behandlar",
+      "processed": [
+        "E-postadress för kontot, för att ta emot engångskoder",
+        "Autentiseringshändelser med tekniska metadata, som sparas av säkerhets- och revisionsskäl",
+        "Tillfälliga räknare för förebyggande av missbruk som upphör att gälla av sig själva",
+        "Inloggningsuppgifter och kryptografiska nycklar lagras endast i skyddad form"
+      ],
+      "neverTitle": "Vad vi aldrig gör",
+      "never": [
+        "Sälja, hyra ut eller dela personuppgifter – någonsin, oavsett syfte",
+        "Ladda in spårningskoder eller annonspixlar från tredje part på inloggningssidor",
+        "Träna modeller på data från hyresgäster eller slutanvändare",
+        "Spara uppgifterna även efter att du har stängt ditt konto, utöver de lagstadgade minimikraven"
+      ],
+      "privacyLink": "Integritetspolicy →",
+      "dpaLink": "Tillägg om databehandling →",
+      "subprocessorsLink": "Lista över underleverantörer →"
+    },
+    "quickstart": {
+      "eyebrow": "Snabbstart",
+      "title": "Tre försök för att få en fungerande inloggning.",
+      "intro": "Inget proprietärt protokoll, ingen leverantörsberoende – allt nedan är standardmodeller av OAuth 2.1 och OIDC anslutna till våra aktiva slutpunkter.",
+      "stepLabel": "Steg {index}",
+      "steps": [
+        {
+          "title": "Upptäck våra slutpunkter",
+          "body": "Din app läser av standardupptäckten för OIDC – ingen SDK krävs, vilket språk som helst fungerar."
+        },
+        {
+          "title": "Skicka användarna till /authorize med PKCE",
+          "body": "Skapa en kodutmaning, omdirigera webbläsaren – vi sköter inloggningen och e-postkoden."
+        },
+        {
+          "title": "Lös in koden mot polletter",
+          "body": "Kontrollera id_token mot våra offentliga JWKS, spara uppdateringstokenet och anropa userinfo när du behöver uppgifter."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Priser",
+      "title": "Priset bestäms av användarna, inte av lås.",
+      "intro": "Priser för tidig åtkomst. En månatligt aktiv användare är en användare som har loggat in minst en gång under månaden; du debiteras aldrig för konton som är lagrade men inaktiva.",
+      "perMonth": "per månad",
+      "periodFree": "för alltid",
+      "plans": [
+        {
+          "includedMau": "1 000 aktiva användare per månad",
+          "features": [
+            "Alla miljöer (utvecklings-, test- och produktionsmiljöer)",
+            "Obegränsat antal applikationer per miljö",
+            "Inloggning med engångskod via e-post",
+            "Revisionsregister och loggar över autentiseringshändelser",
+            "Stöd från samhället"
+          ],
+          "cta": "Kom igång gratis"
+        },
+        {
+          "includedMau": "10 000 aktiva användare per månad",
+          "features": [
+            "Allt är gratis",
+            "Anpassade domäner per kund",
+            "MFA, åtkomstnycklar och SSO för företag i sin nuvarande form",
+            "Längre bevarandeperiod för revisionsunderlag",
+            "Prioriterad support"
+          ],
+          "cta": "Börja med Pro"
+        }
+      ],
+      "note": "Faktureringen är ännu inte automatiserad – kunder med tidig tillgång faktureras manuellt och kan säga upp sitt abonnemang när som helst."
+    },
+    "ctaBand": {
+      "title": "Din inloggningssida ligger bara en omdirigering bort.",
+      "body": "Identifiera punkten vid auth.sdk.enterprises och skicka din första flödesrapport i eftermiddag.",
+      "button": "Öppna instrumentpanelen"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Informacja prawna",
+        "description": "Wydawca, administrator strony oraz informacje prawne dotyczące serwisu auth.sdk.enterprises (mentions légales)."
+      },
+      "title": "Informacja prawna",
+      "description": "Informacje wymagane przez prawo francuskie w odniesieniu do strony internetowej opublikowanej pod adresem auth.sdk.enterprises (informacje prawne), sporządzone zgodnie z art. 6-III ustawy nr 2004-575 z dnia 21 czerwca 2004 r. (LCEN).",
+      "updated": "23 sierpnia 2026 r.",
+      "sections": [
+        {
+          "heading": "Wydawca",
+          "content": [
+            "Niniejsza strona oraz usługa Auth są udostępniane przez SADDEK Entreprises, działającą pod nazwą handlową SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Siedziba: 44 Rue Pasquier, 75008 Paris, France",
+              "Forma prawna: auto-entrepreneur (działalność jednoosobowa), bez kapitału zakładowego",
+              "Numer rejestracji firmy: RCS Paris 850 513 912",
+              "Dyrektor ds. publikacji: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "content": [
+            "Pytania dotyczące tej witryny lub usługi można kierować na adres hello@sdk.enterprises. Informacje na temat zgłaszania luk w zabezpieczeniach można znaleźć w naszej polityce odpowiedzialnego ujawniania luk."
+          ]
+        },
+        {
+          "heading": "Hosting",
+          "content": [
+            "Witryna i usługa są hostowane przez firmę Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Stany Zjednoczone. Bazy danych aplikacji są obsługiwane przez firmę Neon; szczegółowe informacje na temat wszystkich dostawców infrastruktury znajdują się na stronie poświęconej podwykonawcom przetwarzania danych."
+          ]
+        },
+        {
+          "heading": "Własność intelektualna",
+          "content": [
+            "Struktura, teksty, logo i treść niniejszej strony internetowej stanowią własność firmy SDK Enterprises. Zabrania się jakiegokolwiek powielania lub odtwarzania, w całości lub w części, bez uprzedniej zgody, z wyjątkiem przypadków dozwolonych przez obowiązujące prawo."
+          ]
+        },
+        {
+          "heading": "Ramy prawne",
+          "content": [
+            "Niniejsze ogłoszenia podlegają prawu francuskiemu. Usługa Auth jest świadczona zgodnie z naszymi warunkami korzystania z usługi, a zasady przetwarzania danych osobowych opisano w naszej polityce prywatności oraz w aneksie dotyczącym przetwarzania danych."
+          ]
+        }
+      ]
+    }
+  }
+}

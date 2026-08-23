@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — infrastruttura di autenticazione multi-tenant",
+      "description": "Auth offre al tuo prodotto, fin da subito, le funzionalità OIDC e OAuth 2.1 — pagine di accesso ospitate, gestione delle sessioni e uno strumento di gestione API — consentendo al tuo team di concentrarsi sullo sviluppo delle funzionalità anziché sull’infrastruttura di gestione delle identità."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Infrastruttura di autenticazione multi-tenant",
+      "title": "Un unico flusso di accesso per ogni tenant ospitato.",
+      "lead": "Auth offre al tuo prodotto, fin da subito, le funzionalità OIDC e OAuth 2.1 — pagine di accesso ospitate, gestione delle sessioni e uno strumento di gestione API — consentendo al tuo team di concentrarsi sullo sviluppo delle funzionalità anziché sull’infrastruttura di gestione delle identità.",
+      "primaryCta": "Inizia a costruire",
+      "secondaryCta": "Crea il tuo tenant",
+      "securityLink": "Modello di sicurezza →",
+      "visual": {
+        "appTitle": "La tua app",
+        "appBody": "Reindirizza a /authorize",
+        "loginTitle": "autenticazione con accesso universale",
+        "loginBody": "Accesso tramite firma del codice dell'account di posta elettronica in hosting",
+        "returnTitle": "Torna alla tua app",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE obbligatorio · token verificati rispetto a JWKS pubblici"
+      }
+    },
+    "standards": {
+      "eyebrow": "Inserire gli standard, eliminare le sessioni",
+      "sentence": "Attuiamo le specifiche alla lettera: PKCE su ogni codice di autorizzazione, token di aggiornamento a rotazione, sessioni firmate revocabili, chiavi di firma pubblicate."
+    },
+    "features": {
+      "eyebrow": "La piattaforma",
+      "title": "Configurazione dell’identità: tutto a posto.",
+      "intro": "Tutto quanto riportato di seguito è disponibile da oggi, salvo diversa indicazione: ogni scheda riporta il nome del meccanismo, poiché è proprio quello che state effettivamente acquistando.",
+      "items": [
+        {
+          "status": "disponibile",
+          "title": "Accesso universale",
+          "body": "Un flusso di accesso in hosting a cui vengono reindirizzati i tuoi utenti: codici monouso inviati via e-mail, nessuna password da memorizzare, nessuna interfaccia utente di accesso da gestire."
+        },
+        {
+          "status": "disponibile",
+          "title": "Gestione delle sessioni",
+          "body": "Le sessioni sono firmate con RS256 e JWT in cookie \"http-only\", con scadenza inattiva e assoluta, revoca lato server e chiavi specifiche per ogni ambiente."
+        },
+        {
+          "status": "disponibile",
+          "title": "Sicurezza dei token",
+          "body": "I codici di autorizzazione sono sempre accompagnati da PKCE. I token di aggiornamento cambiano ad ogni utilizzo e, se un token viene riutilizzato, l'intera famiglia di token viene revocata."
+        },
+        {
+          "status": "disponibile",
+          "title": "Registro di revisione",
+          "body": "Ogni evento di sicurezza viene registrato in un log di audit con catena di hash per ogni ambiente: qualsiasi manomissione interrompe la catena, che viene ricalcolata a partire dal punto di origine."
+        },
+        {
+          "status": "disponibile",
+          "title": "Controlli anti-abuso",
+          "body": "Limiti di frequenza a finestra fissa per l'invio dei codici, i tentativi di verifica e l'emissione dei token. I blocchi consumano i codici in sospeso; la copia rimane inalterata."
+        },
+        {
+          "status": "lancio",
+          "title": "Gestione API",
+          "body": "Un'unica superficie API per applicazioni, utenti, sessioni e registri all'indirizzo /api/v2, gestita tramite token di macchina con ambito limitato."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "La privacy prima di tutto",
+      "title": "I dati dei tuoi inquilini rimangono di tua proprietà.",
+      "intro": "Auth è un'infrastruttura per la gestione delle identità: trattiamo esclusivamente i dati necessari all'autenticazione e rendiamo pubblici tutti i dettagli. Nessun tracker pubblicitario, nessuna vendita di dati, nessun addestramento di modelli sui dati dei clienti.",
+      "processedTitle": "Cosa trattiamo",
+      "processed": [
+        "Indirizzo e-mail dell'account, per l'invio dei codici monouso",
+        "Eventi di autenticazione con metadati tecnici, conservati a fini di sicurezza e di controllo",
+        "Contatori temporanei per la prevenzione degli abusi che scadono automaticamente",
+        "Le credenziali e le chiavi crittografiche sono conservate esclusivamente in forma protetta"
+      ],
+      "neverTitle": "Cosa non facciamo mai",
+      "never": [
+        "Vendere, affittare o condividere dati personali — in nessun caso, per nessun motivo",
+        "Caricare tracker o pixel pubblicitari di terze parti sulle pagine di autenticazione",
+        "Addestrare i modelli utilizzando i dati dei locatari o degli utenti finali",
+        "Conserva i dati anche dopo la chiusura del tuo account, oltre i termini minimi previsti dalla legge"
+      ],
+      "privacyLink": "Informativa sulla privacy →",
+      "dpaLink": "Allegato relativo al trattamento dei dati →",
+      "subprocessorsLink": "Elenco dei subappaltatori →"
+    },
+    "quickstart": {
+      "eyebrow": "Guida rapida",
+      "title": "Tre tentativi per effettuare l'accesso.",
+      "intro": "Nessun protocollo proprietario, nessuna dipendenza da un unico fornitore: tutto ciò che segue riguarda i modelli standard OAuth 2.1 e OIDC collegati ai nostri endpoint attivi.",
+      "stepLabel": "Passo {index}",
+      "steps": [
+        {
+          "title": "Scopri i nostri endpoint",
+          "body": "La tua app legge i dati di rilevamento standard OIDC: non è necessario SDK, qualsiasi linguaggio va bene."
+        },
+        {
+          "title": "Reindirizza gli utenti alla pagina /authorize con il codice PKCE",
+          "body": "Crea una sfida di programmazione, reindirizza il browser: ci occupiamo noi della procedura di accesso ospitata e del codice relativo all’e-mail."
+        },
+        {
+          "title": "Scambia il codice con dei gettoni",
+          "body": "Verifica l'id_token confrontandolo con il nostro JWKS pubblico, conserva il refresh token e chiama userinfo quando ti servono i claim."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Prezzi",
+      "title": "Il prezzo è determinato dagli utenti, non dai lucchetti.",
+      "intro": "Tariffe per l'accesso anticipato. Per \"utente attivo mensile\" si intende un utente che ha effettuato l'autenticazione almeno una volta nel corso del mese; non ti verrà mai addebitato alcun costo per gli account archiviati ma inattivi.",
+      "perMonth": "al mese",
+      "periodFree": "per sempre",
+      "plans": [
+        {
+          "includedMau": "1.000 utenti attivi al mese",
+          "features": [
+            "Tutti gli ambienti (sviluppo, staging, produzione)",
+            "Numero illimitato di applicazioni per ambiente",
+            "Accesso tramite codice monouso inviato via e-mail",
+            "Registro di audit e registri degli eventi di autenticazione",
+            "Sostegno della comunità"
+          ],
+          "cta": "Inizia gratuitamente"
+        },
+        {
+          "includedMau": "10.000 utenti attivi al mese",
+          "features": [
+            "Tutto gratis",
+            "Domini personalizzati per tenant",
+            "MFA, passkeys e SSO aziendale così come vengono forniti",
+            "Maggiore periodo di conservazione dei documenti di revisione",
+            "Assistenza prioritaria"
+          ],
+          "cta": "Inizia con Pro"
+        }
+      ],
+      "note": "La fatturazione non è ancora automatizzata: agli utenti con accesso anticipato vengono emesse fatture manualmente e possono recedere dal servizio in qualsiasi momento."
+    },
+    "ctaBand": {
+      "title": "La tua pagina di accesso è a un solo reindirizzamento di distanza.",
+      "body": "Individua il punto in auth.sdk.enterprises e invia il tuo primo flusso questo pomeriggio.",
+      "button": "Apri la dashboard"
+    }
+  }
+}

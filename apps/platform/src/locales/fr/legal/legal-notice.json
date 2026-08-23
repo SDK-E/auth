@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Mentions légales",
+        "description": "Éditeur, hébergeur et mentions légales pour auth.sdk.enterprises (mentions légales)."
+      },
+      "title": "Mentions légales",
+      "description": "Informations requises par la législation française concernant le site publié à l'adresse auth.sdk.enterprises (mentions légales), établies conformément à l'article 6-III de la loi n° 2004-575 du 21 juin 2004 (LCEN).",
+      "updated": "23 août 2026",
+      "sections": [
+        {
+          "heading": "Éditeur",
+          "content": [
+            "Ce site et le service Auth sont publiés par SADDEK Entreprises, exerçant sous le nom commercial de SDK Enterprises.",
+            [
+              "SIREN : 850 513 912",
+              "SIRET : 850 513 912 00020",
+              "Siège social : 44 Rue Pasquier, 75008 Paris, France",
+              "Forme juridique : auto-entrepreneur (entreprise individuelle), sans capital social",
+              "Numéro d'enregistrement de la société : RCS Paris 850 513 912",
+              "Directeur de la publication : Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Contact",
+          "content": [
+            "Pour toute question concernant ce site ou le service, veuillez envoyer un e-mail à hello@sdk.enterprises. Pour signaler un problème de sécurité, veuillez consulter notre politique de divulgation responsable."
+          ]
+        },
+        {
+          "heading": "Hébergement",
+          "content": [
+            "Le site et le service sont hébergés par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis. Les bases de données des applications sont gérées par Neon ; les coordonnées de tous les fournisseurs d'infrastructure sont répertoriées sur la page dédiée aux sous-traitants."
+          ]
+        },
+        {
+          "heading": "Propriété intellectuelle",
+          "content": [
+            "La structure, les textes, les logos et le contenu de ce site sont la propriété de SDK Enterprises. Toute reproduction ou représentation, totale ou partielle, sans autorisation préalable est interdite, sauf dans les cas autorisés par la loi en vigueur."
+          ]
+        },
+        {
+          "heading": "Cadre juridique",
+          "content": [
+            "Les présentes mentions sont régies par le droit français. Le service Auth est fourni conformément à nos conditions générales d'utilisation, et le traitement des données à caractère personnel est décrit dans notre politique de confidentialité et dans notre avenant relatif au traitement des données."
+          ]
+        }
+      ]
+    }
+  }
+}

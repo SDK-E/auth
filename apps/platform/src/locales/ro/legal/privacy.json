@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Politica de confidențialitate",
+        "description": "Modul în care Auth by SDK Enterprises prelucrează datele cu caracter personal: ce date colectăm, de ce, pentru cât timp, cu cine sunt partajate și ce drepturi aveți asupra acestora."
+      },
+      "title": "Politica de confidențialitate",
+      "description": "Prezenta politică explică ce date cu caracter personal prelucrează serviciul Auth, de ce sunt prelucrate, cât timp sunt păstrate, cu cine sunt partajate și care sunt drepturile persoanelor vizate. Am redactat-o astfel încât să poată fi citită și înțeleasă, nu doar afișată.",
+      "updated": "23 august 2026",
+      "sections": [
+        {
+          "heading": "1. Cine suntem",
+          "content": [
+            "Serviciul Auth (denumit în continuare „Serviciul”) este operat de SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, cu sediul social la 44 Rue Pasquier, 75008 Paris, France — „SDK Enterprises”, „noi”, „nouă”). Clienții noștri utilizează Serviciul pentru a-și autentifica propriii utilizatori; acest document descrie modul în care datele cu caracter personal circulă în cadrul acestui aranjament și care sunt responsabilitățile fiecărei părți."
+          ]
+        },
+        {
+          "heading": "2. Rolul nostru depinde de situație",
+          "content": [
+            [
+              "Pentru vizitatorii acestui site web și pentru persoanele care își deschid sau administrează un cont la noi, SDK Enterprises stabilește scopul și modul de prelucrare a datelor cu caracter personal și acționează în calitate de operator de date.",
+              "În cazul utilizatorilor finali care se autentifică într-un produs sau serviciu bazat pe Auth, clientul nostru rămâne responsabil pentru prelucrarea respectivă în calitate de operator de date, iar SDK Enterprises prelucrează datele cu caracter personal conform instrucțiunilor documentate ale acestuia, în calitate de persoană împuternicită de operator, în temeiul anexei noastre privind prelucrarea datelor. Dacă sunteți un astfel de utilizator final, primul punct de contact este produsul la care v-ați conectat; noi îi sprijinim pe aceștia să vă răspundă la solicitare fără întârzieri nejustificate."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Categoriile de date cu caracter personal pe care le prelucrăm",
+          "content": [
+            [
+              "Date privind contul. Adresa de e-mail și elementele de bază ale profilului pe care dumneavoastră sau furnizorul dumneavoastră alegeți să le transmiteți; marcajele de timp ale autentificării și contorii de utilizare referitori la contul dumneavoastră.",
+              "Date de autentificare. Înregistrări privind încercările de autentificare și rezultatele acestora, emiterea și revocarea token-urilor și a sesiunilor, precum și metadatele tehnice aferente (inclusiv adresa IP, agentul utilizator al browserului și marcajele temporale precise) sunt păstrate din motive de securitate, pentru prevenirea abuzurilor și în scop probatoriu.",
+              "Înregistrări de securitate. Jurnale cu indicatori de manipulare a evenimentelor relevante pentru securitate, asociate contului sau mediului dumneavoastră.",
+              "Date privind prevenirea abuzurilor. Contori tehnici cu durată limitată, utilizați pentru a detecta și a limita traficul abuziv.",
+              "Date de comunicare. Conținutul mesajelor pe care ni le trimiteți (de exemplu, solicitări de asistență sau exercitarea drepturilor) și răspunsurile noastre.",
+              "Date comerciale. Referințele de facturare și plată în cazul în care se aplică un abonament plătit, gestionate prin procesul nostru de facturare."
+            ],
+            "Nu solicităm și nu stocăm parole pentru autentificarea în Serviciu. Nu solicităm categorii sensibile de date cu caracter personal (date privind sănătatea, date biometrice, opinii politice și altele similare) și acestea nu trebuie să ne fie furnizate."
+          ]
+        },
+        {
+          "heading": "4. Scopuri și temeiuri juridice",
+          "content": [
+            [
+              "Funcționarea și furnizarea Serviciului — executarea unui contract sau demersurile premergătoare încheierii acestuia.",
+              "Securizarea conturilor, detectarea fraudelor și a abuzurilor, precum și păstrarea evidențelor de securitate — interesul nostru legitim de a opera o infrastructură de încredere, pus în balanță cu drepturile și așteptările dumneavoastră.",
+              "Îndeplinirea obligațiilor contabile, fiscale și a altor obligații legale — respectarea unei obligații legale.",
+              "Trimiterea de comunicări de serviciu referitoare la contul dumneavoastră sau la incidentele care îl afectează — executarea contractului; nu trimitem e-mailuri de marketing fără un consimțământ separat."
+            ],
+            "În cazul în care prelucrarea se bazează pe consimțământ, îl puteți retrage în orice moment, fără ca acest lucru să afecteze legalitatea prelucrării efectuate înainte de retragere. Nu efectuăm procese decizionale automatizate care produc efecte juridice în sensul legislației aplicabile."
+          ]
+        },
+        {
+          "heading": "5. Păstrarea",
+          "content": [
+            "Datele cu caracter personal sunt păstrate doar atât timp cât este necesar pentru scopurile menționate mai sus. Datele contului sunt păstrate atât timp cât contul sau utilizatorul rămâne activ; înregistrările de securitate și de audit sunt păstrate atât timp cât este necesar pentru a dovedi integritatea Serviciului și pentru a respecta cerințele legale; datele privind prevenirea abuzurilor sunt, prin natura lor, temporare; înregistrările comerciale sunt păstrate pe durata perioadelor de contabilitate prevăzute de lege. Datele care nu mai sunt necesare sunt șterse sau anonimizate ireversibil."
+          ]
+        },
+        {
+          "heading": "6. Destinatarii și subprocesatorii",
+          "content": [
+            "Partajăm date cu caracter personal numai cu: procesatori care acționează în numele nostru în baza unui contract (furnizori de servicii de găzduire, baze de date, cache și livrare de e-mailuri — identificați individual pe pagina noastră dedicată subprocesatorilor); consilieri profesioniști care își asumă obligații de confidențialitate; și autorități publice, în cazul în care o solicitare legală obligatorie impune acest lucru, situație în care îi informăm pe cei vizați, cu excepția cazurilor în care acest lucru este interzis de lege. Nu vindem, nu închiriem și nu intermediem niciodată date cu caracter personal și nu utilizăm datele clienților sau ale utilizatorilor finali în scopuri publicitare sau pentru antrenarea modelelor de învățare automată."
+          ]
+        },
+        {
+          "heading": "7. Transferuri internaționale",
+          "content": [
+            "Unii dintre furnizorii noștri își desfășoară activitatea în afara Spațiului Economic European. În cazul în care datele cu caracter personal sunt transferate în afara SEE, ne bazăm pe o decizie de adecvare sau pe garanții corespunzătoare — în special pe clauzele contractuale standard ale Comisiei Europene —, împreună cu măsuri suplimentare, acolo unde este necesar. Lista actuală a furnizorilor și a locațiilor acestora este publicată pe pagina noastră dedicată subprocesatorilor."
+          ]
+        },
+        {
+          "heading": "8. Securitatea prelucrării",
+          "content": [
+            "Aplicăm măsuri tehnice și organizatorice adecvate împotriva accesului neautorizat, pierderii, modificării sau divulgării — inclusiv criptarea datelor în tranzit și în stoc, controale stricte de acces pe principiul „necesității de a ști”, separarea datelor chiriașilor, limitarea ratei de acces și detectarea abuzurilor, precum și înregistrarea în jurnalul de audit cu protecție împotriva modificărilor neautorizate. Măsurile sunt revizuite pe măsură ce Serviciul evoluează; o prezentare generală redactată în limbaj simplu este disponibilă pe pagina noastră dedicată securității."
+          ]
+        },
+        {
+          "heading": "9. Drepturile dumneavoastră",
+          "content": [
+            "În conformitate cu legislația aplicabilă, inclusiv cu Regulamentul general privind protecția datelor, dacă vă aflați în SEE, ne puteți solicita să:",
+            [
+              "vă oferim acces la datele cu caracter personal pe care le deținem despre dumneavoastră;",
+              "să corecteze datele inexacte sau să completeze datele incomplete;",
+              "să șteargă datele care nu mai sunt prelucrate în conformitate cu legea;",
+              "să restricționeze sau să se opună anumitor operațiuni de prelucrare;",
+              "să vă punem la dispoziție datele într-un format structurat, utilizat pe scară largă și portabil;",
+              "să vă informăm cu privire la destinatarii datelor dumneavoastră și la măsurile de protecție aplicate."
+            ],
+            "Scrieți la adresa hello@sdk.enterprises. Răspundem în termen de o lună de la primirea unei solicitări justificate și putem solicita, dacă este necesar, o dovadă minimă de identitate. De asemenea, puteți depune o plângere la o autoritate de supraveghere — în Franța, la Commission Nationale de l'Informatique et des Libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Copiii",
+          "content": [
+            "Serviciul se adresează întreprinderilor și profesioniștilor. Nu prelucrăm în mod intenționat datele cu caracter personal ale copiilor care nu au împlinit vârsta necesară pentru a-și da consimțământul în domeniul digital în jurisdicția relevantă; dacă considerați că s-a întâmplat acest lucru, contactați-ne și vom șterge datele fără întârziere."
+          ]
+        },
+        {
+          "heading": "11. Modificări aduse prezentei politici",
+          "content": [
+            "Actualizăm această politică atunci când modul nostru de prelucrare a datelor se modifică. Modificările semnificative sunt anunțate pe această pagină, împreună cu o nouă dată de intrare în vigoare, înainte de a intra efectiv în vigoare. Versiunile anterioare sunt disponibile la cerere."
+          ]
+        },
+        {
+          "heading": "12. Contact",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

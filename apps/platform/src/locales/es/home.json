@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth: infraestructura de autenticación multitenant",
+      "description": "Auth te ofrece de serie las soluciones OIDC y OAuth 2.1 para tu producto —páginas de inicio de sesión alojadas, gestión de sesiones y una solución de gestión API—, para que tu equipo se centre en desarrollar funcionalidades en lugar de tener que ocuparse de la infraestructura de gestión de identidades."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Infraestructura de autenticación multitenant",
+      "title": "Un proceso de inicio de sesión para cada cliente que alojes.",
+      "lead": "Auth te ofrece de serie las soluciones OIDC y OAuth 2.1 para tu producto —páginas de inicio de sesión alojadas, gestión de sesiones y una solución de gestión API—, para que tu equipo se centre en desarrollar funcionalidades en lugar de tener que ocuparse de la infraestructura de gestión de identidades.",
+      "primaryCta": "Empieza a crear",
+      "secondaryCta": "Crea tu inquilino",
+      "securityLink": "Modelo de seguridad →",
+      "visual": {
+        "appTitle": "Tu aplicación",
+        "appBody": "Redirige a /authorize",
+        "loginTitle": "autenticación: inicio de sesión universal",
+        "loginBody": "Inicio de sesión con código de correo electrónico alojado",
+        "returnTitle": "Volver a tu aplicación",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE obligatorio · tokens verificados con JWKS públicos"
+      }
+    },
+    "standards": {
+      "eyebrow": "Entran las normas, se acaban las sesiones",
+      "sentence": "Aplicamos las especificaciones al pie de la letra: PKCE en cada código de autorización, tokens de actualización rotativos, sesiones firmadas revocables y claves de firma publicadas."
+    },
+    "features": {
+      "eyebrow": "La plataforma",
+      "title": "Problemas de identidad, resueltos.",
+      "intro": "Todo lo que aparece a continuación está disponible hoy, salvo que se indique lo contrario; en cada ficha se especifica el mecanismo, ya que eso es lo que realmente estás comprando.",
+      "items": [
+        {
+          "status": "disponible",
+          "title": "Inicio de sesión universal",
+          "body": "Un proceso de inicio de sesión alojado al que se redirige a tus usuarios: códigos de un solo uso por correo electrónico, sin contraseñas que almacenar ni interfaz de inicio de sesión que mantener."
+        },
+        {
+          "status": "disponible",
+          "title": "Gestión de sesiones",
+          "body": "Las sesiones se firman con claves RS256 y JWT en cookies de solo HTTP, con caducidad por inactividad y absoluta, revocación por parte del servidor y claves específicas para cada entorno."
+        },
+        {
+          "status": "disponible",
+          "title": "Seguridad de los tokens",
+          "body": "Los códigos de autorización siempre van acompañados de PKCE. Los tokens de actualización se renuevan con cada uso, y si se reutiliza un token, se revoca toda su familia."
+        },
+        {
+          "status": "disponible",
+          "title": "Libro mayor de auditoría",
+          "body": "Cada incidente de seguridad se registra en un registro de auditoría con cadena de hash por entorno; cualquier manipulación rompe la cadena, y esta se vuelve a calcular desde el origen."
+        },
+        {
+          "status": "disponible",
+          "title": "Controles contra el abuso",
+          "body": "Límites de frecuencia con ventana fija para el envío de códigos, los intentos de verificación y la emisión de tokens. Los bloqueos consumen los códigos pendientes; la copia no se ve afectada."
+        },
+        {
+          "status": "puesta en marcha",
+          "title": "Gestión API",
+          "body": "Una interfaz API para aplicaciones, usuarios, sesiones y registros en /api/v2, gestionada mediante tokens de máquina con ámbito limitado."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "La privacidad es lo primero",
+      "title": "Los datos de tus inquilinos siguen siendo tuyos.",
+      "intro": "Auth es una infraestructura de identidad: procesamos exactamente lo que requiere la autenticación y publicamos todos los detalles. Sin rastreadores publicitarios, sin venta de datos, sin entrenamiento de modelos con datos de los usuarios.",
+      "processedTitle": "Qué datos tratamos",
+      "processed": [
+        "Correo electrónico de la cuenta, para recibir códigos de uso único",
+        "Eventos de autenticación con metadatos técnicos, que se conservan por motivos de seguridad y auditoría",
+        "Contadores transitorios para la prevención del abuso que caducan automáticamente",
+        "Las credenciales y las claves criptográficas se almacenan únicamente de forma protegida"
+      ],
+      "neverTitle": "Lo que nunca hacemos",
+      "never": [
+        "Vender, alquilar o compartir datos personales —en ningún momento, ni para ningún fin—",
+        "Cargar rastreadores o píxeles publicitarios de terceros en las superficies de autenticación",
+        "Entrenar modelos con datos de inquilinos o usuarios finales",
+        "Conserva los datos tras cerrar tu cuenta, más allá de los plazos mínimos legales"
+      ],
+      "privacyLink": "Política de privacidad →",
+      "dpaLink": "Anexo sobre el tratamiento de datos →",
+      "subprocessorsLink": "Lista de subcontratistas →"
+    },
+    "quickstart": {
+      "eyebrow": "Inicio rápido",
+      "title": "Tres solicitudes para una cuenta de acceso válida.",
+      "intro": "Sin protocolos propios, sin dependencia de un proveedor: todo lo que se muestra a continuación corresponde a los modelos OAuth 2.1 y OIDC de serie conectados a nuestros puntos finales en producción.",
+      "stepLabel": "Paso {index}",
+      "steps": [
+        {
+          "title": "Descubre nuestros dispositivos finales",
+          "body": "Tu aplicación lee el protocolo de descubrimiento estándar OIDC; no hace falta SDK, funciona con cualquier idioma."
+        },
+        {
+          "title": "Redirige a los usuarios a /authorize con el código PKCE",
+          "body": "Crea un reto de programación, redirige el navegador; nosotros nos encargamos del código de inicio de sesión y del correo electrónico alojados."
+        },
+        {
+          "title": "Canjea el código por fichas",
+          "body": "Comprueba el id_token con nuestro JWKS público, guarda el token de actualización y llama a userinfo cuando necesites las reclamaciones."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Precios",
+      "title": "El precio lo fijan los usuarios, no las cerraduras.",
+      "intro": "Tarifas de acceso anticipado. Se considera usuario activo mensual a aquel que se haya autenticado al menos una vez durante ese mes; nunca se te cobrarán las cuentas inactivas, aunque estén almacenadas.",
+      "perMonth": "al mes",
+      "periodFree": "para siempre",
+      "plans": [
+        {
+          "includedMau": "1.000 usuarios activos al mes",
+          "features": [
+            "Todos los entornos (desarrollo, prueba, producción)",
+            "Número ilimitado de aplicaciones por entorno",
+            "Inicio de sesión mediante código único enviado por correo electrónico",
+            "Libro mayor de auditoría y registros de eventos de autorización",
+            "Apoyo de la comunidad"
+          ],
+          "cta": "Empieza gratis"
+        },
+        {
+          "includedMau": "10 000 usuarios activos al mes",
+          "features": [
+            "Todo gratis",
+            "Dominios personalizados por inquilino",
+            "MFA, claves de acceso y SSO empresarial tal y como se suministran",
+            "Mayor periodo de conservación de los documentos de auditoría",
+            "Asistencia prioritaria"
+          ],
+          "cta": "Empieza con Pro"
+        }
+      ],
+      "note": "La facturación aún no está automatizada: a los inquilinos con acceso anticipado se les factura manualmente y pueden marcharse en cualquier momento."
+    },
+    "ctaBand": {
+      "title": "Tu página de inicio de sesión está a un clic de distancia.",
+      "body": "Identifica el punto en auth.sdk.enterprises y envía tu primer flujo esta tarde.",
+      "button": "Abre el panel de control"
+    }
+  }
+}

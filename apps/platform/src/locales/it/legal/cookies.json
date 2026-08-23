@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Cookie e tracciamento",
+        "description": "L'elenco completo delle impostazioni che Auth configura nel tuo browser — e perché è più breve rispetto a quello di quasi tutti i siti che hai visitato."
+      },
+      "title": "Cookie e tracciamento",
+      "description": "Le piattaforme Auth sono progettate per funzionare senza tracciare gli utenti. Questa pagina elenca tutti i cookie e tutti i meccanismi di analisi, ovvero un elenco molto breve.",
+      "updated": "23 agosto 2026",
+      "sections": [
+        {
+          "heading": "1. I cookie che impostiamo",
+          "content": [
+            {
+              "columns": [
+                "Nome",
+                "Dove",
+                "Scopo"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Dashboard di Auth",
+                  "Essenziale. Mantiene l'accesso alla dashboard del tenant; firmato, solo HTTP, scade con la sessione."
+                ],
+                [
+                  "(cookie di sessione dell'utente)",
+                  "Accesso universale",
+                  "Essenziale. Viene emesso solo quando si effettua l'accesso a un prodotto che utilizza Auth, con ambito limitato all'autenticazione di quel prodotto."
+                ]
+              ]
+            },
+            "Non è presente alcun banner di consenso perché non c'è nulla su cui dare il proprio consenso: né cookie pubblicitari, né tracker cross-site, né widget social, né script di fingerprinting vengono eseguiti su auth.sdk.enterprises o sulle pagine di accesso ospitate."
+          ]
+        },
+        {
+          "heading": "2. Analisi",
+          "content": [
+            "Le pagine di marketing utilizzano Vercel Analytics, che non utilizza cookie: conta le visualizzazioni delle pagine in forma aggregata senza memorizzare identificatori né creare profili degli utenti. Non vengono eseguite analisi sulle pagine di accesso universale, sugli endpoint API o all’interno delle applicazioni dei tenant."
+          ]
+        },
+        {
+          "heading": "3. Record lato server",
+          "content": [
+            "Come qualsiasi server web, registriamo le richieste a fini di sicurezza (rilevamento di abusi, limitazione della frequenza, prove di audit) in conformità con le nostre regole di conservazione dei dati riportate nell'informativa sulla privacy. Questi registri non vengono utilizzati per profilare i visitatori di questo sito di marketing."
+          ]
+        },
+        {
+          "heading": "4. Domande",
+          "content": [
+            "Se qualcosa non ti è chiaro, scrivi a hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

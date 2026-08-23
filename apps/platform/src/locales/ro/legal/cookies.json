@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Cookie-uri și urmărire",
+        "description": "Lista completă a elementelor pe care Auth le setează în browserul tău — și de ce este mai scurtă decât cea a aproape oricărui site pe care l-ai vizitat."
+      },
+      "title": "Cookie-uri și urmărire",
+      "description": "Serviciile Auth sunt concepute să funcționeze fără a vă urmări. Această pagină prezintă toate cookie-urile și toate mecanismele de analiză, lista fiind una foarte scurtă.",
+      "updated": "23 august 2026",
+      "sections": [
+        {
+          "heading": "1. Cookie-urile pe care le setăm",
+          "content": [
+            {
+              "columns": [
+                "Nume",
+                "Unde",
+                "Scop"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Tabloul de bord Auth",
+                  "Esențial. Îți menține autentificarea în panoul de control al tenantului; semnat, doar HTTP, expiră odată cu sesiunea."
+                ],
+                [
+                  "(cookie de sesiune al utilizatorului)",
+                  "Autentificare universală",
+                  "Esențial. Se emite numai atunci când te autentifici într-un produs care utilizează Auth, fiind limitat la procesul de autentificare al respectivului produs."
+                ]
+              ]
+            },
+            "Nu există niciun banner de consimțământ, deoarece nu există nimic pentru care să se dea consimțământul: nu există cookie-uri publicitare, nici dispozitive de urmărire între site-uri, nici widget-uri sociale și nici scripturi de amprentare digitală care să ruleze pe auth.sdk.enterprises sau pe paginile de autentificare găzduite."
+          ]
+        },
+        {
+          "heading": "2. Analize",
+          "content": [
+            "Paginile de marketing utilizează Vercel Analytics, un sistem fără cookie-uri: acesta numără vizualizările de pagină în mod agregat, fără a stoca identificatori sau a crea profiluri ale utilizatorilor. Nu se efectuează analize pe paginile de autentificare universală, pe punctele finale API sau în cadrul aplicațiilor clienților."
+          ]
+        },
+        {
+          "heading": "3. Înregistrări pe partea de server",
+          "content": [
+            "Ca orice server web, înregistrăm solicitările în scopul operațiunilor de securitate (detectarea abuzurilor, limitarea frecvenței accesărilor, dovezi de audit) în conformitate cu regulile noastre de păstrare a datelor prevăzute în politica de confidențialitate. Aceste jurnale nu sunt utilizate pentru a crea profiluri ale vizitatorilor acestui site de marketing."
+          ]
+        },
+        {
+          "heading": "4. Întrebări",
+          "content": [
+            "Dacă ceva din cele menționate aici nu este clar, scrieți la hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Platform",
+    "quickstart": "Snelstart",
+    "pricing": "Prijzen",
+    "security": "Beveiliging",
+    "status": "Status",
+    "signIn": "Inloggen"
+  },
+  "footer": {
+    "tagline": "Infrastructuur voor authenticatie van meerdere gebruikers door SDK Enterprises.",
+    "productTitle": "Product",
+    "productLinks": [
+      "Platform",
+      "Snelstart",
+      "Prijzen",
+      "Servicestatus"
+    ],
+    "trustTitle": "Vertrouwen",
+    "trustLinks": [
+      "Beveiliging",
+      "Privacybeleid",
+      "Gegevensverwerking (DPA)",
+      "Subverwerkers",
+      "Cookies en tracking"
+    ],
+    "legalTitle": "Juridisch",
+    "legalLinks": [
+      "Gebruiksvoorwaarden",
+      "Juridische kennisgeving"
+    ],
+    "companyTitle": "Bedrijf",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Contact"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "onderworpen aan het Franse recht",
+    "languageLabel": "Taal"
+  },
+  "statusBadges": {
+    "available": "Beschikbaar",
+    "rollingOut": "Uitrol",
+    "recommended": "Aanbevolen"
+  },
+  "legalShell": {
+    "brandContext": "auteursrecht · Juridisch",
+    "effectiveLine": "Van kracht vanaf {date} · onderworpen aan het Franse recht",
+    "documentsLabel": "Documenten",
+    "securityOverview": "Beveiligingsoverzicht",
+    "docs": [
+      "Privacybeleid",
+      "Gebruiksvoorwaarden",
+      "Aanvulling inzake gegevensverwerking",
+      "Subverwerkers",
+      "Cookies en tracking",
+      "Juridische kennisgeving"
+    ]
+  }
+}

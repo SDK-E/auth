@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Oikeudellinen ilmoitus",
+        "description": "auth.sdk.enterprises:n julkaisija, ylläpitäjä ja oikeudelliset tiedot (mentions légales)."
+      },
+      "title": "Oikeudellinen ilmoitus",
+      "description": "Ranskan lainsäädännön edellyttämät tiedot verkkosivustolle, jonka osoite on auth.sdk.enterprises (lakisääteiset tiedot), laadittu 21. kesäkuuta 2004 annetun lain nro 2004-575 6-III §:n mukaisesti (LCEN).",
+      "updated": "23. elokuuta 2026",
+      "sections": [
+        {
+          "heading": "Kustantaja",
+          "content": [
+            "Tämän sivuston ja Auth-palvelun julkaisijana toimii SADDEK Entreprises, joka käyttää toiminimellä SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Kotipaikka: 44 Rue Pasquier, 75008 Paris, France",
+              "Oikeusmuoto: auto-entrepreneur (yksityisyrittäjä), ilman osakepääomaa",
+              "Yritystunnus: RCS Paris 850 513 912",
+              "Julkaisujohtaja: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Yhteystiedot",
+          "content": [
+            "Tätä sivustoa tai palvelua koskevat kysymykset voi lähettää osoitteeseen hello@sdk.enterprises. Turvallisuusilmoituksia koskevat ohjeet löytyvät vastuullisen ilmoittamisen käytänteistämme."
+          ]
+        },
+        {
+          "heading": "Verkkopalvelut",
+          "content": [
+            "Sivuston ja palvelun isännöinnistä vastaa Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Yhdysvallat. Sovellusten tietokantoja ylläpitää Neon; tiedot kaikista infrastruktuurin tarjoajista on lueteltu alihankkijoiden sivulla."
+          ]
+        },
+        {
+          "heading": "Teollis- ja tekijänoikeudet",
+          "content": [
+            "Tämän sivuston rakenne, tekstit, logot ja sisältö ovat SDK Enterprises:n omaisuutta. Niiden jäljentäminen tai esittäminen kokonaan tai osittain ilman etukäteen annettua lupaa on kielletty, ellei sovellettavassa lainsäädännössä toisin määrätä."
+          ]
+        },
+        {
+          "heading": "Oikeudelliset puitteet",
+          "content": [
+            "Näihin ilmoituksiin sovelletaan Ranskan lakia. Auth-palvelu tarjotaan käyttöehtojemme mukaisesti, ja henkilötietojen käsittely on kuvattu tietosuojakäytännössämme ja tietojenkäsittelyliitteessämme."
+          ]
+        }
+      ]
+    }
+  }
+}

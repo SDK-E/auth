@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Subcontractanți",
+        "description": "Subprocesatorii cu care SDK Enterprises colaborează pentru operarea serviciului Auth, rolul pe care îl îndeplinește fiecare dintre aceștia, locul în care își desfășoară activitatea și categoriile de date implicate."
+      },
+      "title": "Subcontractanți",
+      "description": "Menținem această listă la zi și publicăm completările înainte ca un nou sub-procesator să înceapă prelucrarea datelor cu caracter personal, oferind clienților noștri posibilitatea de a-și exprima opoziția pe baza unor motive întemeiate.",
+      "updated": "23 august 2026",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Fiecare subprocesator își desfășoară activitatea în baza unui acord scris care îi impune obligații de protecție a datelor cel puțin la fel de stricte ca cele prevăzute în anexa noastră privind prelucrarea datelor, iar SDK Enterprises rămâne responsabil față de clienții săi pentru performanța subprocesatorului. Obiecțiile cu privire la o adăugare anunțată pot fi formulate în termen de paisprezece zile de la publicare, prin trimiterea unei scrisori la adresa hello@sdk.enterprises."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Subcontractant",
+                "Rol",
+                "Locație",
+                "Categoriile de date implicate"
+              ],
+              "rows": [
+                [
+                  "Vercel S.A.",
+                  "Găzduirea aplicațiilor și distribuirea conținutului",
+                  "Statele Unite; rețea globală de margine",
+                  "Tot traficul către Serviciu trece prin rețeaua acestuia; procesarea se limitează la transmiterea, stocarea în cache și furnizarea cererilor și răspunsurilor criptate."
+                ],
+                [
+                  "Neon (Neon Inc.)",
+                  "Furnizor de servicii de administrare a bazelor de date",
+                  "Regiunea cloud selectată pentru fiecare implementare; sunt disponibile regiuni compatibile cu EEA",
+                  "Configurația utilizatorilor, înregistrările conturilor, înregistrările de autentificare, jurnalele de securitate și de audit. Datele de autentificare și cheile criptografice sunt stocate exclusiv în format protejat."
+                ],
+                [
+                  "Upstash Inc.",
+                  "Stocare temporară pentru prevenirea abuzurilor",
+                  "Statele Unite ale Americii",
+                  "Contori tehnici cu durată scurtă de viață, utilizați pentru detectarea traficului abuziv. Sunt păstrați doar pe durata scurtă de viață a contorului."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Livrarea e-mailurilor tranzacționale",
+                  "Statele Unite ale Americii",
+                  "Adresa de e-mail a destinatarului și metadatele de livrare pentru e-mailurile de serviciu, cum ar fi codurile de autentificare. Conținutul mesajului se limitează la ceea ce este strict necesar."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Jurnal de modificări",
+          "content": [
+            [
+              "August 2026 — Lista inițială publicată: Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

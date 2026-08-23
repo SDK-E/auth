@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Datenschutzerklärung",
+        "description": "Wie „Auth by SDK Enterprises“ personenbezogene Daten verarbeitet: Was wir erheben, warum, wie lange, an wen die Daten weitergegeben werden und welche Rechte Sie in Bezug auf diese Daten haben."
+      },
+      "title": "Datenschutzerklärung",
+      "description": "In dieser Datenschutzerklärung wird erläutert, welche personenbezogenen Daten der Auth-Dienst verarbeitet, warum sie verarbeitet werden, wie lange sie aufbewahrt werden, an wen sie weitergegeben werden und welche Rechte den betroffenen Personen zustehen. Wir haben sie so verfasst, dass sie gelesen und verstanden werden kann – und nicht nur angezeigt wird.",
+      "updated": "23. August 2026",
+      "sections": [
+        {
+          "heading": "1. Wer wir sind",
+          "content": [
+            "Der Auth-Dienst (der „Dienst“) wird von SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, mit Sitz in 44 Rue Pasquier, 75008 Paris, France – „SDK Enterprises“, „wir“, „uns“). Unsere Kunden nutzen den Dienst, um ihre eigenen Nutzer zu authentifizieren; dieses Dokument beschreibt, wie personenbezogene Daten im Rahmen dieser Vereinbarung fließen und welche Verantwortlichkeiten die einzelnen Parteien haben."
+          ]
+        },
+        {
+          "heading": "2. Unsere Rolle hängt von der jeweiligen Situation ab",
+          "content": [
+            [
+              "Für Besucher dieser Website sowie für Personen, die ein Konto bei uns eröffnen oder verwalten, legt SDK Enterprises fest, zu welchem Zweck und auf welche Weise personenbezogene Daten verarbeitet werden, und fungiert als Verantwortlicher.",
+              "Für Endnutzer, die sich bei einem von Auth betriebenen Produkt oder Dienst anmelden, bleibt unser Kunde als Verantwortlicher für diese Verarbeitung verantwortlich, und SDK Enterprises verarbeitet personenbezogene Daten gemäß den dokumentierten Anweisungen des Kunden als Auftragsverarbeiter im Rahmen unseres Zusatzabkommens zur Datenverarbeitung. Wenn Sie ein solcher Endnutzer sind, ist Ihr erster Ansprechpartner das Produkt, bei dem Sie sich angemeldet haben; wir unterstützen dieses Produkt dabei, Ihre Anfrage unverzüglich zu beantworten."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Kategorien der von uns verarbeiteten personenbezogenen Daten",
+          "content": [
+            [
+              "Kontodaten. E-Mail-Adresse und grundlegende Profilangaben, die Sie oder Ihr Anbieter freiwillig übermitteln; Zeitstempel zur Authentifizierung und Nutzungszähler in Bezug auf Ihr Konto.",
+              "Authentifizierungsdaten. Aufzeichnungen über Anmeldeversuche und deren Ergebnisse, die Vergabe und den Widerruf von Tokens und Sitzungen sowie zugehörige technische Metadaten (einschließlich IP-Adresse, Browser-User-Agent und genaue Zeitstempel), die zu Sicherheitszwecken, zur Missbrauchsverhinderung und als Beweismittel aufbewahrt werden.",
+              "Sicherheitsprotokolle. Manipulationssichere Protokolle sicherheitsrelevanter Ereignisse, die mit Ihrem Konto oder Ihrer Umgebung in Zusammenhang stehen.",
+              "Daten zur Missbrauchsprävention. Kurzlebige technische Zähler, die zur Erkennung und Drosselung missbräuchlichen Datenverkehrs verwendet werden.",
+              "Kommunikationsdaten. Der Inhalt der Nachrichten, die Sie uns senden (z. B. Supportanfragen oder die Ausübung von Rechten), sowie unsere Antworten darauf.",
+              "Geschäftliche Daten. Rechnungs- und Zahlungsangaben im Falle eines kostenpflichtigen Tarifs werden über unseren Rechnungsstellungsprozess abgewickelt."
+            ],
+            "Wir verlangen keine Passwörter für die Anmeldung beim Dienst und speichern diese auch nicht. Sensible Kategorien personenbezogener Daten (Gesundheit, biometrische Daten, politische Meinungen und Ähnliches) werden nicht abgefragt und dürfen uns nicht übermittelt werden."
+          ]
+        },
+        {
+          "heading": "4. Zwecke und Rechtsgrundlagen",
+          "content": [
+            [
+              "Betrieb und Bereitstellung des Dienstes – Erfüllung eines Vertrags oder Maßnahmen im Vorfeld des Vertragsabschlusses.",
+              "Sicherung von Konten, Aufdeckung von Betrug und Missbrauch sowie Führung von Sicherheitsprotokollen – unser berechtigtes Interesse am Betrieb einer vertrauenswürdigen Infrastruktur, abgewogen gegen Ihre Rechte und Erwartungen.",
+              "Erfüllung von buchhalterischen, steuerlichen und sonstigen gesetzlichen Verpflichtungen – Einhaltung einer gesetzlichen Verpflichtung.",
+              "Versendung von Service-Mitteilungen zu Ihrem Konto oder zu Vorfällen, die dieses betreffen – Erfüllung des Vertrags; ohne gesonderte Einwilligung versenden wir keine Marketing-E-Mails."
+            ],
+            "Sofern die Verarbeitung auf einer Einwilligung beruht, können Sie diese jederzeit widerrufen, ohne dass dies die Rechtmäßigkeit der vor dem Widerruf erfolgten Verarbeitung beeinträchtigt. Wir führen keine automatisierte Entscheidungsfindung mit rechtlichen Auswirkungen im Sinne des geltenden Rechts durch."
+          ]
+        },
+        {
+          "heading": "5. Kundenbindung",
+          "content": [
+            "Personenbezogene Daten werden nur so lange gespeichert, wie es für die oben genannten Zwecke erforderlich ist. Kontodaten werden so lange gespeichert, wie ein Konto oder ein Mandant aktiv ist; Sicherheits- und Prüfprotokolle werden so lange aufbewahrt, wie dies erforderlich ist, um die Integrität des Dienstes nachzuweisen und gesetzliche Anforderungen zu erfüllen; Daten zur Missbrauchsverhinderung sind von Natur aus vorübergehend; Geschäftsunterlagen werden für die gesetzlich vorgeschriebenen Aufbewahrungsfristen aufbewahrt. Daten, die nicht mehr benötigt werden, werden gelöscht oder unwiderruflich anonymisiert."
+          ]
+        },
+        {
+          "heading": "6. Empfänger und Unterauftragsverarbeiter",
+          "content": [
+            "Wir geben personenbezogene Daten ausschließlich weiter an: Auftragsverarbeiter, die im Auftrag und im Namen unseres Unternehmens tätig sind (Hosting-, Datenbank-, Cache- und E-Mail-Versand-Anbieter – diese sind einzeln auf unserer Seite zu den Unterauftragsverarbeitern aufgeführt); professionelle Berater, die der Geheimhaltungspflicht unterliegen; sowie Behörden, sofern eine verbindliche rechtliche Anordnung dies erfordert; in diesem Fall benachrichtigen wir die Betroffenen, sofern dies nicht gesetzlich untersagt ist. Wir verkaufen, vermieten oder vermitteln niemals personenbezogene Daten, und wir verwenden keine Kunden- oder Endnutzerdaten für Werbezwecke oder zum Trainieren von Modellen für maschinelles Lernen."
+          ]
+        },
+        {
+          "heading": "7. Internationale Überweisungen",
+          "content": [
+            "Einige unserer Dienstleister sind außerhalb des Europäischen Wirtschaftsraums tätig. Bei der Übermittlung personenbezogener Daten aus dem EWR stützen wir uns auf eine Angemessenheitsentscheidung oder auf geeignete Garantien – insbesondere die Standardvertragsklauseln der Europäischen Kommission – sowie gegebenenfalls auf ergänzende Maßnahmen. Die aktuelle Liste der Dienstleister und ihrer Standorte ist auf unserer Seite zu Unterauftragsverarbeitern veröffentlicht."
+          ]
+        },
+        {
+          "heading": "8. Sicherheit der Verarbeitung",
+          "content": [
+            "Wir ergreifen geeignete technische und organisatorische Maßnahmen zum Schutz vor unbefugtem Zugriff, Verlust, Veränderung oder Offenlegung – darunter Verschlüsselung während der Übertragung und im Speicherstand, strenge Zugriffskontrollen nach dem „Need-to-know“-Prinzip, Trennung von Mandantendaten, Ratenbegrenzung und Missbrauchserkennung sowie manipulationssichere Protokollierung. Die Maßnahmen werden im Zuge der Weiterentwicklung des Dienstes überprüft; eine leicht verständliche Übersicht finden Sie auf unserer Sicherheitsseite."
+          ]
+        },
+        {
+          "heading": "9. Ihre Rechte",
+          "content": [
+            "Vorbehaltlich der geltenden Rechtsvorschriften, einschließlich der Datenschutz-Grundverordnung, wenn Sie sich im EWR befinden, können Sie von uns Folgendes verlangen:",
+            [
+              "Ihnen Zugang zu den personenbezogenen Daten zu gewähren, die wir über Sie gespeichert haben;",
+              "unrichtige Daten zu berichtigen oder unvollständige Daten zu vervollständigen;",
+              "Daten löschen, deren Verarbeitung nicht mehr rechtmäßig ist;",
+              "die Verarbeitung einzuschränken oder ihr zu widersprechen;",
+              "Ihre Daten in einem strukturierten, gängigen und übertragbaren Format bereitzustellen;",
+              "Ihnen Auskunft über die Empfänger Ihrer Daten und die getroffenen Sicherheitsmaßnahmen geben."
+            ],
+            "Schreiben Sie an hello@sdk.enterprises. Wir antworten innerhalb eines Monats auf eine begründete Anfrage und bitten gegebenenfalls um einen minimalen Identitätsnachweis. Sie können außerdem eine Beschwerde bei einer Aufsichtsbehörde einreichen – in Frankreich ist dies die Commission Nationale de l'Informatique et des Libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Kinder",
+          "content": [
+            "Der Dienst richtet sich an Unternehmen und Fachleute. Wir verarbeiten wissentlich keine personenbezogenen Daten von Kindern, die das in der jeweiligen Rechtsordnung geltende Alter für die digitale Einwilligung noch nicht erreicht haben; sollten Sie der Ansicht sein, dass dies dennoch geschehen ist, kontaktieren Sie uns bitte, und wir werden die Daten umgehend löschen."
+          ]
+        },
+        {
+          "heading": "11. Änderungen dieser Richtlinie",
+          "content": [
+            "Wir aktualisieren diese Richtlinie, wenn sich unsere Datenverarbeitung ändert. Wesentliche Änderungen werden auf dieser Seite mit einem neuen Datum des Inkrafttretens bekannt gegeben, bevor sie wirksam werden. Frühere Versionen sind auf Anfrage erhältlich."
+          ]
+        },
+        {
+          "heading": "12. Kontakt",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

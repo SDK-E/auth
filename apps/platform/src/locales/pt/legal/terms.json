@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Termos de serviço",
+        "description": "Os termos que regem o acesso e a utilização do serviço de autenticação Auth fornecido pela SDK Enterprises."
+      },
+      "title": "Termos de serviço",
+      "description": "Estes termos constituem o acordo entre si e a SDK Enterprises relativamente à utilização do serviço Auth. São intencionalmente concisos, mas abrangem tudo o que é relevante numa relação profissional.",
+      "updated": "23 de agosto de 2026",
+      "sections": [
+        {
+          "heading": "1. Definições",
+          "content": [
+            [
+              "«Serviço» — a plataforma de autenticação multitenant Auth operada em auth.sdk.enterprises, incluindo os seus painéis de controlo, interfaces e documentação.",
+              "«Tenant» — o seu espaço de trabalho isolado no âmbito do Serviço.",
+              "«Utilizador final» — uma pessoa singular que efetua a autenticação nos seus produtos através do Serviço.",
+              "«Acordo» — estes termos, juntamente com qualquer encomenda ou escolha de plano que efetuar, a nossa política de privacidade e (quando aplicável) o nosso aditamento relativo ao tratamento de dados."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Quem és tu",
+          "content": [
+            "Representa uma entidade jurídica ou atua na qualidade de profissional. Confirma que as informações que fornece aquando do registo são exatas, que está autorizado a vincular a entidade que representa e que a sua utilização do Serviço cumpre as leis aplicáveis a si e aos seus utilizadores finais. O Serviço não é oferecido a consumidores que ajam fora do âmbito da sua atividade profissional, nem a indivíduos com idade inferior à idade de consentimento digital."
+          ]
+        },
+        {
+          "heading": "3. O seu inquilino e as suas responsabilidades",
+          "content": [
+            [
+              "É da sua responsabilidade zelar pelas aplicações que registar, pelos endereços que autorizar para redirecionamento e pela confidencialidade das credenciais que lhe forem atribuídas. Notifique-nos imediatamente em caso de qualquer violação de segurança.",
+              "É da sua responsabilidade gerir a sua relação com os utilizadores finais, incluindo informá-los sobre o tratamento de dados efetuado através do Serviço e obter as autorizações necessárias.",
+              "Deve manter os dados de contacto do inquilino atualizados para que possamos contactá-lo sobre questões relacionadas com a segurança e os serviços."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Utilização aceitável",
+          "content": [
+            "Concorda em não:",
+            [
+              "utilizar o Serviço para fins ilegais ou de forma a infringir os direitos de terceiros;",
+              "interferir, sobrecarregar, sondar ou testar o Serviço fora do âmbito da nossa política de divulgação responsável;",
+              "contornar controlos de segurança, limites de utilização ou restrições de acesso;",
+              "revender ou comercializar sob marca branca o próprio Serviço como uma oferta concorrente de identidade alojada sem um acordo separado;",
+              "enviar conteúdos ilegais através de e-mails enviados pelo Serviço, ou falsificar a sua origem;",
+              "carregar código malicioso ou conteúdo não relacionado com a autenticação."
+            ],
+            "Podemos investigar suspeitas de violações e suspender o acesso afetado sempre que tal for razoavelmente necessário — mediante aviso prévio, sempre que possível, e de imediato caso exista um risco de segurança credível."
+          ]
+        },
+        {
+          "heading": "5. Disponibilidade do serviço",
+          "content": [
+            "Operamos o Serviço numa infraestrutura gerida de prestígio, dotada de monitorização, cópias de segurança e redundância adequadas ao seu grau de maturidade. Durante o período de acesso antecipado, não se aplica qualquer compromisso formal relativo ao nível de serviço; quando tal compromisso for estabelecido, será publicado aqui e passará a fazer parte do Contrato. A manutenção planeada é anunciada com antecedência, sempre que possível."
+          ]
+        },
+        {
+          "heading": "6. Taxas, faturação e impostos",
+          "content": [
+            [
+              "Os valores são os publicados na secção de preços do nosso site no momento da subscrição, expressos sem os impostos aplicáveis.",
+              "Salvo indicação em contrário, as taxas devem ser pagas mensalmente antecipadamente e não são reembolsáveis após o início do período, exceto nos casos previstos na lei.",
+              "Podemos alterar os preços com efeito futuro, mediante um pré-aviso de, pelo menos, 30 dias; as alterações nunca afetam um período já pago.",
+              "O atraso no pagamento poderá resultar na suspensão, após aviso prévio por escrito."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Propriedade intelectual",
+          "content": [
+            "A SDK Enterprises detém todos os direitos sobre o Serviço, incluindo o seu software, os ativos da marca e a documentação. O utilizador detém todos os direitos sobre as suas aplicações e sobre os dados que lhe pertencem, bem como aos seus utilizadores finais. O utilizador recebe um direito pessoal, não exclusivo e intransferível de utilizar o Serviço, em conformidade com o presente Acordo, durante a vigência do mesmo. Os comentários que nos enviar poderão ser utilizados livremente para melhorar o Serviço, sem qualquer obrigação."
+          ]
+        },
+        {
+          "heading": "8. Garantias e isenções de responsabilidade",
+          "content": [
+            "Garantimos que prestaremos o Serviço com a competência e o cuidado razoáveis. Salvo indicação expressa em contrário e na medida máxima permitida por lei, o Serviço é prestado «tal como está», sem quaisquer garantias adicionais de qualquer tipo, quer expressas quer implícitas, incluindo a adequação a um fim específico ou o funcionamento ininterrupto e isento de erros. Nada no presente Acordo exclui a responsabilidade que não possa ser excluída ao abrigo da legislação francesa, incluindo a responsabilidade por dolo ou negligência grave, lesões corporais e as proteções legais dos consumidores, sempre que aplicáveis."
+          ]
+        },
+        {
+          "heading": "9. Limitação de responsabilidade",
+          "content": [
+            "Na medida do permitido por lei, nenhuma das partes é responsável por perdas indiretas, incidentais ou consequentes, incluindo lucros cessantes, receitas, boa reputação ou dados, independentemente da causa. A responsabilidade total agregada de cada parte decorrente do Contrato ou relacionada com o mesmo está limitada ao montante total das taxas pagas por si nos doze meses anteriores ao evento que deu origem à reclamação. Estes limites aplicam-se solidariamente aos nossos subcontratantes apenas na medida do permitido por lei."
+          ]
+        },
+        {
+          "heading": "10. Indemnização",
+          "content": [
+            "O utilizador concorda em defender-nos e indemnizar-nos contra reclamações de terceiros decorrentes das suas aplicações, da sua utilização do Serviço em violação do presente Acordo ou da violação por si de direitos de terceiros — desde que o notifiquemos imediatamente da reclamação, lhe permitamos assumir o controlo da defesa e não cheguemos a um acordo unilateralmente em seu nome."
+          ]
+        },
+        {
+          "heading": "11. Confidencialidade",
+          "content": [
+            "Cada parte protege as informações confidenciais da outra com, pelo menos, o mesmo cuidado que aplica às suas próprias informações semelhantes, utiliza-as exclusivamente para o cumprimento do Contrato e divulga-as apenas ao pessoal e aos consultores que delas necessitem e que estejam vinculados a obrigações equivalentes. Esta obrigação mantém-se em vigor durante três anos após a rescisão do Contrato."
+          ]
+        },
+        {
+          "heading": "12. Duração, suspensão e rescisão",
+          "content": [
+            [
+              "O Acordo entra em vigor quando utilizar o Serviço pela primeira vez e mantém-se em vigor enquanto o seu inquilino existir.",
+              "Qualquer das partes pode rescindir o contrato a qualquer momento, mediante notificação por escrito; os períodos já pagos continuam até ao seu termo previsto, salvo disposição em contrário da lei.",
+              "Qualquer das partes pode rescindir o contrato por incumprimento grave que não tenha sido sanado no prazo de 30 dias a contar da notificação, ou com efeito imediato, caso a continuação do cumprimento seja ilegal ou cause prejuízo grave.",
+              "Após a rescisão, disponibilizamos, mediante pedido, uma exportação em formato legível por máquina dos dados do seu tenant durante 30 dias; posteriormente, eliminamos o tenant, sem prejuízo das obrigações de conservação descritas na política de privacidade."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Prestadores de serviços externos",
+          "content": [
+            "O Serviço recorre a fornecedores de infraestruturas de renome, indicados na nossa página de subcontratantes. Somos responsáveis pelo desempenho destes no âmbito do presente Acordo; as suas relações com eles só se estabelecem através de nós."
+          ]
+        },
+        {
+          "heading": "14. Força maior",
+          "content": [
+            "Nenhuma das partes é responsável pelo incumprimento causado por eventos que escapem ao seu controlo razoável — catástrofes naturais, greves, guerra, falhas nas redes públicas ou nos serviços públicos, ou medidas tomadas pelas autoridades públicas — desde que a parte afetada notifique a outra e retome o cumprimento assim que for razoavelmente possível."
+          ]
+        },
+        {
+          "heading": "15. Cláusulas gerais",
+          "content": [
+            [
+              "O presente Acordo constitui o acordo integral entre as partes relativamente ao Serviço e substitui quaisquer acordos anteriores.",
+              "Se uma cláusula for considerada inválida, o restante do contrato mantém-se em vigor e as partes substituirão essa cláusula por uma válida que mais se aproxime da sua intenção.",
+              "O facto de uma parte demorar a fazer valer um direito não constitui uma renúncia ao mesmo.",
+              "Não poderá ceder o Contrato sem o nosso consentimento; poderemos cedê-lo no âmbito de uma reorganização da nossa atividade, mediante notificação prévia.",
+              "As notificações são válidamente enviadas por e-mail para hello@sdk.enterprises ou para a última morada de contacto do inquilino indicada.",
+              "Estes termos foram redigidos em inglês; poderá ser fornecida uma versão em francês por conveniência. No caso de contratos celebrados com clientes profissionais franceses, prevalece a versão em francês, caso exista e haja divergências."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Lei aplicável e litígios",
+          "content": [
+            "O presente Acordo rege-se pela lei francesa. Antes de recorrerem aos tribunais, as partes procurarão chegar a uma resolução de boa-fé durante 30 dias a contar da notificação por escrito de um litígio. Caso tal não seja possível, os tribunais de Paris, França, têm jurisdição — salvo nos casos em que normas imperativas lhe concedam um foro diferente."
+          ]
+        },
+        {
+          "heading": "17. Alterações aos presentes termos",
+          "content": [
+            "As alterações significativas são anunciadas nesta página pelo menos 30 dias antes de entrarem em vigor. A utilização continuada após essa data implica a aceitação das mesmas; caso discorde, pode rescindir o contrato antes da data em que as alterações entram em vigor."
+          ]
+        }
+      ]
+    }
+  }
+}

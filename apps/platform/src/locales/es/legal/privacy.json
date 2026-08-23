@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Política de privacidad",
+        "description": "Cómo trata Auth by SDK Enterprises los datos personales: qué datos recopilamos, por qué, durante cuánto tiempo, con quién se comparten y cuáles son tus derechos al respecto."
+      },
+      "title": "Política de privacidad",
+      "description": "Esta política explica qué datos personales trata el servicio Auth, por qué se tratan, durante cuánto tiempo se conservan, con quién se comparten y cuáles son los derechos de los interesados. La hemos redactado para que se lea y se comprenda, no solo para que se muestre.",
+      "updated": "23 de agosto de 2026",
+      "sections": [
+        {
+          "heading": "1. Quiénes somos",
+          "content": [
+            "El servicio Auth (en adelante, el «Servicio») es gestionado por SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, con domicilio social en 44 Rue Pasquier, 75008 Paris, France — «SDK Enterprises», «nosotros», «nos»). Nuestros clientes utilizan el Servicio para autenticar a sus propios usuarios; este documento describe cómo circulan los datos personales en el marco de dicho acuerdo y cuáles son las responsabilidades de cada parte."
+          ]
+        },
+        {
+          "heading": "2. Nuestra función depende de la situación",
+          "content": [
+            [
+              "Para los visitantes de este sitio web y para las personas que abren o gestionan una cuenta con nosotros, SDK Enterprises determina los fines y las modalidades del tratamiento de los datos personales y actúa como responsable del tratamiento.",
+              "En el caso de los usuarios finales que inician sesión en un producto o servicio que utiliza Auth, nuestro cliente sigue siendo responsable de dicho tratamiento en calidad de responsable del tratamiento, y SDK Enterprises trata los datos personales siguiendo sus instrucciones documentadas en calidad de encargado del tratamiento, de conformidad con nuestro anexo sobre el tratamiento de datos. Si eres uno de esos usuarios finales, tu primer punto de contacto es el producto en el que has iniciado sesión; les ayudamos a responder a tu solicitud sin demoras indebidas."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Categorías de datos personales que tratamos",
+          "content": [
+            [
+              "Datos de la cuenta. Dirección de correo electrónico y datos básicos del perfil que tú o tu proveedor decidáis facilitar; marcas de tiempo de autenticación y contadores de uso relacionados con tu cuenta.",
+              "Datos de autenticación. Registros de los intentos de inicio de sesión y sus resultados, la emisión y revocación de tokens y sesiones, así como los metadatos técnicos relacionados (incluidas la dirección IP, el agente de usuario del navegador y las marcas de tiempo precisas), que se conservan con fines de seguridad, prevención de abusos y como prueba.",
+              "Registros de seguridad. Registros a prueba de manipulaciones de los eventos relevantes para la seguridad asociados a tu cuenta o entorno.",
+              "Datos sobre la prevención del uso indebido. Contadores técnicos de corta duración utilizados para detectar y limitar el tráfico abusivo.",
+              "Datos de comunicaciones. El contenido de los mensajes que nos envías (por ejemplo, solicitudes de asistencia o el ejercicio de derechos) y nuestras respuestas.",
+              "Datos comerciales. Referencias de facturación y pago en los casos en que se aplique un plan de pago, gestionadas a través de nuestro proceso de facturación."
+            ],
+            "No solicitamos ni almacenamos contraseñas para acceder al Servicio. No se solicitan datos personales de carácter sensible (salud, datos biométricos, opiniones políticas y similares) y no deben facilitársenos."
+          ]
+        },
+        {
+          "heading": "4. Finalidades y fundamentos jurídicos",
+          "content": [
+            [
+              "Gestión y prestación del Servicio: cumplimiento de un contrato o medidas previas a la celebración del mismo.",
+              "Proteger las cuentas, detectar el fraude y los abusos, y llevar registros de seguridad: nuestro interés legítimo en gestionar una infraestructura fiable, sopesado con tus derechos y expectativas.",
+              "Cumplimiento de las obligaciones contables, fiscales y otras obligaciones legales: cumplimiento de una obligación legal.",
+              "Envío de comunicaciones de servicio relacionadas con tu cuenta o con incidencias que la afecten: cumplimiento del contrato; no enviamos correos electrónicos de marketing sin un consentimiento específico."
+            ],
+            "Cuando el tratamiento se base en el consentimiento, podrá retirarlo en cualquier momento sin que ello afecte a la licitud del tratamiento realizado antes de la retirada. No llevamos a cabo procesos de toma de decisiones automatizados que generen efectos jurídicos en el sentido de la legislación aplicable."
+          ]
+        },
+        {
+          "heading": "5. Retención",
+          "content": [
+            "Los datos personales se conservan únicamente durante el tiempo necesario para los fines anteriormente indicados. Los datos de la cuenta se conservan mientras la cuenta o el usuario permanezcan activos; los registros de seguridad y auditoría se conservan mientras sea necesario para acreditar la integridad del Servicio y cumplir con los requisitos legales; los datos para la prevención de abusos son de carácter transitorio por diseño; los registros comerciales se conservan durante los plazos contables exigidos por la ley. Los datos que ya no sean necesarios se eliminan o se anonimizan de forma irreversible."
+          ]
+        },
+        {
+          "heading": "6. Destinatarios y subencargados del tratamiento",
+          "content": [
+            "Solo compartimos datos personales con: encargados del tratamiento que actúan por contrato en nuestro nombre (proveedores de alojamiento web, bases de datos, caché y envío de correo electrónico, identificados individualmente en nuestra página de subencargados del tratamiento); asesores profesionales sujetos a obligaciones de confidencialidad; y autoridades públicas cuando así lo exija una solicitud legal vinculante, en cuyo caso se lo notificaremos a los interesados, salvo que la ley lo prohíba. Nunca vendemos, alquilamos ni comercializamos datos personales, y no utilizamos los datos de los clientes ni de los usuarios finales con fines publicitarios ni para entrenar modelos de aprendizaje automático."
+          ]
+        },
+        {
+          "heading": "7. Transferencias internacionales",
+          "content": [
+            "Algunos de nuestros proveedores operan fuera del Espacio Económico Europeo. Cuando se transfieren datos personales fuera del EEE, nos basamos en una decisión de adecuación o en garantías adecuadas —en particular, las cláusulas contractuales tipo de la Comisión Europea—, junto con medidas complementarias cuando sea necesario. La lista actualizada de proveedores y sus ubicaciones se publica en nuestra página de subencargados del tratamiento."
+          ]
+        },
+        {
+          "heading": "8. Seguridad del tratamiento",
+          "content": [
+            "Aplicamos medidas técnicas y organizativas adecuadas contra el acceso no autorizado, la pérdida, la alteración o la divulgación, entre las que se incluyen el cifrado en tránsito y en reposo, controles de acceso estrictos basados en la necesidad de conocer la información, la segregación de los datos de los clientes, la limitación de tasas y la detección de abusos, así como registros de auditoría a prueba de manipulaciones. Las medidas se revisan a medida que evoluciona el Servicio; en nuestra página de seguridad se puede consultar una descripción general redactada en lenguaje sencillo."
+          ]
+        },
+        {
+          "heading": "9. Tus derechos",
+          "content": [
+            "Con sujeción a la legislación aplicable, incluido el Reglamento General de Protección de Datos si se encuentra en el EEE, puede solicitarnos que:",
+            [
+              "darte acceso a los datos personales que tenemos sobre ti;",
+              "corregir los datos inexactos o completar los datos incompletos;",
+              "borrar los datos cuyo tratamiento ya no sea lícito;",
+              "restringir o oponerse a un tratamiento concreto;",
+              "facilitarte tus datos en un formato estructurado, de uso común y transferible;",
+              "informarte sobre los destinatarios de tus datos y las medidas de seguridad aplicadas."
+            ],
+            "Escríbenos a hello@sdk.enterprises. Respondemos en el plazo de un mes a partir de la recepción de una solicitud justificada y, en caso necesario, podemos solicitarte una prueba mínima de identidad. También puede presentar una reclamación ante una autoridad de control; en Francia, la Commission Nationale de l'Informatique et des Libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Niños",
+          "content": [
+            "El Servicio está dirigido a empresas y profesionales. No tratamos deliberadamente los datos personales de menores que no hayan alcanzado la edad de consentimiento digital establecida en la jurisdicción correspondiente; si crees que esto ha ocurrido, ponte en contacto con nosotros y eliminaremos los datos de inmediato."
+          ]
+        },
+        {
+          "heading": "11. Modificaciones de esta política",
+          "content": [
+            "Actualizamos esta política cuando se producen cambios en nuestro tratamiento de datos. Los cambios sustanciales se anuncian en esta página, indicando una nueva fecha de entrada en vigor, antes de que surtan efecto. Las versiones anteriores están disponibles previa solicitud."
+          ]
+        },
+        {
+          "heading": "12. Contacto",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

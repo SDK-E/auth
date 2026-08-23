@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Rechtliche Hinweise",
+        "description": "Herausgeber, Betreiber und rechtliche Hinweise zu auth.sdk.enterprises (Impressum)."
+      },
+      "title": "Rechtliche Hinweise",
+      "description": "Nach französischem Recht erforderliche Angaben für die unter der Adresse auth.sdk.enterprises veröffentlichte Website (Impressum), erstellt gemäß Artikel 6-III des Gesetzes Nr. 2004-575 vom 21. Juni 2004 (LCEN).",
+      "updated": "23. August 2026",
+      "sections": [
+        {
+          "heading": "Verlag",
+          "content": [
+            "Diese Website und der Auth-Dienst werden von SADDEK Entreprises betrieben, das unter dem Namen SDK Enterprises firmiert.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Sitz der Gesellschaft: 44 Rue Pasquier, 75008 Paris, France",
+              "Rechtsform: „Auto-Entrepreneur“ (Einzelunternehmer), ohne Stammkapital",
+              "Handelsregisternummer: RCS Paris 850 513 912",
+              "Verantwortlicher Herausgeber: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "content": [
+            "Fragen zu dieser Website oder zum Dienst können an hello@sdk.enterprises gerichtet werden. Informationen zu Sicherheitsmeldungen finden Sie in unserer Richtlinie zur verantwortungsvollen Offenlegung."
+          ]
+        },
+        {
+          "heading": "Hosting",
+          "content": [
+            "Die Website und der Dienst werden von Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Vereinigte Staaten, gehostet. Die Anwendungsdatenbanken werden von Neon betrieben; Einzelheiten zu allen Infrastrukturanbietern sind auf der Seite „Unterauftragsverarbeiter“ aufgeführt."
+          ]
+        },
+        {
+          "heading": "Geistiges Eigentum",
+          "content": [
+            "Die Struktur, die Texte, die Logos und die Inhalte dieser Website sind Eigentum von SDK Enterprises. Jede Vervielfältigung oder Darstellung, sei es ganz oder teilweise, ist ohne vorherige Genehmigung untersagt, sofern dies nicht durch geltendes Recht gestattet ist."
+          ]
+        },
+        {
+          "heading": "Rechtlicher Rahmen",
+          "content": [
+            "Diese Hinweise unterliegen französischem Recht. Der Auth-Dienst wird gemäß unseren Nutzungsbedingungen bereitgestellt, und die Verarbeitung personenbezogener Daten ist in unserer Datenschutzerklärung und im Zusatz zur Datenverarbeitung beschrieben."
+          ]
+        }
+      ]
+    }
+  }
+}

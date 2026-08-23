@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Alikäsittelijät",
+        "description": "SDK Enterprises:n käyttämät alihankkijat, jotka huolehtivat Auth-palvelun toiminnasta, kunkin alihankkijan rooli, toimintapaikka sekä käsiteltävät tietoryhmät."
+      },
+      "title": "Alikäsittelijät",
+      "description": "Pidämme tämän luettelon ajan tasalla ja julkaisemme siihen tehdyt lisäykset ennen kuin uusi alihankkija alkaa käsitellä henkilötietoja, jolloin asiakkaillamme on mahdollisuus esittää vastalauseita perustelluista syistä.",
+      "updated": "23. elokuuta 2026",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Jokainen alihankkija toimii kirjallisen sopimuksen nojalla, jossa sille asetetaan tietosuojavelvoitteet, jotka eivät ole suojatasoltaan heikompia kuin tietojenkäsittelyliitteessämme määritellyt velvoitteet, ja SDK Enterprises on edelleen vastuussa asiakkailleen alihankkijan suorituskyvystä. Ilmoitettuun lisäykseen kohdistuvat vastalauseet voidaan esittää neljäntoista päivän kuluessa julkaisemisesta kirjoittamalla osoitteeseen hello@sdk.enterprises."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Alisopimuskumppani",
+                "Tehtävä",
+                "Sijainti",
+                "Käsiteltävät tietoryhmät"
+              ],
+              "rows": [
+                [
+                  "Vercel Inc.",
+                  "Sovellusten isännöinti ja sisällön jakelu",
+                  "Yhdysvallat; maailmanlaajuinen reuna-verkko",
+                  "Kaikki palveluun suuntautuva liikenne kulkee sen verkon kautta; käsittely rajoittuu salattujen pyyntöjen ja vastausten välittämiseen, välimuistiin tallentamiseen ja tarjoamiseen."
+                ],
+                [
+                  "Neon (Neon Inc.)",
+                  "Hallinnoitujen tietokantojen palveluntarjoaja",
+                  "Pilvialue valitaan kunkin käyttöönoton yhteydessä; saatavilla on ETA-yhteensopivia alueita",
+                  "Vuokralaisen asetukset, tilitiedot, todennustiedot, turvallisuus- ja tarkastuslokit. Käyttäjätunnukset ja salausavaimet tallennetaan ainoastaan suojatussa muodossa."
+                ],
+                [
+                  "Upstash Inc.",
+                  "Väliaikainen tallennus väärinkäytön estämiseksi",
+                  "Yhdysvallat",
+                  "Lyhytaikaiset tekniset laskurit, joita käytetään väärinkäytöksiin perustuvan liikenteen havaitsemiseen. Säilytetään vain laskurin lyhyen voimassaoloajan ajan."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Transaktiosähköpostien toimitus",
+                  "Yhdysvallat",
+                  "Vastaanottajan sähköpostiosoite ja toimitustiedot palvelusähköposteissa, kuten kirjautumiskoodeissa. Viestin sisältö rajoittuu siihen, mikä on ehdottomasti välttämätöntä."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Muutosloki",
+          "content": [
+            [
+              "Elokuu 2026 — Alun perin julkaistu luettelo: Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

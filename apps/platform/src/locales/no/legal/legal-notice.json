@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Juridisk merknad",
+        "description": "Utgiver, vert og juridisk informasjon for auth.sdk.enterprises (mentions légales)."
+      },
+      "title": "Juridisk merknad",
+      "description": "Opplysninger som kreves i henhold til fransk lovgivning for nettstedet publisert på auth.sdk.enterprises (lovpålagte opplysninger), utarbeidet i samsvar med artikkel 6-III i lov nr. 2004-575 av 21. juni 2004 (LCEN).",
+      "updated": "23. august 2026",
+      "sections": [
+        {
+          "heading": "Utgiver",
+          "content": [
+            "Dette nettstedet og Auth-tjenesten drives av SADDEK Entreprises, som driver virksomhet under navnet SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Hovedkontor: 44 Rue Pasquier, 75008 Paris, France",
+              "Selskapsform: auto-entrepreneur (enkeltpersonforetak), uten aksjekapital",
+              "Organisasjonsnummer: RCS Paris 850 513 912",
+              "Publiseringsansvarlig: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "content": [
+            "Spørsmål om dette nettstedet eller tjenesten kan sendes til hello@sdk.enterprises. For sikkerhetsrapporter, se retningslinjene våre for ansvarlig rapportering."
+          ]
+        },
+        {
+          "heading": "Webhotell",
+          "content": [
+            "Nettstedet og tjenesten driftes av Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA. Applikasjonsdatabasene drives av Neon; detaljer om alle infrastrukturleverandører er oppført på siden for underdatabehandlere."
+          ]
+        },
+        {
+          "heading": "Immaterielle rettigheter",
+          "content": [
+            "Strukturen, tekstene, logoene og innholdet på dette nettstedet tilhører SDK Enterprises. Enhver reproduksjon eller gjengivelse, helt eller delvis, uten forhåndsgodkjenning er forbudt, med unntak av det som er tillatt i henhold til gjeldende lovgivning."
+          ]
+        },
+        {
+          "heading": "Rettslig rammeverk",
+          "content": [
+            "Disse merknadene er underlagt fransk lov. Auth-tjenesten tilbys i henhold til våre bruksvilkår, og behandlingen av personopplysninger er beskrevet i vår personvernerklæring og tillegget om databehandling."
+          ]
+        }
+      ]
+    }
+  }
+}

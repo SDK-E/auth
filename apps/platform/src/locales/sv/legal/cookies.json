@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Cookies och spårning",
+        "description": "En fullständig lista över vad Auth lagrar i din webbläsare – och varför den är kortare än på nästan alla andra webbplatser du har besökt."
+      },
+      "title": "Cookies och spårning",
+      "description": "Auth-ytorna är utformade för att fungera utan att spåra dig. På den här sidan listas alla cookies och alla analysverktyg – en mycket kort lista.",
+      "updated": "23 augusti 2026",
+      "sections": [
+        {
+          "heading": "1. Cookies som vi placerar",
+          "content": [
+            {
+              "columns": [
+                "Namn",
+                "Var",
+                "Syfte"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Auth-instrumentpanelen",
+                  "Nödvändigt. Ser till att du förblir inloggad på din hyresgästs kontrollpanel; signerad, endast HTTP, upphör att gälla när sessionen avslutas."
+                ],
+                [
+                  "(sessioncookie för hyresgästen)",
+                  "Universell inloggning",
+                  "Viktigt. Utfärdas endast när du loggar in på en produkt som använder Auth, och gäller endast för den produktens autentisering."
+                ]
+              ]
+            },
+            "Det finns ingen banner för samtycke eftersom det inte finns något att samtycka till: inga reklamcookies, inga spårningskoder som fungerar över flera webbplatser, inga sociala widgets och inga fingeravtrycksskript körs på auth.sdk.enterprises eller på de inloggningssidor som finns där."
+          ]
+        },
+        {
+          "heading": "2. Analys",
+          "content": [
+            "Marknadsföringssidorna använder Vercel Analytics, som är cookielöst: det räknar sidvisningar i aggregerad form utan att lagra identifierare eller skapa profiler för enskilda användare. Ingen analys körs på sidor för universell inloggning, API-ändpunkter eller inuti kundernas applikationer."
+          ]
+        },
+        {
+          "heading": "3. Postar på serversidan",
+          "content": [
+            "Precis som alla webbservrar loggar vi förfrågningar för säkerhetsändamål (upptäckt av missbruk, begränsning av trafikflödet, revisionsunderlag) i enlighet med våra regler för lagringstid som anges i integritetspolicyn. Dessa loggar används inte för att skapa profiler på besökare på denna marknadsföringssajt."
+          ]
+        },
+        {
+          "heading": "4. Frågor",
+          "content": [
+            "Skriv till hello@sdk.enterprises om något här är oklart."
+          ]
+        }
+      ]
+    }
+  }
+}

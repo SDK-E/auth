@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Sécurité",
+      "description": "Comment Auth sécurise son infrastructure d'authentification : architecture par jetons, rotation des clés, limitation de débit, registre d'audit à chaînes de hachages, et comment signaler une vulnérabilité."
+    },
+    "hero": {
+      "eyebrow": "Confiance",
+      "title": "La sécurité correspond à la liste des mécanismes.",
+      "lead": "Nous ne vous demandons pas de vous fier aux arguments marketing : chaque mesure de protection présentée ci-dessous explique précisément comment elle fonctionne et où elle s'applique. Si nous ne sommes pas en mesure de décrire son mécanisme, nous ne faisons pas cette affirmation."
+    },
+    "layers": [
+      {
+        "title": "Architecture des jetons",
+        "points": [
+          "Les codes d'autorisation doivent comporter la chaîne « PKCE (S256) » à chaque requête ; ils sont à usage unique et ont une durée de validité limitée.",
+          "Les jetons de rafraîchissement changent à chaque utilisation ; la présentation d'un jeton déjà utilisé entraîne l'annulation de l'ensemble de la famille de jetons.",
+          "Les jetons d'accès et d'identification sont des RS256 et JWT signés pour chaque environnement ; les clés publiques sont publiées à l'adresse /.well-known/jwks.json.",
+          "La révocation des jetons d'actualisation est disponible à l'adresse /oauth/revoke."
+        ]
+      },
+      {
+        "title": "Séances",
+        "points": [
+          "Les cookies de session sont exclusivement HTTP, avec l'attribut SameSite=Lax, sécurisés en environnement de production, et contiennent des identifiants de session signés RS256 et JWT.",
+          "Chaque session dispose à la fois d'un délai d'inactivité et d'une date d'expiration absolue.",
+          "Les sessions sont révocables côté serveur ; la déconnexion entraîne leur révocation immédiate."
+        ]
+      },
+      {
+        "title": "Clés et secrets",
+        "points": [
+          "Clés de signature RS256 spécifiques à chaque environnement ; les clés privées sont chiffrées par enveloppe au repos (AES-256-GCM) et ne sont jamais enregistrées.",
+          "La rotation met hors service les clés actives tout en les laissant publiées, de sorte que les jetons en circulation puissent être validés jusqu'à leur expiration naturelle.",
+          "Les secrets des clients sont stockés uniquement sous forme chiffrée ; la vérification s'effectue en temps constant après le déchiffrement."
+        ]
+      },
+      {
+        "title": "Mesures de lutte contre les abus",
+        "points": [
+          "Limites de débit à fenêtre fixe : nombre d'envois de code par e-mail et par adresse IP, nombre d'échecs de vérification par e-mail, nombre d'émissions de jetons par client et par adresse IP.",
+          "Un nombre trop élevé d'échecs de vérification épuise tous les codes à usage unique encore disponibles pour cette adresse.",
+          "Le message d'erreur affiché à l'utilisateur reste neutre ; les détails ne sont consignés que dans les journaux du serveur."
+        ]
+      },
+      {
+        "title": "Traçabilité",
+        "points": [
+          "Les événements de sécurité sont consignés dans un registre chaîné par hachage propre à chaque environnement : chaque entrée est liée à la précédente par le hachage SHA-256.",
+          "La chaîne peut être recalculée à partir de la genèse à tout moment ; toute modification rétroactive la rompt.",
+          "Les événements d'authentification standard (connexions, émission de jetons, détection de réutilisation, révocation, création de clés) sont enregistrés parallèlement au registre."
+        ]
+      },
+      {
+        "title": "Traitement des données",
+        "points": [
+          "Les données relatives aux locataires sont stockées dans une base de données Postgres portant la référence Neon, située dans la région sélectionnée pour le déploiement ; leur accès nécessite un transport chiffré.",
+          "Les secrets sont chiffrés au niveau de l'enveloppe avant d'être stockés ; la clé principale est conservée en dehors de la base de données.",
+          "Aucun traceur tiers ni pixel publicitaire n'est utilisé sur les interfaces d'authentification ; les analyses effectuées sur ce site marketing ne font pas appel à des cookies et sont agrégées."
+        ]
+      }
+    ],
+    "complianceNote": "Situation en matière de conformité, en toute franchise : Auth met en œuvre dès le départ des contrôles conformes aux critères SOC 2, mais aucun audit de certification n’a encore été réalisé. Nous publierons les résultats ici dès que cela changera.",
+    "disclosure": {
+      "eyebrow": "Divulgation responsable",
+      "title": "Vous avez repéré une erreur ? Signalez-la-nous.",
+      "items": [
+        "Envoyez un e-mail à hello@sdk.enterprises en indiquant [sécurité] dans l'objet.",
+        "Veuillez indiquer les étapes permettant de reproduire le problème ; nous accusons réception des signalements dans un délai de 2 jours ouvrés.",
+        "Veuillez éviter d'effectuer des analyses automatisées sur l'environnement de production et ne pas accéder à des données autres que celles nécessaires à la vérification du problème.",
+        "Les recherches menées de bonne foi dans le cadre de cette politique ne font l'objet d'aucune poursuite judiciaire ; nous citons les sources, sauf si celles-ci préfèrent rester anonymes.",
+        "Politique lisible par machine : /.well-known/security.txt"
+      ],
+      "privacyLink": "Politique de confidentialité →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Sous-traitants →"
+    }
+  }
+}

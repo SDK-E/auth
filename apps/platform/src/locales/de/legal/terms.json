@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Nutzungsbedingungen",
+        "description": "Die Bedingungen für den Zugang zum und die Nutzung des von SDK Enterprises bereitgestellten Auth-Authentifizierungsdienstes."
+      },
+      "title": "Nutzungsbedingungen",
+      "description": "Diese Bedingungen bilden die Vereinbarung zwischen Ihnen und SDK Enterprises über die Nutzung des Auth-Dienstes. Sie sind bewusst knapp gehalten, decken jedoch alle wesentlichen Aspekte einer geschäftlichen Beziehung ab.",
+      "updated": "23. August 2026",
+      "sections": [
+        {
+          "heading": "1. Begriffsbestimmungen",
+          "content": [
+            [
+              "„Service“ – die von auth.sdk.enterprises betriebene Multi-Tenant-Authentifizierungsplattform „Auth“, einschließlich ihrer Dashboards, Schnittstellen und Dokumentation.",
+              "„Tenant“ – Ihr isolierter Arbeitsbereich innerhalb des Dienstes.",
+              "„Endnutzer“ – eine Person, die sich über den Dienst bei Ihren Produkten authentifiziert.",
+              "„Vereinbarung“ – diese Bedingungen zusammen mit Ihrer Bestellung oder der von Ihnen getroffenen Planauswahl, unserer Datenschutzerklärung und (sofern zutreffend) unserem Zusatz zur Datenverarbeitung."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Wer du bist",
+          "content": [
+            "Sie vertreten eine juristische Person oder handeln in beruflicher Eigenschaft. Sie bestätigen, dass die von Ihnen bei der Registrierung angegebenen Informationen korrekt sind, dass Sie befugt sind, die von Ihnen vertretene juristische Person zu binden, und dass Ihre Nutzung des Dienstes den für Sie und Ihre Endnutzer geltenden Gesetzen entspricht. Der Dienst wird weder Verbrauchern, die nicht in beruflicher Eigenschaft handeln, noch Personen unterhalb des Alters der digitalen Einwilligungsfähigkeit angeboten."
+          ]
+        },
+        {
+          "heading": "3. Ihr Mieter und Ihre Pflichten",
+          "content": [
+            [
+              "Sie sind verantwortlich für die von Ihnen registrierten Anwendungen, die von Ihnen für die Weiterleitung autorisierten Adressen sowie für die Vertraulichkeit der Ihnen zugewiesenen Zugangsdaten. Bitte informieren Sie uns unverzüglich, falls diese kompromittiert wurden.",
+              "Sie sind für Ihre Beziehung zu den Endnutzern verantwortlich, einschließlich der Unterrichtung dieser über die im Rahmen des Dienstes durchgeführten Verarbeitungen und der Einholung aller erforderlichen Einwilligungen.",
+              "Sie müssen die Kontaktdaten der Mieter stets auf dem neuesten Stand halten, damit wir Sie in Sicherheits- und Serviceangelegenheiten erreichen können."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Zulässige Nutzung",
+          "content": [
+            "Sie erklären sich damit einverstanden, Folgendes zu unterlassen:",
+            [
+              "den Dienst für rechtswidrige Zwecke oder in einer Weise zu nutzen, die die Rechte anderer verletzt;",
+              "den Dienst außerhalb unserer Richtlinien zur verantwortungsvollen Offenlegung zu stören, zu überlasten, zu untersuchen oder zu testen;",
+              "Sicherheitsmaßnahmen, Nutzungsbeschränkungen oder Zugriffsbeschränkungen zu umgehen;",
+              "den Dienst selbst ohne gesonderte Vereinbarung als konkurrierendes Hosted-Identity-Angebot weiterzuverkaufen oder als White-Label-Produkt anzubieten;",
+              "über den Dienst versendete E-Mails mit rechtswidrigen Inhalten zu versenden oder deren Herkunft falsch darzustellen;",
+              "Schadcode oder Inhalte hochladen, die nichts mit der Authentifizierung zu tun haben."
+            ],
+            "Wir behalten uns vor, mutmaßliche Verstöße zu untersuchen und den betroffenen Zugang zu sperren, sofern dies nach vernünftigem Ermessen erforderlich ist – soweit möglich nach vorheriger Ankündigung und unverzüglich, wenn ein glaubwürdiges Sicherheitsrisiko vorliegt."
+          ]
+        },
+        {
+          "heading": "5. Verfügbarkeit der Dienste",
+          "content": [
+            "Wir betreiben den Dienst auf einer bewährten, verwalteten Infrastruktur mit Überwachung, Datensicherungen und Redundanz, die dem Reifegrad des Dienstes angemessen sind. Während der Early-Access-Phase gilt keine formelle Service-Level-Verpflichtung; sobald eine solche gilt, wird sie hier veröffentlicht und ist Bestandteil der Vereinbarung. Geplante Wartungsarbeiten werden, soweit möglich, im Voraus angekündigt."
+          ]
+        },
+        {
+          "heading": "6. Gebühren, Rechnungsstellung und Steuern",
+          "content": [
+            [
+              "Es gelten die zum Zeitpunkt Ihres Abonnements im Bereich „Preise“ auf unserer Website veröffentlichten Gebühren, die ohne anfallende Steuern angegeben sind.",
+              "Sofern nicht anders angegeben, sind die Gebühren monatlich im Voraus fällig und nach Beginn des Zeitraums nicht erstattungsfähig, es sei denn, dies ist gesetzlich vorgeschrieben.",
+              "Wir behalten uns vor, die Preise mit einer Frist von mindestens 30 Tagen mit Wirkung für die Zukunft anzupassen; Änderungen wirken sich niemals auf bereits bezahlte Zeiträume aus.",
+              "Bei verspäteter Zahlung kann es nach vorheriger schriftlicher Mahnung zu einer Sperrung kommen."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Geistiges Eigentum",
+          "content": [
+            "SDK Enterprises behält sich alle Rechte an dem Dienst vor, einschließlich der dazugehörigen Software, Markenelemente und Dokumentation. Sie behalten alle Rechte an Ihren Anwendungen sowie an den Daten, die Ihnen und Ihren Endnutzern gehören. Sie erhalten ein persönliches, nicht exklusives und nicht übertragbares Recht, den Dienst während der Laufzeit dieser Vereinbarung gemäß den Bestimmungen dieser Vereinbarung zu nutzen. Das Feedback, das Sie uns geben, darf zur Verbesserung des Dienstes frei und ohne Verpflichtung verwendet werden."
+          ]
+        },
+        {
+          "heading": "8. Gewährleistungen und Haftungsausschlüsse",
+          "content": [
+            "Wir garantieren, dass wir den Dienst mit angemessener Fachkenntnis und Sorgfalt erbringen. Sofern nicht ausdrücklich anders angegeben und soweit gesetzlich zulässig, wird der Dienst „wie besehen“ ohne zusätzliche Garantien jeglicher Art bereitgestellt, seien diese ausdrücklich oder stillschweigend, einschließlich der Eignung für einen bestimmten Zweck oder eines unterbrechungsfreien, fehlerfreien Betriebs. Keine Bestimmung dieser Vereinbarung schließt eine Haftung aus, die nach französischem Recht nicht ausgeschlossen werden kann, einschließlich der Haftung für Vorsatz oder grobe Fahrlässigkeit, Körperverletzung sowie der gesetzlichen Verbraucherschutzbestimmungen, soweit diese anwendbar sind."
+          ]
+        },
+        {
+          "heading": "9. Haftungsbeschränkung",
+          "content": [
+            "Soweit gesetzlich zulässig, haftet keine der Parteien für indirekte, zufällige oder Folgeschäden, einschließlich entgangener Gewinne, Einnahmen, Firmenwert oder Daten, unabhängig von deren Ursache. Die Gesamthaftung jeder Partei, die sich aus dem Vertrag ergibt oder damit in Zusammenhang steht, ist auf die Gesamtsumme der von Ihnen in den zwölf Monaten vor dem Ereignis, das den Anspruch begründet hat, gezahlten Gebühren begrenzt. Diese Beschränkungen gelten für unsere Unterauftragsverarbeiter gesamtschuldnerisch nur in dem gesetzlich zulässigen Umfang."
+          ]
+        },
+        {
+          "heading": "10. Haftungsfreistellung",
+          "content": [
+            "Sie verpflichten sich, uns gegen Ansprüche Dritter zu verteidigen und schadlos zu halten, die sich aus Ihren Anwendungen, Ihrer vertragswidrigen Nutzung des Dienstes oder Ihrer Verletzung von Rechten Dritter ergeben – vorausgesetzt, wir unterrichten Sie unverzüglich über den Anspruch, gestatten Ihnen, die Verteidigung zu leiten, und schließen keinen einseitigen Vergleich in Ihrem Namen ab."
+          ]
+        },
+        {
+          "heading": "11. Vertraulichkeit",
+          "content": [
+            "Jede Partei schützt die vertraulichen Informationen der anderen Partei mit mindestens derselben Sorgfalt, die sie bei ihren eigenen ähnlichen Informationen walten lässt, nutzt diese ausschließlich zur Erfüllung des Vertrags und gibt sie nur an Mitarbeiter und Berater weiter, die diese Informationen benötigen und durch gleichwertige Verpflichtungen gebunden sind. Diese Verpflichtung besteht auch nach Beendigung des Vertrags noch drei Jahre lang fort."
+          ]
+        },
+        {
+          "heading": "12. Laufzeit, Aussetzung und Beendigung",
+          "content": [
+            [
+              "Die Vereinbarung tritt mit Ihrer ersten Nutzung des Dienstes in Kraft und bleibt so lange gültig, wie Ihr Mandant besteht.",
+              "Jede Partei kann den Vertrag jederzeit durch schriftliche Kündigung beenden; bereits bezahlte Laufzeiten laufen bis zu ihrem planmäßigen Ende weiter, sofern gesetzlich nichts anderes vorgesehen ist.",
+              "Jede Vertragspartei kann den Vertrag wegen einer wesentlichen Vertragsverletzung kündigen, sofern diese nicht innerhalb von 30 Tagen nach Inkenntnissetzung behoben wird, oder mit sofortiger Wirkung, wenn die Fortsetzung der Vertragserfüllung rechtswidrig oder mit erheblichen Nachteilen verbunden wäre.",
+              "Bei Beendigung stellen wir Ihnen auf Anfrage 30 Tage lang einen maschinenlesbaren Export Ihrer Mandantendaten zur Verfügung; anschließend löschen wir den Mandanten unter Beachtung der in der Datenschutzerklärung beschriebenen Aufbewahrungspflichten."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Drittanbieter",
+          "content": [
+            "Der Dienst stützt sich auf renommierte Infrastrukturanbieter, die auf unserer Seite „Unterauftragsverarbeiter“ aufgeführt sind. Wir sind im Rahmen dieser Vereinbarung für deren Leistung verantwortlich; Ihre Geschäftsbeziehungen zu ihnen kommen ausschließlich über uns zustande."
+          ]
+        },
+        {
+          "heading": "14. Höhere Gewalt",
+          "content": [
+            "Keine der Parteien haftet für Leistungsstörungen, die auf Ereignisse zurückzuführen sind, die außerhalb ihrer zumutbaren Kontrolle liegen – Naturkatastrophen, Streiks, Krieg, Ausfälle öffentlicher Netzwerke oder Versorgungsunternehmen oder Maßnahmen öffentlicher Behörden –, sofern die betroffene Partei die andere Partei benachrichtigt und die Leistung so bald wie zumutbar möglich wieder aufnimmt."
+          ]
+        },
+        {
+          "heading": "15. Allgemeine Bestimmungen",
+          "content": [
+            [
+              "Diese Vereinbarung stellt die gesamte Vereinbarung zwischen den Parteien bezüglich des Dienstes dar und ersetzt alle früheren Vereinbarungen.",
+              "Sollte eine Bestimmung für unwirksam erklärt werden, bleibt der übrige Teil weiterhin gültig, und die Parteien ersetzen die Bestimmung durch eine wirksame Bestimmung, die dem beabsichtigten Zweck am nächsten kommt.",
+              "Die verspätete Geltendmachung eines Rechts durch eine Partei gilt nicht als Verzicht darauf.",
+              "Sie dürfen den Vertrag nicht ohne unsere Zustimmung abtreten; wir können ihn im Rahmen einer Umstrukturierung unseres Unternehmens nach vorheriger Ankündigung abtreten.",
+              "Mitteilungen gelten als ordnungsgemäß zugestellt, wenn sie per E-Mail an hello@sdk.enterprises oder an die zuletzt angegebene Kontaktadresse des Mieters gesendet werden.",
+              "Diese Bedingungen sind in englischer Sprache verfasst; eine französische Fassung kann aus Gründen der Übersichtlichkeit bereitgestellt werden. Bei Verträgen mit französischen professionellen Kunden ist die französische Fassung maßgebend, sofern eine solche vorliegt und Abweichungen bestehen."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Anwendbares Recht und Streitigkeiten",
+          "content": [
+            "Diese Vereinbarung unterliegt französischem Recht. Vor der Einleitung gerichtlicher Schritte bemühen sich die Parteien 30 Tage lang ab schriftlicher Mitteilung einer Streitigkeit um eine einvernehmliche Lösung in gutem Glauben. Gelingt dies nicht, sind die Gerichte in Paris, Frankreich, zuständig – es sei denn, zwingende Vorschriften sehen einen anderen Gerichtsstand vor."
+          ]
+        },
+        {
+          "heading": "17. Änderungen dieser Bedingungen",
+          "content": [
+            "Wesentliche Änderungen werden auf dieser Seite mindestens 30 Tage vor ihrem Inkrafttreten bekannt gegeben. Die fortgesetzte Nutzung nach diesem Datum gilt als Zustimmung; sollten Sie damit nicht einverstanden sein, können Sie den Vertrag vor Inkrafttreten der Änderungen kündigen."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Sütik és nyomon követés",
+        "description": "Az Auth által a böngésződben beállított elemek teljes listája – és miért rövidebb, mint szinte bármelyik általad korábban felkeresett webhelyé."
+      },
+      "title": "Sütik és nyomon követés",
+      "description": "Az Auth felületek úgy lettek kialakítva, hogy a felhasználók nyomon követése nélkül működjenek. Ezen az oldalon felsoroljuk az összes cookie-t és elemzési mechanizmust – ez egy nagyon rövid lista.",
+      "updated": "2026. augusztus 23.",
+      "sections": [
+        {
+          "heading": "1. Az általunk elhelyezett cookie-k",
+          "content": [
+            {
+              "columns": [
+                "Név",
+                "Hol",
+                "Cél"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Auth irányítópult",
+                  "Elengedhetetlen. Biztosítja, hogy bejelentkezve maradj a bérlői irányítópultján; aláírt, kizárólag HTTP-re érvényes, a munkamenet lejárta után érvényét veszti."
+                ],
+                [
+                  "(bérlői munkamenet-süti)",
+                  "Univerzális bejelentkezés",
+                  "Alapvető. Csak akkor kerül kiadásra, ha bejelentkezel egy olyan termékbe, amely az Auth-ot használja, és a termék hitelesítésére korlátozódik."
+                ]
+              ]
+            },
+            "Nincs hozzájárulási sáv, mert nincs mire hozzájárulni: sem hirdetési cookie-k, sem webhelyek közötti nyomkövetők, sem közösségi widgetek, sem ujjlenyomat-felismerő szkriptek nem futnak a auth.sdk.enterprises oldalon vagy a tárolt bejelentkezési oldalakon."
+          ]
+        },
+        {
+          "heading": "2. Elemzés",
+          "content": [
+            "A marketingoldalak a Vercel Analytics rendszert használják, amely cookie-mentes: az oldalnézéseket összesítve számolja, anélkül, hogy azonosítókat tárolna vagy egyéni profilokat készítene. Az univerzális bejelentkezési oldalakon, a API végpontokon, illetve a bérlők alkalmazásain belül nem fut elemzési folyamat."
+          ]
+        },
+        {
+          "heading": "3. Szerveroldali rekordok",
+          "content": [
+            "Mint minden webszerver, mi is naplózzuk a kéréseket biztonsági célokból (visszaélések felderítése, forgalomkorlátozás, ellenőrzési bizonyítékok) az adatvédelmi irányelvben meghatározott adatmegőrzési szabályok szerint. Ezeket a naplóbejegyzéseket nem használjuk fel a marketingoldal látogatóinak profilozására."
+          ]
+        },
+        {
+          "heading": "4. Kérdések",
+          "content": [
+            "Ha bármi nem világos az itt leírtak közül, írjon a hello@sdk.enterprises címre."
+          ]
+        }
+      ]
+    }
+  }
+}

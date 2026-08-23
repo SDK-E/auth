@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Rättslig information",
+        "description": "Utgivare, webbplatsansvarig och juridisk information för auth.sdk.enterprises (juridisk information)."
+      },
+      "title": "Rättslig information",
+      "description": "Information som enligt fransk lag krävs för webbplatsen som publiceras på auth.sdk.enterprises (lagstadgade uppgifter), upprättad i enlighet med artikel 6-III i lag nr 2004-575 av den 21 juni 2004 (LCEN).",
+      "updated": "23 augusti 2026",
+      "sections": [
+        {
+          "heading": "Förlag",
+          "content": [
+            "Denna webbplats och Auth-tjänsten drivs av SADDEK Entreprises, som bedriver verksamhet under namnet SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Säte: 44 Rue Pasquier, 75008 Paris, France",
+              "Bolagsform: enskild näringsidkare, inget aktiekapital",
+              "Företagsregistreringsnummer: RCS Paris 850 513 912",
+              "Ansvarig utgivare: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "content": [
+            "Frågor om denna webbplats eller tjänsten kan skickas till hello@sdk.enterprises. För säkerhetsrapporter, se vår policy för ansvarsfull rapportering."
+          ]
+        },
+        {
+          "heading": "Webbhotell",
+          "content": [
+            "Webbplatsen och tjänsten drivs av Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA. Applikationsdatabaserna drivs av Neon; detaljerad information om alla infrastrukturleverantörer finns på sidan om underleverantörer."
+          ]
+        },
+        {
+          "heading": "Immateriella rättigheter",
+          "content": [
+            "Webbplatsens struktur, texter, logotyper och innehåll tillhör SDK Enterprises. All reproduktion eller återgivning, helt eller delvis, utan föregående tillstånd är förbjuden, såvida inte detta är tillåtet enligt gällande lagstiftning."
+          ]
+        },
+        {
+          "heading": "Rättslig ram",
+          "content": [
+            "Dessa meddelanden regleras av fransk lag. Tjänsten Auth tillhandahålls enligt våra användarvillkor, och hanteringen av personuppgifter beskrivs i vår integritetspolicy och vårt tillägg om personuppgiftsbehandling."
+          ]
+        }
+      ]
+    }
+  }
+}

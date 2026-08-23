@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Juridische kennisgeving",
+        "description": "Uitgever, host en wettelijke informatie voor auth.sdk.enterprises (wettelijke vermeldingen)."
+      },
+      "title": "Juridische kennisgeving",
+      "description": "Informatie die krachtens de Franse wetgeving vereist is voor de website die wordt gepubliceerd op auth.sdk.enterprises (wettelijke vermeldingen), opgesteld overeenkomstig artikel 6-III van wet nr. 2004-575 van 21 juni 2004 (LCEN).",
+      "updated": "23 augustus 2026",
+      "sections": [
+        {
+          "heading": "Uitgever",
+          "content": [
+            "Deze website en de Auth-dienst worden beheerd door SADDEK Entreprises, handelend onder de naam SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Statutaire zetel: 44 Rue Pasquier, 75008 Paris, France",
+              "Rechtsvorm: auto-entrepreneur (eenmanszaak), zonder maatschappelijk kapitaal",
+              "Bedrijfsregistratienummer: RCS Paris 850 513 912",
+              "Publicatiedirecteur: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Contact",
+          "content": [
+            "Vragen over deze website of de dienst kunt u sturen naar hello@sdk.enterprises. Voor beveiligingsmeldingen verwijzen wij u naar ons beleid inzake verantwoorde melding."
+          ]
+        },
+        {
+          "heading": "Hosting",
+          "content": [
+            "De website en de dienst worden gehost door Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Verenigde Staten. De applicatiedatabases worden beheerd door Neon; details over alle infrastructuurproviders staan vermeld op de pagina met subverwerkers."
+          ]
+        },
+        {
+          "heading": "Intellectuele eigendom",
+          "content": [
+            "De structuur, teksten, logo’s en inhoud van deze website zijn eigendom van SDK Enterprises. Elke reproductie of weergave, geheel of gedeeltelijk, zonder voorafgaande toestemming is verboden, tenzij dit is toegestaan door de toepasselijke wetgeving."
+          ]
+        },
+        {
+          "heading": "Wettelijk kader",
+          "content": [
+            "Op deze mededelingen is het Franse recht van toepassing. De Auth-dienst wordt aangeboden op basis van onze gebruiksvoorwaarden, en de verwerking van persoonsgegevens wordt beschreven in ons privacybeleid en in de bijlage inzake gegevensverwerking."
+          ]
+        }
+      ]
+    }
+  }
+}

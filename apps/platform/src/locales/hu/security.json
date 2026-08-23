@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Biztonság",
+      "description": "Hogyan biztosítja az Auth a hitelesítési infrastruktúrát: token-architektúra, kulcsváltás, sebességkorlátozás, a hash-láncú ellenőrzési főkönyv, valamint a biztonsági rés bejelentésének módja."
+    },
+    "hero": {
+      "eyebrow": "Bizalom",
+      "title": "A biztonsági mechanizmusok listája.",
+      "lead": "Nem kérjük, hogy higgyen a marketinges állításoknak — az alábbi védelmi funkciók mindegyike pontosan leírja, hogyan működik és hol érvényesül. Ha nem tudjuk leírni a működési elvet, akkor nem állítjuk azt."
+    },
+    "layers": [
+      {
+        "title": "A token architektúrája",
+        "points": [
+          "Az engedélyezési kódok minden kérésnél a „PKCE (S256)” kódot igénylik, egyszer használatosak és rövid ideig érvényesek.",
+          "A frissítési tokenek minden használatkor cserélődnek; egy már felhasznált token bemutatása az egész tokencsalád érvényességét megszünteti.",
+          "A hozzáférési és azonosító tokenek környezetenként aláírt RS256 és JWT típusúak; a nyilvános kulcsok a /.well-known/jwks.json fájlban találhatók.",
+          "A frissítési tokenek visszavonása a /oauth/revoke oldalon lehetséges."
+        ]
+      },
+      {
+        "title": "Ülések",
+        "points": [
+          "A munkamenet-cookie-k kizárólag HTTP-n működnek, SameSite=Lax beállítással rendelkeznek, éles környezetben biztonságosak, és aláírt RS256 munkamenet-azonosítókat (JWT) tartalmaznak.",
+          "Minden munkamenetnek van várakozási időkorlátja és abszolút lejárati ideje is.",
+          "A munkamenetek szerveroldalon visszavonhatók; a kijelentkezés esetén a munkamenet azonnal megszűnik."
+        ]
+      },
+      {
+        "title": "Kulcsok és titkok",
+        "points": [
+          "Környezetenkénti RS256 aláírási kulcsok; a titkos kulcsokat tároláskor borítékos titkosítással védik (AES-256-GCM), és azokat soha nem rögzítik.",
+          "A rotáció az aktív kulcsokat visszavonja, miközben azok továbbra is közzétett állapotban maradnak, így a még érvényes tokenek a természetes lejáratig továbbra is érvényesek maradnak.",
+          "Az ügyfél titkai kizárólag titkosított formában kerülnek tárolásra; a hitelesítés a visszafejtés után állandó időben történik."
+        ]
+      },
+      {
+        "title": "Visszaélések elleni intézkedések",
+        "points": [
+          "Rögzített ablakos korlátozások: kódküldés e-mailenként és IP-címenként, hitelesítési hibák e-mailenként, token-kibocsátás ügyfél- és IP-címenként.",
+          "A túl sok sikertelen hitelesítési kísérlet kimeríti az adott címhez tartozó összes fennmaradó egyszeri kódot.",
+          "A felhasználóknak megjelenített hibaüzenet semleges marad; a részletek kizárólag a szerver naplóiba kerülnek rögzítésre."
+        ]
+      },
+      {
+        "title": "Ellenőrizhetőség",
+        "points": [
+          "A biztonsági eseményeket egy környezetenkénti, hash-lánccal összekapcsolt főkönyvbe írják: minden bejegyzés a SHA-256 azonosítóval kapcsolódik az előzőhöz.",
+          "A lánc bármikor újraszámítható a kezdeti blokktól kezdve; bármilyen visszamenőleges módosítás megszakítja azt.",
+          "A szokásos hitelesítési eseményeket (bejelentkezések, token-kiadás, újrafelhasználás észlelése, visszavonás, kulcs létrehozása) a főkönyvvel együtt rögzítik."
+        ]
+      },
+      {
+        "title": "Adatkezelés",
+        "points": [
+          "A bérlői adatok a telepítéshez kiválasztott régióban található Neon nevű Postgres-adatbázisban vannak tárolva; a hozzáféréshez titkosított adatátvitel szükséges.",
+          "A titkokat tárolás előtt borítékos titkosítással védik; a főkulcs az adatbázison kívül található.",
+          "A bejelentkezési felületeken nem futnak harmadik féltől származó nyomkövetők vagy hirdetési pixelek; az ezen a marketingoldalon végzett elemzések cookie-mentesek és összesített adatokon alapulnak."
+        ]
+      }
+    ],
+    "complianceNote": "A megfelelés állapota, őszintén szólva: az Auth az első naptól kezdve a SOC 2 kritériumoknak megfelelő ellenőrzési intézkedéseket alkalmaz, de eddig még nem került sor tanúsítási auditra. Amint ez megváltozik, az eredményeket itt fogjuk közzétenni.",
+    "disclosure": {
+      "eyebrow": "Felelősségteljes közzététel",
+      "title": "Hibát találtál? Szólj nekünk!",
+      "items": [
+        "Küldjön e-mailt a hello@sdk.enterprises címre, a tárgy mezőbe írja be: [security].",
+        "Kérjük, adja meg a hiba reprodukciójának lépéseit; a bejelentéseket 2 munkanapon belül nyugtázzuk.",
+        "Kérjük, kerüljék az éles környezet automatizált vizsgálatát, és ne férjenek hozzá olyan adatokhoz, amelyek a probléma igazolásához szükségeseknél többet tartalmaznak.",
+        "Az e szabályzat alapján jóhiszeműen végzett kutatások nem vonhatnak maguk után jogi eljárást; a beszámolók nevét feltüntetjük, kivéve, ha névtelenséget kérnek.",
+        "Gépileg olvasható irányelv: /.well-known/security.txt"
+      ],
+      "privacyLink": "Adatvédelmi nyilatkozat →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Alvállalkozók →"
+    }
+  }
+}

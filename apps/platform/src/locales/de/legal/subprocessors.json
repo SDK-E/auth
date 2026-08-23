@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Unterauftragsverarbeiter",
+        "description": "Die Unterauftragsverarbeiter, die SDK Enterprises für den Betrieb des Auth-Dienstes einsetzt, die jeweilige Rolle jedes einzelnen, ihr Einsatzort sowie die betroffenen Datenkategorien."
+      },
+      "title": "Unterauftragsverarbeiter",
+      "description": "Wir halten diese Liste auf dem neuesten Stand und veröffentlichen Ergänzungen, bevor ein neuer Unterauftragsverarbeiter personenbezogene Daten verarbeitet, um unseren Kunden die Möglichkeit zu geben, aus triftigen Gründen Widerspruch einzulegen.",
+      "updated": "23. August 2026",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Jeder Unterauftragsverarbeiter ist an eine schriftliche Vereinbarung gebunden, die Datenschutzverpflichtungen vorsieht, die mindestens ebenso streng sind wie die in unserem Zusatz zur Datenverarbeitung, und SDK Enterprises bleibt gegenüber seinen Kunden für die Leistung des Unterauftragsverarbeiters verantwortlich. Einwände gegen eine angekündigte Hinzufügung können innerhalb von vierzehn Tagen nach Veröffentlichung schriftlich an hello@sdk.enterprises gerichtet werden."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Unterauftragnehmer",
+                "Rolle",
+                "Standort",
+                "Betroffene Datenkategorien"
+              ],
+              "rows": [
+                [
+                  "Vercel GmbH",
+                  "Anwendungshosting und Bereitstellung von Inhalten",
+                  "Vereinigte Staaten; globales Edge-Netzwerk",
+                  "Der gesamte Datenverkehr zum Dienst läuft über dessen Netzwerk; die Verarbeitung beschränkt sich auf die Übertragung, das Zwischenspeichern und die Bereitstellung verschlüsselter Anfragen und Antworten."
+                ],
+                [
+                  "Neon (Neon Inc.)",
+                  "Anbieter von verwalteten Datenbanken",
+                  "Pro Bereitstellung ausgewählte Cloud-Region; EWR-kompatible Regionen verfügbar",
+                  "Mandantenkonfiguration, Kontodaten, Authentifizierungsdaten, Sicherheits- und Prüfprotokolle. Anmeldedaten und kryptografische Schlüssel werden ausschließlich in verschlüsselter Form gespeichert."
+                ],
+                [
+                  "Upstash GmbH",
+                  "Zwischenspeicherung zur Verhinderung von Missbrauch",
+                  "Vereinigte Staaten",
+                  "Kurzlebige technische Zähler, die zur Erkennung missbräuchlichen Datenverkehrs verwendet werden. Sie werden nur für die kurze Lebensdauer des Zählers gespeichert."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Versand von Transaktions-E-Mails",
+                  "Vereinigte Staaten",
+                  "E-Mail-Adresse des Empfängers und Metadaten zur Zustellung von Service-E-Mails wie beispielsweise Anmeldecodes. Der Inhalt der Nachrichten beschränkt sich auf das unbedingt Notwendige."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Änderungsprotokoll",
+          "content": [
+            [
+              "August 2026 – Erstveröffentlichte Liste: Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

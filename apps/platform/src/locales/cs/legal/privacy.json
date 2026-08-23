@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Zásady ochrany osobních údajů",
+        "description": "Jak společnost Auth by SDK Enterprises zpracovává osobní údaje: co shromažďujeme, proč, jak dlouho, s kým tyto údaje sdílíme a jaká práva k nim máte."
+      },
+      "title": "Zásady ochrany osobních údajů",
+      "description": "Tato zásada vysvětluje, jaké osobní údaje služba Auth zpracovává, proč jsou zpracovávány, jak dlouho jsou uchovávány, s kým jsou sdíleny a jaká práva mají dotčené osoby. Vypracovali jsme ji tak, aby byla srozumitelná a čitelná, nikoli pouze k zobrazení.",
+      "updated": "23. srpna 2026",
+      "sections": [
+        {
+          "heading": "1. Kdo jsme",
+          "content": [
+            "Službu Auth (dále jen „Služba“) provozuje společnost SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, se sídlem v 44 Rue Pasquier, 75008 Paris, France — „SDK Enterprises“, „my“, „nás“). Naši zákazníci využívají Službu k ověřování svých vlastních uživatelů; tento dokument popisuje, jakým způsobem v rámci tohoto uspořádání proudí osobní údaje a za co je která strana odpovědná."
+          ]
+        },
+        {
+          "heading": "2. Naše role závisí na situaci",
+          "content": [
+            [
+              "Pro návštěvníky této webové stránky a pro osoby, které si u nás zřizují nebo spravují účet, určuje společnost SDK Enterprises, za jakým účelem a jakým způsobem jsou osobní údaje zpracovávány, a vystupuje jako správce údajů.",
+              "V případě koncových uživatelů, kteří se přihlašují k produktu nebo službě využívající technologii Auth, zůstává náš zákazník jako správce údajů zodpovědný za dané zpracování, přičemž společnost SDK Enterprises zpracovává osobní údaje na základě jeho písemných pokynů jako zpracovatel údajů v souladu s naším dodatkem o zpracování údajů. Jste-li takovým koncovým uživatelem, vaším prvním kontaktním místem je produkt, do kterého jste se přihlásili; podporujeme jej v tom, aby na vaši žádost reagoval bez zbytečného odkladu."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Kategorie osobních údajů, které zpracováváme",
+          "content": [
+            [
+              "Údaje o účtu. E-mailová adresa a základní údaje z profilu, které se rozhodnete poskytnout vy nebo váš poskytovatel; časová razítka ověření a počítadla využití související s vaším účtem.",
+              "Autentizační údaje. Záznamy o pokusech o přihlášení a jejich výsledcích, o vydávání a zrušení tokenů a relací a související technická metadata (včetně IP adresy, user-agentu prohlížeče a přesných časových razítek) jsou uchovávány z bezpečnostních důvodů, za účelem prevence zneužití a jako důkazní materiál.",
+              "Záznamy o zabezpečení. Záznamy o událostech souvisejících se zabezpečením, které se týkají vašeho účtu nebo prostředí, s ochranným prvkem proti neoprávněné manipulaci.",
+              "Údaje o prevenci zneužívání. Krátkodobé technické čítače sloužící k detekci a omezení zneužívajícího provozu.",
+              "Komunikační údaje. Obsah zpráv, které nám zasíláte (například žádosti o podporu nebo uplatnění práv), a naše odpovědi.",
+              "Obchodní údaje. Údaje o fakturaci a platbách v případě předplaceného tarifu jsou zpracovávány v rámci našeho fakturačního procesu."
+            ],
+            "Pro přihlášení ke Službě nevyžadujeme ani neuchováváme hesla. Citlivé kategorie osobních údajů (zdravotní údaje, biometrické údaje, politické názory a podobně) nevyžadujeme a nesmí nám být poskytovány."
+          ]
+        },
+        {
+          "heading": "4. Účely a právní základy",
+          "content": [
+            [
+              "Provozování a poskytování služby – plnění smlouvy nebo kroky předcházející jejímu uzavření.",
+              "Zabezpečení účtů, odhalování podvodů a zneužívání a vedení bezpečnostních záznamů – náš oprávněný zájem na provozování důvěryhodné infrastruktury, který je vyvážen vašimi právy a očekáváními.",
+              "Plnění účetních, daňových a dalších zákonných povinností – dodržování zákonných požadavků.",
+              "Zasílání služebních sdělení týkajících se vašeho účtu nebo událostí, které jej ovlivňují – plnění smlouvy; bez samostatného souhlasu nezasíláme marketingové e-maily."
+            ],
+            "Pokud je zpracování založeno na souhlasu, můžete jej kdykoli odvolat, aniž by to mělo vliv na zákonnost zpracování provedeného před jeho odvoláním. Neprovádíme automatizované rozhodování s právními účinky ve smyslu platných právních předpisů."
+          ]
+        },
+        {
+          "heading": "5. Udržení",
+          "content": [
+            "Osobní údaje jsou uchovávány pouze po dobu nezbytnou pro výše uvedené účely. Údaje o účtu jsou uchovávány po dobu, po kterou je účet nebo nájemce aktivní; záznamy o bezpečnosti a auditu jsou uchovávány tak dlouho, dokud je to nezbytné k prokázání integrity Služby a splnění zákonných požadavků; údaje sloužící k prevenci zneužívání jsou ze své podstaty dočasné; obchodní záznamy jsou uchovávány po dobu stanovenou zákonem pro vedení účetnictví. Údaje, které již nejsou potřebné, jsou vymazány nebo nevratně anonymizovány."
+          ]
+        },
+        {
+          "heading": "6. Příjemci a subdodavatelé zpracování",
+          "content": [
+            "Osobní údaje sdílíme pouze s: zpracovateli, kteří na základě smlouvy jednají naším jménem (poskytovatelé hostingu, databází, mezipaměti a doručování e-mailů – jednotlivě uvedení na naší stránce věnované subdodavatelům); odbornými poradci, kteří jsou vázáni povinností mlčenlivosti; a veřejnými orgány, pokud to vyžaduje závazná právní výzva, přičemž v takovém případě o tom informujeme dotčené osoby, pokud to není zákonem zakázáno. Osobní údaje nikdy neprodáváme, nepronajímáme ani s nimi nezprostředkováváme obchod, a údaje o zákaznících či koncových uživatelích nepoužíváme k reklamním účelům ani k trénování modelů strojového učení."
+          ]
+        },
+        {
+          "heading": "7. Mezinárodní převody",
+          "content": [
+            "Někteří z našich poskytovatelů působí mimo Evropský hospodářský prostor. V případech, kdy dochází k předávání osobních údajů mimo EHP, opíráme se o rozhodnutí o přiměřenosti nebo o odpovídající záruky – zejména o standardní smluvní doložky Evropské komise – spolu s doplňujícími opatřeními, jsou-li zapotřebí. Aktuální seznam poskytovatelů a jejich sídla je zveřejněn na naší stránce věnované subdodavatelům."
+          ]
+        },
+        {
+          "heading": "8. Bezpečnost zpracování",
+          "content": [
+            "Uplatňujeme vhodná technická a organizační opatření proti neoprávněnému přístupu, ztrátě, změně nebo zveřejnění – včetně šifrování při přenosu i v úložišti, přísné kontroly přístupu na základě principu „potřeby vědět“, oddělení dat jednotlivých nájemců, omezení počtu požadavků a detekce zneužití, jakož i auditního protokolování s ochranou proti neoprávněné manipulaci. Opatření jsou revidována v závislosti na vývoji Služby; přehled v srozumitelném jazyce je k dispozici na naší stránce věnované bezpečnosti."
+          ]
+        },
+        {
+          "heading": "9. Vaše práva",
+          "content": [
+            "V souladu s platnými právními předpisy, včetně obecného nařízení o ochraně osobních údajů, pokud se nacházíte v EHP, nás můžete požádat o:",
+            [
+              "umožnit vám přístup k osobním údajům, které o vás uchováváme;",
+              "opravit nesprávné údaje nebo doplnit neúplné údaje;",
+              "vymazat údaje, jejichž zpracování již není v souladu se zákonem;",
+              "omezit určité zpracování nebo vznést námitku proti němu;",
+              "poskytnout vaše údaje ve strukturovaném, běžně používaném a přenositelném formátu;",
+              "vám poskytneme informace o příjemcích vašich údajů a o použitých bezpečnostních opatřeních."
+            ],
+            "Napište na adresu hello@sdk.enterprises. Na podloženou žádost odpovíme do jednoho měsíce a v případě potřeby můžeme požádat o minimální doklad totožnosti. Můžete také podat stížnost u dozorového úřadu – ve Francii je jím Commission Nationale de l'Informatique et des Libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Děti",
+          "content": [
+            "Tato služba je určena podnikům a profesionálům. Vědomě nezpracováváme osobní údaje dětí, které nedosáhly věku potřebného k udělení digitálního souhlasu v příslušné jurisdikci; pokud se domníváte, že k tomu došlo, kontaktujte nás a my tyto údaje neprodleně vymažeme."
+          ]
+        },
+        {
+          "heading": "11. Změny těchto zásad",
+          "content": [
+            "Tyto zásady aktualizujeme, jakmile dojde ke změnám v našem zpracování údajů. Podstatné změny jsou na této stránce oznámeny spolu s novým datem účinnosti ještě předtím, než vstoupí v platnost. Starší verze jsou k dispozici na vyžádání."
+          ]
+        },
+        {
+          "heading": "12. Kontakt",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "legal": {
+    "dpa": {
+      "meta": {
+        "title": "Nachtrag zur Datenverarbeitung",
+        "description": "Der Nachtrag, auf dessen Grundlage SDK Enterprises personenbezogene Daten von Endnutzern im Auftrag von Auth-Mandanten gemäß Artikel 28 des GDPR verarbeitet."
+      },
+      "title": "Nachtrag zur Datenverarbeitung",
+      "description": "Dieser Nachtrag legt die Bedingungen fest, unter denen SDK Enterprises personenbezogene Daten im Auftrag der Nutzer des Auth-Dienstes verarbeitet. Er spiegelt die Anforderungen wider, die gemäß den datenschutzrechtlichen Bestimmungen an Auftragsverarbeiter gelten, einschließlich Artikel 28 der Datenschutz-Grundverordnung.",
+      "updated": "23. August 2026",
+      "sections": [
+        {
+          "heading": "1. Parteien und Rollen",
+          "content": [
+            "Dieser Nachtrag wird zwischen Ihnen (dem Verantwortlichen, „Kunde“) und SDK Enterprises (dem Auftragsverarbeiter) geschlossen. Er gilt für personenbezogene Daten, die SDK Enterprises in Ihrem Auftrag verarbeitet, wenn Sie den Dienst zur Authentifizierung Ihrer Endnutzer nutzen. Er ist Bestandteil der Vereinbarung und hat in Fragen des Datenschutzes Vorrang vor dieser."
+          ]
+        },
+        {
+          "heading": "2. Einzelheiten zur Verarbeitung",
+          "content": [
+            [
+              "Thema: Authentifizierungs- und Identitätsdienste für Kundenanwendungen.",
+              "Laufzeit: Die Laufzeit der Vereinbarung zuzüglich der nachstehend beschriebenen Aufbewahrungspflichten.",
+              "Art und Zweck: Bereitstellung von Anmeldeabläufen, Identitätsprüfung mittels Einmalcodes, Vergabe und Verwaltung von Sitzungen und Tokens, Missbrauchsprävention, Sicherheitsprotokollierung sowie der damit verbundene Support.",
+              "Kategorien von betroffenen Personen: Endnutzer des Kunden sowie Mitarbeiter des Kunden, die den Mandanten verwalten.",
+              "Kategorien personenbezogener Daten: Identifikationsdaten (insbesondere E-Mail-Adressen), Authentifizierungs- und Nutzungsprotokolle, technische Metadaten wie IP-Adresse und User-Agent, Sicherheits- und Prüfprotokolle sowie vorübergehende Indikatoren zur Missbrauchsprävention.",
+              "Besondere Kategorien: Es werden keine angefordert oder erwartet; der Kunde darf diese nicht übermitteln."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Pflichten des Auftragsverarbeiters",
+          "content": [
+            "SDK Enterprises verarbeitet personenbezogene Daten ausschließlich auf der Grundlage dokumentierter Anweisungen des Kunden – bestehend aus diesem Nachtrag und der Konfiguration des Dienstes durch den Kunden –, sofern nicht durch das Recht der Union oder eines Mitgliedstaats etwas anderes vorgeschrieben ist; in diesem Fall informiert SDK Enterprises den Kunden vor der Verarbeitung über diese gesetzliche Anforderung, sofern dies nicht gesetzlich untersagt ist. SDK Enterprises informiert den Kunden unverzüglich, wenn es der Ansicht ist, dass eine Anweisung gegen geltendes Datenschutzrecht verstößt."
+          ]
+        },
+        {
+          "heading": "4. Vertraulichkeit",
+          "content": [
+            "Personen, die zur Verarbeitung personenbezogener Daten befugt sind, tun dies nur insoweit, wie dies für den Dienst erforderlich ist, und unterliegen einer Geheimhaltungspflicht, die auch nach Beendigung ihres Arbeitsverhältnisses fortbesteht."
+          ]
+        },
+        {
+          "heading": "5. Sicherheitsmaßnahmen",
+          "content": [
+            "Unter Berücksichtigung des Stands der Technik und der Implementierungskosten ergreift SDK Enterprises angemessene technische und organisatorische Maßnahmen, darunter: Verschlüsselung von Daten während der Übertragung und angemessene Verschlüsselung im Ruhezustand; strenge Zugriffskontrolle nach dem „Need-to-know“-Prinzip; Trennung der Mandantenumgebungen; Maßnahmen zur Gewährleistung der Verfügbarkeit und Ausfallsicherheit, einschließlich Sicherungen und Wiederherstellungsverfahren; Erkennung von Missbrauch und Ratenbegrenzung; manipulationssichere Protokollierung sicherheitsrelevanter Ereignisse; sowie regelmäßige Überprüfung dieser Maßnahmen im Zuge der Weiterentwicklung des Dienstes. Eine leicht verständliche Übersicht ist unter /security veröffentlicht."
+          ]
+        },
+        {
+          "heading": "6. Unterauftragsverarbeiter",
+          "content": [
+            "Der Kunde erteilt eine allgemeine schriftliche Genehmigung zur Beauftragung von Unterauftragsverarbeitern, deren Identität, Aufgaben und Standorte unter /legal/subprocessors veröffentlicht sind. SDK Enterprises erlegt jedem Unterauftragsverarbeiter schriftlich Datenschutzverpflichtungen auf, die mindestens ebenso streng sind wie die in diesem Nachtrag festgelegten, und haftet gegenüber dem Kunden für Verstöße seitens der Unterauftragsverarbeiter. Spätestens vierzehn (14) Tage bevor ein neuer Unterauftragsverarbeiter personenbezogene Daten verarbeitet, aktualisiert SDK Enterprises die veröffentlichte Liste und gibt dem Kunden damit die Möglichkeit, aus angemessenen, datenschutzrechtlichen Gründen Widerspruch einzulegen; kann ein Widerspruch nicht angemessen beigelegt werden, kann der Kunde den betroffenen Teil des Dienstes kündigen."
+          ]
+        },
+        {
+          "heading": "7. Unterstützung für den Kunden",
+          "content": [
+            [
+              "Anträge von betroffenen Personen (Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit): SDK Enterprises kommt diesen Anträgen unverzüglich nach, soweit möglich mithilfe der verfügbaren Mandanten-Tools.",
+              "Datenschutz-Folgenabschätzungen und vorherige Konsultationen: SDK Enterprises stellt angemessen verfügbare Informationen über den Dienst bereit.",
+              "Sicherheitsvorfälle: SDK Enterprises benachrichtigt den Kunden unverzüglich, nachdem es Kenntnis von einer Verletzung des Schutzes personenbezogener Daten erhalten hat, die die Daten des Kunden betrifft, stellt die Informationen bereit, die der Kunde zur Erfüllung seiner eigenen Verpflichtungen vernünftigerweise benötigt, und arbeitet bei der Bewältigung des Vorfalls mit."
+            ]
+          ]
+        },
+        {
+          "heading": "8. Internationale Überweisungen",
+          "content": [
+            "Sollten personenbezogene Daten außerhalb des Europäischen Wirtschaftsraums in ein Land übermittelt werden, für das keine Angemessenheitsentscheidung vorliegt, stellt SDK Enterprises sicher, dass angemessene Schutzmaßnahmen getroffen werden – in erster Linie die von der Europäischen Kommission verabschiedeten Standardvertragsklauseln, die zwischen dem jeweiligen Exporteur und Importeur vereinbart werden –, gegebenenfalls ergänzt durch zusätzliche technische Maßnahmen. Die aktuellen Übermittlungsorte sind auf der Seite „Unterauftragsverarbeiter“ beschrieben."
+          ]
+        },
+        {
+          "heading": "9. Rechenschaftspflicht und Prüfungen",
+          "content": [
+            "SDK Enterprises führt Aufzeichnungen über die Verarbeitungsvorgänge in seinem Zuständigkeitsbereich und stellt Unterlagen zur Verfügung, die die Einhaltung dieses Nachtrags belegen. Der Kunde kann diese Informationen einmal jährlich sowie zusätzlich nach einer Verletzung des Schutzes personenbezogener Daten oder bei begründeten Bedenken hinsichtlich der Einhaltung der Vorschriften anfordern. Vor-Ort-Audits finden, sofern genehmigt, auf Kosten des Kunden, nach angemessener Vorankündigung und unter Einhaltung der Vertraulichkeitsverpflichtungen sowie der Schutzmaßnahmen gegenüber anderen Kunden statt."
+          ]
+        },
+        {
+          "heading": "10. Rückgabe und Löschung",
+          "content": [
+            "Bei Beendigung des Vertrags stellt SDK Enterprises die personenbezogenen Daten des Kunden zum Export bereit und löscht sie anschließend – einschließlich der Daten in den Systemen von Unterauftragsverarbeitern – innerhalb einer wirtschaftlich angemessenen Frist; dies gilt nicht, sofern eine Aufbewahrung gesetzlich vorgeschrieben ist; in diesem Fall bleiben die Daten bis zur möglichen Löschung gemäß diesem Nachtrag geschützt."
+          ]
+        },
+        {
+          "heading": "11. Haftung, geltendes Recht und Streitigkeiten",
+          "content": [
+            "Die Haftung im Rahmen dieses Nachtrags wird gemäß den Bestimmungen der Nutzungsbedingungen aufgeteilt und begrenzt. Dieser Nachtrag unterliegt französischem Recht, und Streitigkeiten werden nach dem dort vereinbarten Streitbeilegungsverfahren beigelegt."
+          ]
+        },
+        {
+          "heading": "12. Datenschutzrechte in Kalifornien",
+          "content": [
+            "In Bezug auf personenbezogene Daten, die dem kalifornischen Verbraucherdatenschutzgesetz (California Consumer Privacy Act) in seiner jeweils gültigen Fassung unterliegen, agiert SDK Enterprises als Dienstleister: Das Unternehmen verkauft oder gibt keine personenbezogenen Daten weiter, speichert, nutzt oder offenbart diese nicht außerhalb der direkten Geschäftsbeziehung, sofern dies nicht gesetzlich zulässig ist, und führt sie nicht mit personenbezogenen Daten zusammen, die aus anderen Quellen stammen."
+          ]
+        },
+        {
+          "heading": "13. Rangordnung und Änderungen",
+          "content": [
+            "Sollten einzelne Bestimmungen dieses Nachtrags im Widerspruch zu den gemäß Abschnitt 8 aufgenommenen Standardvertragsklauseln stehen, haben diese Klauseln für die von ihnen geregelten Datenübermittlungen Vorrang. Wir behalten uns vor, diesen Nachtrag mit Wirkung für die Zukunft anzupassen, um Änderungen am Dienst oder an den gesetzlichen Bestimmungen Rechnung zu tragen, und werden wesentliche Änderungen auf dieser Seite bekannt geben, bevor sie in Kraft treten."
+          ]
+        }
+      ]
+    }
+  }
+}

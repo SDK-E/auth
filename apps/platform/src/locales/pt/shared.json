@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Plataforma",
+    "quickstart": "Introdução rápida",
+    "pricing": "Preços",
+    "security": "Segurança",
+    "status": "Estado",
+    "signIn": "Iniciar sessão"
+  },
+  "footer": {
+    "tagline": "Infraestrutura de autenticação multilocatária da SDK Enterprises.",
+    "productTitle": "Produto",
+    "productLinks": [
+      "Plataforma",
+      "Introdução rápida",
+      "Preços",
+      "Estado do serviço"
+    ],
+    "trustTitle": "Confiança",
+    "trustLinks": [
+      "Segurança",
+      "Política de privacidade",
+      "Tratamento de dados (DPA)",
+      "Subcontratantes",
+      "Cookies e rastreamento"
+    ],
+    "legalTitle": "Aspectos legais",
+    "legalLinks": [
+      "Termos de serviço",
+      "Aviso legal"
+    ],
+    "companyTitle": "Empresa",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Contacto"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "regida pela legislação francesa",
+    "languageLabel": "Idioma"
+  },
+  "statusBadges": {
+    "available": "Disponível",
+    "rollingOut": "Implementação",
+    "recommended": "Recomendado"
+  },
+  "legalShell": {
+    "brandContext": "autorização · Legal",
+    "effectiveLine": "Em vigor {date} · regido pela legislação francesa",
+    "documentsLabel": "Documentos",
+    "securityOverview": "Visão geral da segurança",
+    "docs": [
+      "Política de privacidade",
+      "Termos de serviço",
+      "Anexo relativo ao tratamento de dados",
+      "Subcontratantes",
+      "Cookies e rastreamento",
+      "Aviso legal"
+    ]
+  }
+}

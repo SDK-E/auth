@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — infrastructură de autentificare multi-tenant",
+      "description": "Auth vă pune la dispoziție, încă de la început, produsele OIDC și OAuth 2.1 — pagini de autentificare găzduite, gestionarea sesiunilor și un modul de administrare API — astfel încât echipa dvs. să se poată concentra pe lansarea de funcționalități, în loc să se ocupe de infrastructura de identitate."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Infrastructură de autentificare multi-tenant",
+      "title": "Un singur proces de autentificare pentru fiecare client pe care îl găzduiți.",
+      "lead": "Auth vă pune la dispoziție, încă de la început, produsele OIDC și OAuth 2.1 — pagini de autentificare găzduite, gestionarea sesiunilor și un modul de administrare API — astfel încât echipa dvs. să se poată concentra pe lansarea de funcționalități, în loc să se ocupe de infrastructura de identitate.",
+      "primaryCta": "Începe să construiești",
+      "secondaryCta": "Creează-ți contul de utilizator",
+      "securityLink": "Modelul de securitate →",
+      "visual": {
+        "appTitle": "Aplicația ta",
+        "appBody": "Redirecționează către /authorize",
+        "loginTitle": "autentificare universală",
+        "loginBody": "Autentificare prin semnătura codului pentru serviciul de e-mail găzduit",
+        "returnTitle": "Înapoi la aplicația ta",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE obligatoriu · token-urile sunt verificate în raport cu seturile JWKS publice"
+      }
+    },
+    "standards": {
+      "eyebrow": "Se introduc standardele, se elimină sesiunile",
+      "sentence": "Respectăm întocmai specificațiile: PKCE pentru fiecare cod de autorizare, tokenuri de reîmprospătare cu valabilitate limitată, sesiuni semnate revocabile, chei de semnare publicate."
+    },
+    "features": {
+      "eyebrow": "Platforma",
+      "title": "Configurarea identității, rezolvată.",
+      "intro": "Tot ce urmează mai jos este disponibil astăzi, cu excepția cazurilor în care se specifică altfel — fiecare card menționează mecanismul, deoarece acesta este, de fapt, produsul pe care îl achiziționați.",
+      "items": [
+        {
+          "status": "disponibil",
+          "title": "Autentificare universală",
+          "body": "Un flux de autentificare găzduit către care sunt redirecționați utilizatorii tăi — coduri unice trimise prin e-mail, fără parole de stocat, fără interfață de autentificare de întreținut."
+        },
+        {
+          "status": "disponibil",
+          "title": "Gestionarea sesiunilor",
+          "body": "Sesiunile sunt semnate cu cheile RS256 și JWT în cookie-uri de tip „http-only”, cu expirare la inactivitate și expirare absolută, revocare pe partea de server și chei specifice fiecărui mediu."
+        },
+        {
+          "status": "disponibil",
+          "title": "Securitatea tokenurilor",
+          "body": "Codurile de autorizare sunt întotdeauna însoțite de PKCE. Tokenurile de reîmprospătare se schimbă la fiecare utilizare, iar un token reutilizat anulează întreaga sa familie."
+        },
+        {
+          "status": "disponibil",
+          "title": "Registrul de audit",
+          "body": "Fiecare eveniment de securitate este înregistrat într-un jurnal de audit cu lanț de hash pentru fiecare mediu — orice încercare de manipulare a datelor întrerupe lanțul, iar acesta se recalculează de la început."
+        },
+        {
+          "status": "disponibil",
+          "title": "Măsuri de prevenire a abuzurilor",
+          "body": "Limite de frecvență cu interval fix pentru livrarea codurilor, încercările de verificare și emiterea de tokenuri. Blocările consumă codurile rămase; copia rămâne neutră."
+        },
+        {
+          "status": "lansare",
+          "title": "Conducere API",
+          "body": "O singură suprafață API pentru aplicații, utilizatori, sesiuni și jurnale la adresa /api/v2, gestionată prin tokenuri de mașină cu domeniu de aplicare limitat."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Confidențialitatea pe primul loc",
+      "title": "Datele chiriașilor dumneavoastră rămân ale dumneavoastră.",
+      "intro": "Auth este o infrastructură de identitate — prelucrăm strict ceea ce este necesar pentru autentificare și publicăm fiecare detaliu. Fără trackere publicitare, fără vânzarea datelor, fără antrenarea modelelor pe datele clienților.",
+      "processedTitle": "Ce prelucrăm",
+      "processed": [
+        "Adresa de e-mail a contului, pentru trimiterea codurilor unice",
+        "Evenimente de autentificare însoțite de metadate tehnice, păstrate în scopuri de securitate și audit",
+        "Contori temporari pentru prevenirea abuzurilor, care expiră automat",
+        "Datele de autentificare și cheile criptografice sunt stocate exclusiv în format protejat"
+      ],
+      "neverTitle": "Ce nu facem niciodată",
+      "never": [
+        "Să vândă, să închirieze sau să partajeze date cu caracter personal — niciodată, în niciun scop",
+        "Încărcarea trackerelor sau a pixelilor publicitari de la terți pe interfețele de autentificare",
+        "Antrenează modelele pe baza datelor chiriașilor sau ale utilizatorilor finali",
+        "Păstrați datele după închiderea contului, peste termenele minime prevăzute de lege"
+      ],
+      "privacyLink": "Politica de confidențialitate →",
+      "dpaLink": "Anexă privind prelucrarea datelor →",
+      "subprocessorsLink": "Lista subprocesatorilor →"
+    },
+    "quickstart": {
+      "eyebrow": "Ghid de pornire rapidă",
+      "title": "Trei încercări de autentificare.",
+      "intro": "Fără protocoale proprietare, fără dependență de un singur furnizor — toate datele de mai jos reprezintă date standard ale modelelor OAuth 2.1 și OIDC, comparate cu punctele noastre finale active.",
+      "stepLabel": "Pasul {index}",
+      "steps": [
+        {
+          "title": "Descoperiți terminalele noastre",
+          "body": "Aplicația ta recunoaște formatul standard de descoperire OIDC — nu este necesar SDK, orice limbaj este compatibil."
+        },
+        {
+          "title": "Redirecționează utilizatorii către /authorize cu codul PKCE",
+          "body": "Creează o provocare de programare, redirecționează browserul; noi ne ocupăm de procesul de autentificare și de codul de e-mail găzduit."
+        },
+        {
+          "title": "Schimbă codul cu jetoane",
+          "body": "Verificați id_token-ul folosind setul nostru public de chei JWKS, păstrați tokenul de reîmprospătare și apelați funcția userinfo atunci când aveți nevoie de revendicări."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Prețuri",
+      "title": "Prețul este stabilit de utilizatori, nu de încuietori.",
+      "intro": "Tarife pentru acces anticipat. Un utilizator activ lunar este un utilizator care s-a autentificat cel puțin o dată în luna respectivă; nu vi se vor factura niciodată conturile stocate, dar inactive.",
+      "perMonth": "pe lună",
+      "periodFree": "pentru totdeauna",
+      "plans": [
+        {
+          "includedMau": "1.000 de utilizatori activi lunar",
+          "features": [
+            "Toate mediile (dezvoltare, testare, producție)",
+            "Număr nelimitat de aplicații pe mediu",
+            "Autentificare prin e-mail cu cod unic",
+            "Registrul de audit și jurnalele de evenimente de autentificare",
+            "Sprijinul comunității"
+          ],
+          "cta": "Începe gratuit"
+        },
+        {
+          "includedMau": "10.000 de utilizatori activi lunar",
+          "features": [
+            "Totul gratuit",
+            "Domenii personalizate pentru fiecare client",
+            "MFA, cheile de acces și SSO la nivel de întreprindere, așa cum sunt livrate",
+            "Perioadă mai lungă de păstrare a documentelor de audit",
+            "Asistență prioritară"
+          ],
+          "cta": "Începe cu Pro"
+        }
+      ],
+      "note": "Facturarea nu este încă automatizată — clienții cu acces anticipat sunt facturați manual și pot renunța la orice moment."
+    },
+    "ctaBand": {
+      "title": "Pagina de autentificare se află la o singură redirecționare distanță.",
+      "body": "Identifică punctul la auth.sdk.enterprises și trimite primul tău flux în această după-amiază.",
+      "button": "Deschideți tabloul de bord"
+    }
+  }
+}

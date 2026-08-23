@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Alusta",
+    "quickstart": "Pikaopas",
+    "pricing": "Hinnasto",
+    "security": "Turvallisuus",
+    "status": "Tila",
+    "signIn": "Kirjaudu sisään"
+  },
+  "footer": {
+    "tagline": "SDK Enterprises:n monen käyttäjän todennusinfrastruktuuri.",
+    "productTitle": "Tuote",
+    "productLinks": [
+      "Alusta",
+      "Pikaopas",
+      "Hinnat",
+      "Palvelun tila"
+    ],
+    "trustTitle": "Luottamus",
+    "trustLinks": [
+      "Turvallisuus",
+      "Tietosuojakäytäntö",
+      "Tietojenkäsittely (DPA)",
+      "Alikäsittelijät",
+      "Evästeet ja seuranta"
+    ],
+    "legalTitle": "Oikeudelliset tiedot",
+    "legalLinks": [
+      "Käyttöehdot",
+      "Oikeudellinen ilmoitus"
+    ],
+    "companyTitle": "Yritys",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Yhteystiedot"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "sovelletaan Ranskan lakia",
+    "languageLabel": "Kieli"
+  },
+  "statusBadges": {
+    "available": "Saatavilla",
+    "rollingOut": "Käyttöönotto",
+    "recommended": "Suositeltava"
+  },
+  "legalShell": {
+    "brandContext": "tekijänoikeudet · Oikeudelliset asiat",
+    "effectiveLine": "Voimassa oleva {date} · sovelletaan Ranskan lakia",
+    "documentsLabel": "Asiakirjat",
+    "securityOverview": "Turvallisuuden yleiskatsaus",
+    "docs": [
+      "Tietosuojakäytäntö",
+      "Käyttöehdot",
+      "Tietojenkäsittelyä koskeva liite",
+      "Alikäsittelijät",
+      "Evästeet ja seuranta",
+      "Oikeudellinen ilmoitus"
+    ]
+  }
+}

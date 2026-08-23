@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Plateforme",
+    "quickstart": "Guide de démarrage rapide",
+    "pricing": "Tarifs",
+    "security": "Sécurité",
+    "status": "Statut",
+    "signIn": "Se connecter"
+  },
+  "footer": {
+    "tagline": "Infrastructure d'authentification multi-locataires par SDK Enterprises.",
+    "productTitle": "Produit",
+    "productLinks": [
+      "Plateforme",
+      "Guide de démarrage rapide",
+      "Tarifs",
+      "État du service"
+    ],
+    "trustTitle": "Confiance",
+    "trustLinks": [
+      "Sécurité",
+      "Politique de confidentialité",
+      "Traitement des données (DPA)",
+      "Sous-traitants",
+      "Cookies et suivi"
+    ],
+    "legalTitle": "Mentions légales",
+    "legalLinks": [
+      "Conditions générales d'utilisation",
+      "Mentions légales"
+    ],
+    "companyTitle": "Entreprise",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Contact"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "régie par le droit français",
+    "languageLabel": "Langue"
+  },
+  "statusBadges": {
+    "available": "Disponible",
+    "rollingOut": "Mise en place",
+    "recommended": "Recommandé"
+  },
+  "legalShell": {
+    "brandContext": "auth. · Juridique",
+    "effectiveLine": "En vigueur {date} · soumis au droit français",
+    "documentsLabel": "Documents",
+    "securityOverview": "Présentation générale de la sécurité",
+    "docs": [
+      "Politique de confidentialité",
+      "Conditions d'utilisation",
+      "Anexe relative au traitement des données",
+      "Sous-traitants",
+      "Cookies et suivi",
+      "Mentions légales"
+    ]
+  }
+}

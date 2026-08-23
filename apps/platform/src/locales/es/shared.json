@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Plataforma",
+    "quickstart": "Inicio rápido",
+    "pricing": "Precios",
+    "security": "Seguridad",
+    "status": "Estado",
+    "signIn": "Iniciar sesión"
+  },
+  "footer": {
+    "tagline": "Infraestructura de autenticación multitenant de SDK Enterprises.",
+    "productTitle": "Producto",
+    "productLinks": [
+      "Plataforma",
+      "Inicio rápido",
+      "Precios",
+      "Estado del servicio"
+    ],
+    "trustTitle": "Confianza",
+    "trustLinks": [
+      "Seguridad",
+      "Política de privacidad",
+      "Tratamiento de datos (DPA)",
+      "Subencargados del tratamiento",
+      "Cookies y seguimiento"
+    ],
+    "legalTitle": "Aviso legal",
+    "legalLinks": [
+      "Condiciones de uso",
+      "Aviso legal"
+    ],
+    "companyTitle": "Empresa",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Contacto"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "regido por la legislación francesa",
+    "languageLabel": "Idioma"
+  },
+  "statusBadges": {
+    "available": "Disponible",
+    "rollingOut": "Puesta en marcha",
+    "recommended": "Recomendado"
+  },
+  "legalShell": {
+    "brandContext": "autorización · Aspectos legales",
+    "effectiveLine": "Vigente {date} · regido por la legislación francesa",
+    "documentsLabel": "Documentos",
+    "securityOverview": "Resumen sobre seguridad",
+    "docs": [
+      "Política de privacidad",
+      "Condiciones de uso",
+      "Anexo sobre el tratamiento de datos",
+      "Subencargados del tratamiento",
+      "Cookies y seguimiento",
+      "Aviso legal"
+    ]
+  }
+}

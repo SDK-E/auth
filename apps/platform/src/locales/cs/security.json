@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Bezpečnost",
+      "description": "Jak Auth zajišťuje bezpečnost autentizační infrastruktury: architektura tokenů, rotace klíčů, omezení frekvence požadavků, auditní účetní kniha s řetězcem hashů a jak nahlásit zranitelnost."
+    },
+    "hero": {
+      "eyebrow": "Důvěra",
+      "title": "Zabezpečení je seznam mechanismů.",
+      "lead": "Nežádáme vás, abyste věřili marketingovým tvrzením – u každé z níže uvedených ochranných funkcí je přesně popsáno, jak funguje a kde se uplatňuje. Pokud nedokážeme mechanismus popsat, dané tvrzení neuvádíme."
+    },
+    "layers": [
+      {
+        "title": "Architektura tokenů",
+        "points": [
+          "Autorizační kódy vyžadují při každém požadavku zadání kódu PKCE (S256) a jsou určeny k jednorázovému použití s krátkou dobou platnosti.",
+          "Obnovovací tokeny se při každém použití obměňují; předložení již použitého tokenu vede ke zrušení celé skupiny tokenů.",
+          "Přístupové a identifikační tokeny mají formát RS256 JWT a jsou podepsány pro každé prostředí zvlášť; veřejné klíče jsou zveřejněny na adrese /.well-known/jwks.json.",
+          "Zrušení lze provést na adrese /oauth/revoke u tokenů pro obnovení."
+        ]
+      },
+      {
+        "title": "Relace",
+        "points": [
+          "Relační soubory cookie jsou typu „http-only“, mají atribut „SameSite=Lax“, jsou v produkčním prostředí zabezpečené a obsahují podepsané relační soubory RS256 typu JWT.",
+          "Každá relace má jak časový limit nečinnosti, tak absolutní dobu platnosti.",
+          "Relace lze na straně serveru zrušit; odhlášení vede k jejich okamžitému zrušení."
+        ]
+      },
+      {
+        "title": "Klíče a tajemství",
+        "points": [
+          "Podpisové klíče RS256 pro jednotlivá prostředí; soukromé klíče jsou v neaktivním stavu šifrovány pomocí šifrování typu „envelope“ (AES-256-GCM) a nikdy se neukládají do protokolu.",
+          "Rotace stahuje aktivní klíče z oběhu, přičemž je ponechává zveřejněné, aby bylo možné ověřovat nevyřízené tokeny až do uplynutí jejich přirozené platnosti.",
+          "Tajné údaje klientů jsou ukládány výhradně v zašifrované podobě; ověření trvá po dešifrování konstantní čas."
+        ]
+      },
+      {
+        "title": "Opatření proti zneužívání",
+        "points": [
+          "Limity s pevně nastavenými prahy: počet odeslaných kódů na e-mailovou adresu a na IP adresu, počet neúspěšných ověření na e-mailovou adresu, počet vydaných tokenů na klienta a na IP adresu.",
+          "Příliš mnoho neúspěšných ověření vyčerpá všechny zbývající jednorázové kódy pro danou adresu.",
+          "Chybové hlášení zobrazené uživateli zůstává neutrální; konkrétní údaje se zaznamenávají pouze do protokolů serveru."
+        ]
+      },
+      {
+        "title": "Možnost provádění auditu",
+        "points": [
+          "Bezpečnostní události se zapisují do účetní knihy s řetězcem hashů pro každé prostředí: každý záznam je navázán na svůj předchozí záznam pomocí hodnoty SHA-256.",
+          "Řetězec lze kdykoli přepočítat od počátku; jakákoli zpětná úprava jej přeruší.",
+          "Standardní události související s autentizací (přihlášení, vydávání tokenů, detekce opakovaného použití, zrušení, vytváření klíčů) se zaznamenávají společně s účetní knihou."
+        ]
+      },
+      {
+        "title": "Zpracování dat",
+        "points": [
+          "Údaje o nájemcích jsou uloženy v databázi Postgres s identifikátorem Neon v regionu vybraném pro nasazení; přístup k nim vyžaduje šifrovaný přenos.",
+          "Tajemství jsou před uložením zašifrována pomocí obálkového šifrování; hlavní klíč je uložen mimo databázi.",
+          "Na přihlašovacích stránkách neběží žádné sledovací nástroje ani reklamní pixely třetích stran; analytika na tomto marketingovém webu probíhá bez použití souborů cookie a v agregované podobě."
+        ]
+      }
+    ],
+    "complianceNote": "Stav dodržování předpisů, upřímně řečeno: Společnost Auth od samého počátku zavádí kontrolní mechanismy v souladu s kritérii SOC 2, dosud však nebyl proveden žádný certifikační audit. Jakmile se to změní, zveřejníme zde výsledky.",
+    "disclosure": {
+      "eyebrow": "Zodpovědné zveřejnění",
+      "title": "Našli jste chybu? Dejte nám vědět.",
+      "items": [
+        "Pošlete e-mail na adresu hello@sdk.enterprises s předmětem [security].",
+        "Uveďte kroky k reprodukci; na hlášení reagujeme do 2 pracovních dnů.",
+        "Vyhněte se prosím automatickému skenování v produkčním prostředí a neprohlížejte si data nad rámec toho, co je nezbytné k prokázání problému.",
+        "Výzkum prováděný v dobré víře v souladu s touto politikou je chráněn před právními kroky; uvádíme jména informátorů, pokud si nepřejí zůstat v anonymitě.",
+        "Zásady ve strojově čitelném formátu: /.well-known/security.txt"
+      ],
+      "privacyLink": "Zásady ochrany osobních údajů →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Dále zpracovatelé →"
+    }
+  }
+}

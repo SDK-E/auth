@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Soubory cookie a sledování",
+        "description": "Úplný seznam toho, co služba Auth ukládá ve vašem prohlížeči – a proč je tento seznam kratší než u téměř všech stránek, které jste navštívili."
+      },
+      "title": "Soubory cookie a sledování",
+      "description": "Platformy Auth jsou navrženy tak, aby fungovaly bez sledování uživatelů. Na této stránce je uveden kompletní seznam všech souborů cookie a všech analytických mechanismů – jde o velmi krátký seznam.",
+      "updated": "23. srpna 2026",
+      "sections": [
+        {
+          "heading": "1. Soubory cookie, které ukládáme",
+          "content": [
+            {
+              "columns": [
+                "Jméno",
+                "Kde",
+                "Účel"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Přihlašovací panel pro Auth",
+                  "Nezbytný. Udržuje vás přihlášené k ovládacímu panelu vašeho tenant; podepsaný, pouze HTTP, vyprší s koncem relace."
+                ],
+                [
+                  "(dočasný soubor cookie relace nájemce)",
+                  "Univerzální přihlášení",
+                  "Nezbytné. Vydává se pouze při přihlášení k produktu, který využívá Auth, a jeho platnost je omezena na ověřování v rámci daného produktu."
+                ]
+              ]
+            },
+            "Na stránce auth.sdk.enterprises ani na hostovaných přihlašovacích stránkách se nezobrazuje žádný banner s žádostí o souhlas, protože není s čím souhlasit: nejsou zde žádné reklamní soubory cookie, žádné mezistránkové sledovací nástroje, žádné widgety sociálních sítí ani žádné skripty pro identifikaci uživatelů."
+          ]
+        },
+        {
+          "heading": "2. Analytika",
+          "content": [
+            "Marketingové stránky využívají službu Vercel Analytics, která nepracuje s cookies: počítá celkový počet zobrazení stránek, aniž by ukládala identifikátory nebo vytvářela profily jednotlivých uživatelů. Na stránkách s univerzálním přihlášením, koncových bodech API ani v aplikacích nájemců neprobíhá žádná analytika."
+          ]
+        },
+        {
+          "heading": "3. Záznamy na straně serveru",
+          "content": [
+            "Stejně jako každý webový server zaznamenáváme požadavky pro účely zabezpečení (odhalování zneužití, omezení frekvence přístupů, důkazní podklady pro audit) v souladu s pravidly pro uchovávání údajů uvedenými v našich zásadách ochrany osobních údajů. Tyto záznamy se nepoužívají k profilování návštěvníků tohoto marketingového webu."
+          ]
+        },
+        {
+          "heading": "4. Otázky",
+          "content": [
+            "Pokud vám něco z výše uvedeného není jasné, napište na adresu hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

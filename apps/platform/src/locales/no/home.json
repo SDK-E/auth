@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — autentiseringsinfrastruktur for flere brukere",
+      "description": "Auth gir produktet ditt OIDC og OAuth 2.1 fra første stund – hostede påloggingssider, sesjonshåndtering og et administrasjonsverktøy API – slik at teamet ditt kan fokusere på å levere funksjoner i stedet for å jobbe med identitetsinfrastruktur."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Autentiseringsinfrastruktur for flere brukere",
+      "title": "Én påloggingsprosess for hver leietaker du drifter.",
+      "lead": "Auth gir produktet ditt OIDC og OAuth 2.1 fra første stund – hostede påloggingssider, sesjonshåndtering og et administrasjonsverktøy API – slik at teamet ditt kan fokusere på å levere funksjoner i stedet for å jobbe med identitetsinfrastruktur.",
+      "primaryCta": "Begynn å bygge",
+      "secondaryCta": "Opprett din leietaker",
+      "securityLink": "Sikkerhetsmodell →",
+      "visual": {
+        "appTitle": "Appen din",
+        "appBody": "Omdirigerer til /authorize",
+        "loginTitle": "autentisering: universell pålogging",
+        "loginBody": "Pålogging med kodesignering for e-posttjenester hos en tredjepartsleverandør",
+        "returnTitle": "Tilbake til appen din",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE obligatorisk · tokens verifisert mot offentlige JWKS"
+      }
+    },
+    "standards": {
+      "eyebrow": "Standarder inn, økter ut",
+      "sentence": "Vi følger spesifikasjonene til punkt og prikke: PKCE i alle autorisasjonskoder, roterende oppdateringstokener, tilbakekallbare signerte økter og publiserte signeringsnøkler."
+    },
+    "features": {
+      "eyebrow": "Plattformen",
+      "title": "Identitetskonfigurasjon – ordnet.",
+      "intro": "Alt nedenfor er tilgjengelig i dag, med mindre annet er angitt — hvert kort angir mekanismen, for det er jo det du faktisk kjøper.",
+      "items": [
+        {
+          "status": "tilgjengelig",
+          "title": "Universell pålogging",
+          "body": "En ekstern påloggingsprosess som brukerne blir omdirigert til – engangskoder sendes via e-post, ingen passord å lagre, ingen påloggingsgrensesnitt å vedlikeholde."
+        },
+        {
+          "status": "tilgjengelig",
+          "title": "Sesjonshåndtering",
+          "body": "Øktene signeres med RS256 og JWT i «http-only»-informasjonskapsler, med utløp ved inaktivitet og absolutt utløp, tilbakekalling på serversiden og nøkler per miljø."
+        },
+        {
+          "status": "tilgjengelig",
+          "title": "Token-sikkerhet",
+          "body": "Autorisasjonskoder følger alltid med PKCE. Oppdateringstokener skiftes ut ved hver bruk, og et token som brukes på nytt, fører til at hele familien av tokener blir ugyldiggjort."
+        },
+        {
+          "status": "tilgjengelig",
+          "title": "Revisjonsbok",
+          "body": "Hver sikkerhetshendelse blir registrert i en revisjonslogg med hash-kjede for hvert miljø – ved manipulering brytes kjeden, og kjeden beregnes på nytt fra begynnelsen."
+        },
+        {
+          "status": "tilgjengelig",
+          "title": "Kontrolltiltak mot misbruk",
+          "body": "Faste grenseverdier for antall kodeleveranser, verifiseringsforsøk og utstedelse av token. Sperringer bruker opp utestående koder; kopien forblir uberørt."
+        },
+        {
+          "status": "innføring",
+          "title": "Ledelse API",
+          "body": "Én API-overflate for applikasjoner, brukere, økter og logger på /api/v2, styrt av maskin-tokens med begrenset gyldighetsområde."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Personvernet først",
+      "title": "Leietakernes opplysninger forblir dine.",
+      "intro": "Auth er en identitetsinfrastruktur – vi behandler nøyaktig det som kreves for autentisering og offentliggjør alle detaljer. Ingen annonsesporere, ingen salg av data, ingen modellopplæring basert på kundedata.",
+      "processedTitle": "Hva vi behandler",
+      "processed": [
+        "E-postadresse til kontoen, for mottak av engangskoder",
+        "Autentiseringshendelser med tekniske metadata, som oppbevares av sikkerhets- og revisjonshensyn",
+        "Midlertidige tellere for forebygging av misbruk som utløper automatisk",
+        "Påloggingsopplysninger og kryptografiske nøkler lagres utelukkende i beskyttet form"
+      ],
+      "neverTitle": "Det vi aldri gjør",
+      "never": [
+        "Selge, utleie eller dele personopplysninger – noensinne, uansett formål",
+        "Last inn sporingskoder eller annonsepiksler fra tredjeparter på autentiseringsflater",
+        "Trene modeller på data fra leietakere eller sluttbrukere",
+        "Oppbevar data etter at du har avsluttet kontoen din, utover de lovfestede minimumsperiodene"
+      ],
+      "privacyLink": "Personvernerklæring →",
+      "dpaLink": "Tillegg om databehandling →",
+      "subprocessorsLink": "Liste over underleverandører →"
+    },
+    "quickstart": {
+      "eyebrow": "Hurtigstart",
+      "title": "Tre forsøk på å logge inn.",
+      "intro": "Ingen proprietær protokoll, ingen leverandørbinding — alt nedenfor er standard OAuth 2.1 og OIDC koblet til våre aktive endepunkter.",
+      "stepLabel": "Trinn {index}",
+      "steps": [
+        {
+          "title": "Oppdag våre endepunkter",
+          "body": "Appen din leser standard OIDC-oppdagingsdata – SDK er ikke nødvendig, og alle språk fungerer."
+        },
+        {
+          "title": "Send brukere til /authorize med PKCE",
+          "body": "Lag en kodeutfordring, omdiriger nettleseren – vi tar oss av den hostede påloggingen og e-postkoden."
+        },
+        {
+          "title": "Bytt inn koden mot poletter",
+          "body": "Sjekk id_token mot vår offentlige JWKS, behold oppdateringstokenet, og kall userinfo når du trenger påstander."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Priser",
+      "title": "Prisen bestemmes av brukerne, ikke av låsene.",
+      "intro": "Priser for tidlig tilgang. En månedlig aktiv bruker er en bruker som har logget seg inn minst én gang i løpet av måneden; du blir aldri fakturert for kontoer som er lagret, men ikke i bruk.",
+      "perMonth": "per måned",
+      "periodFree": "for alltid",
+      "plans": [
+        {
+          "includedMau": "1 000 aktive brukere per måned",
+          "features": [
+            "Alle miljøer (utvikling, test, produksjon)",
+            "Ubegrenset antall applikasjoner per miljø",
+            "Pålogging med engangskode via e-post",
+            "Revisjonsjournal og logger over autentiseringshendelser",
+            "Støtte fra lokalsamfunnet"
+          ],
+          "cta": "Kom i gang gratis"
+        },
+        {
+          "includedMau": "10 000 aktive brukere per måned",
+          "features": [
+            "Alt er gratis",
+            "Egendefinerte domener per leietaker",
+            "MFA, passnøkler og SSO for bedrifter slik de leveres",
+            "Lengre oppbevaringsperiode for revisjonsdokumentasjon",
+            "Prioritert support"
+          ],
+          "cta": "Begynn med Pro"
+        }
+      ],
+      "note": "Faktureringen er ennå ikke automatisert — kunder med tidlig tilgang får faktura manuelt og kan si opp når som helst."
+    },
+    "ctaBand": {
+      "title": "Du er bare én viderekobling unna innloggingssiden.",
+      "body": "Oppdag punktet ved auth.sdk.enterprises og send inn din første flyt i ettermiddag.",
+      "button": "Åpne oversiktssiden"
+    }
+  }
+}

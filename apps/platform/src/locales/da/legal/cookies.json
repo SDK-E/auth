@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Cookies og sporing",
+        "description": "Den fulde liste over, hvad Auth indstiller i din browser — og hvorfor den er kortere end næsten alle andre hjemmesider, du har besøgt."
+      },
+      "title": "Cookies og sporing",
+      "description": "Auth-platforme er udviklet til at fungere uden at spore dig. Denne side indeholder en oversigt over alle cookies og alle analysemekanismer – en meget kort liste.",
+      "updated": "23. august 2026",
+      "sections": [
+        {
+          "heading": "1. De cookies, vi sætter",
+          "content": [
+            {
+              "columns": [
+                "Navn",
+                "Hvor",
+                "Formål"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Auth-dashboard",
+                  "Nødvendig. Sikrer, at du forbliver logget ind på dit lejer-dashboard; signeret, http-only, udløber sammen med sessionen."
+                ],
+                [
+                  "(session-cookie for brugeren)",
+                  "Universel login",
+                  "Vigtigt. Udstedes kun, når du logger ind på et produkt, der bruger Auth, og er begrænset til det pågældende produkts autentificering."
+                ]
+              ]
+            },
+            "Der vises ikke noget samtykkebanner, da der ikke er noget at give samtykke til: Der kører hverken reklamecookies, sporingsværktøjer på tværs af websteder, sociale widgets eller fingerprinting-scripts på auth.sdk.enterprises eller på de hostede loginsider."
+          ]
+        },
+        {
+          "heading": "2. Analyse",
+          "content": [
+            "Markedsføringssiderne bruger Vercel Analytics, som er uden cookies: Det tæller sidevisninger samlet uden at gemme identifikatorer eller oprette profiler på enkeltpersoner. Der kører ingen analyse på universelle loginsider, API-endpoints eller inde i kundernes applikationer."
+          ]
+        },
+        {
+          "heading": "3. Serverbaserede poster",
+          "content": [
+            "Som enhver anden webserver logger vi forespørgsler af sikkerhedsmæssige årsager (opsporing af misbrug, begrænsning af trafikmængden, revisionsdokumentation) i overensstemmelse med vores opbevaringsregler i privatlivspolitikken. Disse logfiler bruges ikke til at oprette profiler på besøgende på dette markedsføringswebsted."
+          ]
+        },
+        {
+          "heading": "4. Spørgsmål",
+          "content": [
+            "Skriv til hello@sdk.enterprises, hvis noget her er uklart."
+          ]
+        }
+      ]
+    }
+  }
+}

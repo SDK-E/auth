@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Jogi nyilatkozat",
+        "description": "A auth.sdk.enterprises kiadója, üzemeltetője és jogi információi (jogi nyilatkozat)."
+      },
+      "title": "Jogi nyilatkozat",
+      "description": "A francia jogszabályok által előírt, a auth.sdk.enterprises címen közzétett weboldalra vonatkozó információk (jogi nyilatkozat), a 2004. június 21-i 2004-575. sz. törvény (LCEN) 6-III. cikkelyének megfelelően.",
+      "updated": "2026. augusztus 23.",
+      "sections": [
+        {
+          "heading": "Kiadó",
+          "content": [
+            "Ezt a weboldalt és az Auth szolgáltatást a SADDEK Entreprises üzemelteti, amely SDK Enterprises néven működik.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Székhely: 44 Rue Pasquier, 75008 Paris, France",
+              "Jogi forma: egyéni vállalkozó, alaptőke nélkül",
+              "Cégjegyzékszám: RCS Paris 850 513 912",
+              "Kiadási vezető: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Kapcsolat",
+          "content": [
+            "A webhelyünkkel vagy szolgáltatásunkkal kapcsolatos kérdéseket a hello@sdk.enterprises címre küldhetik. A biztonsági bejelentésekkel kapcsolatban kérjük, olvassák el a felelősségteljes bejelentési irányelveinket."
+          ]
+        },
+        {
+          "heading": "Tárhelyszolgáltatás",
+          "content": [
+            "A webhelyet és a szolgáltatást a Vercel Inc. üzemelteti, székhelye: 440 N Barranca Ave #4133, Covina, CA 91723, Egyesült Államok. Az alkalmazás adatbázisait a Neon üzemelteti; az összes infrastruktúra-szolgáltató adatai az alvállalkozók oldalon találhatók."
+          ]
+        },
+        {
+          "heading": "Szellemi tulajdon",
+          "content": [
+            "A weboldal felépítése, szövegei, logói és tartalma a SDK Enterprises tulajdonát képezik. Az előzetes engedély nélküli, teljes vagy részleges sokszorosítás vagy közzététel tilos, kivéve az alkalmazandó jogszabályok által megengedett eseteket."
+          ]
+        },
+        {
+          "heading": "Jogi keret",
+          "content": [
+            "Ezekre a közleményekre a francia jog az irányadó. Az Auth szolgáltatás a felhasználási feltételeink szerint kerül nyújtásra, a személyes adatok kezelését pedig az adatvédelmi nyilatkozatunk és az adatkezelési kiegészítésünk tartalmazza."
+          ]
+        }
+      ]
+    }
+  }
+}

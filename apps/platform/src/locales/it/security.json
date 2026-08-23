@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Sicurezza",
+      "description": "Come Auth garantisce la sicurezza dell'infrastruttura di autenticazione: architettura basata su token, rotazione delle chiavi, limitazione della frequenza, registro di audit con catena di hash e procedure per segnalare una vulnerabilità."
+    },
+    "hero": {
+      "eyebrow": "Fiducia",
+      "title": "La sicurezza è l'elenco dei meccanismi.",
+      "lead": "Non vi chiediamo di fidarvi delle affermazioni di marketing: ogni misura di protezione qui di seguito descrive esattamente come funziona e dove viene applicata. Se non siamo in grado di descriverne il meccanismo, non facciamo alcuna affermazione al riguardo."
+    },
+    "layers": [
+      {
+        "title": "Architettura dei token",
+        "points": [
+          "I codici di autorizzazione richiedono l'inserimento di PKCE (S256) in ogni richiesta e sono monouso con scadenza breve.",
+          "I token di aggiornamento vengono rinnovati ad ogni utilizzo; la presentazione di un token già utilizzato comporta la revoca dell'intera famiglia di token.",
+          "I token di accesso e di identificazione sono RS256 e JWT, firmati per ciascun ambiente; le chiavi pubbliche sono pubblicate all'indirizzo /.well-known/jwks.json.",
+          "È possibile revocare i token di aggiornamento all'indirizzo /oauth/revoke."
+        ]
+      },
+      {
+        "title": "Sessioni",
+        "points": [
+          "I cookie di sessione sono di tipo \"http-only\", con impostazione \"SameSite=Lax\", sicuri in ambiente di produzione e contengono cookie di sessione firmati con le chiavi RS256 e JWT.",
+          "Ogni sessione prevede sia un timeout di inattività che una scadenza assoluta.",
+          "Le sessioni sono revocabili dal lato server; il logout comporta la revoca immediata."
+        ]
+      },
+      {
+        "title": "Chiavi e segreti",
+        "points": [
+          "Chiavi di firma RS256 specifiche per ogni ambiente; le chiavi private sono crittografate con il metodo “envelope” quando non sono in uso (AES-256-GCM) e non vengono mai registrate.",
+          "La rotazione mette fuori servizio i chiavi attive, mantenendoli tuttavia pubblicati in modo che i token in circolazione possano essere verificati fino alla loro scadenza naturale.",
+          "I segreti dei clienti vengono memorizzati esclusivamente in forma crittografata; la verifica richiede un tempo costante rispetto al tempo necessario per la decrittografia."
+        ]
+      },
+      {
+        "title": "Controlli anti-abuso",
+        "points": [
+          "Limiti di frequenza a intervallo fisso: invio di codici per e-mail e per indirizzo IP, errori di verifica per e-mail, emissione di token per cliente e per indirizzo IP.",
+          "Un numero eccessivo di errori di verifica esaurisce tutti i codici monouso disponibili per quell’indirizzo.",
+          "Il messaggio di errore visualizzato dall'utente mantiene un tono neutro; i dettagli vengono registrati esclusivamente nei log del server."
+        ]
+      },
+      {
+        "title": "Verificabilità",
+        "points": [
+          "Gli eventi di sicurezza vengono registrati in un registro con catena di hash specifico per ciascun ambiente: ogni voce viene collegata alla precedente tramite lo hash SHA-256.",
+          "La catena può essere ricalcolata a partire dalla genesi in qualsiasi momento; qualsiasi modifica retroattiva la interrompe.",
+          "Gli eventi di autenticazione standard (accessi, emissione di token, rilevamento del riutilizzo, revoca, creazione di chiavi) vengono registrati insieme al registro."
+        ]
+      },
+      {
+        "title": "Trattamento dei dati",
+        "points": [
+          "I dati relativi agli inquilini sono archiviati in un database Postgres Neon nella regione selezionata per l'implementazione; l'accesso richiede un trasporto crittografato.",
+          "I segreti vengono crittografati con un algoritmo a busta prima di essere archiviati; la chiave master è conservata al di fuori del database.",
+          "Sulle pagine di autenticazione non vengono eseguiti tracker o pixel pubblicitari di terze parti; le analisi su questo sito di marketing non utilizzano cookie e sono aggregate."
+        ]
+      }
+    ],
+    "complianceNote": "Situazione di conformità, in tutta onestà: Auth ha implementato sin dall’inizio controlli in linea con i criteri SOC 2, ma non è stata ancora completata alcuna verifica di certificazione. Pubblicheremo i risultati qui non appena la situazione cambierà.",
+    "disclosure": {
+      "eyebrow": "Divulgazione responsabile",
+      "title": "Hai trovato un errore? Segnalacelo.",
+      "items": [
+        "Invia un'e-mail all'indirizzo hello@sdk.enterprises indicando [security] nell'oggetto.",
+        "Si prega di includere la procedura di riproduzione; confermeremo la ricezione delle segnalazioni entro 2 giorni lavorativi.",
+        "Si prega di evitare scansioni automatiche sull'ambiente di produzione e di non accedere a dati oltre a quelli necessari a dimostrare il problema.",
+        "La ricerca condotta in buona fede ai sensi della presente politica è al riparo da azioni legali; citiamo i nomi dei informatori, a meno che questi non preferiscano rimanere anonimi.",
+        "Politica leggibile da macchina: /.well-known/security.txt"
+      ],
+      "privacyLink": "Informativa sulla privacy →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Sottogestori →"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — infrastruktur til autentificering af flere brugere",
+      "description": "Auth leverer dine produkter OIDC og OAuth 2.1 klar til brug – med hostede login-sider, sessionsstyring og et administrationsværktøj API – så dit team kan fokusere på at udvikle nye funktioner i stedet for at skulle bekymre sig om identitetsinfrastrukturen."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Infrastruktur til autentificering af flere brugere",
+      "title": "Én login-proces for hver enkelt lejer, du hoster.",
+      "lead": "Auth leverer dine produkter OIDC og OAuth 2.1 klar til brug – med hostede login-sider, sessionsstyring og et administrationsværktøj API – så dit team kan fokusere på at udvikle nye funktioner i stedet for at skulle bekymre sig om identitetsinfrastrukturen.",
+      "primaryCta": "Kom i gang med at bygge",
+      "secondaryCta": "Opret din lejer",
+      "securityLink": "Sikkerhedsmodel →",
+      "visual": {
+        "appTitle": "Din app",
+        "appBody": "Omdirigerer til /authorize",
+        "loginTitle": "auth. universel login",
+        "loginBody": "Login med kodesignering af hostet e-mail",
+        "returnTitle": "Tilbage til din app",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE obligatorisk · tokens verificeret mod offentlige JWKS’er"
+      }
+    },
+    "standards": {
+      "eyebrow": "Standarder ind, sessioner ud",
+      "sentence": "Vi følger specifikationerne til punkt og prikke: PKCE i hver autorisationskode, roterende opdateringstokener, tilbagekaldelige signerede sessioner og offentliggjorte signeringsnøgler."
+    },
+    "features": {
+      "eyebrow": "Platformen",
+      "title": "Identitetskonfiguration – klaret.",
+      "intro": "Alt nedenfor er tilgængeligt i dag, medmindre andet er angivet — på hvert kort er mekanismen angivet, for det er jo det, du rent faktisk køber.",
+      "items": [
+        {
+          "status": "tilgængelig",
+          "title": "Universel login",
+          "body": "En hostet loginfunktion, som dine brugere omdirigeres til — engangskoder via e-mail, ingen adgangskoder, der skal gemmes, og ingen login-grænseflade, der skal vedligeholdes."
+        },
+        {
+          "status": "tilgængelig",
+          "title": "Sessionsstyring",
+          "body": "Sessionerne signeres med RS256 og JWT i http-only-cookies med udløb ved inaktivitet og absolut udløb, tilbagekaldelse på serversiden samt nøgler pr. miljø."
+        },
+        {
+          "status": "tilgængelig",
+          "title": "Token-sikkerhed",
+          "body": "Autorisationskoder følger altid med PKCE. Opdateringstokener udskiftes ved hver brug, og et genbrugt token medfører, at hele tokenfamilien bliver ugyldig."
+        },
+        {
+          "status": "tilgængelig",
+          "title": "Revisionsbog",
+          "body": "Hver sikkerhedshændelse registreres i en auditlog med hash-kæde for hvert miljø — manipulation af loggen bryder kæden, og kæden genberegnes fra begyndelsen."
+        },
+        {
+          "status": "tilgængelig",
+          "title": "Kontrolforanstaltninger mod misbrug",
+          "body": "Faste grænser for antallet af kodeleveringer, verifikationsforsøg og udstedelse af tokens. Spærringer forbruger udestående koder; kopier forbliver uændrede."
+        },
+        {
+          "status": "indførelse",
+          "title": "Ledelse API",
+          "body": "Én API-grænseflade til applikationer, brugere, sessioner og logfiler på /api/v2, der styres af maskin-tokens med begrænset gyldighedsområde."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Privatlivet først",
+      "title": "Dine lejers oplysninger forbliver dine.",
+      "intro": "Auth er en identitetsinfrastruktur — vi behandler udelukkende de oplysninger, der er nødvendige for autentificering, og offentliggør alle detaljer. Ingen annoncesporere, intet salg af data, ingen modeltræning baseret på kundeoplysninger.",
+      "processedTitle": "Hvad vi behandler",
+      "processed": [
+        "E-mailadresse til kontoen, til modtagelse af engangskoder",
+        "Autentificeringshændelser med tekniske metadata, der opbevares af sikkerheds- og revisionsmæssige årsager",
+        "Tidlige tællere til forebyggelse af misbrug, der udløber automatisk",
+        "Adgangsoplysninger og kryptografiske nøgler gemmes udelukkende i beskyttet form"
+      ],
+      "neverTitle": "Hvad vi aldrig gør",
+      "never": [
+        "At sælge, udleje eller dele personoplysninger — nogensinde, uanset formålet",
+        "Indlæs tredjeparts-trackere eller annoncepixels på godkendelsesflader",
+        "Træn modeller på data fra lejere eller slutbrugere",
+        "Opbevar data, efter at du har lukket din konto, ud over de lovmæssige minimumskrav"
+      ],
+      "privacyLink": "Fortrolighedspolitik →",
+      "dpaLink": "Tillæg om databehandling →",
+      "subprocessorsLink": "Liste over underdatabehandlere →"
+    },
+    "quickstart": {
+      "eyebrow": "Hurtigstart",
+      "title": "Tre anmodninger om et fungerende login.",
+      "intro": "Ingen proprietær protokol, ingen leverandørbinding — alt nedenfor er standard OAuth 2.1 og OIDC, der kører mod vores aktive endpoints.",
+      "stepLabel": "Trin {index}",
+      "steps": [
+        {
+          "title": "Se vores enheder",
+          "body": "Din app genkender standard OIDC-opdagelse — der kræves ingen SDK, og alle sprog fungerer."
+        },
+        {
+          "title": "Send brugerne til /authorize med PKCE",
+          "body": "Opret en kodeudfordring, omdiriger browseren – vi tager os af den hostede login- og e-mail-kode."
+        },
+        {
+          "title": "Indløs koden mod tokens",
+          "body": "Kontroller id_token mod vores offentlige JWKS, gem refresh token, og kald userinfo, når du har brug for claims."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Priser",
+      "title": "Prisen fastsættes af brugerne, ikke af låse.",
+      "intro": "Priser for tidlig adgang. En månedligt aktiv bruger er en bruger, der har logget ind mindst én gang i den pågældende måned; du bliver aldrig opkrævet for konti, der er oprettet, men ikke er aktive.",
+      "perMonth": "pr. måned",
+      "periodFree": "for altid",
+      "plans": [
+        {
+          "includedMau": "1.000 aktive brugere om måneden",
+          "features": [
+            "Alle miljøer (udviklings-, test- og produktionsmiljø)",
+            "Ubegrænset antal applikationer pr. miljø",
+            "Login med engangskode via e-mail",
+            "Revisionshovedbog og logfiler over godkendelseshændelser",
+            "Støtte fra lokalsamfundet"
+          ],
+          "cta": "Kom i gang gratis"
+        },
+        {
+          "includedMau": "10.000 aktive brugere om måneden",
+          "features": [
+            "Alt er gratis",
+            "Brugerdefinerede domæner pr. lejer",
+            "MFA, adgangsnøgler og SSO i virksomheden, som de leveres",
+            "Længere opbevaringsperiode for revisionsdokumenter",
+            "Prioriteret support"
+          ],
+          "cta": "Start med Pro"
+        }
+      ],
+      "note": "Faktureringen er endnu ikke automatiseret — brugere med tidlig adgang faktureres manuelt og kan opsige deres abonnement når som helst."
+    },
+    "ctaBand": {
+      "title": "Der er kun én omdirigering tilbage til din loginside.",
+      "body": "Find et punkt ved auth.sdk.enterprises, og send dit første flow i eftermiddag.",
+      "button": "Åbn kontrolpanelet"
+    }
+  }
+}

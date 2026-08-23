@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Användarvillkor",
+        "description": "Villkoren för åtkomst till och användning av autentiseringstjänsten Auth som tillhandahålls av SDK Enterprises."
+      },
+      "title": "Användarvillkor",
+      "description": "Dessa villkor utgör avtalet mellan dig och SDK Enterprises avseende användningen av Auth-tjänsten. De är medvetet kortfattade, men täcker allt som är väsentligt i en affärsrelation.",
+      "updated": "23 augusti 2026",
+      "sections": [
+        {
+          "heading": "1. Definitioner",
+          "content": [
+            [
+              "”Tjänsten” – Auths autentiseringsplattform för flera kunder som drivs på auth.sdk.enterprises, inklusive dess instrumentpaneler, gränssnitt och dokumentation.",
+              "\"Hyresgäst\" — din avskilda arbetsplats inom Tjänsten.",
+              "”Slutanvändare” – en person som loggar in på era produkter via Tjänsten.",
+              "”Avtal” – dessa villkor tillsammans med eventuella beställningar eller val av abonnemang som du gör, vår integritetspolicy och (i tillämpliga fall) vårt tillägg om databehandling."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Vem du är",
+          "content": [
+            "Du företräder en juridisk person eller agerar i egenskap av yrkesutövare. Du bekräftar att de uppgifter du lämnar vid registreringen är korrekta, att du är behörig att binda den enhet du företräder och att din användning av Tjänsten överensstämmer med de lagar som gäller för dig och dina slutanvändare. Tjänsten erbjuds inte till konsumenter som agerar utanför sin yrkesroll, och inte heller till personer som inte har uppnått den ålder då de kan ge sitt digitala samtycke."
+          ]
+        },
+        {
+          "heading": "3. Din hyresgäst och dina skyldigheter",
+          "content": [
+            [
+              "Du är ansvarig för de applikationer du registrerar, de adresser du godkänner för omdirigering samt för att de inloggningsuppgifter som utfärdats till dig förblir konfidentiella. Meddela oss omedelbart om något läckage uppstår.",
+              "Du ansvarar för din relation till slutanvändarna, vilket innefattar att informera dem om den behandling som sker via Tjänsten och att inhämta nödvändiga tillstånd.",
+              "Du måste se till att hyresgästens kontaktuppgifter är uppdaterade så att vi kan kontakta dig i frågor som rör säkerhet och service."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Godtagbar användning",
+          "content": [
+            "Du förbinder dig att inte:",
+            [
+              "använda Tjänsten för olagliga ändamål eller på ett sätt som kränker andras rättigheter;",
+              "stör, överbelastar, undersöker eller testar Tjänsten på ett sätt som strider mot vår policy för ansvarsfull rapportering;",
+              "kringgå säkerhetsåtgärder, användningsbegränsningar eller åtkomstbegränsningar;",
+              "vidareförsälja eller erbjuda Tjänsten som en egen produkt (white label) i form av ett konkurrerande erbjudande av identitetshantering utan separat avtal;",
+              "skicka olagligt innehåll via e-postmeddelanden som skickas via Tjänsten, eller ge en felaktig bild av dess ursprung;",
+              "ladda upp skadlig kod eller innehåll som inte har något samband med autentisering."
+            ],
+            "Vi kan utreda misstänkta överträdelser och kan stänga av berörd åtkomst när det är rimligt nödvändigt – med förvarning när det är möjligt, och omedelbart när det föreligger en trovärdig säkerhetsrisk."
+          ]
+        },
+        {
+          "heading": "5. Tjänstens tillgänglighet",
+          "content": [
+            "Vi driver Tjänsten på en välrenommerad, hanterad infrastruktur med övervakning, säkerhetskopiering och redundans som är anpassade efter tjänstens mognadsgrad. Under perioden med tidig åtkomst gäller inga formella åtaganden avseende servicenivå; när sådana åtaganden införs kommer de att publiceras här och utgöra en del av Avtalet. Planerat underhåll meddelas i förväg i den mån det är möjligt."
+          ]
+        },
+        {
+          "heading": "6. Avgifter, fakturering och skatter",
+          "content": [
+            [
+              "Avgifterna är de som anges i prisavsnittet på vår webbplats vid tidpunkten för din prenumeration och anges exklusive tillämpliga skatter.",
+              "Om inte annat anges ska avgifterna betalas månadsvis i förskott och återbetalas inte när perioden har börjat, såvida inte lagen kräver annat.",
+              "Vi kan ändra priserna med verkan från och med ett senare datum med minst 30 dagars varsel; ändringarna påverkar aldrig en period som redan har betalats.",
+              "Försenad betalning kan leda till avstängning efter en skriftlig varning."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Immateriella rättigheter",
+          "content": [
+            "SDK Enterprises förbehåller sig alla rättigheter till Tjänsten, inklusive dess programvara, varumärkesresurser och dokumentation. Du behåller alla rättigheter till dina applikationer och till data som tillhör dig och dina slutanvändare. Du erhåller en personlig, icke-exklusiv och icke-överlåtbar rätt att använda Tjänsten i enlighet med detta Avtal under dess giltighetstid. Feedback som du lämnar till oss får användas fritt för att förbättra Tjänsten utan någon förpliktelse."
+          ]
+        },
+        {
+          "heading": "8. Garantier och ansvarsfriskrivningar",
+          "content": [
+            "Vi garanterar att vi kommer att tillhandahålla Tjänsten med rimlig skicklighet och omsorg. Om inte annat uttryckligen anges, och i den utsträckning som lagen tillåter, tillhandahålls Tjänsten ”i befintligt skick” utan ytterligare garantier av något slag, vare sig uttryckliga eller underförstådda, inklusive lämplighet för ett visst ändamål eller avbrottsfri och felfri drift. Ingenting i detta avtal utesluter ansvar som inte kan uteslutas enligt fransk lag, inklusive ansvar för uppsåt eller grov vårdslöshet, personskada och lagstadgat konsumentskydd där sådant är tillämpligt."
+          ]
+        },
+        {
+          "heading": "9. Ansvarsbegränsning",
+          "content": [
+            "I den utsträckning som lagen tillåter är ingen av parterna ansvarig för indirekta, tillfälliga eller följdskador, inklusive utebliven vinst, intäkter, goodwill eller data, oavsett orsak. Varje parts totala ansvar som härrör från eller är relaterat till Avtalet är begränsat till de totala avgifter som du har betalat under de tolv månader som föregick den händelse som gav upphov till anspråket. Dessa begränsningar gäller solidariskt för våra underleverantörer endast i den utsträckning som lagen tillåter."
+          ]
+        },
+        {
+          "heading": "10. Skadeståndsansvar",
+          "content": [
+            "Du samtycker till att försvara och ersätta oss för anspråk från tredje part som härrör från dina applikationer, din användning av Tjänsten i strid med detta Avtal eller ditt intrång i tredje parts rättigheter – förutsatt att vi omedelbart underrättar dig om anspråket, låter dig leda försvaret och inte ensidigt ingår förlikning på dina vägnar."
+          ]
+        },
+        {
+          "heading": "11. Sekretess",
+          "content": [
+            "Vardera parten ska skydda den andra partens konfidentiella information med minst samma omsorg som den tillämpar på sin egen liknande information, använda den enbart för att fullgöra avtalet och endast lämna ut den till personal och rådgivare som behöver den och som är bundna av motsvarande skyldigheter. Denna skyldighet gäller i tre år efter avtalets upphörande."
+          ]
+        },
+        {
+          "heading": "12. Giltighetstid, upphävande och uppsägning",
+          "content": [
+            [
+              "Avtalet träder i kraft när du använder Tjänsten för första gången och gäller så länge din hyresgäst finns.",
+              "Vardera parten kan säga upp avtalet när som helst genom skriftligt meddelande; de perioder för vilka avgiften redan har betalats löper ut enligt plan, om inte lagen föreskriver något annat.",
+              "Vardera parten får säga upp avtalet på grund av väsentlig avtalsbrott som inte har åtgärdats inom 30 dagar efter underrättelse, eller omedelbart om fortsatt fullgörande skulle vara olagligt eller medföra väsentlig skada.",
+              "Vid uppsägning tillhandahåller vi på begäran en maskinläsbar export av dina kunddata under 30 dagar, varefter vi raderar kunduppgifterna i enlighet med de arkiveringsskyldigheter som beskrivs i integritetspolicyn."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Tredjepartsleverantörer",
+          "content": [
+            "Tjänsten utnyttjar välrenommerade infrastrukturleverantörer som anges på vår sida om underleverantörer. Vi ansvarar för deras prestationer enligt detta avtal; dina relationer med dem uppstår endast genom oss."
+          ]
+        },
+        {
+          "heading": "14. Force majeure",
+          "content": [
+            "Ingen av parterna är ansvarig för underlåtenhet att fullgöra sina åtaganden som orsakas av händelser som ligger utanför dess rimliga kontroll – naturkatastrofer, strejker, krig, störningar i offentliga nätverk eller försörjningssystem, eller åtgärder från myndigheternas sida – förutsatt att den drabbade parten underrättar den andra parten och återupptar fullgörandet så snart som det rimligen är möjligt."
+          ]
+        },
+        {
+          "heading": "15. Allmänna bestämmelser",
+          "content": [
+            [
+              "Detta avtal utgör den fullständiga överenskommelsen mellan parterna avseende Tjänsten och ersätter tidigare överenskommelser.",
+              "Om en bestämmelse förklaras ogiltig, ska övriga bestämmelser fortsätta att gälla och parterna ska ersätta den ogiltiga bestämmelsen med en giltig bestämmelse som bäst motsvarar dess syfte.",
+              "Att en part dröjer med att utöva en rättighet innebär inte att denne avstår från den.",
+              "Du får inte överlåta avtalet utan vårt samtycke; vi får överlåta det som en del av en omorganisation av vår verksamhet, efter att ha meddelat detta.",
+              "Meddelanden anses giltigt överlämnade via e-post till hello@sdk.enterprises eller till den senast angivna kontaktadressen för hyresgästen.",
+              "Dessa villkor är upprättade på engelska; en fransk version kan tillhandahållas för enkelhetens skull. För avtal med franska professionella kunder gäller den franska versionen i den mån en sådan finns och det föreligger skillnader."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Tillämplig lag och tvister",
+          "content": [
+            "Detta avtal regleras av fransk lag. Innan ärendet tas upp till domstol ska parterna under 30 dagar från det att en tvist skriftligen anmälts försöka nå en uppgörelse i god tro. Om detta misslyckas har domstolarna i Paris, Frankrike, behörighet – såvida inte tvingande bestämmelser ger dig rätt till en annan domstol."
+          ]
+        },
+        {
+          "heading": "17. Ändringar av dessa villkor",
+          "content": [
+            "Väsentliga ändringar meddelas på denna sida minst 30 dagar innan de träder i kraft. Fortsatt användning efter det datumet innebär att du godkänner ändringarna; om du inte samtycker kan du säga upp avtalet innan ändringarna träder i kraft."
+          ]
+        }
+      ]
+    }
+  }
+}

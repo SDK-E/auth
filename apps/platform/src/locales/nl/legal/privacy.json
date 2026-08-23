@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Privacybeleid",
+        "description": "Hoe Auth by SDK Enterprises persoonsgegevens verwerkt: welke gegevens we verzamelen, waarom, hoe lang we ze bewaren, met wie we ze delen en welke rechten u hierop hebt."
+      },
+      "title": "Privacybeleid",
+      "description": "In dit beleid wordt uitgelegd welke persoonsgegevens de Auth-dienst verwerkt, waarom deze worden verwerkt, hoe lang ze worden bewaard, met wie ze worden gedeeld en welke rechten de betrokkenen hebben. We hebben dit beleid opgesteld om te worden gelezen en begrepen, niet alleen om te worden weergegeven.",
+      "updated": "23 augustus 2026",
+      "sections": [
+        {
+          "heading": "1. Wie wij zijn",
+          "content": [
+            "De Auth-dienst (de „Dienst“) wordt beheerd door SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, met maatschappelijke zetel te 44 Rue Pasquier, 75008 Paris, France — „SDK Enterprises“, „wij“, „ons“). Onze klanten gebruiken de Dienst om hun eigen gebruikers te authenticeren; in dit document wordt beschreven hoe persoonsgegevens binnen die regeling worden verwerkt en waarvoor elke partij verantwoordelijk is."
+          ]
+        },
+        {
+          "heading": "2. Onze rol hangt af van de situatie",
+          "content": [
+            [
+              "Voor bezoekers van deze website en voor personen die bij ons een account openen of beheren, bepaalt SDK Enterprises waarom en hoe persoonsgegevens worden verwerkt en treedt het op als verwerkingsverantwoordelijke.",
+              "Voor eindgebruikers die inloggen op een product of dienst die door Auth wordt aangedreven, blijft onze klant als verwerkingsverantwoordelijke verantwoordelijk voor die verwerking, en verwerkt SDK Enterprises persoonsgegevens op basis van hun gedocumenteerde instructies als gegevensverwerker, overeenkomstig ons aanvullend akkoord inzake gegevensverwerking. Als u zo’n eindgebruiker bent, is het product waarbij u zich hebt aangemeld uw eerste aanspreekpunt; wij ondersteunen hen bij het zonder onnodige vertraging beantwoorden van uw verzoek."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Categorieën persoonsgegevens die wij verwerken",
+          "content": [
+            [
+              "Accountgegevens. E-mailadres en basisgegevens van uw profiel die u of uw provider vrijwillig verstrekt; tijdstempels van authenticatie en gebruikstatistieken met betrekking tot uw account.",
+              "Authenticatiegegevens. Registraties van inlogpogingen en de uitkomst daarvan, de toekenning en intrekking van tokens en sessies, en bijbehorende technische metagegevens (waaronder IP-adres, browser-user-agent en nauwkeurige tijdstempels) die worden bewaard voor beveiligingsdoeleinden, ter voorkoming van misbruik en als bewijsmateriaal.",
+              "Beveiligingslogboeken. Logboeken met manipulatiebeveiliging van beveiligingsgerelateerde gebeurtenissen die verband houden met uw account of omgeving.",
+              "Gegevens over misbruikpreventie. Tijdelijke technische tellers die worden gebruikt om misbruikverkeer op te sporen en te beperken.",
+              "Communicatiegegevens. De inhoud van berichten die u ons stuurt (bijvoorbeeld verzoeken om ondersteuning of het uitoefenen van rechten) en onze antwoorden daarop.",
+              "Commerciële gegevens. Factuur- en betalingsreferenties bij een betaald abonnement worden via ons factureringsproces afgehandeld."
+            ],
+            "Wij vragen geen wachtwoorden en slaan deze ook niet op voor het inloggen op de Dienst. Gevoelige categorieën persoonsgegevens (gezondheid, biometrische gegevens, politieke opvattingen en dergelijke) worden niet opgevraagd en mogen niet aan ons worden verstrekt."
+          ]
+        },
+        {
+          "heading": "4. Doeleinden en rechtsgrondslagen",
+          "content": [
+            [
+              "Het exploiteren en aanbieden van de Dienst — uitvoering van een overeenkomst, of handelingen die voorafgaan aan het aangaan daarvan.",
+              "Het beveiligen van accounts, het opsporen van fraude en misbruik, en het bijhouden van beveiligingsgegevens — ons gerechtvaardigd belang bij het exploiteren van een betrouwbare infrastructuur, afgewogen tegen uw rechten en verwachtingen.",
+              "Het nakomen van boekhoudkundige, fiscale en andere wettelijke verplichtingen — naleving van een wettelijke verplichting.",
+              "Het versturen van servicemeldingen met betrekking tot uw account of incidenten die daar invloed op hebben — uitvoering van de overeenkomst; wij sturen geen marketingmails zonder afzonderlijke toestemming."
+            ],
+            "Wanneer de verwerking is gebaseerd op toestemming, kunt u deze te allen tijde intrekken zonder dat dit invloed heeft op de rechtmatigheid van de verwerking die vóór de intrekking heeft plaatsgevonden. Wij maken geen gebruik van geautomatiseerde besluitvorming die rechtsgevolgen heeft in de zin van de toepasselijke wetgeving."
+          ]
+        },
+        {
+          "heading": "5. Retentie",
+          "content": [
+            "Persoonsgegevens worden slechts bewaard zolang dit nodig is voor de hierboven genoemde doeleinden. Accountgegevens worden bewaard zolang een account of tenant actief blijft; beveiligings- en auditlogboeken worden bewaard zolang dit nodig is om de integriteit van de Dienst aan te tonen en te voldoen aan wettelijke vereisten; gegevens ter voorkoming van misbruik zijn per definitie van tijdelijke aard; commerciële gegevens worden bewaard gedurende de wettelijk voorgeschreven boekhoudtermijnen. Gegevens die niet langer nodig zijn, worden verwijderd of onomkeerbaar geanonimiseerd."
+          ]
+        },
+        {
+          "heading": "6. Ontvangers en subverwerkers",
+          "content": [
+            "Wij delen persoonsgegevens uitsluitend met: verwerkers die op contractbasis namens ons handelen (aanbieders van hosting, databases, cache en e-mailverzending — afzonderlijk vermeld op onze pagina over subverwerkers); professionele adviseurs die gebonden zijn aan een geheimhoudingsplicht; en overheidsinstanties wanneer een bindend wettelijk verzoek dit vereist, in welk geval wij de betrokkenen hiervan op de hoogte stellen, tenzij dit wettelijk verboden is. Wij verkopen, verhuren of verhandelen nooit persoonsgegevens, en wij gebruiken geen gegevens van klanten of eindgebruikers voor reclamedoeleinden of voor het trainen van machine learning-modellen."
+          ]
+        },
+        {
+          "heading": "7. Internationale overboekingen",
+          "content": [
+            "Sommige van onze dienstverleners zijn gevestigd buiten de Europese Economische Ruimte. Wanneer persoonsgegevens buiten de EER worden doorgegeven, baseren wij ons op een adequaatheidsbesluit of op passende waarborgen — met name de modelcontractbepalingen van de Europese Commissie — in combinatie met aanvullende maatregelen waar nodig. De actuele lijst met dienstverleners en hun vestigingsplaatsen is gepubliceerd op onze pagina over subverwerkers."
+          ]
+        },
+        {
+          "heading": "8. Beveiliging van de verwerking",
+          "content": [
+            "We nemen passende technische en organisatorische maatregelen ter bescherming tegen ongeoorloofde toegang, verlies, wijziging of openbaarmaking — waaronder versleuteling tijdens verzending en opslag, strikte toegangscontroles op basis van het ‘need-to-know’-principe, scheiding van tenantgegevens, beperking van het aantal verzoeken en detectie van misbruik, en auditlogging met manipulatiebeveiliging. Deze maatregelen worden herzien naarmate de Dienst zich verder ontwikkelt; een overzicht in begrijpelijke taal is beschikbaar op onze beveiligingspagina."
+          ]
+        },
+        {
+          "heading": "9. Uw rechten",
+          "content": [
+            "Met inachtneming van de toepasselijke wetgeving, waaronder de Algemene Verordening Gegevensbescherming (AVG) indien u zich in de EER bevindt, kunt u ons verzoeken om:",
+            [
+              "u inzage geven in de persoonsgegevens die wij over u bewaren;",
+              "onjuiste gegevens corrigeren of onvolledige gegevens aanvullen;",
+              "gegevens wissen die niet langer rechtmatig worden verwerkt;",
+              "de verwerking beperken of bezwaar maken tegen bepaalde verwerkingen;",
+              "uw gegevens in een gestructureerd, algemeen gebruikt en overdraagbaar formaat verstrekken;",
+              "u informeren over de ontvangers van uw gegevens en de toegepaste beveiligingsmaatregelen."
+            ],
+            "Stuur een e-mail naar hello@sdk.enterprises. Wij reageren binnen een maand op een onderbouwd verzoek en kunnen indien nodig om een minimaal identiteitsbewijs vragen. U kunt ook een klacht indienen bij een toezichthoudende autoriteit — in Frankrijk is dat de Commission Nationale de l'Informatique et des Libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Kinderen",
+          "content": [
+            "De Dienst is bedoeld voor bedrijven en professionals. Wij verwerken niet bewust persoonsgegevens van kinderen die jonger zijn dan de leeftijd waarop zij in het betreffende rechtsgebied digitaal toestemming mogen geven; mocht u van mening zijn dat dit toch is gebeurd, neem dan contact met ons op, dan zullen wij de gegevens onmiddellijk verwijderen."
+          ]
+        },
+        {
+          "heading": "11. Wijzigingen in dit beleid",
+          "content": [
+            "We werken dit beleid bij wanneer onze verwerkingspraktijken veranderen. Wezenlijke wijzigingen worden op deze pagina aangekondigd, met vermelding van een nieuwe ingangsdatum, voordat ze van kracht worden. Eerdere versies zijn op verzoek verkrijgbaar."
+          ]
+        },
+        {
+          "heading": "12. Contact",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

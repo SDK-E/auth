@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Privacy policy",
+        "description": "How Auth by SDK Enterprises processes personal data: what we collect, why, for how long, with whom it is shared, and the rights you have over it."
+      },
+      "title": "Privacy policy",
+      "description": "This policy explains what personal data the Auth service processes, why it is processed, how long it is kept, who it is shared with, and the rights available to the people concerned. We have written it to be read and understood, not merely displayed.",
+      "updated": "August 23, 2026",
+      "sections": [
+        {
+          "heading": "1. Who we are",
+          "content": [
+            "The Auth service (the \"Service\") is operated by SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, whose registered office is at 44 Rue Pasquier, 75008 Paris, France — \"SDK Enterprises\", \"we\", \"us\"). Our customers use the Service to authenticate their own users; this document describes how personal data flows through that arrangement and what each party is responsible for."
+          ]
+        },
+        {
+          "heading": "2. Our role depends on the situation",
+          "content": [
+            [
+              "For visitors to this website and for individuals who open or administer an account with us, SDK Enterprises determines why and how personal data is processed and acts as a data controller.",
+              "For end users who sign in to a product or service powered by Auth, our customer remains responsible for that processing as controller, and SDK Enterprises processes personal data on their documented instructions as a data processor, under our data processing addendum. If you are such an end user, your first point of contact is the product you were signing in to; we support them in answering your request without undue delay."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Categories of personal data we process",
+          "content": [
+            [
+              "Account data. Email address and basic profile elements you or your provider choose to submit; authentication timestamps and usage counters relating to your account.",
+              "Authentication data. Records of sign-in attempts and outcomes, issuance and revocation of tokens and sessions, and related technical metadata (including IP address, browser user-agent, and precise timestamps) retained for security, abuse prevention, and evidence purposes.",
+              "Security records. Tamper-evident logs of security-relevant events associated with your account or environment.",
+              "Abuse-prevention data. Short-lived technical counters used to detect and throttle abusive traffic.",
+              "Communications data. The content of messages you send us (for example requests for support or the exercise of rights) and our replies.",
+              "Commercial data. Invoicing and payment references where a paid plan applies, handled through our invoicing process."
+            ],
+            "We do not require or store passwords for sign-in to the Service. Sensitive categories of personal data (health, biometrics, political opinions, and similar) are not requested and must not be submitted to us."
+          ]
+        },
+        {
+          "heading": "4. Purposes and legal bases",
+          "content": [
+            [
+              "Operating and providing the Service — performance of a contract, or steps prior to entering into one.",
+              "Securing accounts, detecting fraud and abuse, and keeping security records — our legitimate interest in operating trustworthy infrastructure, balanced against your rights and expectations.",
+              "Meeting accounting, tax, and other statutory duties — compliance with a legal obligation.",
+              "Sending service communications relating to your account or incidents affecting it — performance of the contract; we do not send marketing email absent separate consent."
+            ],
+            "Where processing relies on consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal. We do not carry out automated decision-making producing legal effects within the meaning of applicable law."
+          ]
+        },
+        {
+          "heading": "5. Retention",
+          "content": [
+            "Personal data is kept only as long as necessary for the purposes set out above. Account data is kept while an account or tenant remains active; security and audit records are kept while needed to evidence the integrity of the Service and meet legal requirements; abuse-prevention data is transient by design; commercial records are kept for the statutorily required bookkeeping periods. Data that is no longer needed is deleted or irreversibly anonymised."
+          ]
+        },
+        {
+          "heading": "6. Recipients and subprocessors",
+          "content": [
+            "We share personal data only with: processors acting under contract on our behalf (hosting, database, cache, and email-delivery providers — identified individually on our subprocessors page); professional advisers under duties of confidentiality; and public authorities where a binding legal request requires it, in which case we notify those concerned unless legally prohibited. We never sell, rent, or broker personal data, and we do not use customer or end-user data for advertising or for training machine-learning models."
+          ]
+        },
+        {
+          "heading": "7. International transfers",
+          "content": [
+            "Some of our providers operate outside the European Economic Area. Where personal data is transferred out of the EEA, we rely on an adequate adequacy decision or on appropriate safeguards — in particular the European Commission's standard contractual clauses — together with supplementary measures where required. The current list of providers and their locations is published on our subprocessors page."
+          ]
+        },
+        {
+          "heading": "8. Security of processing",
+          "content": [
+            "We apply appropriate technical and organisational measures against unauthorised access, loss, alteration, or disclosure — including encryption in transit and at rest, strict access controls on a need-to-know basis, segregation of tenant data, rate limiting and abuse detection, and tamper-evident audit logging. Measures are reviewed as the Service evolves; a plain-language overview is available on our security page."
+          ]
+        },
+        {
+          "heading": "9. Your rights",
+          "content": [
+            "Subject to applicable law, including the General Data Protection Regulation if you are in the EEA, you may ask us to:",
+            [
+              "give you access to the personal data we hold about you;",
+              "rectify inaccurate data or complete incomplete data;",
+              "erase data that is no longer lawfully processed;",
+              "restrict or object to particular processing;",
+              "provide your data in a structured, commonly used, portable format;",
+              "tell you about the recipients of your data and the safeguards applied."
+            ],
+            "Write to hello@sdk.enterprises. We respond within one month of a substantiated request and may ask for minimal proof of identity where necessary. You may also lodge a complaint with a supervisory authority — in France, the Commission Nationale de l'Informatique et des Libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Children",
+          "content": [
+            "The Service is directed at businesses and professionals. We do not knowingly process the personal data of children below the age of digital consent in the relevant jurisdiction; if you believe this has happened, contact us and we will delete the data promptly."
+          ]
+        },
+        {
+          "heading": "11. Changes to this policy",
+          "content": [
+            "We update this policy when our processing changes. Material changes are announced on this page, with a new effective date, before they take effect. Earlier versions are available on request."
+          ]
+        },
+        {
+          "heading": "12. Contact",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Cookies et suivi",
+        "description": "La liste complète des éléments qu'Auth enregistre dans votre navigateur — et pourquoi elle est plus courte que celle de presque tous les sites que vous avez consultés."
+      },
+      "title": "Cookies et suivi",
+      "description": "Les interfaces Auth sont conçues pour fonctionner sans vous suivre. Cette page répertorie tous les cookies et tous les mécanismes d'analyse, ce qui représente une liste très courte.",
+      "updated": "23 août 2026",
+      "sections": [
+        {
+          "heading": "1. Les cookies que nous installons",
+          "content": [
+            {
+              "columns": [
+                "Nom",
+                "Où",
+                "Objectif"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Tableau de bord Auth",
+                  "Indispensable. Permet de rester connecté à votre tableau de bord de locataire ; signé, http-only, expire à la fin de la session."
+                ],
+                [
+                  "(cookie de session du locataire)",
+                  "Connexion universelle",
+                  "Indispensable. Émis uniquement lorsque vous vous connectez à un produit utilisant Auth, dans le cadre de l'authentification propre à ce produit."
+                ]
+              ]
+            },
+            "Il n'y a pas de bannière de consentement car il n'y a rien à accepter : aucun cookie publicitaire, aucun traceur intersite, aucun widget social et aucun script d'empreinte numérique n'est utilisé sur auth.sdk.enterprises ni sur les pages de connexion hébergées."
+          ]
+        },
+        {
+          "heading": "2. Analyse",
+          "content": [
+            "Les pages marketing utilisent Vercel Analytics, un système sans cookie : il comptabilise le nombre total de pages vues sans stocker d'identifiants ni établir de profils individuels. Aucune analyse n'est effectuée sur les pages de connexion universelles, les points de terminaison API ou au sein des applications des locataires."
+          ]
+        },
+        {
+          "heading": "3. Enregistrements côté serveur",
+          "content": [
+            "Comme tout serveur web, nous enregistrons les requêtes à des fins de sécurité (détection des abus, limitation du débit, preuves d'audit) conformément à nos règles de conservation énoncées dans la politique de confidentialité. Ces journaux ne sont pas utilisés pour établir le profil des visiteurs de ce site marketing."
+          ]
+        },
+        {
+          "heading": "4. Questions",
+          "content": [
+            "Si vous avez des questions concernant ce qui précède, n'hésitez pas à écrire à hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

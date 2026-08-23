@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Platform",
+    "quickstart": "Gyors útmutató",
+    "pricing": "Árak",
+    "security": "Biztonság",
+    "status": "Állapot",
+    "signIn": "Bejelentkezés"
+  },
+  "footer": {
+    "tagline": "SDK Enterprises által készített, több felhasználót támogató hitelesítési infrastruktúra.",
+    "productTitle": "Termék",
+    "productLinks": [
+      "Platform",
+      "Gyors útmutató",
+      "Árak",
+      "Szolgáltatás állapota"
+    ],
+    "trustTitle": "Bizalom",
+    "trustLinks": [
+      "Biztonság",
+      "Adatvédelmi nyilatkozat",
+      "Adatkezelés (DPA)",
+      "Alvállalkozók",
+      "Sütik és nyomkövetés"
+    ],
+    "legalTitle": "Jogi információk",
+    "legalLinks": [
+      "Felhasználási feltételek",
+      "Jogi nyilatkozat"
+    ],
+    "companyTitle": "Vállalat",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Kapcsolat"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "a francia jog hatálya alá tartozik",
+    "languageLabel": "Nyelv"
+  },
+  "statusBadges": {
+    "available": "Elérhető",
+    "rollingOut": "Bevezetés",
+    "recommended": "Ajánlott"
+  },
+  "legalShell": {
+    "brandContext": "Jog. · Jogi",
+    "effectiveLine": "Hatályos: {date} · a francia jog hatálya alá tartozik",
+    "documentsLabel": "Dokumentumok",
+    "securityOverview": "Biztonsági áttekintés",
+    "docs": [
+      "Adatvédelmi nyilatkozat",
+      "Felhasználási feltételek",
+      "Az adatkezelésre vonatkozó kiegészítés",
+      "Alvállalkozók",
+      "Sütik és nyomon követés",
+      "Jogi nyilatkozat"
+    ]
+  }
+}

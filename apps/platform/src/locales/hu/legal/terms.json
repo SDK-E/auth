@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Felhasználási feltételek",
+        "description": "A SDK Enterprises által nyújtott Auth hitelesítési szolgáltatáshoz való hozzáférésre és használatra vonatkozó feltételek."
+      },
+      "title": "Felhasználási feltételek",
+      "description": "Ezek a feltételek képezik az Ön és a SDK Enterprises között az Auth szolgáltatás használatára vonatkozó megállapodást. Szándékosan röviden fogalmaztuk meg őket, de minden olyan szempontot lefednek, amely egy szakmai kapcsolatban fontos.",
+      "updated": "2026. augusztus 23.",
+      "sections": [
+        {
+          "heading": "1. Fogalommeghatározások",
+          "content": [
+            [
+              "„Szolgáltatás” — a auth.sdk.enterprises címen üzemeltetett Auth többfelhasználós hitelesítési platform, beleértve annak irányítópultjait, felületeit és dokumentációját.",
+              "„Bérlő” — az Ön elkülönített munkaterülete a Szolgáltatáson belül.",
+              "„Végfelhasználó” — olyan magánszemély, aki a Szolgáltatáson keresztül hitelesíti magát az Ön termékeiben.",
+              "„Megállapodás” — a jelen feltételek, az Ön által leadott bármely megrendelés vagy választott csomag, adatvédelmi irányelveink, valamint (adott esetben) adatkezelési kiegészítésünk."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Ki vagy te?",
+          "content": [
+            "Ön jogi személyt képvisel, vagy szakemberként jár el. Kijelenti, hogy a regisztráció során megadott információk pontosak, hogy jogosult az Ön által képviselt jogi személy nevében kötelezettségeket vállalni, és hogy a Szolgáltatás használata megfelel az Önre és a végfelhasználókra vonatkozó jogszabályoknak. A Szolgáltatás nem áll rendelkezésre olyan fogyasztók számára, akik nem szakmai minőségükben járnak el, valamint a digitális beleegyezéshez szükséges életkort még el nem érő személyek számára sem."
+          ]
+        },
+        {
+          "heading": "3. A bérlő és a kötelezettségei",
+          "content": [
+            [
+              "Ön felelős a regisztrált alkalmazásokért, az átirányításra engedélyezett címekért, valamint a számára kiadott hitelesítő adatok bizalmas kezeléséért. Bármilyen biztonsági incidens esetén haladéktalanul értesítsen minket.",
+              "Ön felelős a végfelhasználókkal való kapcsolataiért, ideértve a Szolgáltatáson keresztül végzett adatkezelésről való tájékoztatásukat és a szükséges hozzájárulások beszerzését is.",
+              "Kérjük, gondoskodjon arról, hogy a bérlő elérhetőségei mindig naprakészek legyenek, hogy biztonsági és szolgáltatási ügyekben kapcsolatba tudjunk lépni Önnel."
+            ]
+          ]
+        },
+        {
+          "heading": "4. A használatra vonatkozó szabályok",
+          "content": [
+            "Ön vállalja, hogy nem fogja:",
+            [
+              "a Szolgáltatást jogellenes célokra, illetve mások jogait sértő módon használni;",
+              "a Szolgáltatást a felelősségteljes közzétételi irányelvünk keretein kívül zavarni, túlterhelni, vizsgálni vagy tesztelni;",
+              "a biztonsági ellenőrzések, a használati korlátozások vagy a hozzáférési korlátozások kijátszása;",
+              "a Szolgáltatást külön megállapodás nélkül versenytárs, távoli identitáskezelési szolgáltatásként viszonteladni vagy saját márkanév alatt forgalmazni;",
+              "törvénytelen tartalmat küldeni a Szolgáltatáson keresztül továbbított e-mailekben, vagy hamisan feltüntetni azok eredetét;",
+              "rosszindulatú kód vagy a hitelesítéshez nem kapcsolódó tartalom feltöltése."
+            ],
+            "A feltételezett szabálysértéseket kivizsgálhatjuk, és amennyiben az ésszerűen indokolt, felfüggeszthetjük az érintett hozzáférést – amennyiben lehetséges, erről előzetes értesítést küldünk, hiteles biztonsági kockázat esetén pedig haladéktalanul intézkedünk."
+          ]
+        },
+        {
+          "heading": "5. A szolgáltatás elérhetősége",
+          "content": [
+            "A Szolgáltatást megbízható, felügyelt infrastruktúrán üzemeltetjük, amely a szolgáltatás fejlettségi szintjének megfelelő felügyeleti, biztonsági mentési és redundancia-megoldásokkal rendelkezik. A korai hozzáférés időszakában nem vonatkozik hivatalos szolgáltatási szintre vonatkozó kötelezettségvállalás; amint ilyen hatályba lép, azt itt tesszük közzé, és az a Megállapodás részét képezi. A tervezett karbantartási munkákat – amennyiben lehetséges – előre bejelentjük."
+          ]
+        },
+        {
+          "heading": "6. Díjak, számlázás és adók",
+          "content": [
+            [
+              "A díjak azok, amelyeket a feliratkozáskor weboldalunk „Árak” menüpontjában közzétettünk, az alkalmazandó adókat nem tartalmazva.",
+              "Ha másképp nem jelezzük, a díjakat havonta előre kell megfizetni, és az időszak kezdetét követően azok nem visszatéríthetők, kivéve, ha a törvény másként rendelkezik.",
+              "Az árakat a jövőre nézve, legalább 30 nappal előre bejelentve módosíthatjuk; a változások soha nem érintik a már kifizetett időszakot.",
+              "A fizetési késedelem előzetes írásbeli figyelmeztetés után a szolgáltatás felfüggesztését vonhatja maga után."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Szellemi tulajdon",
+          "content": [
+            "A SDK Enterprises fenntartja a Szolgáltatással kapcsolatos minden jogot, beleértve a szoftvert, a márkaelemeket és a dokumentációt. Ön megőrzi az alkalmazásaihoz, valamint az Ön és végfelhasználói tulajdonában lévő adatokhoz fűződő összes jogot. Ön személyes, nem kizárólagos, átruházhatatlan jogot kap a Szolgáltatás jelen Szerződésnek megfelelő használatára a Szerződés időtartama alatt. Az Ön által nekünk megadott visszajelzéseket kötelezettség nélkül szabadon felhasználhatjuk a Szolgáltatás fejlesztése céljából."
+          ]
+        },
+        {
+          "heading": "8. Garanciák és felelősségkizárások",
+          "content": [
+            "Garantáljuk, hogy a Szolgáltatást ésszerű szakértelemmel és gondossággal nyújtjuk. Kifejezett eltéréstől eltekintve, valamint a törvény által megengedett legnagyobb mértékben a Szolgáltatást „adott állapotban” nyújtjuk, bármiféle további – kifejezett vagy vélelmezett – garancia nélkül, beleértve az adott célra való alkalmasságot vagy a zavartalan, hibamentes működést is. A jelen Szerződés egyetlen rendelkezése sem zárja ki azokat a felelősségeket, amelyeket a francia jog alapján nem lehet kizárni, ideértve a szándékosságért vagy súlyos gondatlanságért való felelősséget, a testi sérülésekért való felelősséget, valamint az alkalmazandó törvényi fogyasztóvédelmi rendelkezéseket."
+          ]
+        },
+        {
+          "heading": "9. Felelősségkorlátozás",
+          "content": [
+            "A törvény által megengedett mértékben egyik fél sem felel a közvetett, véletlenszerű vagy következményes károkért, ideértve az elmaradt nyereséget, bevételt, üzleti hírnevet vagy adatvesztést is, függetlenül azok okától. A Megállapodásból eredő vagy azzal kapcsolatos bármely fél teljes összesített felelőssége legfeljebb az Ön által a követelés alapját képező eseményt megelőző tizenkét hónapban befizetett teljes díj összegére korlátozódik. Ezek a korlátozások a törvény által megengedett mértékben együttesen és külön-külön vonatkoznak alvállalkozóinkra is."
+          ]
+        },
+        {
+          "heading": "10. Kártalanítás",
+          "content": [
+            "Ön vállalja, hogy megvéd minket és kártalanít minket az Ön alkalmazásai, a Szolgáltatás jelen Szerződést sértő használata, illetve harmadik felek jogainak megsértése miatt felmerülő harmadik felek által támasztott igényekkel szemben – feltéve, hogy az igényről haladéktalanul értesítjük Önt, lehetővé tesszük Önnek, hogy irányítsa a védekezést, és nem kötünk egyoldalúan egyezséget az Ön nevében."
+          ]
+        },
+        {
+          "heading": "11. Titoktartás",
+          "content": [
+            "Mindkét fél a másik fél bizalmas adatait legalább olyan gondossággal védi, mint a saját hasonló adatait, azokat kizárólag a Megállapodás teljesítése céljából használja fel, és csak azoknak a munkatársaknak és tanácsadóknak adja át, akiknek azokra szükségük van, és akikre hasonló kötelezettségek vonatkoznak. Ez a kötelezettség a szerződés megszűnését követően három évig fennmarad."
+          ]
+        },
+        {
+          "heading": "12. A szerződés időtartama, felfüggesztése és felmondása",
+          "content": [
+            [
+              "A megállapodás a Szolgáltatás első használatakor lép hatályba, és a bérlői fiók fennállásának ideje alatt érvényben marad.",
+              "Bármelyik fél írásbeli felmondással bármikor felmondhatja a szerződést; a díjfizetési időszakok a tervezett végéig fennmaradnak, amennyiben a törvény másként nem rendelkezik.",
+              "Bármelyik fél felmondhatja a szerződést, ha a lényeges szerződésszegés az értesítéstől számított 30 napon belül nem kerül orvoslásra, illetve azonnal, amennyiben a szerződés teljesítésének folytatása jogellenes vagy lényegesen káros lenne.",
+              "A szerződés megszűnésekor kérésre 30 napig rendelkezésre bocsátjuk a bérlői adatok géppel olvasható exportját, majd az adatvédelmi irányelvben leírt adatmegőrzési kötelezettségek figyelembevételével töröljük a bérlői adatokat."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Külső szolgáltatók",
+          "content": [
+            "A Szolgáltatás a „Alvállalkozók” oldalon felsorolt, jó hírű infrastruktúra-szolgáltatókra támaszkodik. A jelen Szerződés értelmében mi felelünk a teljesítményükért; az Ön velük fennálló kapcsolata kizárólag rajtunk keresztül jön létre."
+          ]
+        },
+        {
+          "heading": "14. Vis maior",
+          "content": [
+            "Egyik fél sem felelős az ésszerűen befolyásolhatatlan események – természeti katasztrófák, sztrájkok, háború, közhálózatok vagy közüzemi szolgáltatások meghibásodásai, illetve hatósági intézkedések – miatt bekövetkező teljesítési mulasztásért, feltéve, hogy az érintett fél értesíti a másik felet, és a teljesítést ésszerűen lehetséges legrövidebb időn belül folytatja."
+          ]
+        },
+        {
+          "heading": "15. Általános rendelkezések",
+          "content": [
+            [
+              "Jelen megállapodás a felek között a Szolgáltatással kapcsolatban létrejött teljes megállapodást képezi, és felülírja az azt megelőző megállapodásokat.",
+              "Amennyiben egy rendelkezést érvénytelennek nyilvánítanak, a szerződés többi része továbbra is hatályban marad, és a felek a rendelkezést egy olyan érvényes rendelkezéssel helyettesítik, amely a leginkább megfelel annak szándékának.",
+              "Az, hogy egy fél késlekedik egy jogának érvényesítésével, nem jelenti azt, hogy lemondott arról.",
+              "A megállapodást a mi hozzájárulásunk nélkül nem ruházhatja át; mi viszont vállalkozásunk átszervezése keretében, előzetes értesítés mellett átruházhatjuk azt.",
+              "Az értesítéseket érvényesen e-mailben kell elküldeni a hello@sdk.enterprises címre, vagy a bérlő által legutóbb megadott kapcsolattartási címre.",
+              "Ezeket a feltételeket angol nyelven fogalmazták meg; a könnyebb érthetőség érdekében francia nyelvű változat is rendelkezésre állhat. A francia szakmai ügyfelekkel kötött szerződések esetében – amennyiben létezik francia nyelvű változat, és eltérések merülnek fel – a francia nyelvű változat az irányadó."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Alkalmazandó jog és jogviták",
+          "content": [
+            "A jelen megállapodásra a francia jog az irányadó. Peres eljárás megindítása előtt a felek a vita írásbeli bejelentésétől számított 30 napon keresztül jóhiszeműen megkísérlik a vita rendezését. Amennyiben ez nem sikerül, a franciaországi Párizs bíróságai rendelkeznek joghatósággal — kivéve, ha kötelező erejű jogszabályok más bírósági illetékességet biztosítanak Önnek."
+          ]
+        },
+        {
+          "heading": "17. A jelen feltételek módosításai",
+          "content": [
+            "A lényeges változásokat ezen az oldalon legalább 30 nappal a hatálybalépésük előtt közzétesszük. Az ezen időpont utáni további használat a változások elfogadását jelenti; amennyiben nem ért egyet velük, a hatálybalépés időpontja előtt felmondhatja a szolgáltatást."
+          ]
+        }
+      ]
+    }
+  }
+}

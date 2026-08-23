@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Sous-traitants",
+        "description": "Les sous-traitants SDK Enterprises auxquels SDK Enterprises fait appel pour assurer le fonctionnement du service Auth, le rôle joué par chacun d'entre eux, leur lieu d'intervention et les catégories de données concernées."
+      },
+      "title": "Sous-traitants",
+      "description": "Nous veillons à ce que cette liste soit à jour et publions les ajouts avant qu'un nouveau sous-traitant ne traite des données à caractère personnel, afin de donner à nos clients la possibilité de s'y opposer pour des motifs légitimes.",
+      "updated": "23 août 2026",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Chaque sous-traitant agit dans le cadre d'un accord écrit lui imposant des obligations en matière de protection des données au moins aussi strictes que celles prévues dans notre avenant relatif au traitement des données, et SDK Enterprises reste responsable vis-à-vis de ses clients de la bonne exécution des missions par le sous-traitant. Les objections à un ajout annoncé peuvent être formulées dans un délai de quatorze jours à compter de la publication, par courrier adressé à hello@sdk.enterprises."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Sous-traitant",
+                "Fonction",
+                "Lieu",
+                "Catégories de données concernées"
+              ],
+              "rows": [
+                [
+                  "Vercel S.A.S.",
+                  "Hébergement d'applications et diffusion de contenu",
+                  "États-Unis ; réseau périphérique mondial",
+                  "Tout le trafic destiné au Service transite par son réseau ; le traitement se limite à la transmission, à la mise en cache et à la mise à disposition des requêtes et réponses chiffrées."
+                ],
+                [
+                  "Neon (Neon Inc.)",
+                  "Fournisseur de bases de données gérées",
+                  "Région cloud sélectionnée pour chaque déploiement ; régions compatibles avec l'EEE disponibles",
+                  "Configuration des locataires, enregistrements de comptes, enregistrements d'authentification, journaux de sécurité et d'audit. Les identifiants et les clés cryptographiques sont stockés exclusivement sous une forme sécurisée."
+                ],
+                [
+                  "Upstash S.A.S.",
+                  "Stockage temporaire pour la prévention des abus",
+                  "États-Unis",
+                  "Compteurs techniques à durée de vie limitée utilisés pour détecter le trafic abusif. Ils ne sont conservés que pendant la brève durée de vie du compteur."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Envoi d'e-mails transactionnels",
+                  "États-Unis",
+                  "L'adresse e-mail du destinataire et les métadonnées de livraison des e-mails de service, tels que les codes de connexion. Le contenu des messages se limite au strict nécessaire."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Journal des modifications",
+          "content": [
+            [
+              "Août 2026 — Première liste publiée : Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

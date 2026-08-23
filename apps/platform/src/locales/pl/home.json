@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — infrastruktura uwierzytelniania dla wielu użytkowników",
+      "description": "Auth zapewnia Twojemu produktowi gotowe do użycia rozwiązania OIDC i OAuth 2.1 — hostowane strony logowania, zarządzanie sesjami oraz panel administracyjny API — dzięki czemu Twój zespół może skupić się na tworzeniu nowych funkcji, a nie na implementacji rozwiązań związanych z tożsamością."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Infrastruktura uwierzytelniania dla wielu dzierżawców",
+      "title": "Jeden proces logowania dla każdego najemcy, którego obsługujesz.",
+      "lead": "Auth zapewnia Twojemu produktowi gotowe do użycia rozwiązania OIDC i OAuth 2.1 — hostowane strony logowania, zarządzanie sesjami oraz panel administracyjny API — dzięki czemu Twój zespół może skupić się na tworzeniu nowych funkcji, a nie na implementacji rozwiązań związanych z tożsamością.",
+      "primaryCta": "Zacznij tworzyć",
+      "secondaryCta": "Utwórz swojego najemcę",
+      "securityLink": "Model bezpieczeństwa →",
+      "visual": {
+        "appTitle": "Twoja aplikacja",
+        "appBody": "Przekierowuje do /authorize",
+        "loginTitle": "autoryzacja – uniwersalne logowanie",
+        "loginBody": "Logowanie za pomocą podpisu cyfrowego w usłudze poczty elektronicznej hostowanej",
+        "returnTitle": "Powrót do aplikacji",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE – wymagane · tokeny zweryfikowane względem publicznych kluczy JWKS"
+      }
+    },
+    "standards": {
+      "eyebrow": "Wprowadzenie standardów, zakończenie sesji",
+      "sentence": "Dokładnie przestrzegamy specyfikacji: PKCE w każdym kodzie autoryzacyjnym, rotujące tokeny odświeżające, sesje podpisane z możliwością cofnięcia oraz opublikowane klucze podpisujące."
+    },
+    "features": {
+      "eyebrow": "Platforma",
+      "title": "Kwestie związane z tożsamością – załatwione.",
+      "intro": "Wszystkie poniższe oferty są aktualne od dzisiaj, o ile nie zaznaczono inaczej — na każdej karcie podano nazwę mechanizmu, ponieważ to właśnie go faktycznie kupujesz.",
+      "items": [
+        {
+          "status": "dostępne",
+          "title": "Logowanie uniwersalne",
+          "body": "Proces logowania oparty na usłudze hostingowej, do którego są przekierowywani użytkownicy — jednorazowe kody wysyłane e-mailem, brak konieczności przechowywania haseł, brak konieczności utrzymywania interfejsu logowania."
+        },
+        {
+          "status": "dostępne",
+          "title": "Zarządzanie sesjami",
+          "body": "Sesje są podpisywane kluczami RS256 i JWT w plikach cookie typu „http-only”, z wygaśnięciem po okresie bezczynności i wygaśnięciem bezwzględnym, unieważnieniem po stronie serwera oraz kluczami przypisanymi do poszczególnych środowisk."
+        },
+        {
+          "status": "dostępne",
+          "title": "Bezpieczeństwo tokenów",
+          "body": "Kody autoryzacyjne są zawsze przesyłane wraz z ciągiem znaków PKCE. Tokeny odświeżające zmieniają się przy każdym użyciu, a ponowne użycie tokenu powoduje unieważnienie całej jego rodziny."
+        },
+        {
+          "status": "dostępne",
+          "title": "Księga audytowa",
+          "body": "Każde zdarzenie związane z bezpieczeństwem trafia do łańcuchowego dziennika audytowego opartego na skrótach dla danego środowiska — jakakolwiek manipulacja przerywa łańcuch, a łańcuch jest ponownie generowany od początku."
+        },
+        {
+          "status": "dostępne",
+          "title": "Mechanizmy zapobiegania nadużyciom",
+          "body": "Stałe limity częstotliwości dotyczące dostarczania kodów, prób weryfikacji oraz wydawania tokenów. Blokady powodują wykorzystanie pozostałych kodów; liczba kopii pozostaje bez zmian."
+        },
+        {
+          "status": "wdrażanie",
+          "title": "Zarząd API",
+          "body": "Jedna powierzchnia API przeznaczona dla aplikacji, użytkowników, sesji i dzienników pod adresem /api/v2, obsługiwana przez tokeny maszynowe o ograniczonym zakresie."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Prywatność przede wszystkim",
+      "title": "Dane Twoich najemców pozostają Twoją własnością.",
+      "intro": "Auth to infrastruktura tożsamości — przetwarzamy wyłącznie dane niezbędne do uwierzytelnienia i ujawniamy wszystkie szczegóły. Żadnych modułów śledzących reklamy, żadnej sprzedaży danych, żadnego uczenia modeli na danych użytkowników.",
+      "processedTitle": "Jakie dane przetwarzamy",
+      "processed": [
+        "Adres e-mail konta, na który będą wysyłane kody jednorazowe",
+        "Zdarzenia związane z uwierzytelnianiem wraz z metadanymi technicznymi, przechowywane dla celów bezpieczeństwa i audytu",
+        "Liczniki zapobiegania nadużyciom o charakterze przejściowym, które wygasają samoczynnie",
+        "Dane uwierzytelniające i klucze kryptograficzne przechowywane wyłącznie w formie zabezpieczonej"
+      ],
+      "neverTitle": "Czego nigdy nie robimy",
+      "never": [
+        "Sprzedaż, wynajem lub udostępnianie danych osobowych — w żadnym wypadku i w żadnym celu",
+        "Wczytaj moduły śledzące lub piksele reklamowe stron trzecich na stronach logowania",
+        "Trenuj modele na danych najemców lub użytkowników końcowych",
+        "Zachowaj dane po zamknięciu konta, dłużej niż wymagają tego przepisy"
+      ],
+      "privacyLink": "Polityka prywatności →",
+      "dpaLink": "Załącznik dotyczący przetwarzania danych →",
+      "subprocessorsLink": "Lista podwykonawców →"
+    },
+    "quickstart": {
+      "eyebrow": "Szybki start",
+      "title": "Trzy próby zalogowania się przy użyciu prawidłowych danych logowania.",
+      "intro": "Żadnych zastrzeżonych protokołów, żadnego uzależnienia od dostawcy — wszystkie poniższe dane dotyczą standardowych modeli OAuth 2.1 i OIDC w połączeniu z naszymi aktywnymi punktami końcowymi.",
+      "stepLabel": "Krok {index}",
+      "steps": [
+        {
+          "title": "Poznaj nasze punkty końcowe",
+          "body": "Twoja aplikacja odczytuje standardowe sygnały wykrywania OIDC — nie jest wymagany model SDK, obsługuje dowolny język."
+        },
+        {
+          "title": "Przekieruj użytkowników na stronę /authorize z kodem PKCE",
+          "body": "Stwórz zadanie programistyczne, przekieruj przeglądarkę – my zajmiemy się obsługą logowania na naszej platformie oraz kodem związanym z adresem e-mail."
+        },
+        {
+          "title": "Wymień kod na tokeny",
+          "body": "Zweryfikuj token identyfikacyjny (id_token) przy użyciu naszego publicznego klucza JWKS, zachowaj token odświeżający i wywołaj metodę userinfo, gdy potrzebujesz informacji o uprawnieniach."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Ceny",
+      "title": "Cena ustalana przez użytkowników, a nie przez zamki.",
+      "intro": "Ceny w ramach wczesnego dostępu. Aktywny użytkownik miesięczny to użytkownik, który przynajmniej raz w danym miesiącu zalogował się do serwisu; za konta, które są przechowywane, ale nieaktywne, nigdy nie są naliczane żadne opłaty.",
+      "perMonth": "miesięcznie",
+      "periodFree": "na zawsze",
+      "plans": [
+        {
+          "includedMau": "1 000 aktywnych użytkowników miesięcznie",
+          "features": [
+            "Wszystkie środowiska (rozwojowe, testowe, produkcyjne)",
+            "Nieograniczona liczba aplikacji w każdym środowisku",
+            "Logowanie za pomocą jednorazowego kodu wysłanego e-mailem",
+            "Księga audytowa i dzienniki zdarzeń uwierzytelniania",
+            "Wsparcie społeczności"
+          ],
+          "cta": "Zacznij za darmo"
+        },
+        {
+          "includedMau": "10 000 aktywnych użytkowników miesięcznie",
+          "features": [
+            "Wszystko za darmo",
+            "Domeny niestandardowe dla poszczególnych dzierżawców",
+            "MFA, klucze dostępu i korporacyjne logowanie jednokrotne (SSO) w postaci, w jakiej są dostarczane",
+            "Dłuższy okres przechowywania dokumentacji audytowej",
+            "Wsparcie priorytetowe"
+          ],
+          "cta": "Zacznij od wersji Pro"
+        }
+      ],
+      "note": "Rozliczenia nie są jeszcze zautomatyzowane — najemcy korzystający z wczesnego dostępu otrzymują faktury wystawiane ręcznie i mogą wypowiedzieć umowę w dowolnym momencie."
+    },
+    "ctaBand": {
+      "title": "Do strony logowania dzieli Cię tylko jedno przekierowanie.",
+      "body": "Zlokalizuj punkt w auth.sdk.enterprises i wyślij swój pierwszy przepływ jeszcze dziś po południu.",
+      "button": "Otwórz pulpit nawigacyjny"
+    }
+  }
+}

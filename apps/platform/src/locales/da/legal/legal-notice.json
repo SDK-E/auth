@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Juridisk meddelelse",
+        "description": "Udgiver, vært og juridiske oplysninger for auth.sdk.enterprises (juridiske oplysninger)."
+      },
+      "title": "Juridisk meddelelse",
+      "description": "Oplysninger, der i henhold til fransk lovgivning skal angives for webstedet, der er offentliggjort på auth.sdk.enterprises (lovmæssige oplysninger), udarbejdet i overensstemmelse med artikel 6-III i lov nr. 2004-575 af 21. juni 2004 (LCEN).",
+      "updated": "23. august 2026",
+      "sections": [
+        {
+          "heading": "Udgiver",
+          "content": [
+            "Dette websted og Auth-tjenesten udgives af SADDEK Entreprises, der driver virksomhed under navnet SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Hovedkontor: 44 Rue Pasquier, 75008 Paris, France",
+              "Virksomhedsform: enkeltmandsvirksomhed (auto-entrepreneur), ingen aktiekapital",
+              "Virksomhedsregistreringsnummer: RCS Paris 850 513 912",
+              "Redaktionschef: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "content": [
+            "Spørgsmål vedrørende dette websted eller tjenesten kan sendes til hello@sdk.enterprises. Se vores politik for ansvarlig rapportering af sikkerhedsproblemer."
+          ]
+        },
+        {
+          "heading": "Hosting",
+          "content": [
+            "Hjemmesiden og tjenesten hostes af Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA. Applikationsdatabaserne drives af Neon; oplysninger om alle infrastrukturudbydere findes på siden om underdatabehandlere."
+          ]
+        },
+        {
+          "heading": "Intellektuel ejendomsret",
+          "content": [
+            "Dette websteds struktur, tekster, logoer og indhold tilhører SDK Enterprises. Enhver reproduktion eller gengivelse, helt eller delvist, uden forudgående tilladelse er forbudt, medmindre dette er tilladt i henhold til gældende lovgivning."
+          ]
+        },
+        {
+          "heading": "Retsgrundlag",
+          "content": [
+            "Disse meddelelser er underlagt fransk lovgivning. Auth-tjenesten leveres i henhold til vores servicevilkår, og behandlingen af personoplysninger er beskrevet i vores privatlivspolitik og tillægget om databehandling."
+          ]
+        }
+      ]
+    }
+  }
+}

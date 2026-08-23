@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Podwykonawcy przetwarzania danych",
+        "description": "Podwykonawcy, z którymi firma SDK Enterprises współpracuje w celu obsługi usługi Auth, role pełnione przez każdego z nich, miejsce, w którym prowadzą działalność, oraz kategorie danych, których to dotyczy."
+      },
+      "title": "Podwykonawcy przetwarzania danych",
+      "description": "Dbamy o to, by lista ta była aktualna, i publikujemy nowe wpisy przed rozpoczęciem przetwarzania danych osobowych przez nowego podwykonawcę, dając naszym klientom możliwość zgłoszenia sprzeciwu z uzasadnionych powodów.",
+      "updated": "23 sierpnia 2026 r.",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Każdy podwykonawca działa na podstawie pisemnej umowy nakładającej obowiązki w zakresie ochrony danych, których poziom ochrony nie jest niższy niż ten określony w naszym aneksie dotyczącym przetwarzania danych, a firma SDK Enterprises ponosi wobec swoich klientów odpowiedzialność za sposób działania podwykonawcy. Sprzeciw wobec ogłoszonego dodania można zgłosić w ciągu czternastu dni od publikacji, pisząc na adres hello@sdk.enterprises."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Podwykonawca",
+                "Rola",
+                "Lokalizacja",
+                "Kategorie danych, których to dotyczy"
+              ],
+              "rows": [
+                [
+                  "Vercel Inc.",
+                  "Hosting aplikacji i dostarczanie treści",
+                  "Stany Zjednoczone; globalna sieć brzegowa",
+                  "Cały ruch kierowany do Usługi przechodzi przez jej sieć; przetwarzanie ogranicza się do transmisji, buforowania oraz dostarczania zaszyfrowanych żądań i odpowiedzi."
+                ],
+                [
+                  "Neon (Neon Inc.)",
+                  "Dostawca usług zarządzania bazami danych",
+                  "Region chmury wybierany dla każdego wdrożenia; dostępne są regiony obsługujące EEA",
+                  "Konfiguracja najemców, dane kont, dane uwierzytelniania, dzienniki bezpieczeństwa i audytu. Dane uwierzytelniające i klucze kryptograficzne są przechowywane wyłącznie w postaci zabezpieczonej."
+                ],
+                [
+                  "Upstash Inc.",
+                  "Pamięć przejściowa służąca zapobieganiu nadużyciom",
+                  "Stany Zjednoczone",
+                  "Krótkotrwałe liczniki techniczne służące do wykrywania ruchu o charakterze nadużycia. Są przechowywane wyłącznie przez krótki okres trwania danego licznika."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Dostarczanie wiadomości e-mail związanych z transakcjami",
+                  "Stany Zjednoczone",
+                  "Adres e-mail odbiorcy oraz metadane dotyczące dostarczania wiadomości serwisowych, takich jak kody logowania. Treść wiadomości ogranicza się do tego, co jest absolutnie niezbędne."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Lista zmian",
+          "content": [
+            [
+              "Sierpień 2026 r. — Pierwsza opublikowana lista: Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Brugsbetingelser",
+        "description": "De vilkår, der gælder for adgang til og brug af Auth-autentificeringstjenesten, som leveres af SDK Enterprises."
+      },
+      "title": "Brugsbetingelser",
+      "description": "Disse vilkår udgør aftalen mellem dig og SDK Enterprises om brugen af Auth-tjenesten. De er bevidst holdt kortfattede, men dækker alt, hvad der er vigtigt i et professionelt samarbejde.",
+      "updated": "23. august 2026",
+      "sections": [
+        {
+          "heading": "1. Definitioner",
+          "content": [
+            [
+              "»Service« — Auth-autentificeringsplatformen til flere brugere, der drives på auth.sdk.enterprises, herunder dens kontrolpaneler, brugergrænseflader og dokumentation.",
+              "»Lejer« — dit isolerede arbejdsområde inden for tjenesten.",
+              "»Slutbruger« — en person, der logger ind på dine produkter via tjenesten.",
+              "»Aftalen« — disse vilkår sammen med enhver bestilling eller valg af abonnement, du foretager, vores privatlivspolitik og (hvor det er relevant) vores tillæg om databehandling."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Hvem du er",
+          "content": [
+            "Du repræsenterer en juridisk enhed eller handler i egenskab af erhvervsdrivende. Du bekræfter, at de oplysninger, du angiver ved registreringen, er korrekte, at du er bemyndiget til at forpligte den enhed, du repræsenterer, og at din brug af Tjenesten overholder den lovgivning, der gælder for dig og dine slutbrugere. Tjenesten tilbydes ikke til forbrugere, der handler uden for en erhvervsmæssig sammenhæng, og heller ikke til personer under den alder, hvor de kan give samtykke til digitale tjenester."
+          ]
+        },
+        {
+          "heading": "3. Din lejer og dine forpligtelser",
+          "content": [
+            [
+              "Du er ansvarlig for de applikationer, du registrerer, de adresser, du godkender til omdirigering, samt fortroligheden af de adgangsoplysninger, du har modtaget. Underret os straks, hvis der opstår et sikkerhedsbrud.",
+              "Du er ansvarlig for dit forhold til slutbrugerne, herunder at informere dem om den databehandling, der foretages via tjenesten, og at indhente de nødvendige tilladelser.",
+              "Du skal sørge for, at lejerens kontaktoplysninger altid er opdaterede, så vi kan kontakte dig i forbindelse med sikkerheds- og serviceanliggender."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Regler for brug",
+          "content": [
+            "Du forpligter dig til ikke at:",
+            [
+              "at anvende Tjenesten til ulovlige formål eller på en måde, der krænker andres rettigheder;",
+              "at forstyrre, overbelaste, undersøge eller teste Tjenesten på en måde, der ligger uden for rammerne af vores politik for ansvarlig rapportering;",
+              "omgå sikkerhedskontrol, brugsbegrænsninger eller adgangsbegrænsninger;",
+              "at videresælge eller markedsføre tjenesten som et konkurrerende tilbud inden for hostede identitetsløsninger under eget mærke uden en særskilt aftale;",
+              "at sende ulovligt indhold via e-mails, der leveres via Tjenesten, eller at give urigtige oplysninger om indholdets oprindelse;",
+              "at uploade ondsindet kode eller indhold, der ikke har noget med autentificering at gøre."
+            ],
+            "Vi forbeholder os ret til at undersøge formodede overtrædelser og kan suspendere den berørte adgang, hvor det er rimeligt nødvendigt — med forudgående varsel, hvor det er muligt, og med øjeblikkelig virkning, hvis der foreligger en troværdig sikkerhedsrisiko."
+          ]
+        },
+        {
+          "heading": "5. Tjenestens tilgængelighed",
+          "content": [
+            "Vi driver tjenesten på en pålidelig, administreret infrastruktur med overvågning, sikkerhedskopiering og redundans, der svarer til tjenestens modenhed. I løbet af perioden med tidlig adgang gælder der ingen formelle forpligtelser vedrørende serviceniveau; når sådanne forpligtelser træder i kraft, vil de blive offentliggjort her og udgøre en del af aftalen. Planlagt vedligeholdelse annonceres på forhånd, hvor det er muligt."
+          ]
+        },
+        {
+          "heading": "6. Gebyrer, fakturering og afgifter",
+          "content": [
+            [
+              "Gebyrerne er de beløb, der er angivet i afsnittet om priser på vores hjemmeside på det tidspunkt, hvor du tegner abonnementet, og er angivet eksklusive gældende afgifter.",
+              "Medmindre andet er angivet, skal gebyrerne betales månedligt forud og kan ikke refunderes, når perioden er påbegyndt, medmindre loven kræver andet.",
+              "Vi forbeholder os ret til at ændre priserne med virkning fra et fremtidigt tidspunkt med mindst 30 dages varsel; ændringerne påvirker aldrig en periode, der allerede er betalt for.",
+              "Forsinket betaling kan medføre suspension efter forudgående skriftlig advarsel."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Intellektuel ejendomsret",
+          "content": [
+            "SDK Enterprises forbeholder sig alle rettigheder til Tjenesten, herunder dens software, varemærker og dokumentation. Du beholder alle rettigheder til dine applikationer og til data, der tilhører dig og dine slutbrugere. Du får en personlig, ikke-eksklusiv og ikke-overdragelig ret til at benytte tjenesten i overensstemmelse med denne aftale i hele dens løbetid. Den feedback, du giver os, kan frit anvendes til at forbedre tjenesten uden forpligtelser."
+          ]
+        },
+        {
+          "heading": "8. Garantier og ansvarsfraskrivelser",
+          "content": [
+            "Vi garanterer, at vi vil levere tjenesten med rimelig dygtighed og omhu. Medmindre andet udtrykkeligt er angivet, og i det omfang loven tillader det, leveres tjenesten »som den er« uden yderligere garantier af nogen art, hverken udtrykkelige eller underforståede, herunder egnethed til et bestemt formål eller uafbrudt, fejlfri drift. Intet i denne aftale udelukker ansvar, der ikke kan udelukkes i henhold til fransk lovgivning, herunder ansvar for forsæt eller grov uagtsomhed, personskade samt lovbestemte forbrugerbeskyttelsesbestemmelser, hvor disse finder anvendelse."
+          ]
+        },
+        {
+          "heading": "9. Ansvarsbegrænsning",
+          "content": [
+            "I det omfang loven tillader det, er ingen af parterne ansvarlig for indirekte, tilfældige eller følgeskader, herunder tab af fortjeneste, indtægter, goodwill eller data, uanset årsagen hertil. Hver parts samlede erstatningsansvar, der følger af eller er knyttet til aftalen, er begrænset til det samlede gebyr, som du har betalt i de tolv måneder forud for den begivenhed, der gav anledning til kravet. Disse begrænsninger gælder solidarisk for vores underdatabehandlere kun i det omfang, loven tillader det."
+          ]
+        },
+        {
+          "heading": "10. Erstatningsansvar",
+          "content": [
+            "Du forpligter dig til at forsvare og skadesløsholde os mod krav fra tredjeparter, der opstår som følge af dine applikationer, din brug af Tjenesten i strid med denne Aftale eller din krænkelse af tredjeparters rettigheder — forudsat at vi straks underretter dig om kravet, giver dig mulighed for at styre forsvaret herimod og ikke indgår et forlig ensidigt på dine vegne."
+          ]
+        },
+        {
+          "heading": "11. Fortrolighed",
+          "content": [
+            "Hver part skal beskytte den anden parts fortrolige oplysninger med mindst samme omhu, som den udviser over for sine egne tilsvarende oplysninger, må udelukkende anvende dem til opfyldelse af aftalen og må kun videregive dem til medarbejdere og rådgivere, der har behov for dem, og som er underlagt tilsvarende forpligtelser. Denne forpligtelse gælder i tre år efter aftalens ophør."
+          ]
+        },
+        {
+          "heading": "12. Varighed, suspension og ophør",
+          "content": [
+            [
+              "Aftalen træder i kraft, når du bruger tjenesten for første gang, og gælder, så længe din lejer eksisterer.",
+              "Begge parter kan til enhver tid opsige aftalen ved skriftlig meddelelse; de perioder, der er betalt for, fortsætter indtil den planlagte udløbsdato, medmindre loven bestemmer andet.",
+              "Hver af parterne kan opsige aftalen på grund af væsentlig misligholdelse, der ikke er afhjulpet inden for 30 dage efter meddelelse herom, eller med øjeblikkelig virkning, hvis fortsat opfyldelse ville være ulovlig eller medføre væsentlig skade.",
+              "Ved opsigelse stiller vi på anmodning en maskinlæsbar eksport af dine lejeroplysninger til rådighed i 30 dage, hvorefter vi sletter lejeroplysningerne i overensstemmelse med de opbevaringsforpligtelser, der er beskrevet i privatlivspolitikken."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Tredjepartsudbydere",
+          "content": [
+            "Tjenesten benytter sig af velrenommerede infrastrukturudbydere, der er anført på vores side om underbehandlere. Vi er ansvarlige for deres ydeevne i henhold til denne aftale; dit forhold til dem opstår udelukkende gennem os."
+          ]
+        },
+        {
+          "heading": "14. Force majeure",
+          "content": [
+            "Ingen af parterne er ansvarlig for manglende opfyldelse, der skyldes begivenheder, som ligger uden for partens rimelige kontrol — naturkatastrofer, strejker, krig, svigt i offentlige netværk eller forsyningsvirksomheder eller foranstaltninger truffet af offentlige myndigheder — forudsat at den berørte part underretter den anden part herom og genoptager opfyldelsen, så snart det med rimelighed er muligt."
+          ]
+        },
+        {
+          "heading": "15. Generelle bestemmelser",
+          "content": [
+            [
+              "Denne aftale udgør den fulde aftale mellem parterne vedrørende tjenesten og erstatter tidligere aftaler.",
+              "Hvis en bestemmelse kendes ugyldig, forbliver de øvrige bestemmelser i kraft, og parterne erstatter den ugyldige bestemmelse med en gyldig bestemmelse, der bedst muligt afspejler dens hensigt.",
+              "At en part udsætter håndhævelsen af en rettighed, betyder ikke, at den giver afkald på denne.",
+              "Du må ikke overdrage aftalen uden vores samtykke; vi kan overdrage den som led i en omstrukturering af vores virksomhed, forudsat at der gives meddelelse herom.",
+              "Meddelelser anses for gyldigt fremsendt via e-mail til hello@sdk.enterprises eller til den senest oplyste kontaktadresse for lejeren.",
+              "Disse vilkår er udarbejdet på engelsk; der kan af hensyn til brugervenligheden stilles en fransk version til rådighed. For aftaler med franske erhvervskunder er den franske version gældende, hvis en sådan foreligger, og der fortsat er uoverensstemmelser."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Gældende lov og tvister",
+          "content": [
+            "Denne aftale er underlagt fransk lov. Inden sagen indbringes for domstolene, skal parterne i god tro forsøge at nå frem til en løsning i løbet af 30 dage fra modtagelsen af en skriftlig meddelelse om tvisten. Lykkes dette ikke, har domstolene i Paris, Frankrig, kompetence — medmindre ufravigelige regler giver dig ret til et andet retssted."
+          ]
+        },
+        {
+          "heading": "17. Ændringer af disse vilkår",
+          "content": [
+            "Væsentlige ændringer offentliggøres på denne side mindst 30 dage før de træder i kraft. Fortsat brug efter denne dato betragtes som accept; hvis du ikke er enig, kan du opsige aftalen, inden ændringerne træder i kraft."
+          ]
+        }
+      ]
+    }
+  }
+}

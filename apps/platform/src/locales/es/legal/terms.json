@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Condiciones de uso",
+        "description": "Las condiciones que rigen el acceso y el uso del servicio de autenticación Auth prestado por SDK Enterprises."
+      },
+      "title": "Condiciones de uso",
+      "description": "Estas condiciones constituyen el acuerdo entre tú y SDK Enterprises para el uso del servicio Auth. Se han redactado de forma intencionadamente concisa, pero abarcan todo lo que es relevante en una relación profesional.",
+      "updated": "23 de agosto de 2026",
+      "sections": [
+        {
+          "heading": "1. Definiciones",
+          "content": [
+            [
+              "«Servicio»: la plataforma de autenticación multitenant de Auth que se aloja en auth.sdk.enterprises, incluidos sus paneles de control, interfaces y documentación.",
+              "«Inquilino»: tu espacio de trabajo aislado dentro del Servicio.",
+              "«Usuario final»: una persona que se autentica en sus productos a través del Servicio.",
+              "«Acuerdo»: los presentes términos, junto con cualquier pedido o selección de plan que realices, nuestra política de privacidad y (cuando proceda) nuestro anexo sobre el tratamiento de datos."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Quién eres",
+          "content": [
+            "Usted representa a una persona jurídica o actúa en calidad de profesional. Confirmas que la información que facilitas al registrarte es veraz, que estás autorizado para obligar a la entidad a la que representas y que tu uso del Servicio cumple con la legislación aplicable tanto a ti como a tus usuarios finales. El Servicio no se ofrece a consumidores que actúen al margen de su actividad profesional, ni a personas menores de la edad de consentimiento digital."
+          ]
+        },
+        {
+          "heading": "3. Tu inquilino y tus responsabilidades",
+          "content": [
+            [
+              "Eres responsable de las aplicaciones que registres, de las direcciones que autorices para el redireccionamiento y de la confidencialidad de las credenciales que se te hayan facilitado. Notifícanos sin demora cualquier vulneración de la seguridad.",
+              "Eres responsable de tu relación con los usuarios finales, lo que incluye informarles sobre el tratamiento de datos que se lleva a cabo a través del Servicio y obtener los permisos necesarios.",
+              "Debes mantener actualizados los datos de contacto del inquilino para que podamos ponernos en contacto contigo en relación con cuestiones de seguridad y de mantenimiento."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Uso adecuado",
+          "content": [
+            "Te comprometes a no:",
+            [
+              "utilizar el Servicio con fines ilícitos o de forma que vulnere los derechos de terceros;",
+              "interferir, sobrecargar, sondear o someter a pruebas el Servicio al margen de nuestra política de divulgación responsable;",
+              "eludir los controles de seguridad, los límites de uso o las restricciones de acceso;",
+              "revender o comercializar el Servicio en sí mismo como una oferta de identidad alojada competidora sin un acuerdo independiente;",
+              "enviar contenidos ilícitos a través de los correos electrónicos que envía el Servicio, o falsear su origen;",
+              "subir código malicioso o contenido que no esté relacionado con la autenticación."
+            ],
+            "Podremos investigar las presuntas infracciones y suspender el acceso afectado cuando sea razonablemente necesario —previo aviso, siempre que sea posible, e inmediatamente cuando exista un riesgo de seguridad creíble—."
+          ]
+        },
+        {
+          "heading": "5. Disponibilidad del servicio",
+          "content": [
+            "Prestamos el Servicio mediante una infraestructura gestionada de confianza, dotada de sistemas de supervisión, copias de seguridad y redundancia adecuados a su nivel de madurez. Durante el periodo de acceso anticipado no se aplica ningún compromiso formal en materia de nivel de servicio; cuando se establezca uno, se publicará aquí y formará parte del Acuerdo. El mantenimiento programado se anuncia con antelación siempre que sea posible."
+          ]
+        },
+        {
+          "heading": "6. Tarifas, facturación e impuestos",
+          "content": [
+            [
+              "Las tarifas son las publicadas en la sección de precios de nuestra página web en el momento de la suscripción, y se indican sin incluir los impuestos aplicables.",
+              "Salvo que se indique lo contrario, las cuotas deben abonarse mensualmente por adelantado y no son reembolsables una vez iniciado el periodo, salvo en los casos en que así lo exija la ley.",
+              "Podemos modificar los precios con carácter prospectivo, previa notificación con al menos 30 días de antelación; los cambios nunca afectan a un periodo ya abonado.",
+              "El retraso en el pago puede dar lugar a la suspensión del servicio tras una advertencia previa por escrito."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Propiedad intelectual",
+          "content": [
+            "SDK Enterprises se reserva todos los derechos sobre el Servicio, incluidos su software, sus activos de marca y su documentación. Usted conserva todos los derechos sobre sus aplicaciones y sobre los datos que le pertenecen a usted y a sus usuarios finales. Se le concede un derecho personal, no exclusivo e intransferible a utilizar el Servicio de conformidad con el presente Acuerdo durante toda su vigencia. Los comentarios que nos envíe podrán utilizarse libremente para mejorar el Servicio sin que ello implique obligación alguna."
+          ]
+        },
+        {
+          "heading": "8. Garantías y exenciones de responsabilidad",
+          "content": [
+            "Garantizamos que prestaremos el Servicio con la diligencia y el esmero razonables. Salvo que se indique expresamente lo contrario, y en la medida máxima permitida por la ley, el Servicio se presta «tal cual», sin garantías adicionales de ningún tipo, ya sean expresas o implícitas, incluida la idoneidad para un fin concreto o el funcionamiento ininterrumpido y sin errores. Ninguna disposición del presente Acuerdo excluye la responsabilidad que no pueda excluirse en virtud de la legislación francesa, incluida la responsabilidad por dolo o negligencia grave, lesiones corporales y las protecciones legales de los consumidores cuando sean de aplicación."
+          ]
+        },
+        {
+          "heading": "9. Limitación de responsabilidad",
+          "content": [
+            "En la medida en que lo permita la ley, ninguna de las partes será responsable de pérdidas indirectas, incidentales o consecuentes, incluyendo el lucro cesante, la pérdida de ingresos, la pérdida de fondo de comercio o la pérdida de datos, cualquiera que sea su causa. La responsabilidad total acumulada de cada parte derivada del Acuerdo o relacionada con él tendrá como límite máximo el importe total de las tarifas abonadas por usted en los doce meses anteriores al hecho que haya dado lugar a la reclamación. Estos límites se aplican de forma solidaria a nuestros subencargados del tratamiento únicamente en la medida en que lo permita la ley."
+          ]
+        },
+        {
+          "heading": "10. Indemnización",
+          "content": [
+            "Te comprometes a defendernos e indemnizarnos frente a reclamaciones de terceros derivadas de tus aplicaciones, de tu uso del Servicio que incumpla el presente Acuerdo o de tu vulneración de los derechos de terceros, siempre que te notifiquemos la reclamación sin demora, te permitamos llevar la defensa y no lleguemos a un acuerdo de forma unilateral en tu nombre."
+          ]
+        },
+        {
+          "heading": "11. Confidencialidad",
+          "content": [
+            "Cada parte protegerá la información confidencial de la otra con, como mínimo, el mismo cuidado que aplica a su propia información similar, la utilizará exclusivamente para el cumplimiento del Acuerdo y solo la revelará al personal y a los asesores que la necesiten y que estén sujetos a obligaciones equivalentes. Esta obligación seguirá vigente durante tres años tras la rescisión del Acuerdo."
+          ]
+        },
+        {
+          "heading": "12. Duración, suspensión y rescisión",
+          "content": [
+            [
+              "El Acuerdo entrará en vigor en el momento en que utilices el Servicio por primera vez y permanecerá vigente mientras exista tu cuenta de usuario.",
+              "Cualquiera de las partes podrá rescindir el contrato en cualquier momento mediante notificación por escrito; los períodos por los que ya se haya abonado la cuota continuarán hasta su fecha de finalización prevista, salvo que la ley disponga lo contrario.",
+              "Cualquiera de las partes podrá rescindir el contrato por incumplimiento grave que no se haya subsanado en un plazo de 30 días a partir de la notificación, o con carácter inmediato cuando la continuación de la ejecución resulte ilegal o suponga un perjuicio grave.",
+              "Tras la rescisión, ponemos a su disposición, previa solicitud, una exportación en formato legible por máquina de los datos de su cuenta durante 30 días; posteriormente, eliminaremos dicha cuenta, sin perjuicio de las obligaciones de conservación descritas en la política de privacidad."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Proveedores externos",
+          "content": [
+            "El Servicio recurre a proveedores de infraestructura de prestigio que figuran en nuestra página de subencargados del tratamiento. Somos responsables de su desempeño en virtud del presente Acuerdo; sus relaciones con ellos se establecen únicamente a través de nosotros."
+          ]
+        },
+        {
+          "heading": "14. Fuerza mayor",
+          "content": [
+            "Ninguna de las partes será responsable del incumplimiento de sus obligaciones que se deba a circunstancias ajenas a su control razonable —desastres naturales, huelgas, guerras, fallos en las redes públicas o en los servicios públicos, o medidas adoptadas por las autoridades públicas—, siempre que la parte afectada lo notifique a la otra y reanude el cumplimiento tan pronto como sea razonablemente posible."
+          ]
+        },
+        {
+          "heading": "15. Cláusulas generales",
+          "content": [
+            [
+              "El presente Acuerdo constituye el acuerdo íntegro entre las partes en relación con el Servicio y sustituye a cualquier acuerdo anterior.",
+              "Si se declarara nula alguna cláusula, el resto del documento seguirá en vigor y las partes sustituirán dicha cláusula por otra válida que se acerque lo más posible a su intención.",
+              "El hecho de que una parte se demore en hacer valer un derecho no supone una renuncia al mismo.",
+              "No podrás ceder el Contrato sin nuestro consentimiento; nosotros podremos cederlo como parte de una reorganización de nuestra empresa, previa notificación.",
+              "Las notificaciones se considerarán válidamente entregadas si se envían por correo electrónico a hello@sdk.enterprises o a la última dirección de contacto facilitada por el inquilino.",
+              "Las presentes condiciones se han redactado en inglés; se podrá facilitar una versión en francés por motivos de comodidad. En el caso de los contratos con clientes profesionales franceses, prevalecerá la versión en francés, siempre que exista y haya diferencias entre ambas versiones."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Legislación aplicable y resolución de litigios",
+          "content": [
+            "El presente Acuerdo se rige por la legislación francesa. Antes de recurrir a la vía judicial, las partes intentarán llegar a una resolución de buena fe durante 30 días a partir de la notificación por escrito de la controversia. En su defecto, serán competentes los tribunales de París (Francia), salvo que normas imperativas le otorguen una jurisdicción diferente."
+          ]
+        },
+        {
+          "heading": "17. Modificaciones de estas condiciones",
+          "content": [
+            "Los cambios sustanciales se anuncian en esta página al menos 30 días antes de que entren en vigor. El uso continuado tras esa fecha implica su aceptación; si no estás de acuerdo, puedes rescindir el contrato antes de que entre en vigor."
+          ]
+        }
+      ]
+    }
+  }
+}

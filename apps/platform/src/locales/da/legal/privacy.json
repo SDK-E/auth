@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Fortrolighedspolitik",
+        "description": "Sådan behandler Auth by SDK Enterprises personoplysninger: hvad vi indsamler, hvorfor, hvor længe, hvem vi deler dem med, og hvilke rettigheder du har i forbindelse hermed."
+      },
+      "title": "Fortrolighedspolitik",
+      "description": "Denne politik redegør for, hvilke personoplysninger Auth-tjenesten behandler, hvorfor de behandles, hvor længe de opbevares, hvem de videregives til, samt hvilke rettigheder de berørte personer har. Vi har udarbejdet den med henblik på, at den skal læses og forstås, ikke blot vises.",
+      "updated": "23. august 2026",
+      "sections": [
+        {
+          "heading": "1. Hvem vi er",
+          "content": [
+            "Auth-tjenesten (herefter benævnt »Tjenesten«) drives af SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, med hjemsted i 44 Rue Pasquier, 75008 Paris, France — »SDK Enterprises«, »vi«, »os«). Vores kunder bruger tjenesten til at autentificere deres egne brugere; dette dokument beskriver, hvordan personoplysninger flyder gennem denne ordning, og hvad hver part er ansvarlig for."
+          ]
+        },
+        {
+          "heading": "2. Vores rolle afhænger af situationen",
+          "content": [
+            [
+              "For besøgende på denne hjemmeside og for personer, der opretter eller administrerer en konto hos os, fastlægger SDK Enterprises, hvorfor og hvordan personoplysninger behandles, og fungerer som dataansvarlig.",
+              "For slutbrugere, der logger ind på et produkt eller en tjeneste, der drives af Auth, forbliver vores kunde ansvarlig for denne behandling som dataansvarlig, og SDK Enterprises behandler personoplysninger i henhold til kundens dokumenterede instrukser som databehandler i henhold til vores tillæg om databehandling. Hvis du er en sådan slutbruger, er dit første kontaktpunkt det produkt, du loggede ind på; vi hjælper dem med at besvare din anmodning uden unødig forsinkelse."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Kategorier af personoplysninger, som vi behandler",
+          "content": [
+            [
+              "Kontooplysninger. E-mailadresse og grundlæggende profiloplysninger, som du eller din udbyder vælger at indsende; tidsstempler for autentificering og brugsstatistikker vedrørende din konto.",
+              "Autentificeringsdata. Registreringer af loginforsøg og -resultater, udstedelse og tilbagekaldelse af tokens og sessioner samt tilhørende tekniske metadata (herunder IP-adresse, browserens user-agent og præcise tidsstempler), der opbevares af hensyn til sikkerhed, forebyggelse af misbrug og som bevismateriale.",
+              "Sikkerhedslogfiler. Logfiler med sporbarhed ved manipulation, der indeholder sikkerhedsrelevante hændelser knyttet til din konto eller dit miljø.",
+              "Data vedrørende forebyggelse af misbrug. Kortvarige tekniske tællere, der anvendes til at opdage og begrænse misbrug af trafikken.",
+              "Kommunikationsdata. Indholdet af de beskeder, du sender til os (f.eks. anmodninger om support eller udøvelse af rettigheder), samt vores svar.",
+              "Forretningsdata. Faktura- og betalingsreferencer, hvor der gælder et betalt abonnement, håndteres via vores faktureringsproces."
+            ],
+            "Vi kræver ikke og gemmer ikke adgangskoder til login på tjenesten. Følsomme kategorier af personoplysninger (helbred, biometriske data, politiske holdninger og lignende) indhentes ikke og må ikke indsendes til os."
+          ]
+        },
+        {
+          "heading": "4. Formål og retsgrundlag",
+          "content": [
+            [
+              "Drift og levering af tjenesten — opfyldelse af en aftale eller forberedende foranstaltninger forud for indgåelse af en aftale.",
+              "Sikring af konti, afsløring af svindel og misbrug samt opbevaring af sikkerhedsoplysninger — vores legitime interesse i at drive en pålidelig infrastruktur, afvejet mod dine rettigheder og forventninger.",
+              "Overholdelse af regnskabs-, skatte- og andre lovmæssige forpligtelser — overholdelse af en juridisk forpligtelse.",
+              "Udsendelse af servicemeddelelser vedrørende din konto eller hændelser, der påvirker den — opfyldelse af aftalen; vi sender ikke markedsførings-e-mails uden særskilt samtykke."
+            ],
+            "Når behandlingen er baseret på samtykke, kan du til enhver tid trække dit samtykke tilbage, uden at dette påvirker lovligheden af den behandling, der er foretaget før tilbagetrækningen. Vi foretager ikke automatiske afgørelser, der har retsvirkning i henhold til gældende lovgivning."
+          ]
+        },
+        {
+          "heading": "5. Fastholdelse",
+          "content": [
+            "Personoplysninger opbevares kun så længe, det er nødvendigt til de ovenfor angivne formål. Kontooplysninger opbevares, så længe en konto eller en bruger er aktiv; sikkerheds- og revisionslogfiler opbevares, så længe det er nødvendigt for at dokumentere tjenestens integritet og opfylde lovmæssige krav; data til forebyggelse af misbrug er midlertidige i kraft af deres udformning; forretningsmæssige optegnelser opbevares i de lovmæssigt fastsatte regnskabsperioder. Data, der ikke længere er nødvendige, slettes eller anonymiseres irreversibelt."
+          ]
+        },
+        {
+          "heading": "6. Modtagere og underdatabehandlere",
+          "content": [
+            "Vi deler kun personoplysninger med: databehandlere, der på vores vegne handler i henhold til en kontrakt (udbydere af hosting, databaser, cache og e-mail-levering — som er angivet enkeltvis på vores side om underdatabehandlere); professionelle rådgivere, der er underlagt tavshedspligt; og offentlige myndigheder, når en bindende juridisk anmodning kræver det, i hvilket tilfælde vi underretter de berørte parter, medmindre dette er forbudt ved lov. Vi sælger, udlejer eller formidler aldrig personoplysninger, og vi bruger ikke kunde- eller slutbrugerdata til reklame eller til træning af maskinlæringsmodeller."
+          ]
+        },
+        {
+          "heading": "7. Internationale overførsler",
+          "content": [
+            "Nogle af vores leverandører opererer uden for Det Europæiske Økonomiske Samarbejdsområde (EØS). Når personoplysninger overføres uden for EØS, baserer vi os på en afgørelse om tilstrækkelighed eller på passende sikkerhedsforanstaltninger — især Europa-Kommissionens standardkontraktbestemmelser — sammen med supplerende foranstaltninger, hvor det er nødvendigt. Den aktuelle liste over leverandører og deres placeringer er offentliggjort på vores side om underdatabehandlere."
+          ]
+        },
+        {
+          "heading": "8. Sikkerhed i forbindelse med behandlingen",
+          "content": [
+            "Vi anvender passende tekniske og organisatoriske foranstaltninger mod uautoriseret adgang, tab, ændring eller videregivelse — herunder kryptering under overførsel og i lagring, strenge adgangskontrolforanstaltninger baseret på »need-to-know«-princippet, adskillelse af kundedata, begrænsning af adgangshastighed og påvisning af misbrug samt revisionslogning, der viser eventuelle manipulationer. Foranstaltningerne revideres i takt med, at tjenesten udvikler sig; en oversigt i et letforståeligt sprog findes på vores sikkerhedsside."
+          ]
+        },
+        {
+          "heading": "9. Dine rettigheder",
+          "content": [
+            "I henhold til gældende lovgivning, herunder den generelle forordning om databeskyttelse, hvis du befinder dig i EØS, kan du anmode os om at:",
+            [
+              "give dig adgang til de personoplysninger, vi har om dig;",
+              "rette unøjagtige oplysninger eller supplere ufuldstændige oplysninger;",
+              "slette data, der ikke længere behandles i overensstemmelse med loven;",
+              "at begrænse eller gøre indsigelse mod bestemte former for behandling;",
+              "at stille dine data til rådighed i et struktureret, almindeligt anvendt og overførbart format;",
+              "fortælle dig om, hvem der modtager dine data, og hvilke sikkerhedsforanstaltninger der er truffet."
+            ],
+            "Skriv til hello@sdk.enterprises. Vi svarer inden for en måned efter modtagelse af en velbegrundet anmodning og kan om nødvendigt bede om et minimalt identitetsbevis. Du kan også indgive en klage til en tilsynsmyndighed – i Frankrig er det Commission Nationale de l'Informatique et des Libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Børn",
+          "content": [
+            "Tjenesten er rettet mod virksomheder og fagfolk. Vi behandler ikke bevidst personoplysninger om børn, der er yngre end den alder, hvor der i den pågældende jurisdiktion kræves digitalt samtykke; hvis du mener, at dette er sket, bedes du kontakte os, så vil vi straks slette oplysningerne."
+          ]
+        },
+        {
+          "heading": "11. Ændringer af denne politik",
+          "content": [
+            "Vi opdaterer denne politik, når vores databehandling ændres. Væsentlige ændringer offentliggøres på denne side med angivelse af en ny ikrafttrædelsesdato, inden de træder i kraft. Tidligere versioner kan fås på anmodning."
+          ]
+        },
+        {
+          "heading": "12. Kontakt",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

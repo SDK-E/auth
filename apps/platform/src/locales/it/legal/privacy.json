@@ -1,0 +1,113 @@
+{
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Informativa sulla privacy",
+        "description": "Come Auth by SDK Enterprises tratta i dati personali: quali dati raccogliamo, perché, per quanto tempo, con chi vengono condivisi e quali sono i diritti dell'utente in merito."
+      },
+      "title": "Informativa sulla privacy",
+      "description": "La presente informativa illustra quali dati personali vengono trattati dal servizio Auth, per quale motivo vengono trattati, per quanto tempo vengono conservati, con chi vengono condivisi e quali diritti spettano agli interessati. L’abbiamo redatta affinché venga letta e compresa, non solo visualizzata.",
+      "updated": "23 agosto 2026",
+      "sections": [
+        {
+          "heading": "1. Chi siamo",
+          "content": [
+            "Il servizio Auth (il “Servizio”) è gestito da SDK Enterprises (SADDEK Entreprises, RCS Paris 850 513 912, con sede legale in 44 Rue Pasquier, 75008 Paris, France — “SDK Enterprises”, “noi”, “ci”). I nostri clienti utilizzano il Servizio per autenticare i propri utenti; il presente documento descrive il flusso dei dati personali nell’ambito di tale accordo e le responsabilità di ciascuna parte."
+          ]
+        },
+        {
+          "heading": "2. Il nostro ruolo dipende dalla situazione",
+          "content": [
+            [
+              "Per i visitatori di questo sito web e per le persone che aprono o gestiscono un account presso di noi, SDK Enterprises stabilisce le finalità e le modalità del trattamento dei dati personali e agisce in qualità di titolare del trattamento.",
+              "Per gli utenti finali che effettuano l'accesso a un prodotto o servizio basato su Auth, il nostro cliente rimane responsabile di tale trattamento in qualità di titolare del trattamento, mentre SDK Enterprises tratta i dati personali secondo le sue istruzioni documentate in qualità di responsabile del trattamento, ai sensi del nostro allegato sul trattamento dei dati. Se sei un utente finale di questo tipo, il tuo primo punto di contatto è il prodotto a cui stavi effettuando l’accesso; noi li supportiamo nel rispondere alla tua richiesta senza indebito ritardo."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Categorie di dati personali che trattiamo",
+          "content": [
+            [
+              "Dati dell'account. Indirizzo e-mail ed elementi di base del profilo che l'utente o il suo provider decidono di fornire; timestamp di autenticazione e conteggi di utilizzo relativi all'account dell'utente.",
+              "Dati di autenticazione. Registrazioni dei tentativi di accesso e dei relativi esiti, dell'emissione e della revoca di token e sessioni, nonché dei metadati tecnici correlati (tra cui indirizzo IP, user-agent del browser e timestamp precisi) conservati a fini di sicurezza, prevenzione degli abusi e come prova.",
+              "Registri di sicurezza. Registrazioni a prova di manomissione degli eventi rilevanti per la sicurezza associati al tuo account o al tuo ambiente.",
+              "Dati relativi alla prevenzione degli abusi. Contatori tecnici di breve durata utilizzati per individuare e limitare il traffico abusivo.",
+              "Dati relativi alle comunicazioni. Il contenuto dei messaggi che ci inviate (ad esempio richieste di assistenza o di esercizio dei diritti) e le nostre risposte.",
+              "Dati commerciali. Riferimenti relativi alla fatturazione e ai pagamenti, laddove sia in vigore un piano a pagamento, gestiti tramite la nostra procedura di fatturazione."
+            ],
+            "Non richiediamo né conserviamo password per l'accesso al Servizio. Non vengono richieste categorie sensibili di dati personali (dati sanitari, dati biometrici, opinioni politiche e simili) e tali dati non devono essere forniti."
+          ]
+        },
+        {
+          "heading": "4. Finalità e basi giuridiche",
+          "content": [
+            [
+              "Gestione e fornitura del Servizio — esecuzione di un contratto o attività preliminari alla sua stipula.",
+              "Proteggere gli account, individuare frodi e abusi e conservare i registri relativi alla sicurezza: il nostro legittimo interesse a gestire un’infrastruttura affidabile, in equilibrio con i tuoi diritti e le tue aspettative.",
+              "Adempimento degli obblighi contabili, fiscali e di altro tipo previsti dalla legge — rispetto di un obbligo legale.",
+              "Invio di comunicazioni di servizio relative al tuo account o a problemi che lo riguardano — adempimento del contratto; non inviamo e-mail di marketing in assenza di un consenso specifico."
+            ],
+            "Laddove il trattamento si basi sul consenso, l’utente può revocarlo in qualsiasi momento senza che ciò pregiudichi la liceità del trattamento effettuato prima della revoca. Non effettuiamo processi decisionali automatizzati che producano effetti giuridici ai sensi della normativa applicabile."
+          ]
+        },
+        {
+          "heading": "5. Fidelizzazione",
+          "content": [
+            "I dati personali vengono conservati solo per il tempo necessario alle finalità sopra indicate. I dati relativi agli account vengono conservati fintanto che un account o un tenant rimane attivo; i registri di sicurezza e di audit vengono conservati per il tempo necessario a dimostrare l’integrità del Servizio e a soddisfare i requisiti legali; i dati relativi alla prevenzione degli abusi sono, per loro natura, temporanei; i registri commerciali vengono conservati per i periodi contabili previsti dalla legge. I dati che non sono più necessari vengono cancellati o resi irreversibilmente anonimi."
+          ]
+        },
+        {
+          "heading": "6. Destinatari e sub-responsabili del trattamento",
+          "content": [
+            "Condividiamo i dati personali esclusivamente con: responsabili del trattamento che agiscono per nostro conto in base a un contratto (fornitori di servizi di hosting, database, cache e invio di e-mail — identificati singolarmente nella nostra pagina dedicata ai sub-responsabili del trattamento); consulenti professionali soggetti a obblighi di riservatezza; e autorità pubbliche qualora ciò sia richiesto da una richiesta legale vincolante, nel qual caso ne informiamo gli interessati a meno che ciò non sia vietato dalla legge. Non vendiamo, non affittiamo né cediamo mai dati personali, e non utilizziamo i dati dei clienti o degli utenti finali a fini pubblicitari o per l’addestramento di modelli di apprendimento automatico."
+          ]
+        },
+        {
+          "heading": "7. Trasferimenti internazionali",
+          "content": [
+            "Alcuni dei nostri fornitori operano al di fuori dello Spazio economico europeo (SEE). Qualora i dati personali vengano trasferiti al di fuori del SEE, ci basiamo su una decisione di adeguatezza o su garanzie adeguate — in particolare le clausole contrattuali tipo della Commissione europea — insieme a misure supplementari, ove necessario. L'elenco aggiornato dei fornitori e delle loro sedi è pubblicato sulla nostra pagina dedicata ai sub-responsabili del trattamento."
+          ]
+        },
+        {
+          "heading": "8. Sicurezza del trattamento",
+          "content": [
+            "Adottiamo misure tecniche e organizzative adeguate a tutela contro accessi non autorizzati, perdita, alterazione o divulgazione dei dati — tra cui la crittografia sia in transito che in archiviazione, rigorosi controlli di accesso basati sul principio della “necessità di sapere”, la separazione dei dati dei tenant, la limitazione della frequenza delle richieste e il rilevamento degli abusi, nonché la registrazione di log di audit a prova di manomissione. Le misure vengono riviste man mano che il Servizio si evolve; una panoramica in linguaggio semplice è disponibile sulla nostra pagina dedicata alla sicurezza."
+          ]
+        },
+        {
+          "heading": "9. I tuoi diritti",
+          "content": [
+            "Fatta salva la normativa applicabile, compreso il Regolamento generale sulla protezione dei dati (GDPR) se ti trovi nel SEE, puoi richiederci di:",
+            [
+              "consentirti di accedere ai dati personali che deteniamo su di te;",
+              "correggere i dati errati o completare quelli incompleti;",
+              "cancellare i dati il cui trattamento non è più consentito dalla legge;",
+              "limitare o opporsi a determinati trattamenti;",
+              "fornire i propri dati in un formato strutturato, di uso comune e trasferibile;",
+              "fornirvi informazioni sui destinatari dei vostri dati e sulle misure di sicurezza adottate."
+            ],
+            "Scrivi all'indirizzo hello@sdk.enterprises. Rispondiamo entro un mese dalla ricezione di una richiesta motivata e, se necessario, potremmo richiedere una prova minima dell'identità. È inoltre possibile presentare un reclamo presso un'autorità di controllo: in Francia, la Commission Nationale de l'Informatique et des Libertés (CNIL)."
+          ]
+        },
+        {
+          "heading": "10. Bambini",
+          "content": [
+            "Il Servizio è rivolto ad aziende e professionisti. Non trattiamo consapevolmente i dati personali di minori al di sotto dell'età prevista per il consenso digitale nella giurisdizione di riferimento; se ritieni che ciò sia avvenuto, contattaci e provvederemo a cancellare tempestivamente i dati."
+          ]
+        },
+        {
+          "heading": "11. Modifiche alla presente informativa",
+          "content": [
+            "Aggiorniamo la presente informativa ogni volta che il nostro trattamento dei dati subisce modifiche. Le modifiche sostanziali vengono annunciate su questa pagina, indicandone la nuova data di entrata in vigore, prima che entrino effettivamente in vigore. Le versioni precedenti sono disponibili su richiesta."
+          ]
+        },
+        {
+          "heading": "12. Contatti",
+          "content": [
+            "SDK Enterprises — 44 Rue Pasquier, 75008 Paris, France — hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

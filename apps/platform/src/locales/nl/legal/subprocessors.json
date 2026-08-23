@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Subverwerkers",
+        "description": "De subverwerkers die SDK Enterprises inschakelt voor de exploitatie van de Auth-dienst, de rol die elk van hen vervult, de locatie waar zij actief zijn en de categorieën gegevens waarmee zij werken."
+      },
+      "title": "Subverwerkers",
+      "description": "We houden deze lijst actueel en maken toevoegingen bekend voordat een nieuwe onderaannemer persoonsgegevens verwerkt, zodat onze klanten de mogelijkheid hebben om op redelijke gronden bezwaar te maken.",
+      "updated": "23 augustus 2026",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Elke subverwerker handelt op basis van een schriftelijke overeenkomst waarin gegevensbeschermingsverplichtingen zijn vastgelegd die niet minder strikt zijn dan die in ons aanvullend akkoord inzake gegevensverwerking, en SDK Enterprises blijft jegens zijn klanten verantwoordelijk voor de prestaties van de subverwerker. Bezwaren tegen een aangekondigde toevoeging kunnen binnen veertien dagen na publicatie worden ingediend door een schrijven te richten aan hello@sdk.enterprises."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Subverwerker",
+                "Functie",
+                "Locatie",
+                "Betrokken gegevenscategorieën"
+              ],
+              "rows": [
+                [
+                  "Vercel Inc.",
+                  "Hosting van applicaties en levering van content",
+                  "Verenigde Staten; wereldwijd edge-netwerk",
+                  "Al het verkeer naar de Dienst verloopt via het netwerk van de Dienst; de verwerking beperkt zich tot het doorsturen, in de cache opslaan en verwerken van versleutelde verzoeken en antwoorden."
+                ],
+                [
+                  "Neon (Neon Inc.)",
+                  "Aanbieder van beheerde databases",
+                  "Per implementatie geselecteerde cloudregio; er zijn regio’s beschikbaar die EEA-compatibel zijn",
+                  "Configuratiegegevens van huurders, accountgegevens, authenticatiegegevens, beveiligings- en auditlogboeken. Inloggegevens en cryptografische sleutels worden uitsluitend in beveiligde vorm opgeslagen."
+                ],
+                [
+                  "Upstash Inc.",
+                  "Tijdelijke opslag ter voorkoming van misbruik",
+                  "Verenigde Staten",
+                  "Tijdelijke technische tellers die worden gebruikt om misbruik van het netwerk te detecteren. Deze worden slechts gedurende de korte levensduur van de teller bewaard."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Verzending van transactionele e-mails",
+                  "Verenigde Staten",
+                  "Het e-mailadres van de ontvanger en de verzendgegevens van service-e-mails, zoals inlogcodes. De inhoud van het bericht is beperkt tot wat strikt noodzakelijk is."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Wijzigingslogboek",
+          "content": [
+            [
+              "Augustus 2026 — Eerste gepubliceerde lijst: Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Gebruiksvoorwaarden",
+        "description": "De voorwaarden voor toegang tot en gebruik van de Auth-authenticatiedienst die wordt aangeboden door SDK Enterprises."
+      },
+      "title": "Gebruiksvoorwaarden",
+      "description": "Deze voorwaarden vormen de overeenkomst tussen u en SDK Enterprises met betrekking tot het gebruik van de Auth-dienst. Ze zijn bewust beknopt gehouden, maar omvatten alles wat van belang is in een professionele relatie.",
+      "updated": "23 augustus 2026",
+      "sections": [
+        {
+          "heading": "1. Definities",
+          "content": [
+            [
+              "\"Service\" — het Auth-authenticatieplatform voor meerdere gebruikers dat wordt gehost op auth.sdk.enterprises, met inbegrip van de dashboards, interfaces en documentatie.",
+              "\"Huurder\" — uw afgeschermde werkruimte binnen de Dienst.",
+              "\"Eindgebruiker\" — een persoon die zich via de Dienst bij uw producten aanmeldt.",
+              "\"Overeenkomst\" — deze voorwaarden, samen met elke bestelling of elk door u gekozen pakket, ons privacybeleid en (indien van toepassing) onze aanvullende bepalingen inzake gegevensverwerking."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Wie je bent",
+          "content": [
+            "U vertegenwoordigt een rechtspersoon of treedt op als beroepsbeoefenaar. U bevestigt dat de gegevens die u bij de registratie verstrekt juist zijn, dat u bevoegd bent om de entiteit die u vertegenwoordigt te binden, en dat uw gebruik van de Dienst voldoet aan de wetgeving die op u en uw eindgebruikers van toepassing is. De Dienst wordt niet aangeboden aan consumenten die niet in een professionele hoedanigheid handelen, noch aan personen die jonger zijn dan de digitale toestemmingsleeftijd."
+          ]
+        },
+        {
+          "heading": "3. Uw huurder en uw verantwoordelijkheden",
+          "content": [
+            [
+              "U bent verantwoordelijk voor de applicaties die u registreert, de adressen die u voor doorsturing autoriseert en de vertrouwelijkheid van de aan u verstrekte inloggegevens. Breng ons onmiddellijk op de hoogte als er sprake is van een inbreuk op de beveiliging.",
+              "U bent verantwoordelijk voor uw relatie met eindgebruikers, waaronder het informeren van hen over de verwerking die via de Dienst plaatsvindt en het verkrijgen van de benodigde toestemmingen.",
+              "U dient de contactgegevens van de huurder up-to-date te houden, zodat wij contact met u kunnen opnemen over veiligheids- en servicekwesties."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Toegestaan gebruik",
+          "content": [
+            "U stemt ermee in om het volgende niet te doen:",
+            [
+              "de Dienst te gebruiken voor onwettige doeleinden, of op een wijze die inbreuk maakt op de rechten van anderen;",
+              "de Dienst verstoren, overbelasten, onderzoeken of testen op een manier die buiten ons beleid inzake verantwoorde openbaarmaking valt;",
+              "beveiligingsmaatregelen, gebruikslimieten of toegangsbeperkingen omzeilen;",
+              "de Dienst zelf doorverkopen of als white-label aanbieden als een concurrerend aanbod op het gebied van gehoste identiteitsdiensten zonder afzonderlijke overeenkomst;",
+              "onwettige inhoud versturen via e-mails die via de Dienst worden verzonden, of de herkomst daarvan verkeerd voorstellen;",
+              "kwaadaardige code of inhoud uploaden die geen verband houdt met authenticatie."
+            ],
+            "Wij kunnen vermoedelijke overtredingen onderzoeken en de betreffende toegang opschorten indien dit redelijkerwijs noodzakelijk is — met voorafgaande kennisgeving waar mogelijk, en onmiddellijk wanneer er sprake is van een aannemelijk veiligheidsrisico."
+          ]
+        },
+        {
+          "heading": "5. Beschikbaarheid van de dienst",
+          "content": [
+            "Wij bieden de Dienst aan via een gerenommeerde beheerde infrastructuur met monitoring, back-ups en redundantie die aansluiten bij de ontwikkelingsfase ervan. Tijdens de vroege-toegangsperiode geldt er geen formele serviceovereenkomst; zodra er wel een geldt, wordt deze hier gepubliceerd en maakt deze deel uit van de Overeenkomst. Gepland onderhoud wordt, voor zover mogelijk, vooraf aangekondigd."
+          ]
+        },
+        {
+          "heading": "6. Vergoedingen, facturering en belastingen",
+          "content": [
+            [
+              "De tarieven zijn de tarieven die op het moment van uw inschrijving in het gedeelte ‘Prijzen’ op onze website staan vermeld, exclusief eventuele belastingen.",
+              "Tenzij anders vermeld, dienen de kosten maandelijks vooraf te worden voldaan en worden ze niet terugbetaald zodra de periode is ingegaan, tenzij dit wettelijk verplicht is.",
+              "We kunnen de prijzen met ingang van een toekomstige datum wijzigen, mits we dit ten minste 30 dagen van tevoren aankondigen; wijzigingen hebben nooit gevolgen voor een reeds betaalde periode.",
+              "Bij te late betaling kan, na een voorafgaande schriftelijke waarschuwing, de dienstverlening worden opgeschort."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Intellectuele eigendom",
+          "content": [
+            "SDK Enterprises behoudt alle rechten op de Dienst, met inbegrip van de bijbehorende software, merkelementen en documentatie. U behoudt alle rechten op uw applicaties en op gegevens die aan u en uw eindgebruikers toebehoren. U krijgt een persoonlijk, niet-exclusief en niet-overdraagbaar recht om de Dienst te gebruiken in overeenstemming met deze Overeenkomst voor de duur ervan. Feedback die u ons geeft, mag vrij worden gebruikt om de Dienst te verbeteren, zonder dat dit enige verplichting met zich meebrengt."
+          ]
+        },
+        {
+          "heading": "8. Garanties en aansprakelijkheidsuitsluitingen",
+          "content": [
+            "Wij garanderen dat wij de Dienst met redelijke vakkundigheid en zorgvuldigheid zullen verlenen. Tenzij uitdrukkelijk vermeld, en voor zover wettelijk toegestaan, wordt de Dienst geleverd „zoals hij is“, zonder enige aanvullende garantie, hetzij uitdrukkelijk, hetzij stilzwijgend, met inbegrip van geschiktheid voor een bepaald doel of een ononderbroken en foutloze werking. Niets in deze Overeenkomst sluit aansprakelijkheid uit die krachtens de Franse wetgeving niet kan worden uitgesloten, met inbegrip van aansprakelijkheid voor opzet of grove nalatigheid, lichamelijk letsel en wettelijke consumentenbescherming, voor zover van toepassing."
+          ]
+        },
+        {
+          "heading": "9. Aansprakelijkheidsbeperking",
+          "content": [
+            "Voor zover wettelijk toegestaan, is geen van beide partijen aansprakelijk voor indirecte, incidentele of gevolgschade, met inbegrip van gederfde winst, inkomsten, goodwill of gegevens, ongeacht de oorzaak daarvan. De totale aansprakelijkheid van elke partij die voortvloeit uit of verband houdt met de Overeenkomst is beperkt tot het totale bedrag aan vergoedingen dat u hebt betaald in de twaalf maanden voorafgaand aan de gebeurtenis die aanleiding geeft tot de vordering. Deze beperkingen gelden gezamenlijk en hoofdelijk voor onze subverwerkers, uitsluitend voor zover wettelijk toegestaan."
+          ]
+        },
+        {
+          "heading": "10. Vrijwaring",
+          "content": [
+            "U stemt ermee in ons te verdedigen en schadeloos te stellen tegen vorderingen van derden die voortvloeien uit uw applicaties, uw gebruik van de Dienst in strijd met deze Overeenkomst, of uw inbreuk op rechten van derden — op voorwaarde dat wij u onverwijld op de hoogte stellen van de vordering, u de leiding geven over de verdediging en de vordering niet eenzijdig namens u schikken."
+          ]
+        },
+        {
+          "heading": "11. Vertrouwelijkheid",
+          "content": [
+            "Elke partij beschermt de vertrouwelijke informatie van de andere partij met ten minste dezelfde zorgvuldigheid als waarmee zij haar eigen soortgelijke informatie behandelt, gebruikt deze uitsluitend ter uitvoering van de Overeenkomst en maakt deze alleen bekend aan personeel en adviseurs die deze informatie nodig hebben en aan gelijkwaardige verplichtingen zijn gebonden. Deze verplichting blijft na beëindiging nog drie jaar van kracht."
+          ]
+        },
+        {
+          "heading": "12. Looptijd, opschorting en beëindiging",
+          "content": [
+            [
+              "De Overeenkomst gaat in op het moment dat u de Dienst voor het eerst gebruikt en blijft van kracht zolang uw tenant bestaat.",
+              "Elke partij kan de overeenkomst te allen tijde schriftelijk opzeggen; de periodes waarvoor al is betaald, lopen door tot het geplande einde, tenzij de wet anders bepaalt.",
+              "Elke partij kan de overeenkomst beëindigen wegens een wezenlijke schending die niet binnen 30 dagen na kennisgeving is hersteld, of met onmiddellijke ingang indien voortzetting van de uitvoering onwettig of wezenlijk schadelijk zou zijn.",
+              "Bij beëindiging stellen wij op verzoek gedurende 30 dagen een machinaal leesbare export van uw tenantgegevens ter beschikking; daarna verwijderen wij de tenant, met inachtneming van de in het privacybeleid beschreven bewaarplichten."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Externe dienstverleners",
+          "content": [
+            "De Dienst maakt gebruik van gerenommeerde infrastructuuraanbieders die vermeld staan op onze pagina met subverwerkers. Wij zijn verantwoordelijk voor hun prestaties in het kader van deze Overeenkomst; uw relaties met hen komen uitsluitend via ons tot stand."
+          ]
+        },
+        {
+          "heading": "14. Overmacht",
+          "content": [
+            "Geen van beide partijen is aansprakelijk voor het niet nakomen van haar verplichtingen als gevolg van gebeurtenissen waarop zij redelijkerwijs geen invloed heeft — natuurrampen, stakingen, oorlog, storingen in openbare netwerken of nutsvoorzieningen, of maatregelen van overheidsinstanties — op voorwaarde dat de getroffen partij de andere partij hiervan op de hoogte stelt en de nakoming van haar verplichtingen zo spoedig als redelijkerwijs mogelijk is hervat."
+          ]
+        },
+        {
+          "heading": "15. Algemene bepalingen",
+          "content": [
+            [
+              "Deze overeenkomst vormt de volledige overeenkomst tussen de partijen met betrekking tot de dienst en vervangt eerdere afspraken.",
+              "Indien een bepaling ongeldig wordt verklaard, blijven de overige bepalingen van kracht en vervangen de partijen de ongeldige bepaling door een geldige bepaling die qua strekking zo dicht mogelijk bij de oorspronkelijke bedoeling ligt.",
+              "Het feit dat een partij wacht met het afdwingen van een recht, houdt geen afstand van dat recht in.",
+              "U mag de Overeenkomst niet overdragen zonder onze toestemming; wij mogen deze wel overdragen in het kader van een reorganisatie van onze onderneming, mits wij u hiervan op de hoogte stellen.",
+              "Kennisgevingen worden rechtsgeldig verzonden via e-mail naar hello@sdk.enterprises of naar het laatst opgegeven contactadres van de huurder.",
+              "Deze voorwaarden zijn opgesteld in het Engels; ter verduidelijking kan een Franse versie worden verstrekt. Voor overeenkomsten met Franse professionele klanten prevaleert de Franse versie, indien deze bestaat en er verschillen blijven bestaan."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Toepasselijk recht en geschillen",
+          "content": [
+            "Op deze overeenkomst is het Franse recht van toepassing. Alvorens een gerechtelijke procedure aan te spannen, zullen de partijen gedurende 30 dagen vanaf de schriftelijke kennisgeving van een geschil te goeder trouw trachten tot een schikking te komen. Mocht dit niet lukken, dan zijn de rechtbanken van Parijs, Frankrijk, bevoegd — tenzij dwingende voorschriften u een ander bevoegde forum toekennen."
+          ]
+        },
+        {
+          "heading": "17. Wijzigingen in deze voorwaarden",
+          "content": [
+            "Wezenlijke wijzigingen worden op deze pagina ten minste 30 dagen voordat ze van kracht worden aangekondigd. Als u de dienst na die datum blijft gebruiken, wordt dit beschouwd als instemming; indien u het hier niet mee eens bent, kunt u de overeenkomst beëindigen vóór de datum waarop de wijzigingen van kracht worden."
+          ]
+        }
+      ]
+    }
+  }
+}

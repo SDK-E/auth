@@ -1,0 +1,104 @@
+{
+  "legal": {
+    "dpa": {
+      "meta": {
+        "title": "Allegato relativo al trattamento dei dati",
+        "description": "L’allegato in base al quale SDK Enterprises tratta i dati personali degli utenti finali per conto dei tenant di Auth, ai sensi dell’articolo 28 dello GDPR."
+      },
+      "title": "Allegato relativo al trattamento dei dati",
+      "description": "La presente appendice definisce le condizioni alle quali SDK Enterprises tratta i dati personali per conto degli utenti del servizio Auth. Essa riflette i requisiti applicabili ai responsabili del trattamento ai sensi della normativa sulla protezione dei dati, compreso l'articolo 28 del Regolamento generale sulla protezione dei dati.",
+      "updated": "23 agosto 2026",
+      "sections": [
+        {
+          "heading": "1. Parti e ruoli",
+          "content": [
+            "Il presente allegato è stipulato tra l’utente (il titolare del trattamento, “Cliente”) e SDK Enterprises (il responsabile del trattamento). Si applica ai dati personali che SDK Enterprises tratta per suo conto quando lei utilizza il Servizio per autenticare i suoi utenti finali. Esso costituisce parte integrante del Contratto e prevale su di esso in materia di protezione dei dati."
+          ]
+        },
+        {
+          "heading": "2. Informazioni dettagliate sul trattamento",
+          "content": [
+            [
+              "Oggetto: servizi di autenticazione e identità per le applicazioni del Cliente.",
+              "Durata: la durata del Contratto, oltre agli obblighi di conservazione descritti di seguito.",
+              "Natura e finalità: gestione dei flussi di accesso, verifica dell'identità tramite codici monouso, emissione e gestione di sessioni e token, prevenzione degli abusi, registrazione degli eventi di sicurezza e assistenza correlata.",
+              "Categorie di interessati: gli utenti finali del Cliente e il personale del Cliente incaricato della gestione del tenant.",
+              "Categorie di dati personali: dati identificativi (in particolare indirizzi e-mail), registrazioni relative all’autenticazione e all’utilizzo, metadati tecnici quali indirizzo IP e user-agent, registrazioni relative alla sicurezza e agli audit, nonché indicatori transitori per la prevenzione degli abusi.",
+              "Categorie speciali: non sono richieste né previste; il cliente non deve inviarle."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Obblighi del responsabile del trattamento",
+          "content": [
+            "SDK Enterprises tratta i dati personali esclusivamente sulla base di istruzioni documentate fornite dal Cliente — costituite dal presente allegato e dalla configurazione del Servizio da parte del Cliente — salvo diversamente previsto dalla normativa dell’Unione o degli Stati membri, nel qual caso SDK Enterprises informa il Cliente di tale obbligo di legge prima del trattamento, salvo che ciò sia vietato dalla legge. SDK Enterprises informa senza indugio il Cliente qualora ritenga che un’istruzione violi la normativa applicabile in materia di protezione dei dati."
+          ]
+        },
+        {
+          "heading": "4. Riservatezza",
+          "content": [
+            "Le persone autorizzate al trattamento dei dati personali lo effettuano solo nella misura necessaria ai fini del Servizio e sono vincolate da obblighi di riservatezza che permangono anche dopo la cessazione del loro rapporto di lavoro."
+          ]
+        },
+        {
+          "heading": "5. Misure di sicurezza",
+          "content": [
+            "Tenendo conto dello stato dell’arte e dei costi di implementazione, SDK Enterprises adotta misure tecniche e organizzative adeguate, tra cui: la crittografia dei dati in transito e un’adeguata crittografia dei dati inattivi; un rigoroso controllo degli accessi basato sul principio della “necessità di sapere”; separazione degli ambienti dei tenant; misure per garantire disponibilità e resilienza, inclusi backup e procedure di ripristino; rilevamento degli abusi e limitazione della frequenza; registrazione a prova di manomissione degli eventi rilevanti per la sicurezza; e revisione periodica di tali misure man mano che il Servizio si evolve. Una panoramica in linguaggio semplice è disponibile all’indirizzo /security."
+          ]
+        },
+        {
+          "heading": "6. Sottocontitutori",
+          "content": [
+            "Il Cliente concede un’autorizzazione generale scritta a ricorrere a sub-responsabili del trattamento, le cui identità, ruoli e sedi sono pubblicati all’indirizzo /legal/subprocessors. SDK Enterprises impone per iscritto a ciascun sub-responsabile del trattamento obblighi in materia di protezione dei dati non meno rigorosi di quelli previsti dal presente allegato e rimane responsabile nei confronti del Cliente per eventuali inadempienze dei sub-responsabili del trattamento. Almeno quattordici (14) giorni prima che un nuovo subresponsabile del trattamento inizi a trattare i dati personali, SDK Enterprises aggiorna l’elenco pubblicato, dando al Cliente la possibilità di opporsi per motivi ragionevoli legati alla protezione dei dati; qualora un’opposizione non possa essere ragionevolmente risolta, il Cliente può recedere dalla parte del Servizio interessata."
+          ]
+        },
+        {
+          "heading": "7. Assistenza al cliente",
+          "content": [
+            [
+              "Richieste da parte degli interessati (accesso, rettifica, cancellazione, limitazione del trattamento, opposizione, portabilità): SDK Enterprises fornisce assistenza senza indebito ritardo, avvalendosi, ove possibile, degli strumenti a disposizione dei clienti.",
+              "Valutazioni d’impatto sulla protezione dei dati e consultazioni preventive: SDK Enterprises fornisce informazioni ragionevolmente disponibili sul Servizio.",
+              "Incidenti di sicurezza: SDK Enterprises informa il Cliente senza indebito ritardo non appena viene a conoscenza di una violazione dei dati personali che riguarda i dati del Cliente, fornisce le informazioni ragionevolmente necessarie per l’adempimento degli obblighi a carico del Cliente e collabora alla gestione dell’incidente."
+            ]
+          ]
+        },
+        {
+          "heading": "8. Trasferimenti internazionali",
+          "content": [
+            "Qualora i dati personali dovessero essere trasferiti al di fuori dello Spazio economico europeo verso un paese che non beneficia di una decisione di adeguatezza, SDK Enterprises garantisce che siano in atto adeguate misure di salvaguardia — principalmente le clausole contrattuali tipo adottate dalla Commissione europea, stipulate tra l’esportatore e l’importatore interessati — insieme a misure tecniche supplementari, ove necessario. Le attuali destinazioni dei trasferimenti sono descritte nella pagina dedicata ai sub-responsabili del trattamento."
+          ]
+        },
+        {
+          "heading": "9. Responsabilità e verifiche",
+          "content": [
+            "SDK Enterprises conserva la documentazione relativa alle attività di trattamento che rientrano nel proprio ambito di competenza e mette a disposizione la documentazione che attesta la conformità al presente allegato. Il Cliente può richiedere tali informazioni una volta all’anno, nonché a seguito di una violazione dei dati personali o di una segnalazione fondata relativa alla conformità. Gli audit in loco, ove concessi, si svolgono a spese del Cliente, previo preavviso ragionevole e nel rispetto della riservatezza e delle tutele dovute agli altri clienti."
+          ]
+        },
+        {
+          "heading": "10. Restituzione e cancellazione",
+          "content": [
+            "Alla risoluzione del Contratto, SDK Enterprises renderà disponibili i dati personali del Cliente per l’esportazione e provvederà successivamente alla loro cancellazione, anche all’interno dei sistemi dei sub-responsabili del trattamento, entro un termine commercialmente ragionevole — salvo nei casi in cui la conservazione sia richiesta dalla legge, nel qual caso i dati rimarranno protetti ai sensi del presente allegato fino a quando non sarà possibile procedere alla loro cancellazione."
+          ]
+        },
+        {
+          "heading": "11. Responsabilità, legge applicabile e controversie",
+          "content": [
+            "La responsabilità ai sensi del presente allegato è ripartita e limitata secondo quanto previsto nei termini di servizio. Il presente allegato è regolato dalla legge francese e le controversie sono soggette al meccanismo di risoluzione ivi previsto."
+          ]
+        },
+        {
+          "heading": "12. Diritti alla privacy in California",
+          "content": [
+            "Per quanto riguarda i dati personali soggetti al California Consumer Privacy Act nella sua versione aggiornata, SDK Enterprises agisce in qualità di fornitore di servizi: non vende né condivide dati personali, non li conserva, non li utilizza né li divulga al di fuori del rapporto commerciale diretto, salvo nei casi consentiti dalla legge, e non li combina con dati personali ricevuti da altre fonti."
+          ]
+        },
+        {
+          "heading": "13. Prevalenza e modifiche",
+          "content": [
+            "Qualora singole disposizioni del presente allegato siano in contrasto con le clausole contrattuali standard incorporate ai sensi della sezione 8, queste ultime prevarranno per i trasferimenti da esse disciplinati. Ci riserviamo il diritto di modificare il presente allegato con effetto futuro per riflettere eventuali cambiamenti nel Servizio o nella normativa, annunciando le modifiche sostanziali su questa pagina prima della loro entrata in vigore."
+          ]
+        }
+      ]
+    }
+  }
+}

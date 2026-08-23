@@ -1,0 +1,104 @@
+{
+  "legal": {
+    "dpa": {
+      "meta": {
+        "title": "Dodatek o zpracování údajů",
+        "description": "Dodatek, na jehož základě společnost SDK Enterprises zpracovává osobní údaje koncových uživatelů jménem nájemců služby Auth, v souladu s článkem 28 směrnice GDPR."
+      },
+      "title": "Dodatek o zpracování údajů",
+      "description": "Tento dodatek stanoví podmínky, za kterých společnost SDK Enterprises zpracovává osobní údaje jménem uživatelů služby Auth. Odráží požadavky platné pro zpracovatele podle právních předpisů o ochraně osobních údajů, včetně článku 28 obecného nařízení o ochraně osobních údajů.",
+      "updated": "23. srpna 2026",
+      "sections": [
+        {
+          "heading": "1. Strany a role",
+          "content": [
+            "Tento dodatek je uzavřen mezi vámi (správcem, „zákazníkem“) a společností SDK Enterprises (zpracovatelem). Vztahuje se na osobní údaje, které společnost SDK Enterprises zpracovává vaším jménem, když využíváte Službu k ověřování vašich koncových uživatelů. Tvoří součást Smlouvy a v otázkách ochrany osobních údajů má přednost před ní."
+          ]
+        },
+        {
+          "heading": "2. Podrobnosti o zpracování",
+          "content": [
+            [
+              "Předmět: služby ověřování a identifikace pro aplikace zákazníka.",
+              "Doba trvání: doba platnosti smlouvy plus níže popsané povinnosti týkající se uchovávání.",
+              "Charakter a účel: zajištění procesů přihlášení, ověřování identity pomocí jednorázových kódů, vydávání a správa relací a tokenů, prevence zneužití, bezpečnostní protokolování a související podpora.",
+              "Kategorie subjektů údajů: Koncoví uživatelé zákazníka a zaměstnanci zákazníka, kteří spravují tenant.",
+              "Kategorie osobních údajů: identifikační údaje (zejména e-mailové adresy), záznamy o autentizaci a používání, technická metadata, jako jsou IP adresa a user-agent, záznamy o bezpečnosti a auditu a dočasné indikátory sloužící k prevenci zneužití.",
+              "Zvláštní kategorie: žádné se nevyžadují ani neočekávají; zákazník je nesmí zadávat."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Povinnosti zpracovatele",
+          "content": [
+            "Společnost SDK Enterprises zpracovává osobní údaje výhradně na základě zdokumentovaných pokynů zákazníka – tvořených tímto dodatkem a konfigurací služby ze strany zákazníka –, pokud právní předpisy Unie nebo členského státu nestanoví jinak; v takovém případě společnost SDK Enterprises informuje zákazníka o tomto zákonném požadavku před zahájením zpracování, pokud to není zákonem zakázáno. Společnost SDK Enterprises neprodleně informuje zákazníka, pokud se domnívá, že pokyn porušuje platné právní předpisy o ochraně osobních údajů."
+          ]
+        },
+        {
+          "heading": "4. Důvěrnost",
+          "content": [
+            "Osoby oprávněné ke zpracování osobních údajů tak činí pouze v míře nezbytné pro poskytování Služby a jsou vázány povinností mlčenlivosti, která trvá i po skončení jejich pracovního poměru."
+          ]
+        },
+        {
+          "heading": "5. Bezpečnostní opatření",
+          "content": [
+            "S ohledem na současný stav techniky a náklady na implementaci společnost SDK Enterprises uplatňuje odpovídající technická a organizační opatření, včetně: šifrování dat při přenosu a odpovídajícího šifrování dat v úložišti; přísné kontroly přístupu na základě principu „potřeby vědět“; oddělení prostředí jednotlivých nájemců; opatření pro zajištění dostupnosti a odolnosti, včetně zálohování a postupů pro obnovu; detekci zneužití a omezení frekvence přístupů; protokolování událostí souvisejících s bezpečností s ochranou proti neoprávněné manipulaci; a pravidelné přezkoumávání těchto opatření v souvislosti s vývojem Služby. Přehled v srozumitelném jazyce je zveřejněn na adrese /security."
+          ]
+        },
+        {
+          "heading": "6. Subzpracovatelé",
+          "content": [
+            "Zákazník uděluje obecné písemné oprávnění k zapojení subdodavatelů zpracování, jejichž totožnost, role a sídla jsou zveřejněny na adrese /legal/subprocessors. Společnost SDK Enterprises písemně ukládá každému subdodavateli zpracování povinnosti v oblasti ochrany osobních údajů, které poskytují minimálně stejnou úroveň ochrany jako povinnosti uvedené v tomto dodatku, a nese vůči zákazníkovi odpovědnost za selhání subdodavatelů zpracování. Nejméně čtrnáct (14) dnů předtím, než nový subdodavatel začne zpracovávat osobní údaje, společnost SDK Enterprises aktualizuje zveřejněný seznam, čímž dává zákazníkovi možnost vznést námitku z přiměřených důvodů souvisejících s ochranou osobních údajů; pokud nelze námitku přiměřeně vyřešit, může zákazník ukončit dotčenou část služby."
+          ]
+        },
+        {
+          "heading": "7. Pomoc zákazníkům",
+          "content": [
+            [
+              "Žádosti dotčených osob (přístup, oprava, výmaz, omezení zpracování, námitka, přenositelnost): Společnost SDK Enterprises tyto žádosti vyřizuje bez zbytečného odkladu, pokud možno s využitím dostupných nástrojů pro nájemce.",
+              "Posouzení dopadů na ochranu osobních údajů a předchozí konzultace: SDK Enterprises poskytuje přiměřeně dostupné informace o Službě.",
+              "Bezpečnostní incidenty: Společnost SDK Enterprises bez zbytečného odkladu informuje zákazníka poté, co se dozví o narušení ochrany osobních údajů, které se týká údajů zákazníka, poskytne informace, které jsou přiměřeně nezbytné pro plnění povinností zákazníka, a spolupracuje při řešení daného incidentu."
+            ]
+          ]
+        },
+        {
+          "heading": "8. Mezinárodní převody",
+          "content": [
+            "V případě, že by docházelo k předávání osobních údajů mimo Evropský hospodářský prostor do země, na kterou se nevztahuje rozhodnutí o přiměřenosti, společnost SDK Enterprises zajišťuje zavedení odpovídajících záruk – především standardních smluvních doložek přijatých Evropskou komisí, které jsou uzavřeny mezi příslušným vývozcem a dovozcem – spolu s doplňkovými technickými opatřeními, jsou-li zapotřebí. Aktuální místa předávání jsou popsána na stránce věnované subdodavatelům."
+          ]
+        },
+        {
+          "heading": "9. Odpovědnost a audity",
+          "content": [
+            "Společnost SDK Enterprises vede záznamy o činnostech zpracování spadajících do její působnosti a poskytuje dokumentaci prokazující soulad s tímto dodatkem. Zákazník může o tyto informace požádat jednou ročně, a dále v případě porušení ochrany osobních údajů nebo odůvodněných pochybností ohledně souladu s předpisy. Audity na místě, jsou-li povoleny, se konají na náklady zákazníka, po přiměřeném předběžném oznámení a s ohledem na důvěrnost a ochranu, která náleží ostatním zákazníkům."
+          ]
+        },
+        {
+          "heading": "10. Vrácení a mazání",
+          "content": [
+            "Po ukončení smlouvy společnost SDK Enterprises zpřístupní osobní údaje zákazníka k exportu a následně je vymaže, a to i v systémech subdodavatelů, a to v obchodně přiměřené lhůtě – s výjimkou případů, kdy je uchovávání údajů vyžadováno zákonem; v takovém případě zůstávají údaje chráněny v souladu s tímto dodatkem, dokud nebude možné je vymazat."
+          ]
+        },
+        {
+          "heading": "11. Odpovědnost, právní předpisy a spory",
+          "content": [
+            "Odpovědnost podle tohoto dodatku je rozdělena a omezena v souladu s podmínkami služby. Tento dodatek se řídí francouzským právem a spory se řeší v souladu s mechanismem urovnání sporů v něm stanoveným."
+          ]
+        },
+        {
+          "heading": "12. Práva na ochranu osobních údajů v Kalifornii",
+          "content": [
+            "V případě osobních údajů, na které se vztahuje kalifornský zákon o ochraně soukromí spotřebitelů (California Consumer Privacy Act) v platném znění, společnost SDK Enterprises vystupuje jako poskytovatel služeb: neprodává ani nesdílí osobní údaje, neuchovává je, nepoužívá ani nezveřejňuje mimo rámec přímého obchodního vztahu, s výjimkou případů povolených zákonem, a nespojuje je s osobními údaji získanými z jiných zdrojů."
+          ]
+        },
+        {
+          "heading": "13. Přednost a změny",
+          "content": [
+            "Pokud se jednotlivá ustanovení tohoto dodatku dostanou do rozporu se standardními smluvními doložkami začleněnými podle článku 8, mají pro přenosy, na které se vztahují, přednost tato doložky. Tento dodatek můžeme s budoucím účinkem upravit tak, aby odrážel změny ve Službě nebo v právních předpisech, přičemž podstatné změny oznámíme na této stránce předtím, než vstoupí v platnost."
+          ]
+        }
+      ]
+    }
+  }
+}

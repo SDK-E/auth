@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Brukervilkår",
+        "description": "Vilkårene som regulerer tilgang til og bruk av autentiseringstjenesten «Auth», som tilbys av SDK Enterprises."
+      },
+      "title": "Brukervilkår",
+      "description": "Disse vilkårene utgjør avtalen mellom deg og SDK Enterprises om bruk av Auth-tjenesten. De er bevisst holdt kortfattede, men dekker alt som er viktig i et profesjonelt forhold.",
+      "updated": "23. august 2026",
+      "sections": [
+        {
+          "heading": "1. Definisjoner",
+          "content": [
+            [
+              "«Tjenesten» — Auths autentiseringsplattform for flere brukere, som drives på auth.sdk.enterprises, inkludert dens oversiktssider, grensesnitt og dokumentasjon.",
+              "«Leietaker» — ditt isolerte arbeidsområde innenfor tjenesten.",
+              "«Sluttbruker» – en person som logger seg på produktene dine via tjenesten.",
+              "«Avtalen» — disse vilkårene sammen med eventuelle bestillinger eller valg av abonnement du foretar, vår personvernerklæring og (der det er aktuelt) vårt tillegg om databehandling."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Hvem du er",
+          "content": [
+            "Du representerer en juridisk enhet eller opptrer i egenskap av profesjonell. Du bekrefter at opplysningene du oppgir ved registrering er korrekte, at du er autorisert til å forplikte den enheten du representerer, og at din bruk av tjenesten er i samsvar med lovgivningen som gjelder for deg og dine sluttbrukere. Tjenesten tilbys ikke til forbrukere som handler utenfor en profesjonell kapasitet, og heller ikke til personer under den digitale samtykkelsesalderen."
+          ]
+        },
+        {
+          "heading": "3. Leietakeren din og dine forpliktelser",
+          "content": [
+            [
+              "Du er ansvarlig for applikasjonene du registrerer, adressene du godkjenner for viderekobling og konfidensialiteten til påloggingsopplysningene du har fått tildelt. Gi oss umiddelbart beskjed dersom sikkerheten er blitt kompromittert.",
+              "Du er ansvarlig for forholdet til sluttbrukerne, herunder å informere dem om behandlingen som utføres gjennom tjenesten og å innhente eventuelle nødvendige samtykker.",
+              "Du må sørge for at leietakerens kontaktopplysninger er oppdaterte, slik at vi kan kontakte deg i forbindelse med sikkerhets- og serviceanliggender."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Retningslinjer for bruk",
+          "content": [
+            "Du samtykker i å ikke:",
+            [
+              "bruke tjenesten til ulovlige formål eller på en måte som krenker andres rettigheter;",
+              "forstyrre, overbelaste, undersøke eller teste tjenesten på en måte som ikke er i samsvar med vår retningslinje for ansvarlig informasjonsdeling;",
+              "omgå sikkerhetstiltak, bruksbegrensninger eller tilgangsbegrensninger;",
+              "videreselge eller markedsføre tjenesten under eget varemerke som et konkurrerende tilbud innen identitetsadministrasjon uten en egen avtale;",
+              "sende ulovlig innhold via e-poster som sendes gjennom tjenesten, eller gi uriktige opplysninger om innholdets opprinnelse;",
+              "laste opp skadelig kode eller innhold som ikke har noe med autentisering å gjøre."
+            ],
+            "Vi kan undersøke mistenkte brudd og kan suspendere den berørte tilgangen der det er rimelig nødvendig – med forhåndsvarsel der det er praktisk mulig, og umiddelbart der det foreligger en reell sikkerhetsrisiko."
+          ]
+        },
+        {
+          "heading": "5. Tjenestens tilgjengelighet",
+          "content": [
+            "Vi driver tjenesten på en pålitelig, administrert infrastruktur med overvåking, sikkerhetskopiering og redundans som er tilpasset tjenestens utviklingsstadium. I løpet av tidlig tilgangsperioden gjelder ingen formell forpliktelse til tjenestenivå; når en slik forpliktelse trer i kraft, vil den bli publisert her og utgjøre en del av avtalen. Planlagt vedlikehold kunngjøres på forhånd der det er mulig."
+          ]
+        },
+        {
+          "heading": "6. Gebyrer, fakturering og avgifter",
+          "content": [
+            [
+              "Prisene er de som er oppgitt i prisdelen på nettstedet vårt på det tidspunktet du tegner abonnementet, og er angitt eksklusive gjeldende avgifter.",
+              "Med mindre annet er angitt, skal gebyrene betales månedlig på forhånd og kan ikke refunderes etter at perioden har begynt, med unntak av tilfeller der loven krever det.",
+              "Vi kan endre prisene med virkning fra og med et fremtidig tidspunkt med minst 30 dagers varsel; endringene påvirker aldri en periode som allerede er betalt for.",
+              "Forsinket betaling kan føre til suspensjon etter forutgående skriftlig advarsel."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Immaterielle rettigheter",
+          "content": [
+            "SDK Enterprises beholder alle rettigheter til tjenesten, inkludert programvare, merkevareelementer og dokumentasjon. Du beholder alle rettigheter til dine applikasjoner og til data som tilhører deg og dine sluttbrukere. Du får en personlig, ikke-eksklusiv og ikke-overførbar rett til å bruke tjenesten i samsvar med denne avtalen så lenge den varer. Tilbakemeldinger du gir oss, kan brukes fritt til å forbedre tjenesten uten forpliktelser."
+          ]
+        },
+        {
+          "heading": "8. Garantier og ansvarsfraskrivelser",
+          "content": [
+            "Vi garanterer at vi vil levere Tjenesten med rimelig faglig dyktighet og omhu. Med mindre annet er uttrykkelig angitt, og i den utstrekning loven tillater det, leveres Tjenesten «som den er» uten ytterligere garantier av noe slag, verken uttrykkelige eller underforståtte, herunder egnethet for et bestemt formål eller uavbrutt, feilfri drift. Ingenting i denne avtalen utelukker ansvar som ikke kan utelukkes i henhold til fransk lov, herunder ansvar for forsett eller grov uaktsomhet, personskade og lovfestet forbrukerbeskyttelse der dette gjelder."
+          ]
+        },
+        {
+          "heading": "9. Ansvarsbegrensning",
+          "content": [
+            "I den utstrekning loven tillater det, er ingen av partene ansvarlig for indirekte, tilfeldige eller følgeskader, herunder tap av fortjeneste, inntekter, goodwill eller data, uansett årsak. Hver parts samlede ansvar som følge av eller i forbindelse med avtalen er begrenset til det totale honoraret du har betalt i løpet av de tolv månedene før hendelsen som ga opphav til kravet. Disse begrensningene gjelder solidarisk for våre underbehandlere kun i den utstrekning loven tillater det."
+          ]
+        },
+        {
+          "heading": "10. Ansvarsfraskrivelse",
+          "content": [
+            "Du samtykker i å forsvare og holde oss skadesløse mot krav fra tredjeparter som oppstår som følge av dine applikasjoner, din bruk av Tjenesten i strid med denne avtalen eller din krenkelse av tredjeparters rettigheter – forutsatt at vi umiddelbart underretter deg om kravet, gir deg mulighet til å lede forsvaret og ikke inngår forlik ensidig på dine vegne."
+          ]
+        },
+        {
+          "heading": "11. Konfidensialitet",
+          "content": [
+            "Hver part skal beskytte den andre partens konfidensielle opplysninger med minst samme omhu som den utviser overfor egne tilsvarende opplysninger, bruke dem utelukkende til å oppfylle avtalen, og kun videreformidle dem til ansatte og rådgivere som har behov for dem og som er bundet av tilsvarende forpliktelser. Denne forpliktelsen gjelder i tre år etter avtalens opphør."
+          ]
+        },
+        {
+          "heading": "12. Varighet, suspensjon og opphør",
+          "content": [
+            [
+              "Avtalen trer i kraft når du bruker tjenesten for første gang og gjelder så lenge leietakeravtalen din er gyldig.",
+              "Begge parter kan si opp avtalen når som helst ved skriftlig varsel; perioder der avgiften er betalt, løper videre til den planlagte utløpsdatoen, med mindre loven fastsetter noe annet.",
+              "Hver av partene kan si opp avtalen på grunn av vesentlig mislighold som ikke er rettet opp innen 30 dager etter varsel, eller med umiddelbar virkning dersom videre oppfyllelse ville være ulovlig eller medføre vesentlig skade.",
+              "Ved oppsigelse stiller vi på forespørsel en maskinlesbar eksport av leietakerdataene dine til rådighet i 30 dager, før vi sletter leietakerdataene i henhold til oppbevaringspliktene beskrevet i personvernerklæringen."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Tredjepartsleverandører",
+          "content": [
+            "Tjenesten benytter seg av anerkjente infrastrukturleverandører som er oppført på vår side om underbehandlere. Vi er ansvarlige for deres ytelse i henhold til denne avtalen; ditt forhold til dem oppstår utelukkende gjennom oss."
+          ]
+        },
+        {
+          "heading": "14. Force majeure",
+          "content": [
+            "Ingen av partene er ansvarlig for manglende oppfyllelse som skyldes hendelser utenfor partens rimelige kontroll – naturkatastrofer, streiker, krig, svikt i offentlige nettverk eller forsyningsnett, eller tiltak fra offentlige myndigheter – forutsatt at den berørte parten underretter den andre parten og gjenopptar oppfyllelsen så snart det er rimelig mulig."
+          ]
+        },
+        {
+          "heading": "15. Generelle bestemmelser",
+          "content": [
+            [
+              "Denne avtalen utgjør den fullstendige avtalen mellom partene angående tjenesten og erstatter tidligere avtaler.",
+              "Dersom en bestemmelse blir kjent ugyldig, forblir resten av avtalen i kraft, og partene erstatter den ugyldige bestemmelsen med en gyldig bestemmelse som ligger nærmest den opprinnelige hensikten.",
+              "At en part utsetter å gjøre en rettighet gjeldende, betyr ikke at den fraskriver seg denne rettigheten.",
+              "Du kan ikke overdra avtalen uten vårt samtykke; vi kan overdrage den som ledd i en omorganisering av virksomheten vår, etter å ha gitt varsel.",
+              "Meldinger anses som gyldig levert via e-post til hello@sdk.enterprises eller til den siste oppgitte kontaktadressen til leietakeren.",
+              "Disse vilkårene er utarbeidet på engelsk; det kan bli lagt frem en fransk versjon for enkelhets skyld. For avtaler med franske profesjonelle kunder har den franske versjonen forrang dersom en slik finnes og det foreligger avvik."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Gjeldende lov og tvister",
+          "content": [
+            "Denne avtalen er underlagt fransk lov. Før saken bringes inn for domstolene, skal partene forsøke å finne en løsning i god tro i løpet av 30 dager fra mottak av skriftlig varsel om tvisten. Dersom dette ikke lykkes, har domstolene i Paris, Frankrike, jurisdiksjon – med mindre tvingende regler gir deg rett til å velge et annet rettssted."
+          ]
+        },
+        {
+          "heading": "17. Endringer i disse vilkårene",
+          "content": [
+            "Vesentlige endringer kunngjøres på denne siden minst 30 dager før de trer i kraft. Fortsatt bruk etter denne datoen anses som samtykke; hvis du ikke er enig, kan du si opp avtalen før endringene trer i kraft."
+          ]
+        }
+      ]
+    }
+  }
+}

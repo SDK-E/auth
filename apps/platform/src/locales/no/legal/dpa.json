@@ -1,0 +1,104 @@
+{
+  "legal": {
+    "dpa": {
+      "meta": {
+        "title": "Tillegg om databehandling",
+        "description": "Tillegget som regulerer hvordan SDK Enterprises behandler personopplysninger om sluttbrukere på vegne av Auth-kunder, i samsvar med artikkel 28 i GDPR."
+      },
+      "title": "Tillegg om databehandling",
+      "description": "Dette tillegget beskriver vilkårene for hvordan SDK Enterprises behandler personopplysninger på vegne av leietakere av Auth-tjenesten. Det gjenspeiler kravene som gjelder for databehandlere i henhold til personvernlovgivningen, herunder artikkel 28 i den generelle personvernforordningen.",
+      "updated": "23. august 2026",
+      "sections": [
+        {
+          "heading": "1. Parter og roller",
+          "content": [
+            "Dette tillegget er inngått mellom deg (den behandlingsansvarlige, «Kunden») og SDK Enterprises (databehandleren). Det gjelder personopplysninger som SDK Enterprises behandler på dine vegne når du bruker tjenesten til å autentisere sluttbrukerne dine. Det utgjør en del av avtalen og har forrang over denne når det gjelder personvern."
+          ]
+        },
+        {
+          "heading": "2. Opplysninger om behandlingen",
+          "content": [
+            [
+              "Emne: Autentiserings- og identitetstjenester for kundens applikasjoner.",
+              "Varighet: avtalens løpetid, pluss de oppbevaringsforpliktelsene som er beskrevet nedenfor.",
+              "Formål og funksjon: levering av påloggingsprosesser, identitetsverifisering ved hjelp av engangskoder, utstedelse og administrasjon av økter og tokens, forebygging av misbruk, sikkerhetsloggføring og tilhørende support.",
+              "Kategorier av registrerte: Kundens sluttbrukere og kundens ansatte som administrerer leietakerkontoen.",
+              "Kategorier av personopplysninger: identifikasjonsopplysninger (blant annet e-postadresser), autentiserings- og brukslogger, tekniske metadata som IP-adresse og brukeragent, sikkerhets- og revisjonslogger, samt midlertidige indikatorer for forebygging av misbruk.",
+              "Spesielle kategorier: Det kreves eller forventes ingen; kunden må ikke sende inn slike opplysninger."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Prosessorens forpliktelser",
+          "content": [
+            "SDK Enterprises behandler personopplysninger utelukkende i henhold til dokumenterte instruksjoner fra kunden – som består av dette tillegget og kundens konfigurasjon av tjenesten – med mindre annet følger av lovgivningen i Unionen eller medlemsstatene; i slike tilfeller informerer SDK Enterprises kunden om det aktuelle lovkravet før behandlingen påbegynnes, med mindre dette er forbudt ved lov. SDK Enterprises informerer kunden uten forsinkelse dersom selskapet mener at en instruksjon strider mot gjeldende personvernlovgivning."
+          ]
+        },
+        {
+          "heading": "4. Konfidensialitet",
+          "content": [
+            "Personer som har fullmakt til å behandle personopplysninger, gjør dette kun i den grad det er nødvendig for tjenesten, og er underlagt taushetsplikt som gjelder også etter at deres ansettelsesforhold er avsluttet."
+          ]
+        },
+        {
+          "heading": "5. Sikkerhetstiltak",
+          "content": [
+            "Med hensyn til dagens tekniske standard og implementeringskostnadene opprettholder SDK Enterprises hensiktsmessige tekniske og organisatoriske tiltak, herunder: kryptering av data under overføring og hensiktsmessig kryptering av data i lagring; streng tilgangskontroll basert på behovsprinsippet; adskillelse av leietakermiljøer; tiltak for tilgjengelighet og robusthet, inkludert sikkerhetskopiering og gjenopprettingsprosedyrer; påvisning av misbruk og hastighetsbegrensning; loggføring av sikkerhetsrelevante hendelser som gjør det mulig å oppdage manipulering; og regelmessig gjennomgang av disse tiltakene i takt med at tjenesten utvikler seg. En oversikt i klart språk er publisert på /security."
+          ]
+        },
+        {
+          "heading": "6. Underbehandlere",
+          "content": [
+            "Kunden gir generell skriftlig fullmakt til å engasjere underdatabehandlere, hvis identitet, roller og lokalisering er offentliggjort på /legal/subprocessors. SDK Enterprises pålegger hver underdatabehandler skriftlig personvernforpliktelser som ikke gir mindre beskyttelse enn de som fremgår av dette tillegget, og forblir ansvarlig overfor kunden for underdatabehandleres manglende oppfyllelse av forpliktelsene. Minst fjorten (14) dager før en ny underbehandler behandler personopplysninger, oppdaterer SDK Enterprises den offentliggjorte listen, slik at kunden får mulighet til å gjøre innsigelse på rimelige, personvernrelaterte grunnlag; dersom en innsigelse ikke kan løses på en rimelig måte, kan kunden si opp den berørte delen av tjenesten."
+          ]
+        },
+        {
+          "heading": "7. Kundestøtte",
+          "content": [
+            [
+              "Forespørsler fra registrerte (innsyn, retting, sletting, begrensning, innsigelse, portabilitet): SDK Enterprises bistår uten unødig forsinkelse, om mulig ved hjelp av tilgjengelige verktøy for leietakere.",
+              "Konsekvensanalyser og forhåndskonsultasjoner i forbindelse med personvern: SDK Enterprises gir rimelig tilgjengelig informasjon om tjenesten.",
+              "Sikkerhetshendelser: SDK Enterprises skal underrette kunden uten unødig forsinkelse etter å ha blitt kjent med et brudd på personopplysningssikkerheten som berører kundens data, gi den informasjonen som med rimelighet kreves for at kunden skal kunne oppfylle sine egne forpliktelser, og samarbeide om håndteringen av hendelsen."
+            ]
+          ]
+        },
+        {
+          "heading": "8. Internasjonale overføringer",
+          "content": [
+            "Dersom personopplysninger skal overføres utenfor Det europeiske økonomiske samarbeidsområdet (EØS) til et land som ikke er omfattet av en beslutning om tilstrekkelig beskyttelse, sørger SDK Enterprises for at det foreligger egnede sikkerhetstiltak – hovedsakelig de standardkontraktsklausulene som er vedtatt av EU-kommisjonen, og som inngås mellom den aktuelle eksportøren og importøren – sammen med supplerende tekniske tiltak der det er nødvendig. Gjeldende overføringsdestinasjoner er beskrevet på siden om underbehandlere."
+          ]
+        },
+        {
+          "heading": "9. Ansvarlighet og revisjoner",
+          "content": [
+            "SDK Enterprises fører oversikt over behandlingsaktiviteter innenfor sitt virkeområde og stiller dokumentasjon til rådighet som viser at dette tillegget overholdes. Kunden kan be om slik informasjon én gang i året, samt i tillegg etter et brudd på personvernet eller en begrunnet bekymring knyttet til overholdelse. Revisjoner på stedet, der dette er tillatt, gjennomføres på kundens bekostning, med rimelig varsel og underlagt taushetsplikt og de beskyttelsestiltakene som gjelder for andre kunder."
+          ]
+        },
+        {
+          "heading": "10. Retur og sletting",
+          "content": [
+            "Ved opphør av avtalen gjør SDK Enterprises kundens personopplysninger tilgjengelige for eksport og sletter dem deretter, også i underdatabehandleres systemer, innen en forretningsmessig rimelig frist — med unntak av tilfeller der loven krever oppbevaring; i slike tilfeller forblir opplysningene beskyttet i henhold til dette tillegget inntil sletting blir mulig."
+          ]
+        },
+        {
+          "heading": "11. Ansvar, lovgivning og tvister",
+          "content": [
+            "Ansvaret i henhold til dette tillegget fordeles og begrenses i henhold til vilkårene for tjenesten. Dette tillegget er underlagt fransk lov, og tvister skal løses i henhold til den tvisteløsningsmekanismen som er avtalt der."
+          ]
+        },
+        {
+          "heading": "12. Personvernrettigheter i California",
+          "content": [
+            "Når det gjelder personopplysninger som omfattes av California Consumer Privacy Act i sin gjeldende utgave, opptrer SDK Enterprises som tjenesteleverandør: Selskapet verken selger eller deler personopplysninger, oppbevarer, bruker eller videreformidler dem utenfor det direkte forretningsforholdet, med unntak av det som er tillatt ved lov, og kombinerer dem ikke med personopplysninger mottatt fra andre kilder."
+          ]
+        },
+        {
+          "heading": "13. Prioritet og endringer",
+          "content": [
+            "Dersom enkelte bestemmelser i dette tillegget er i strid med de standardkontraktsklausulene som er innlemmet i henhold til punkt 8, har disse klausulene forrang for de overføringene de regulerer. Vi kan endre dette tillegget med virkning for fremtiden for å tilpasse det til endringer i Tjenesten eller lovgivningen, og vi vil kunngjøre vesentlige endringer på denne siden før de trer i kraft."
+          ]
+        }
+      ]
+    }
+  }
+}

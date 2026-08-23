@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — infrastruktura pro ověřování více uživatelů",
+      "description": "Auth vašemu produktu hned od začátku poskytuje funkce OIDC a OAuth 2.1 – hostované přihlašovací stránky, správu relací a nástroj pro správu API –, takže se váš tým může soustředit na vývoj nových funkcí namísto na implementaci identitních systémů."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Infrastruktura pro autentizaci více nájemců",
+      "title": "Jeden proces přihlášení pro každého nájemce, kterého hostujete.",
+      "lead": "Auth vašemu produktu hned od začátku poskytuje funkce OIDC a OAuth 2.1 – hostované přihlašovací stránky, správu relací a nástroj pro správu API –, takže se váš tým může soustředit na vývoj nových funkcí namísto na implementaci identitních systémů.",
+      "primaryCta": "Začněte stavět",
+      "secondaryCta": "Vytvořte si svůj tenant",
+      "securityLink": "Bezpečnostní model →",
+      "visual": {
+        "appTitle": "Vaše aplikace",
+        "appBody": "Přesměrování na /authorize",
+        "loginTitle": "autorizace – univerzální přihlášení",
+        "loginBody": "Přihlášení pomocí kódu v hostované e-mailové službě",
+        "returnTitle": "Zpět do vaší aplikace",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE povinné · tokeny ověřeny proti veřejnému JWKS"
+      }
+    },
+    "standards": {
+      "eyebrow": "Normy dovnitř, zasedání ven",
+      "sentence": "Přesně dodržujeme specifikace: PKCE u každého autorizačního kódu, rotující obnovovací tokeny, odvolatelné podepsané relace, zveřejněné podpisové klíče."
+    },
+    "features": {
+      "eyebrow": "Platforma",
+      "title": "Nastavení identity – hotovo.",
+      "intro": "Všechny níže uvedené produkty jsou dnes k dispozici, pokud není uvedeno jinak – u každé karty je uveden název mechanismu, protože právě ten si ve skutečnosti kupujete.",
+      "items": [
+        {
+          "status": "k dispozici",
+          "title": "Univerzální přihlášení",
+          "body": "Hostovaný proces přihlášení, na který jsou vaši uživatelé přesměrováni – jednorázové kódy zasílané e-mailem, žádná hesla k ukládání, žádné uživatelské rozhraní pro přihlášení, o které by bylo třeba se starat."
+        },
+        {
+          "status": "k dispozici",
+          "title": "Správa relací",
+          "body": "Relace jsou podepsány klíči RS256 a JWT v souborech cookie typu „http-only“, s platností do nečinnosti a absolutní platností, s možností zrušení na straně serveru a s klíči specifickými pro dané prostředí."
+        },
+        {
+          "status": "k dispozici",
+          "title": "Zabezpečení tokenů",
+          "body": "Autorizační kódy jsou vždy doprovázeny řetězcem PKCE. Obnovovací tokeny se při každém použití mění a opakované použití tokenu vede ke zrušení celé jeho rodiny."
+        },
+        {
+          "status": "k dispozici",
+          "title": "Auditní kniha",
+          "body": "Každá bezpečnostní událost se zaznamená do auditního protokolu s řetězem hashů pro dané prostředí – jakékoli neoprávněné zásahy přeruší řetězec a ten se přepočítá od počátku."
+        },
+        {
+          "status": "k dispozici",
+          "title": "Opatření proti zneužívání",
+          "body": "Pevně nastavené limity pro počet odeslaných kódů, pokusů o ověření a vydaných tokenů. Při zablokování se spotřebují nevyužité kódy; počet kopií zůstává beze změny."
+        },
+        {
+          "status": "zavádění",
+          "title": "Řízení API",
+          "body": "Jedna rozhraní API pro aplikace, uživatele, relace a protokoly na adrese /api/v2, řízená tokeny zařízení s omezeným rozsahem."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Ochrana soukromí na prvním místě",
+      "title": "Údaje o vašich nájemnících zůstávají vaše.",
+      "intro": "Auth je infrastruktura pro správu identit – zpracováváme přesně to, co je nezbytné pro ověření, a zveřejňujeme veškeré podrobnosti. Žádné sledovací nástroje pro reklamy, žádný prodej dat, žádné trénování modelů na datech uživatelů.",
+      "processedTitle": "Jaké údaje zpracováváme",
+      "processed": [
+        "E-mailová adresa účtu pro zasílání jednorázových kódů",
+        "Události ověřování s technickými metadaty, uchovávané z bezpečnostních důvodů a pro účely auditu",
+        "Dočasné čítače pro prevenci zneužití, které se samy vyprší",
+        "Přihlašovací údaje a kryptografické klíče jsou uloženy výhradně v zabezpečené podobě"
+      ],
+      "neverTitle": "Co nikdy neděláme",
+      "never": [
+        "Prodat, pronajmout nebo sdílet osobní údaje – nikdy a za žádným účelem",
+        "Naautentizačních rozhraních načíst sledovací kódy nebo reklamní pixely třetích stran",
+        "Trénovat modely na datech nájemců nebo koncových uživatelů",
+        "Uchovávejte data i po zrušení účtu, a to nad rámec zákonných minimálních lhůt"
+      ],
+      "privacyLink": "Zásady ochrany osobních údajů →",
+      "dpaLink": "Dodatek o zpracování údajů →",
+      "subprocessorsLink": "Seznam subdodavatelů →"
+    },
+    "quickstart": {
+      "eyebrow": "Rychlý start",
+      "title": "Tři pokusy o přihlášení.",
+      "intro": "Žádný proprietární protokol, žádná závislost na dodavateli – vše níže se týká standardních modelů OAuth 2.1 a OIDC připojených k našim živým koncovým bodům.",
+      "stepLabel": "Krok {index}",
+      "steps": [
+        {
+          "title": "Seznamte se s našimi koncovými body",
+          "body": "Vaše aplikace rozpozná standardní identifikační kód OIDC – kód SDK není nutný, funguje jakýkoli jazyk."
+        },
+        {
+          "title": "Přesměrujte uživatele na stránku /authorize s kódem PKCE",
+          "body": "Vytvořte programátorskou výzvu, přesměrujte prohlížeč – my se postaráme o hostované přihlášení a kód pro e-mail."
+        },
+        {
+          "title": "Vyměňte kód za žetony",
+          "body": "Ověřte id_token pomocí našeho veřejného JWKS, uložte si refresh token a v případě potřeby vyvolejte funkci userinfo."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Ceny",
+      "title": "Cena se určuje podle uživatelů, nikoli podle zámků.",
+      "intro": "Ceny v rámci předběžného přístupu. Aktivním uživatelem v daném měsíci se rozumí uživatel, který se v daném měsíci alespoň jednou přihlásil; za uložené, ale neaktivní účty vám nikdy nebudou účtovány žádné poplatky.",
+      "perMonth": "za měsíc",
+      "periodFree": "navždy",
+      "plans": [
+        {
+          "includedMau": "1 000 aktivních uživatelů za měsíc",
+          "features": [
+            "Všechna prostředí (vývojové, testovací, produkční)",
+            "Neomezený počet aplikací v každém prostředí",
+            "Přihlášení pomocí jednorázového kódu zaslaného e-mailem",
+            "Auditní kniha a protokoly autorizačních událostí",
+            "Podpora komunity"
+          ],
+          "cta": "Začněte zdarma"
+        },
+        {
+          "includedMau": "10 000 aktivních uživatelů měsíčně",
+          "features": [
+            "Vše zdarma",
+            "Vlastní domény pro jednotlivé nájemce",
+            "MFA, přístupové klíče a podnikové SSO v jejich standardní podobě",
+            "Delší doba uchovávání auditních záznamů",
+            "Prioritní podpora"
+          ],
+          "cta": "Začněte s verzí Pro"
+        }
+      ],
+      "note": "Fakturace zatím není automatizovaná – nájemcům s přednostním přístupem se faktury vystavují ručně a mohou odejít kdykoli."
+    },
+    "ctaBand": {
+      "title": "K přihlašovací stránce vás dělí už jen jedno přesměrování.",
+      "body": "Najděte bod v souřadnicích auth.sdk.enterprises a ještě dnes odpoledne odešlete svůj první tok.",
+      "button": "Otevřete řídicí panel"
+    }
+  }
+}

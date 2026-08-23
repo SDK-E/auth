@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Underleverandører",
+        "description": "Underleverandørene som SDK Enterprises benytter for å drifte Auth-tjenesten, hvilken rolle hver av dem har, hvor de opererer, og hvilke datakategorier som er involvert."
+      },
+      "title": "Underleverandører",
+      "description": "Vi holder denne listen oppdatert og offentliggjør tillegg før en ny underleverandør behandler personopplysninger, slik at kundene våre får mulighet til å gjøre innsigelse dersom det foreligger rimelige grunner.",
+      "updated": "23. august 2026",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Hver underleverandør opererer i henhold til en skriftlig avtale som pålegger personvernforpliktelser som gir minst like god beskyttelse som de som fremgår av vårt tillegg om databehandling, og SDK Enterprises forblir ansvarlig overfor sine kunder for underleverandørens ytelse. Innvendinger mot en kunngjort tilleggsbestemmelse kan fremsettes innen fjorten dager etter offentliggjøringen ved å skrive til hello@sdk.enterprises."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Underleverandør",
+                "Rolle",
+                "Sted",
+                "Kategorier av berørte opplysninger"
+              ],
+              "rows": [
+                [
+                  "Vercel Inc.",
+                  "Applikasjonshosting og innholdslevering",
+                  "USA; globalt kantnettverk",
+                  "All trafikk til tjenesten går gjennom nettverket; behandlingen begrenser seg til overføring, lagring i cache og levering av krypterte forespørsler og svar."
+                ],
+                [
+                  "Neon (Neon Inc.)",
+                  "Leverandør av administrerte databaser",
+                  "Skyregion valgt for hver distribusjon; regioner som støtter EØS er tilgjengelige",
+                  "Leietakerkonfigurasjon, kontoposter, autentiseringsposter, sikkerhets- og revisjonslogger. Påloggingsopplysninger og kryptografiske nøkler lagres utelukkende i beskyttet form."
+                ],
+                [
+                  "Upstash Inc.",
+                  "Midlertidig lagring for å forhindre misbruk",
+                  "USA",
+                  "Kortvarige tekniske tellere som brukes til å oppdage misbruk av trafikk. Oppbevares kun i tellerens korte levetid."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Levering av transaksjons-e-post",
+                  "USA",
+                  "Mottakerens e-postadresse og leveringsmetadata for tjeneste-e-poster, for eksempel påloggingskoder. Innholdet i meldingene er begrenset til det som er strengt nødvendig."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Endringslogg",
+          "content": [
+            [
+              "August 2026 — Første publiserte liste: Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

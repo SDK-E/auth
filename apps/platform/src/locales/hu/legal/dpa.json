@@ -1,0 +1,104 @@
+{
+  "legal": {
+    "dpa": {
+      "meta": {
+        "title": "Az adatkezelésre vonatkozó kiegészítés",
+        "description": "Az a kiegészítés, amely alapján a SDK Enterprises az Auth bérlők nevében feldolgozza a végfelhasználók személyes adatait, a GDPR 28. cikkével összhangban."
+      },
+      "title": "Az adatkezelésre vonatkozó kiegészítés",
+      "description": "Ez a kiegészítés meghatározza azokat a feltételeket, amelyek szerint a SDK Enterprises az Auth szolgáltatás bérlői nevében személyes adatokat kezel. A kiegészítés tükrözi az adatvédelmi jogszabályok alapján az adatfeldolgozókra vonatkozó követelményeket, beleértve az általános adatvédelmi rendelet 28. cikkét is.",
+      "updated": "2026. augusztus 23.",
+      "sections": [
+        {
+          "heading": "1. Felek és szerepek",
+          "content": [
+            "Ez a kiegészítés az Ön (az adatkezelő, „Ügyfél”) és a SDK Enterprises (az adatfeldolgozó) között jön létre. A jelen kiegészítés azokra a személyes adatokra vonatkozik, amelyeket a SDK Enterprises az Ön nevében feldolgoz, amikor Ön a Szolgáltatást használja végfelhasználói hitelesítésére. A jelen kiegészítés a Megállapodás részét képezi, és adatvédelmi kérdésekben elsőbbséget élvez a Megállapodással szemben."
+          ]
+        },
+        {
+          "heading": "2. Az adatkezelés részletei",
+          "content": [
+            [
+              "Tárgy: hitelesítési és identitáskezelési szolgáltatások az Ügyfél alkalmazásai számára.",
+              "Időtartam: a megállapodás érvényességi ideje, valamint az alábbiakban leírt megőrzési kötelezettségek.",
+              "Jellege és célja: bejelentkezési folyamatok biztosítása, személyazonosság-ellenőrzés egyszeri kódok segítségével, munkamenetek és tokenek kiadása és kezelése, visszaélések megelőzése, biztonsági naplózás, valamint a kapcsolódó támogatás.",
+              "Az érintettek kategóriái: az Ügyfél végfelhasználói, valamint a bérlőt kezelő Ügyfél-alkalmazottak.",
+              "A személyes adatok kategóriái: azonosító adatok (különösen e-mail-címek), hitelesítési és használati naplófájlok, műszaki metaadatok, például IP-cím és felhasználói ügynök, biztonsági és ellenőrzési naplófájlok, valamint átmeneti visszaélés-megelőzési mutatók.",
+              "Különleges kategóriák: ilyenek benyújtását nem kérik és nem is várják el; az ügyfél nem nyújthat be ilyeneket."
+            ]
+          ]
+        },
+        {
+          "heading": "3. A feldolgozó kötelezettségei",
+          "content": [
+            "A SDK Enterprises kizárólag az Ügyfél dokumentált utasításai alapján – amelyek a jelen kiegészítésből és az Ügyfél által a Szolgáltatásra vonatkozóan megadott beállításokból állnak – dolgozza fel a személyes adatokat, kivéve, ha az Unió vagy valamely tagállam jogszabályai másként rendelkeznek; ebben az esetben a SDK Enterprises az adatkezelés megkezdése előtt tájékoztatja az Ügyfelet az adott jogi követelményről, amennyiben ez jogilag nem tilos. A SDK Enterprises haladéktalanul tájékoztatja az Ügyfelet, ha úgy véli, hogy egy utasítás sérti az alkalmazandó adatvédelmi jogszabályokat."
+          ]
+        },
+        {
+          "heading": "4. Titoktartás",
+          "content": [
+            "A személyes adatok feldolgozására felhatalmazott személyek ezt kizárólag a Szolgáltatáshoz szükséges mértékben végzik, és olyan titoktartási kötelezettségek kötik őket, amelyek a megbízatásuk lejártát követően is fennmaradnak."
+          ]
+        },
+        {
+          "heading": "5. Biztonsági intézkedések",
+          "content": [
+            "Figyelembe véve a technológiai színvonalat és a megvalósítás költségeit, a SDK Enterprises megfelelő műszaki és szervezeti intézkedéseket tart fenn, ideértve: az átvitt adatok titkosítását és a tárolt adatok megfelelő titkosítását; a szigorú, a „szükséges tudás” elvén alapuló hozzáférés-ellenőrzést; a bérlői környezetek szétválasztása; a rendelkezésre állás és a rugalmasság biztosítását szolgáló intézkedések, beleértve a biztonsági mentéseket és a helyreállítási eljárásokat; a visszaélések észlelése és a forgalom korlátozása; a biztonsági események manipulációt jelző naplózása; valamint ezen intézkedések rendszeres felülvizsgálata a Szolgáltatás fejlődésével összhangban. A közérthető nyelvű áttekintés a /security oldalon található."
+          ]
+        },
+        {
+          "heading": "6. Alvállalkozók",
+          "content": [
+            "Az Ügyfél általános írásbeli felhatalmazást ad alvállalkozók bevonására, akiknek személyazonosságát, szerepkörét és székhelyét a /legal/subprocessors oldalon teszik közzé. A SDK Enterprises írásban minden alvállalkozóra olyan adatvédelmi kötelezettségeket ró, amelyek védelmi szintje nem alacsonyabb, mint a jelen kiegészítésben foglaltak, és az alvállalkozók mulasztásaiért továbbra is felelősséggel tartozik az Ügyfél felé. Legalább tizennégy (14) nappal azelőtt, hogy egy új aladatfeldolgozó személyes adatokat kezelne, a SDK Enterprises frissíti a közzétett listát, lehetőséget biztosítva az Ügyfélnek, hogy ésszerű, adatvédelemmel kapcsolatos indokok alapján kifogást emeljen; amennyiben a kifogás ésszerűen nem oldható meg, az Ügyfél felmondhatja a Szolgáltatás érintett részét."
+          ]
+        },
+        {
+          "heading": "7. Ügyfélszolgálat",
+          "content": [
+            [
+              "Az érintettek kérelmei (hozzáférés, helyesbítés, törlés, korlátozás, tiltakozás, hordozhatóság): A SDK Enterprises indokolatlan késedelem nélkül nyújt segítséget, amennyiben lehetséges, a rendelkezésre álló bérlői eszközök segítségével.",
+              "Adatvédelmi hatásvizsgálatok és előzetes konzultációk: A SDK Enterprises a Szolgáltatással kapcsolatban ésszerűen hozzáférhető információkat nyújt.",
+              "Biztonsági események: A SDK Enterprises az Ügyfél adatait érintő személyes adatvédelmi incidensről való tudomásszerzését követően indokolatlan késedelem nélkül értesíti az Ügyfelet, megadja az Ügyfél saját kötelezettségeinek teljesítéséhez ésszerűen szükséges információkat, és együttműködik az incidens kezelésében."
+            ]
+          ]
+        },
+        {
+          "heading": "8. Nemzetközi átutalások",
+          "content": [
+            "Amennyiben személyes adatokat az Európai Gazdasági Térségből olyan országba továbbítanának, amelyre nem vonatkozik megfelelőségi határozat, a SDK Enterprises gondoskodik arról, hogy megfelelő biztosítékok legyenek érvényben – elsősorban az Európai Bizottság által elfogadott, az érintett adatátadó és adatátvevő között megkötött általános szerződéses kikötések –, valamint szükség esetén kiegészítő technikai intézkedések is. A jelenlegi adattovábbítási helyszíneket az alvállalkozók oldalán ismertetjük."
+          ]
+        },
+        {
+          "heading": "9. Elszámoltathatóság és ellenőrzések",
+          "content": [
+            "A SDK Enterprises nyilvántartást vezet a hatálya alá tartozó adatkezelési tevékenységekről, és rendelkezésre bocsátja az e kiegészítésnek való megfelelést igazoló dokumentációt. Az Ügyfél évente egyszer, valamint személyes adatokkal kapcsolatos biztonsági incidens vagy megalapozott megfelelési aggály felmerülése esetén kérheti ezeket az információkat. A helyszíni ellenőrzések – amennyiben azok engedélyezettek – az Ügyfél költségére, ésszerű előzetes értesítés mellett, valamint a titoktartási kötelezettség és a többi ügyfélnek biztosítandó védelem betartásával zajlanak."
+          ]
+        },
+        {
+          "heading": "10. Visszaküldés és törlés",
+          "content": [
+            "A megállapodás felbontásakor a SDK Enterprises az Ügyfél személyes adatait exportálásra rendelkezésre bocsátja, majd azokat – beleértve az alvállalkozói rendszerekben tárolt adatokat is – kereskedelmi szempontból ésszerű határidőn belül törli, kivéve, ha az adatok megőrzését törvény írja elő; ebben az esetben az adatok a törlés lehetővé válásáig továbbra is e kiegészítés védelme alatt állnak."
+          ]
+        },
+        {
+          "heading": "11. Felelősség, joghatóság és jogviták",
+          "content": [
+            "A jelen kiegészítés szerinti felelősséget a szolgáltatási feltételekben meghatározottak szerint osztják meg és korlátozzák. A jelen kiegészítésre a francia jog az irányadó, és az esetleges vitás kérdések rendezése az ott megállapodott eljárás szerint történik."
+          ]
+        },
+        {
+          "heading": "12. Kaliforniai adatvédelmi jogok",
+          "content": [
+            "A módosított kaliforniai fogyasztói adatvédelmi törvény (California Consumer Privacy Act) hatálya alá tartozó személyes adatok tekintetében a SDK Enterprises szolgáltatóként jár el: nem értékesíti és nem osztja meg a személyes adatokat, nem tárolja, nem használja fel és nem hozza nyilvánosságra azokat a közvetlen üzleti kapcsolaton kívül – kivéve a törvény által megengedett eseteket –, és nem egyesíti azokat más forrásokból származó személyes adatokkal."
+          ]
+        },
+        {
+          "heading": "13. Elsőbbség és módosítások",
+          "content": [
+            "Amennyiben a jelen kiegészítés egyes rendelkezései ellentétben állnak a 8. szakasz alapján beépített általános szerződési feltételekkel, az utóbbiak az általuk szabályozott adatátvitelek tekintetében elsőbbséget élveznek. A Szolgáltatásban vagy a jogszabályokban bekövetkező változások tükrözése érdekében a jelen kiegészítést jövőbeli hatállyal módosíthatjuk, és a lényeges változásokat azok hatálybalépése előtt ezen az oldalon tesszük közzé."
+          ]
+        }
+      ]
+    }
+  }
+}

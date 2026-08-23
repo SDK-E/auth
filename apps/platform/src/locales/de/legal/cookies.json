@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Cookies und Tracking",
+        "description": "Die vollständige Liste der Daten, die Auth in Ihrem Browser setzt – und warum sie kürzer ist als bei fast jeder anderen Website, die Sie besucht haben."
+      },
+      "title": "Cookies und Tracking",
+      "description": "Auth-Oberflächen sind so konzipiert, dass sie funktionieren, ohne Sie zu verfolgen. Auf dieser Seite sind alle Cookies und alle Analysemechanismen aufgeführt – eine sehr kurze Liste.",
+      "updated": "23. August 2026",
+      "sections": [
+        {
+          "heading": "1. Von uns gesetzte Cookies",
+          "content": [
+            {
+              "columns": [
+                "Name",
+                "Wo",
+                "Zweck"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Auth-Dashboard",
+                  "Unverzichtbar. Stellt sicher, dass Sie im Dashboard Ihres Mandanten angemeldet bleiben; signiert, nur HTTP, läuft mit der Sitzung ab."
+                ],
+                [
+                  "(Tenant-Sitzungs-Cookie)",
+                  "Universelle Anmeldung",
+                  "Unverzichtbar. Wird nur ausgestellt, wenn Sie sich bei einem Produkt anmelden, das Auth verwendet, und ist auf die Authentifizierung dieses Produkts beschränkt."
+                ]
+              ]
+            },
+            "Es gibt kein Einwilligungsbanner, da es nichts gibt, dem zugestimmt werden müsste: Auf auth.sdk.enterprises oder auf den gehosteten Anmeldeseiten werden keine Werbe-Cookies, keine seitenübergreifenden Tracker, keine Social-Media-Widgets und keine Fingerprinting-Skripte ausgeführt."
+          ]
+        },
+        {
+          "heading": "2. Analytik",
+          "content": [
+            "Die Marketing-Seiten verwenden Vercel Analytics, das ohne Cookies auskommt: Es zählt Seitenaufrufe in aggregierter Form, ohne Identifikatoren zu speichern oder Profile einzelner Personen zu erstellen. Auf universellen Anmeldeseiten, API-Endpunkten oder innerhalb der Anwendungen der Mandanten werden keine Analysen durchgeführt."
+          ]
+        },
+        {
+          "heading": "3. Serverseitige Datensätze",
+          "content": [
+            "Wie jeder Webserver protokollieren wir Anfragen für Sicherheitsmaßnahmen (Erkennung von Missbrauch, Ratenbegrenzung, Nachweiszwecke) gemäß unseren Aufbewahrungsvorschriften in der Datenschutzerklärung. Diese Protokolle werden nicht dazu verwendet, Profile von Besuchern dieser Marketing-Website zu erstellen."
+          ]
+        },
+        {
+          "heading": "4. Fragen",
+          "content": [
+            "Falls hier etwas unklar sein sollte, schreiben Sie bitte an hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

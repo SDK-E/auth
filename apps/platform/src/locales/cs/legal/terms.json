@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Podmínky používání",
+        "description": "Podmínky upravující přístup k autentizační službě Auth poskytované společností SDK Enterprises a její využívání."
+      },
+      "title": "Podmínky používání",
+      "description": "Tyto podmínky představují smlouvu mezi vámi a společností SDK Enterprises ohledně využívání služby Auth. Jsou záměrně stručné, ale pokrývají vše, na čem v rámci obchodního vztahu záleží.",
+      "updated": "23. srpna 2026",
+      "sections": [
+        {
+          "heading": "1. Definice",
+          "content": [
+            [
+              "„Služba“ — platforma pro víceuživatelské ověřování Auth provozovaná na adrese auth.sdk.enterprises, včetně jejích řídicích panelů, rozhraní a dokumentace.",
+              "„Nájemce“ — váš izolovaný pracovní prostor v rámci Služby.",
+              "„Koncový uživatel“ – fyzická osoba, která se prostřednictvím Služby přihlašuje k vašim produktům.",
+              "„Smlouva“ – tyto podmínky spolu s jakoukoli vaší objednávkou nebo výběrem tarifu, našimi zásadami ochrany osobních údajů a (v příslušných případech) naším dodatkem o zpracování osobních údajů."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Kdo jste",
+          "content": [
+            "Zastupujete právnickou osobu nebo jednáte jako podnikatel. Potvrzujete, že informace, které při registraci poskytujete, jsou přesné, že jste oprávněni zavazovat subjekt, který zastupujete, a že vaše využívání Služby je v souladu s právními předpisy platnými pro vás i pro vaše koncové uživatele. Služba není nabízena spotřebitelům, kteří nejednají v rámci své podnikatelské činnosti, ani osobám mladším než věk potřebný k udělení digitálního souhlasu."
+          ]
+        },
+        {
+          "heading": "3. Váš nájemník a vaše povinnosti",
+          "content": [
+            [
+              "Nesete odpovědnost za aplikace, které zaregistrujete, za adresy, které povolíte pro přesměrování, a za zachování důvěrnosti přihlašovacích údajů, které vám byly vydány. V případě jakéhokoli narušení bezpečnosti nás neprodleně informujte.",
+              "Jste odpovědní za své vztahy s koncovými uživateli, včetně jejich informování o zpracování prováděném prostřednictvím Služby a zajištění všech nezbytných souhlasů.",
+              "Musíte udržovat kontaktní údaje nájemce v aktuálním stavu, abychom vás mohli kontaktovat v záležitostech týkajících se bezpečnosti a služeb."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Pravidla pro používání",
+          "content": [
+            "Souhlasíte, že nebudete:",
+            [
+              "využívat Službu k nezákonným účelům nebo způsobem, který porušuje práva jiných osob;",
+              "zasahovat do Služby, přetěžovat ji, zkoumat ji nebo testovat ji způsobem, který není v souladu s našimi zásadami odpovědného oznamování;",
+              "obcházet bezpečnostní opatření, limity použití nebo omezení přístupu;",
+              "prodej nebo poskytování služby pod vlastní značkou (white-label) jako konkurenční nabídky hostovaných identit bez samostatné smlouvy;",
+              "zasílat prostřednictvím e-mailů doručovaných touto službou nezákonný obsah nebo uvádět nepravdivé informace o jeho původu;",
+              "nahrávat škodlivý kód nebo obsah, který nesouvisí s ověřováním."
+            ],
+            "Můžeme prošetřovat podezření na porušení pravidel a v případě, že to bude přiměřeně nutné, můžeme pozastavit příslušný přístup – pokud to bude možné, s předchozím oznámením, a v případě věrohodného bezpečnostního rizika okamžitě."
+          ]
+        },
+        {
+          "heading": "5. Dostupnost služeb",
+          "content": [
+            "Službu provozujeme na spolehlivé spravované infrastruktuře, která je vybavena monitorováním, zálohováním a redundancí odpovídající její vyspělosti. Během období předběžného přístupu neplatí žádný formální závazek ohledně úrovně služeb; jakmile takový závazek vznikne, bude zde zveřejněn a stane se součástí Smlouvy. Plánovaná údržba je, pokud je to možné, oznamována předem."
+          ]
+        },
+        {
+          "heading": "6. Poplatky, fakturace a daně",
+          "content": [
+            [
+              "Poplatky jsou uvedeny v sekci „Ceny“ na našem webu v okamžiku uzavření předplatného a jsou uvedeny bez příslušných daní.",
+              "Není-li uvedeno jinak, poplatky se hradí měsíčně předem a po zahájení daného období jsou nevratné, s výjimkou případů, kdy to vyžaduje zákon.",
+              "Ceny můžeme změnit s účinností do budoucna, a to s minimálně 30denním předběžným oznámením; změny se nikdy nevztahují na již zaplacené období.",
+              "V případě opožděné platby může po předchozím písemném upozornění dojít k pozastavení služeb."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Duševní vlastnictví",
+          "content": [
+            "Společnost SDK Enterprises si vyhrazuje veškerá práva ke Službě, včetně jejího softwaru, značkových aktiv a dokumentace. Vy si ponecháváte všechna práva ke svým aplikacím a k datům, která patří vám a vašim koncovým uživatelům. Získáváte osobní, nevýhradní a nepřevoditelné právo používat Službu v souladu s touto Smlouvou po dobu její platnosti. Zpětnou vazbu, kterou nám poskytnete, můžeme bez jakýchkoli závazků volně využít ke zlepšení Služby."
+          ]
+        },
+        {
+          "heading": "8. Záruky a prohlášení o vyloučení odpovědnosti",
+          "content": [
+            "Zaručujeme, že budeme Službu poskytovat s přiměřenou odborností a péčí. Není-li výslovně uvedeno jinak a v maximálním rozsahu povoleném zákonem, je Služba poskytována „tak, jak je“, bez jakýchkoli dalších záruk, ať již výslovných či implicitních, včetně záruky vhodnosti pro konkrétní účel nebo nepřetržitého a bezchybného provozu. Žádné ustanovení této Smlouvy nevylučuje odpovědnost, kterou nelze podle francouzského práva vyloučit, včetně odpovědnosti za úmysl nebo hrubou nedbalost, za tělesné újmy a za zákonnou ochranu spotřebitelů, pokud se na daný případ vztahuje."
+          ]
+        },
+        {
+          "heading": "9. Omezení odpovědnosti",
+          "content": [
+            "V rozsahu povoleném zákonem nenese žádná ze stran odpovědnost za nepřímé, náhodné nebo následné škody, včetně ušlého zisku, tržeb, goodwillu nebo dat, bez ohledu na příčinu jejich vzniku. Celková souhrnná odpovědnost každé ze stran vyplývající z této smlouvy nebo s ní související je omezena na celkovou výši poplatků, které jste zaplatili v období dvanácti měsíců před událostí, která vedla k vzniku nároku. Tyto limity se vztahují společně a nerozdílně na naše subzpracovatele pouze v rozsahu povoleném zákonem."
+          ]
+        },
+        {
+          "heading": "10. Odškodnění",
+          "content": [
+            "Souhlasíte s tím, že nás budete hájit a odškodníte v případě nároků třetích stran vyplývajících z vašich aplikací, z vašeho využívání Služby v rozporu s touto Smlouvou nebo z vašeho porušení práv třetích stran – za předpokladu, že vás o takovém nároku neprodleně informujeme, umožníme vám řídit obranu proti němu a nevyřešíme jej jednostranně vaším jménem."
+          ]
+        },
+        {
+          "heading": "11. Důvěrnost",
+          "content": [
+            "Každá ze stran chrání důvěrné informace druhé strany přinejmenším se stejnou péčí, jakou věnuje svým vlastním podobným informacím, využívá je výhradně k plnění této smlouvy a sděluje je pouze zaměstnancům a poradcům, kteří je potřebují a jsou vázáni odpovídajícími povinnostmi. Tato povinnost trvá i po ukončení smlouvy po dobu tří let."
+          ]
+        },
+        {
+          "heading": "12. Trvání, pozastavení a ukončení",
+          "content": [
+            [
+              "Tato smlouva nabývá platnosti okamžikem prvního použití služby a zůstává v platnosti po celou dobu existence vašeho nájemce.",
+              "Kterákoli ze stran může smlouvu kdykoli vypovědět písemným oznámením; období, za která již bylo zaplaceno, pokračují až do plánovaného konce, pokud zákon nestanoví jinak.",
+              "Kterákoli ze stran může smlouvu vypovědět z důvodu podstatného porušení, které nebylo napraveno do 30 dnů od doručení oznámení, nebo s okamžitou účinností, pokud by další plnění bylo protiprávní nebo by způsobilo podstatnou škodu.",
+              "Po ukončení smlouvy vám na požádání po dobu 30 dnů poskytneme export dat vašeho nájemce ve strojově čitelné formě; poté tyto údaje vymažeme v souladu s povinnostmi uchovávání údajů popsanými v zásadách ochrany osobních údajů."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Externí poskytovatelé",
+          "content": [
+            "Služba využívá renomované poskytovatele infrastruktury uvedené na naší stránce věnované subdodavatelům. Za jejich plnění v rámci této smlouvy neseme odpovědnost; vaše vztahy s nimi vznikají výhradně prostřednictvím nás."
+          ]
+        },
+        {
+          "heading": "14. Vyšší moc",
+          "content": [
+            "Žádná ze stran nenese odpovědnost za neplnění způsobené událostmi, které jsou mimo její přiměřenou kontrolu – přírodní katastrofy, stávky, válka, výpadky veřejných sítí nebo veřejných služeb či opatření veřejných orgánů –, za předpokladu, že dotčená strana o tom informuje druhou stranu a obnoví plnění, jakmile to bude přiměřeně možné."
+          ]
+        },
+        {
+          "heading": "15. Obecná ustanovení",
+          "content": [
+            [
+              "Tato smlouva představuje úplnou dohodu mezi stranami ohledně služby a nahrazuje veškerá předchozí ujednání.",
+              "Pokud bude některé ustanovení shledáno neplatným, zbývající část zůstává v platnosti a strany nahradí toto ustanovení platným ustanovením, které se co nejvíce blíží jeho smyslu.",
+              "Skutečnost, že strana odkládá uplatnění svého práva, neznamená, že se tohoto práva vzdává.",
+              "Tuto smlouvu nesmíte postoupit bez našeho souhlasu; my ji můžeme postoupit v rámci reorganizace naší společnosti, a to po předchozím oznámení.",
+              "Oznámení se považují za platně doručená, jsou-li zaslána e-mailem na adresu hello@sdk.enterprises nebo na poslední uvedenou kontaktní adresu nájemce.",
+              "Tyto podmínky jsou sepsány v angličtině; pro větší přehlednost může být k dispozici také francouzská verze. U smluv s francouzskými profesionálními klienty má přednost francouzská verze, pokud existuje a pokud mezi oběma verzemi přetrvávají rozdíly."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Rozhodné právo a řešení sporů",
+          "content": [
+            "Tato smlouva se řídí francouzským právem. Před zahájením soudního řízení se strany pokusí o smírné urovnání sporu v dobré víře, a to po dobu 30 dnů od písemného oznámení sporu. Pokud se to nepodaří, jsou příslušné soudy v Paříži ve Francii – s výjimkou případů, kdy vám závazná právní pravidla přiznávají jinou soudní příslušnost."
+          ]
+        },
+        {
+          "heading": "17. Změny těchto podmínek",
+          "content": [
+            "Zásadní změny jsou na této stránce oznamovány nejméně 30 dní před jejich nabytím účinnosti. Pokračování v používání po tomto datu se považuje za souhlas; pokud s tím nesouhlasíte, můžete smlouvu vypovědět před datem, kdy změny nabudou účinnosti."
+          ]
+        }
+      ]
+    }
+  }
+}

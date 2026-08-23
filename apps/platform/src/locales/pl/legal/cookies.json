@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Pliki cookie i śledzenie",
+        "description": "Pełna lista elementów, które Auth zapisuje w Twojej przeglądarce — oraz wyjaśnienie, dlaczego jest ona krótsza niż w przypadku niemal każdej innej strony, którą odwiedziłeś."
+      },
+      "title": "Pliki cookie i śledzenie",
+      "description": "Serwisy Auth zostały zaprojektowane tak, by działać bez śledzenia użytkowników. Na tej stronie wymieniono wszystkie pliki cookie i wszystkie mechanizmy analityczne – jest to bardzo krótka lista.",
+      "updated": "23 sierpnia 2026 r.",
+      "sections": [
+        {
+          "heading": "1. Pliki cookie, które umieszczamy",
+          "content": [
+            {
+              "columns": [
+                "Imię i nazwisko",
+                "Gdzie",
+                "Cel"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Pulpit nawigacyjny Auth",
+                  "Niezbędny. Umożliwia utrzymanie logowania w panelu użytkownika; podpisany, tylko HTTP, wygasa wraz z sesją."
+                ],
+                [
+                  "(plik cookie sesji najemcy)",
+                  "Logowanie uniwersalne",
+                  "Niezbędny. Generowany wyłącznie po zalogowaniu się do produktu korzystającego z funkcji Auth, z zakresem ograniczonym do uwierzytelniania w tym produkcie."
+                ]
+              ]
+            },
+            "Nie ma banera z prośbą o wyrażenie zgody, ponieważ nie ma na co wyrażać zgody: na stronie auth.sdk.enterprises ani na hostowanych stronach logowania nie są wykorzystywane żadne reklamowe pliki cookie, żadne moduły śledzące działające między witrynami, żadne widżety społecznościowe ani żadne skrypty służące do identyfikacji użytkowników."
+          ]
+        },
+        {
+          "heading": "2. Analityka",
+          "content": [
+            "Strony marketingowe wykorzystują moduł Vercel Analytics, który nie wykorzystuje plików cookie: zlicza on wyświetlenia stron w ujęciu zbiorczym, bez zapisywania identyfikatorów ani tworzenia profili poszczególnych użytkowników. Na stronach uniwersalnego logowania, w punktach końcowych API ani w aplikacjach dzierżawców nie są uruchamiane żadne narzędzia analityczne."
+          ]
+        },
+        {
+          "heading": "3. Rekordy po stronie serwera",
+          "content": [
+            "Podobnie jak każdy serwer internetowy, rejestrujemy żądania w ramach działań związanych z bezpieczeństwem (wykrywanie nadużyć, ograniczanie częstotliwości żądań, dowody audytowe) zgodnie z zasadami przechowywania danych określonymi w naszej polityce prywatności. Logi te nie są wykorzystywane do tworzenia profili osób odwiedzających tę stronę marketingową."
+          ]
+        },
+        {
+          "heading": "4. Pytania",
+          "content": [
+            "Jeśli coś w tym tekście jest niejasne, napisz na adres hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

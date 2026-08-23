@@ -1,0 +1,152 @@
+{
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Warunki korzystania z serwisu",
+        "description": "Warunki regulujące dostęp do usługi uwierzytelniania Auth świadczonej przez SDK Enterprises oraz korzystanie z niej."
+      },
+      "title": "Warunki korzystania z serwisu",
+      "description": "Niniejsze warunki stanowią umowę między użytkownikiem a firmą SDK Enterprises dotyczącą korzystania z usługi Auth. Zostały one celowo sformułowane w zwięzły sposób, ale obejmują wszystkie istotne kwestie dotyczące relacji biznesowej.",
+      "updated": "23 sierpnia 2026 r.",
+      "sections": [
+        {
+          "heading": "1. Definicje",
+          "content": [
+            [
+              "„Usługa” — wielodostępna platforma uwierzytelniająca Auth działająca pod adresem auth.sdk.enterprises, wraz z jej pulpitami nawigacyjnymi, interfejsami i dokumentacją.",
+              "„Najemca” — Twoja odizolowana przestrzeń robocza w ramach Usługi.",
+              "„Użytkownik końcowy” — osoba fizyczna, która loguje się do Państwa produktów za pośrednictwem Usługi.",
+              "„Umowa” — niniejsze warunki wraz z dokonanym przez użytkownika wyborem zamówienia lub planu, naszą polityką prywatności oraz (w stosownych przypadkach) naszym aneksem dotyczącym przetwarzania danych."
+            ]
+          ]
+        },
+        {
+          "heading": "2. Kim jesteś",
+          "content": [
+            "Reprezentujesz podmiot prawny lub działasz w charakterze profesjonalisty. Potwierdzasz, że informacje podane podczas rejestracji są prawdziwe, że jesteś upoważniony do zaciągania zobowiązań w imieniu podmiotu, który reprezentujesz, oraz że korzystasz z Usługi zgodnie z przepisami obowiązującymi Ciebie i Twoich użytkowników końcowych. Usługa nie jest oferowana konsumentom działającym poza zakresem działalności zawodowej, ani osobom poniżej wieku wymagającego zgody na korzystanie z usług cyfrowych."
+          ]
+        },
+        {
+          "heading": "3. Najemca i obowiązki właściciela",
+          "content": [
+            [
+              "Użytkownik ponosi odpowiedzialność za rejestrowane aplikacje, adresy, na które zezwala na przekierowanie, oraz za poufność przyznanych mu danych uwierzytelniających. W przypadku jakiegokolwiek naruszenia bezpieczeństwa należy niezwłocznie nas o tym powiadomić.",
+              "Użytkownik ponosi odpowiedzialność za swoje relacje z użytkownikami końcowymi, w tym za informowanie ich o przetwarzaniu danych realizowanym za pośrednictwem Usługi oraz za uzyskanie wszelkich niezbędnych zgód.",
+              "Należy na bieżąco aktualizować dane kontaktowe najemcy, abyśmy mogli skontaktować się z Państwem w sprawach dotyczących bezpieczeństwa i obsługi."
+            ]
+          ]
+        },
+        {
+          "heading": "4. Zasady korzystania z serwisu",
+          "content": [
+            "Zobowiązujesz się nie:",
+            [
+              "korzystać z Usługi w celach niezgodnych z prawem lub w sposób naruszający prawa innych osób;",
+              "ingerować w działanie Usługi, przeciążać ją, badać lub testować w sposób niezgodny z naszą polityką odpowiedzialnego ujawniania informacji;",
+              "obejść zabezpieczenia, limity użytkowania lub ograniczenia dostępu;",
+              "odsprzedawać lub oferować Usługę pod własną marką jako konkurencyjną usługę zarządzania tożsamością bez odrębnej umowy;",
+              "wysyłanie treści niezgodnych z prawem za pośrednictwem wiadomości e-mail dostarczanych przez Usługę lub podawanie fałszywych informacji dotyczących ich pochodzenia;",
+              "przesyłać złośliwego kodu lub treści niezwiązanych z uwierzytelnianiem."
+            ],
+            "Możemy przeprowadzać dochodzenia w sprawie domniemanych naruszeń i zawieszać dostęp w przypadku, gdy jest to uzasadnione — z uprzednim powiadomieniem, o ile jest to możliwe, oraz natychmiastowo, gdy istnieje realne zagrożenie dla bezpieczeństwa."
+          ]
+        },
+        {
+          "heading": "5. Dostępność usług",
+          "content": [
+            "Usługę prowadzimy w ramach sprawdzonej, zarządzanej infrastruktury, wyposażonej w systemy monitorowania, tworzenia kopii zapasowych oraz nadmiarowości dostosowane do jej stopnia zaawansowania. W okresie wczesnego dostępu nie obowiązują żadne formalne zobowiązania dotyczące poziomu usług; gdy takie zobowiązania zaczną obowiązywać, zostaną opublikowane w tym miejscu i staną się częścią Umowy. Planowane prace konserwacyjne są ogłaszane z wyprzedzeniem, o ile jest to możliwe."
+          ]
+        },
+        {
+          "heading": "6. Opłaty, fakturowanie i podatki",
+          "content": [
+            [
+              "Opłaty są zgodne z tymi opublikowanymi w sekcji „Cennik” na naszej stronie internetowej w momencie zawarcia subskrypcji i podane są bez uwzględnienia obowiązujących podatków.",
+              "O ile nie określono inaczej, opłaty należy uiszczać co miesiąc z góry i nie podlegają one zwrotowi po rozpoczęciu okresu rozliczeniowego, z wyjątkiem przypadków przewidzianych przez prawo.",
+              "Możemy zmienić ceny z mocą przyszłą, powiadamiając o tym z co najmniej 30-dniowym wyprzedzeniem; zmiany nigdy nie mają wpływu na okres, za który opłata została już uiszczona.",
+              "Opóźnienie w płatności może skutkować zawieszeniem po uprzednim pisemnym ostrzeżeniu."
+            ]
+          ]
+        },
+        {
+          "heading": "7. Własność intelektualna",
+          "content": [
+            "SDK Enterprises zastrzega sobie wszelkie prawa do Usługi, w tym do oprogramowania, elementów identyfikacji wizualnej marki oraz dokumentacji. Użytkownik zachowuje wszelkie prawa do swoich aplikacji oraz danych należących do niego i jego użytkowników końcowych. Użytkownik otrzymuje osobiste, niewyłączne i nieprzenoszalne prawo do korzystania z Usługi zgodnie z niniejszą Umową przez cały okres jej obowiązywania. Przesłane nam opinie mogą być swobodnie wykorzystywane w celu ulepszenia Usługi bez żadnych zobowiązań."
+          ]
+        },
+        {
+          "heading": "8. Gwarancje i wyłączenia odpowiedzialności",
+          "content": [
+            "Gwarantujemy, że będziemy świadczyć Usługę z należytą starannością i fachowością. O ile nie określono wyraźnie inaczej i w maksymalnym zakresie dozwolonym przez prawo, Usługa jest świadczona „w stanie, w jakim jest”, bez żadnych dodatkowych gwarancji, wyraźnych ani dorozumianych, w tym gwarancji przydatności do określonego celu lub nieprzerwanego i bezbłędnego działania. Żadne postanowienie niniejszej Umowy nie wyłącza odpowiedzialności, której nie można wyłączyć na mocy prawa francuskiego, w tym odpowiedzialności za działanie umyślne lub rażące niedbalstwo, obrażenia ciała oraz ustawowe zabezpieczenia konsumentów, o ile mają one zastosowanie."
+          ]
+        },
+        {
+          "heading": "9. Ograniczenie odpowiedzialności",
+          "content": [
+            "W zakresie dozwolonym przez prawo żadna ze stron nie ponosi odpowiedzialności za straty pośrednie, uboczne lub wynikowe, w tym utratę zysków, przychodów, wartości firmy lub danych, niezależnie od przyczyny ich powstania. Łączna odpowiedzialność każdej ze stron wynikająca z Umowy lub z nią związana jest ograniczona do całkowitej kwoty opłat uiszczonych przez użytkownika w ciągu dwunastu miesięcy poprzedzających zdarzenie stanowiące podstawę roszczenia. Ograniczenia te mają zastosowanie solidarnie do naszych podwykonawców wyłącznie w zakresie dozwolonym przez prawo."
+          ]
+        },
+        {
+          "heading": "10. Odszkodowanie",
+          "content": [
+            "Zgadzasz się bronić nas i zwolnić nas z odpowiedzialności w związku z roszczeniami osób trzecich wynikającymi z Twoich aplikacji, korzystania z Usługi z naruszeniem niniejszej Umowy lub naruszenia przez Ciebie praw osób trzecich — pod warunkiem, że niezwłocznie powiadomimy Cię o takim roszczeniu, umożliwimy Ci kierowanie obroną oraz nie zawrzemy ugody jednostronnie w Twoim imieniu."
+          ]
+        },
+        {
+          "heading": "11. Poufność",
+          "content": [
+            "Każda ze stron chroni poufne informacje drugiej strony z co najmniej taką samą starannością, z jaką traktuje własne podobne informacje, wykorzystuje je wyłącznie w celu wykonania Umowy oraz ujawnia je jedynie pracownikom i doradcom, którzy ich potrzebują i są zobowiązani do zachowania równoważnych obowiązków. Obowiązek ten pozostaje w mocy przez trzy lata po wygaśnięciu Umowy."
+          ]
+        },
+        {
+          "heading": "12. Okres obowiązywania, zawieszenie i rozwiązanie umowy",
+          "content": [
+            [
+              "Umowa wchodzi w życie z chwilą pierwszego skorzystania z Usługi i obowiązuje przez cały okres istnienia Twojego konta.",
+              "Każda ze stron może wypowiedzieć umowę w dowolnym momencie poprzez pisemne zawiadomienie; okresy, za które uiszczono opłatę, trwają do planowanego terminu zakończenia, o ile przepisy prawa nie stanowią inaczej.",
+              "Każda ze stron może wypowiedzieć umowę z powodu istotnego naruszenia, które nie zostało usunięte w ciągu 30 dni od otrzymania zawiadomienia, lub ze skutkiem natychmiastowym, jeżeli dalsze wykonywanie umowy byłoby niezgodne z prawem lub powodowałoby istotną szkodę.",
+              "W przypadku rozwiązania umowy udostępniamy na żądanie eksport danych Twojego konta w formacie nadającym się do odczytu maszynowego przez okres 30 dni, a następnie usuwamy dane konta z zastrzeżeniem obowiązków dotyczących przechowywania danych opisanych w polityce prywatności."
+            ]
+          ]
+        },
+        {
+          "heading": "13. Dostawcy zewnętrzni",
+          "content": [
+            "Usługa korzysta z usług renomowanych dostawców infrastruktury wymienionych na naszej stronie poświęconej podwykonawcom. Ponosimy odpowiedzialność za ich działania w ramach niniejszej Umowy; relacje użytkownika z tymi podmiotami nawiązują się wyłącznie za naszym pośrednictwem."
+          ]
+        },
+        {
+          "heading": "14. Siła wyższa",
+          "content": [
+            "Żadna ze stron nie ponosi odpowiedzialności za niewykonanie zobowiązania spowodowane zdarzeniami pozostającymi poza jej uzasadnioną kontrolą — klęskami żywiołowymi, strajkami, wojną, awariami sieci publicznych lub mediów, a także działaniami organów władzy publicznej — pod warunkiem, że strona dotknięta takimi zdarzeniami powiadomi o tym drugą stronę i wznowi wykonywanie zobowiązania tak szybko, jak to racjonalnie możliwe."
+          ]
+        },
+        {
+          "heading": "15. Postanowienia ogólne",
+          "content": [
+            [
+              "Niniejsza Umowa stanowi całość porozumienia między stronami w sprawie Usługi i zastępuje wszelkie wcześniejsze ustalenia.",
+              "Jeżeli któreś z postanowień zostanie uznane za nieważne, pozostałe postanowienia pozostają w mocy, a strony zastąpią to postanowienie innym, ważnym postanowieniem, które najlepiej odzwierciedla jego intencję.",
+              "Opóźnienie w dochodzeniu prawa przez stronę nie oznacza zrzeczenia się tego prawa.",
+              "Nie wolno Państwu scedować niniejszej Umowy bez naszej zgody; my możemy ją scedować w ramach reorganizacji naszej działalności, po uprzednim powiadomieniu.",
+              "Powiadomienia uznaje się za skutecznie doręczone, jeśli zostaną wysłane pocztą elektroniczną na adres hello@sdk.enterprises lub na ostatnio podany adres kontaktowy najemcy.",
+              "Niniejsze warunki zostały sporządzone w języku angielskim; dla wygody może zostać udostępniona wersja francuska. W przypadku umów zawieranych z francuskimi klientami profesjonalnymi, o ile istnieje wersja francuska i występują w niej rozbieżności, pierwszeństwo ma wersja francuska."
+            ]
+          ]
+        },
+        {
+          "heading": "16. Prawo właściwe i spory",
+          "content": [
+            "Niniejsza Umowa podlega prawu francuskiemu. Przed wszczęciem postępowania sądowego strony będą przez 30 dni od daty pisemnego zawiadomienia o sporze podejmować próby jego polubownego rozstrzygnięcia w dobrej wierze. W przypadku niepowodzenia jurysdykcję sprawują sądy w Paryżu we Francji — z wyjątkiem sytuacji, w których bezwzględnie obowiązujące przepisy przewidują inne właściwe sądy."
+          ]
+        },
+        {
+          "heading": "17. Zmiany w niniejszych warunkach",
+          "content": [
+            "Informacje o istotnych zmianach są ogłaszane na tej stronie co najmniej 30 dni przed ich wejściem w życie. Dalsze korzystanie z serwisu po tej dacie oznacza wyrażenie zgody na zmiany; jeśli nie zgadzasz się z nimi, możesz wypowiedzieć umowę przed datą wejścia zmian w życie."
+          ]
+        }
+      ]
+    }
+  }
+}

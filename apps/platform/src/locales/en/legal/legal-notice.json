@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Legal notice",
+        "description": "Publisher, host, and legal information for auth.sdk.enterprises (mentions légales)."
+      },
+      "title": "Legal notice",
+      "description": "Information required by French law for the site published at auth.sdk.enterprises (mentions légales), established in accordance with Article 6-III of Law No. 2004-575 of 21 June 2004 (LCEN).",
+      "updated": "August 23, 2026",
+      "sections": [
+        {
+          "heading": "Publisher",
+          "content": [
+            "This site and the Auth service are published by SADDEK Entreprises, trading as SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Registered office: 44 Rue Pasquier, 75008 Paris, France",
+              "Legal form: auto-entrepreneur (sole trader), no share capital",
+              "Company registration: RCS Paris 850 513 912",
+              "Publication director: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Contact",
+          "content": [
+            "Questions about this site or the service may be sent to hello@sdk.enterprises. For security reports, see our responsible disclosure policy."
+          ]
+        },
+        {
+          "heading": "Hosting",
+          "content": [
+            "The site and service are hosted by Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States. Application databases are operated by Neon; details of all infrastructure providers are listed on the subprocessors page."
+          ]
+        },
+        {
+          "heading": "Intellectual property",
+          "content": [
+            "The structure, texts, logos, and content of this site are the property of SDK Enterprises. Any reproduction or representation, in whole or in part, without prior authorisation is prohibited except as permitted by applicable law."
+          ]
+        },
+        {
+          "heading": "Legal framework",
+          "content": [
+            "These notices are governed by French law. The Auth service is provided under our terms of service, and personal data handling is described in our privacy policy and data processing addendum."
+          ]
+        }
+      ]
+    }
+  }
+}

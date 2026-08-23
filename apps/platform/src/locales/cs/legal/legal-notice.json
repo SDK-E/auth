@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Právní upozornění",
+        "description": "Vydavatel, provozovatel a právní informace k auth.sdk.enterprises (právní upozornění)."
+      },
+      "title": "Právní upozornění",
+      "description": "Informace vyžadované francouzským právem pro webovou stránku zveřejněnou na adrese auth.sdk.enterprises (právní upozornění), stanovené v souladu s článkem 6-III zákona č. 2004-575 ze dne 21. června 2004 (LCEN).",
+      "updated": "23. srpna 2026",
+      "sections": [
+        {
+          "heading": "Vydavatel",
+          "content": [
+            "Tuto stránku a službu Auth provozuje společnost SADDEK Entreprises, která působí pod obchodním názvem SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Sídlo společnosti: 44 Rue Pasquier, 75008 Paris, France",
+              "Právní forma: auto-entrepreneur (živnostník), bez základního kapitálu",
+              "Registrační číslo společnosti: RCS Paris 850 513 912",
+              "Vedoucí redakce: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "content": [
+            "Dotazy týkající se této stránky nebo služby můžete zasílat na adresu hello@sdk.enterprises. Informace o hlášení bezpečnostních problémů najdete v našich zásadách odpovědného oznamování."
+          ]
+        },
+        {
+          "heading": "Hosting",
+          "content": [
+            "Provozovatelem webových stránek a služeb je společnost Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Spojené státy americké. Databáze aplikací provozuje společnost Neon; podrobnosti o všech poskytovatelích infrastruktury jsou uvedeny na stránce věnované subdodavatelům."
+          ]
+        },
+        {
+          "heading": "Duševní vlastnictví",
+          "content": [
+            "Struktura, texty, loga a obsah této stránky jsou majetkem společnosti SDK Enterprises. Jakékoli kopírování nebo zveřejňování, ať už v celém rozsahu nebo částečně, bez předchozího souhlasu je zakázáno, s výjimkou případů povolených platnými právními předpisy."
+          ]
+        },
+        {
+          "heading": "Právní rámec",
+          "content": [
+            "Na tato oznámení se vztahuje francouzské právo. Služba Auth je poskytována v souladu s našimi podmínkami poskytování služeb a nakládání s osobními údaji je popsáno v našich zásadách ochrany osobních údajů a v dodatku o zpracování údajů."
+          ]
+        }
+      ]
+    }
+  }
+}

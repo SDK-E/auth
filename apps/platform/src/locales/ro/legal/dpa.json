@@ -1,0 +1,104 @@
+{
+  "legal": {
+    "dpa": {
+      "meta": {
+        "title": "Anexă privind prelucrarea datelor",
+        "description": "Anexa în temeiul căreia SDK Enterprises prelucrează datele cu caracter personal ale utilizatorilor finali în numele clienților Auth, în conformitate cu articolul 28 din GDPR."
+      },
+      "title": "Anexă privind prelucrarea datelor",
+      "description": "Prezenta anexă stabilește condițiile în care SDK Enterprises prelucrează datele cu caracter personal în numele utilizatorilor serviciului Auth. Aceasta reflectă cerințele aplicabile operatorilor de date în temeiul legislației privind protecția datelor, inclusiv articolul 28 din Regulamentul general privind protecția datelor.",
+      "updated": "23 august 2026",
+      "sections": [
+        {
+          "heading": "1. Părțile și rolurile",
+          "content": [
+            "Prezentul addendum se încheie între dumneavoastră (operatorul de date, „Clientul”) și SDK Enterprises (persoana împuternicită de operator). Acesta se aplică datelor cu caracter personal pe care SDK Enterprises le prelucrează în numele dumneavoastră atunci când utilizați Serviciul pentru a autentifica utilizatorii finali. Acesta face parte integrantă din Acord și prevalează asupra acestuia în ceea ce privește aspectele legate de protecția datelor."
+          ]
+        },
+        {
+          "heading": "2. Detalii privind prelucrarea",
+          "content": [
+            [
+              "Subiect: servicii de autentificare și identitate pentru aplicațiile clientului.",
+              "Durata: perioada de valabilitate a acordului, la care se adaugă obligațiile de păstrare descrise mai jos.",
+              "Natura și scopul: furnizarea fluxurilor de autentificare, verificarea identității prin coduri unice, emiterea și gestionarea sesiunilor și a token-urilor, prevenirea abuzurilor, înregistrarea evenimentelor de securitate și asistența aferentă.",
+              "Categorii de persoane vizate: utilizatorii finali ai Clientului și personalul Clientului care administrează tenantul.",
+              "Categorii de date cu caracter personal: date de identificare (în special adrese de e-mail), înregistrări de autentificare și de utilizare, metadate tehnice, cum ar fi adresa IP și agentul utilizatorului, înregistrări de securitate și de audit, precum și indicatori temporari de prevenire a abuzurilor.",
+              "Categorii speciale: nu se solicită și nu se așteaptă nicio categorie; clientul nu trebuie să le transmită."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Obligațiile procesatorului",
+          "content": [
+            "SDK Enterprises prelucrează datele cu caracter personal numai în baza instrucțiunilor documentate ale Clientului — constituite din prezentul addendum și din configurația Serviciului efectuată de Client — cu excepția cazului în care legislația Uniunii sau a unui stat membru prevede altfel, situație în care SDK Enterprises informează Clientul cu privire la respectiva cerință legală înainte de prelucrare, cu excepția cazului în care acest lucru este interzis de lege. SDK Enterprises informează Clientul fără întârziere dacă consideră că o instrucțiune încalcă legislația aplicabilă privind protecția datelor."
+          ]
+        },
+        {
+          "heading": "4. Confidențialitatea",
+          "content": [
+            "Persoanele autorizate să prelucreze date cu caracter personal fac acest lucru numai în măsura în care este necesar pentru funcționarea Serviciului și sunt supuse unor obligații de confidențialitate care rămân valabile și după încetarea colaborării lor."
+          ]
+        },
+        {
+          "heading": "5. Măsuri de securitate",
+          "content": [
+            "Ținând seama de stadiul actual al tehnologiei și de costurile de implementare, SDK Enterprises menține măsuri tehnice și organizatorice adecvate, printre care: criptarea datelor în tranzit și criptarea corespunzătoare a datelor stocate; controlul strict al accesului pe principiul „necesității de a cunoaște”; separarea mediilor clienților; măsuri privind disponibilitatea și reziliența, inclusiv proceduri de backup și recuperare; detectarea abuzurilor și limitarea ratei de acces; înregistrarea evenimentelor relevante pentru securitate, cu protecție împotriva falsificării; precum și revizuirea periodică a acestor măsuri pe măsură ce Serviciul evoluează. O prezentare generală redactată într-un limbaj simplu este publicată la adresa /security."
+          ]
+        },
+        {
+          "heading": "6. Subprocesatori",
+          "content": [
+            "Clientul acordă o autorizație generală în scris pentru angajarea unor subprocesatori, ale căror identități, roluri și locații sunt publicate la adresa /legal/subprocessors. SDK Enterprises impune fiecărui subprocesator, în scris, obligații privind protecția datelor care să asigure un nivel de protecție cel puțin egal cu cel prevăzut în prezentul addendum și rămâne răspunzător față de Client pentru eventualele încălcări comise de subprocesatori. Cu cel puțin paisprezece (14) zile înainte ca un nou subprocesator să înceapă prelucrarea datelor cu caracter personal, SDK Enterprises actualizează lista publicată, oferind Clientului posibilitatea de a formula obiecții pe motive rezonabile legate de protecția datelor; în cazul în care o obiecție nu poate fi soluționată în mod rezonabil, Clientul poate rezilia partea afectată a Serviciului."
+          ]
+        },
+        {
+          "heading": "7. Asistență pentru clienți",
+          "content": [
+            [
+              "Solicitări din partea persoanelor vizate (acces, rectificare, ștergere, restricționare, opoziție, portabilitate): SDK Enterprises oferă asistență fără întârzieri nejustificate, prin intermediul instrumentelor disponibile pentru clienți, acolo unde este posibil.",
+              "Evaluări ale impactului asupra protecției datelor și consultări prealabile: SDK Enterprises oferă informații rezonabil de accesibile despre Serviciu.",
+              "Incidente de securitate: SDK Enterprises informează Clientul fără întârziere nejustificată după ce ia cunoștință de o încălcare a securității datelor cu caracter personal care afectează datele Clientului, furnizează informațiile necesare în mod rezonabil pentru îndeplinirea obligațiilor Clientului și cooperează în gestionarea incidentului."
+            ]
+          ]
+        },
+        {
+          "heading": "8. Transferuri internaționale",
+          "content": [
+            "În cazul în care datele cu caracter personal ar urma să fie transferate în afara Spațiului Economic European către o țară care nu beneficiază de o decizie de adecvare, SDK Enterprises se asigură că sunt instituite garanții adecvate — în principal clauzele contractuale standard adoptate de Comisia Europeană, încheiate între exportatorul și importatorul în cauză — împreună cu măsuri tehnice suplimentare, acolo unde este necesar. Locațiile actuale de transfer sunt descrise pe pagina dedicată subprocesatorilor."
+          ]
+        },
+        {
+          "heading": "9. Responsabilitatea și auditurile",
+          "content": [
+            "SDK Enterprises ține evidența activităților de prelucrare care intră în sfera sa de aplicare și pune la dispoziție documentația care demonstrează conformitatea cu prezentul addendum. Clientul poate solicita aceste informații o dată pe an, precum și în urma unei încălcări a securității datelor cu caracter personal sau a unei preocupări justificate privind conformitatea. Auditurile la fața locului, acolo unde sunt permise, se desfășoară pe cheltuiala clientului, cu un preaviz rezonabil și sub rezerva confidențialității și a măsurilor de protecție datorate celorlalți clienți."
+          ]
+        },
+        {
+          "heading": "10. Returnare și ștergere",
+          "content": [
+            "La încetarea Acordului, SDK Enterprises pune la dispoziție datele cu caracter personal ale Clientului în vederea exportării și apoi le șterge, inclusiv din sistemele subprocesatorilor, într-un termen rezonabil din punct de vedere comercial — cu excepția cazurilor în care păstrarea acestora este impusă de lege, situație în care datele rămân protejate în temeiul prezentului addendum până când ștergerea acestora devine posibilă."
+          ]
+        },
+        {
+          "heading": "11. Răspunderea, legislația și litigiile",
+          "content": [
+            "Răspunderea prevăzută în prezentul addendum este repartizată și limitată conform prevederilor din Termenii și condițiile de utilizare. Prezentul addendum este reglementat de legislația franceză, iar litigiile se soluționează conform mecanismului de soluționare convenit în cadrul acesteia."
+          ]
+        },
+        {
+          "heading": "12. Drepturile privind confidențialitatea în California",
+          "content": [
+            "În ceea ce privește datele cu caracter personal care intră sub incidența Legii privind confidențialitatea consumatorilor din California, în forma sa modificată, SDK Enterprises acționează în calitate de furnizor de servicii: nu vinde și nu partajează date cu caracter personal, nu le păstrează, nu le utilizează și nu le divulgă în afara relației comerciale directe, cu excepția cazurilor permise de lege, și nu le combină cu date cu caracter personal primite din alte surse."
+          ]
+        },
+        {
+          "heading": "13. Prioritate și modificări",
+          "content": [
+            "În cazul în care anumite prevederi ale prezentului addendum intră în conflict cu clauzele contractuale standard incluse în conformitate cu secțiunea 8, aceste clauze prevalează în ceea ce privește transferurile pe care le reglementează. Ne rezervăm dreptul de a modifica prezentul addendum cu efect pentru viitor, pentru a reflecta modificările aduse Serviciului sau legislației, anunțând modificările semnificative pe această pagină înainte ca acestea să intre în vigoare."
+          ]
+        }
+      ]
+    }
+  }
+}

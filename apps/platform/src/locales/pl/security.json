@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Bezpieczeństwo",
+      "description": "W jaki sposób Auth zabezpiecza infrastrukturę uwierzytelniania: architektura tokenów, rotacja kluczy, ograniczanie częstotliwości, rejestr audytowy oparty na łańcuchu skrótów oraz jak zgłaszać luki w zabezpieczeniach."
+    },
+    "hero": {
+      "eyebrow": "Zaufanie",
+      "title": "Lista mechanizmów zabezpieczeń.",
+      "lead": "Nie prosimy Was o wierzenie w marketingowe obietnice — każda z poniższych funkcji zabezpieczających dokładnie opisuje, jak działa i gdzie jest stosowana. Jeśli nie potrafimy opisać danego mechanizmu, nie wysuwamy takich twierdzeń."
+    },
+    "layers": [
+      {
+        "title": "Architektura tokenów",
+        "points": [
+          "Kody autoryzacyjne muszą zawierać ciąg znaków PKCE (S256) w każdym żądaniu; są to kody jednorazowego użytku o krótkim okresie ważności.",
+          "Tokeny odświeżające są odnawiane przy każdym użyciu; przedstawienie wykorzystanego tokenu powoduje unieważnienie całej rodziny tokenów.",
+          "Tokeny dostępu i identyfikacyjne to RS256 oraz JWT, podpisane dla danego środowiska; klucze publiczne są opublikowane pod adresem /.well-known/jwks.json.",
+          "Funkcja cofania dostępna jest pod adresem /oauth/revoke dla tokenów odświeżających."
+        ]
+      },
+      {
+        "title": "Sesje",
+        "points": [
+          "Pliki cookie sesji działają wyłącznie w protokole HTTP, mają atrybut SameSite=Lax, są zabezpieczone w środowisku produkcyjnym i zawierają podpisane identyfikatory sesji RS256 oraz JWT.",
+          "Każda sesja ma zarówno limit czasu bezczynności, jak i bezwzględny termin wygaśnięcia.",
+          "Sesje można unieważnić po stronie serwera; wylogowanie powoduje natychmiastowe unieważnienie sesji."
+        ]
+      },
+      {
+        "title": "Klucze i sekrety",
+        "points": [
+          "Klucze podpisujące RS256 przypisane do poszczególnych środowisk; klucze prywatne są szyfrowane metodą „envelope” w stanie spoczynku (AES-256-GCM) i nigdy nie są rejestrowane.",
+          "Rotacja wycofuje aktywne klucze, pozostawiając je jednak opublikowane, dzięki czemu nierozliczone tokeny są weryfikowane aż do momentu naturalnego wygaśnięcia.",
+          "Sekrety klienta są przechowywane wyłącznie w postaci zaszyfrowanej; weryfikacja zajmuje stały czas w porównaniu z czasem potrzebnym na odszyfrowanie."
+        ]
+      },
+      {
+        "title": "Mechanizmy zapobiegania nadużyciom",
+        "points": [
+          "Limity stałe: liczba wiadomości wysyłanych na jeden adres e-mail i z jednego adresu IP, liczba nieudanych weryfikacji na jeden adres e-mail, liczba tokenów wydawanych na jednego klienta i z jednego adresu IP.",
+          "Zbyt duża liczba nieudanych prób weryfikacji powoduje wyczerpanie wszystkich pozostałych kodów jednorazowych dla tego adresu.",
+          "Komunikaty o błędach wyświetlane użytkownikom mają charakter neutralny; szczegółowe informacje są zapisywane wyłącznie w logach serwera."
+        ]
+      },
+      {
+        "title": "Możliwość kontroli",
+        "points": [
+          "Zdarzenia związane z bezpieczeństwem są zapisywane w łańcuchu bloków opartym na funkcji skrótu, odrębnym dla każdego środowiska: każdy wpis jest powiązany ze swoim poprzednikiem za pomocą skrótu SHA-256.",
+          "Łańcuch można w dowolnym momencie obliczyć ponownie, zaczynając od momentu powstania; każda zmiana wprowadzona z mocą wsteczną powoduje jego przerwanie.",
+          "Standardowe zdarzenia związane z uwierzytelnianiem (logowanie, wydawanie tokenów, wykrywanie ponownego użycia, unieważnianie, tworzenie kluczy) są rejestrowane wraz z księgą."
+        ]
+      },
+      {
+        "title": "Przetwarzanie danych",
+        "points": [
+          "Dane najemców są przechowywane w bazie danych Postgres o nazwie Neon w regionie wybranym do wdrożenia; dostęp do nich wymaga szyfrowanego połączenia.",
+          "Tajemnice są szyfrowane przy użyciu algorytmu Envelope przed zapisaniem; klucz główny znajduje się poza bazą danych.",
+          "Na stronach uwierzytelniających nie działają żadne moduły śledzące ani piksele reklamowe stron trzecich; dane analityczne na tej witrynie marketingowej są gromadzone bez użycia plików cookie i w formie zbiorczej."
+        ]
+      }
+    ],
+    "complianceNote": "Szczera ocena zgodności: Firma Auth od samego początku stosuje środki kontroli zgodne z kryteriami SOC 2, jednak nie przeprowadzono jeszcze audytu certyfikacyjnego. Gdy sytuacja ulegnie zmianie, opublikujemy wyniki w tym miejscu.",
+    "disclosure": {
+      "eyebrow": "Odpowiedzialne ujawnianie informacji",
+      "title": "Zauważyłeś błąd? Daj nam znać.",
+      "items": [
+        "Wyślij wiadomość e-mail na adres hello@sdk.enterprises, wpisując w temacie [security].",
+        "Prosimy o podanie kroków pozwalających na odtworzenie błędu; potwierdzamy otrzymanie zgłoszeń w ciągu 2 dni roboczych.",
+        "Prosimy o unikanie automatycznego skanowania środowiska produkcyjnego oraz o nieuzyskiwanie dostępu do danych wykraczających poza zakres niezbędny do potwierdzenia problemu.",
+        "Badania prowadzone w dobrej wierze zgodnie z niniejszą polityką są chronione przed postępowaniem sądowym; podajemy nazwiska autorów, chyba że wolą oni zachować anonimowość.",
+        "Polityka w formacie nadającym się do odczytu maszynowego: /.well-known/security.txt"
+      ],
+      "privacyLink": "Polityka prywatności →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Podwykonawcy przetwarzania danych →"
+    }
+  }
+}

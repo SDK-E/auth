@@ -1,0 +1,104 @@
+{
+  "legal": {
+    "dpa": {
+      "meta": {
+        "title": "Załącznik dotyczący przetwarzania danych",
+        "description": "Załącznik, na mocy którego SDK Enterprises przetwarza dane osobowe użytkowników końcowych w imieniu najemców Auth, zgodnie z art. 28 umowy GDPR."
+      },
+      "title": "Załącznik dotyczący przetwarzania danych",
+      "description": "W niniejszym załączniku określono warunki, na jakich firma SDK Enterprises przetwarza dane osobowe w imieniu użytkowników usługi Auth. Odzwierciedla on wymogi mające zastosowanie do podmiotów przetwarzających dane zgodnie z przepisami o ochronie danych, w tym art. 28 Ogólnego rozporządzenia o ochronie danych.",
+      "updated": "23 sierpnia 2026 r.",
+      "sections": [
+        {
+          "heading": "1. Strony i role",
+          "content": [
+            "Niniejszy aneks zostaje zawarty pomiędzy Państwem (administratorem danych, „Klientem”) a firmą SDK Enterprises (podmiotem przetwarzającym dane). Ma ono zastosowanie do danych osobowych, które SDK Enterprises przetwarza w imieniu Klienta w momencie korzystania przez niego z Usługi w celu uwierzytelniania użytkowników końcowych. Stanowi ono część Umowy i ma pierwszeństwo przed nią w kwestiach dotyczących ochrony danych."
+          ]
+        },
+        {
+          "heading": "2. Szczegóły dotyczące przetwarzania danych",
+          "content": [
+            [
+              "Przedmiot: usługi uwierzytelniania i identyfikacji dla aplikacji Klienta.",
+              "Okres obowiązywania: okres obowiązywania Umowy wraz z obowiązkami w zakresie przechowywania dokumentów opisanymi poniżej.",
+              "Charakter i cel: obsługa procesów logowania, weryfikacja tożsamości za pomocą kodów jednorazowych, generowanie sesji i tokenów oraz zarządzanie nimi, zapobieganie nadużyciom, rejestrowanie zdarzeń związanych z bezpieczeństwem oraz związane z tym wsparcie techniczne.",
+              "Kategorie osób, których dane dotyczą: użytkownicy końcowi Klienta oraz pracownicy Klienta zarządzający dzierżawą.",
+              "Kategorie danych osobowych: dane identyfikacyjne (w szczególności adresy e-mail), zapisy dotyczące uwierzytelniania i korzystania z serwisu, metadane techniczne, takie jak adres IP i agent użytkownika, zapisy dotyczące bezpieczeństwa i audytu oraz tymczasowe wskaźniki zapobiegania nadużyciom.",
+              "Kategorie specjalne: nie są wymagane ani oczekiwane; klient nie może ich przekazywać."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Obowiązki podmiotu przetwarzającego",
+          "content": [
+            "SDK Enterprises przetwarza dane osobowe wyłącznie na podstawie udokumentowanych instrukcji Klienta — zawartych w niniejszym aneksie oraz w konfiguracji Usługi dokonanej przez Klienta — chyba że prawo Unii lub państwa członkowskiego stanowi inaczej; w takim przypadku SDK Enterprises informuje Klienta o tym wymogu prawnym przed przystąpieniem do przetwarzania, o ile nie jest to prawnie zabronione. SDK Enterprises niezwłocznie informuje Klienta, jeśli uzna, że dana instrukcja narusza obowiązujące przepisy dotyczące ochrony danych."
+          ]
+        },
+        {
+          "heading": "4. Poufność",
+          "content": [
+            "Osoby upoważnione do przetwarzania danych osobowych dokonują tego wyłącznie w zakresie niezbędnym do świadczenia Usługi i są zobowiązane do zachowania poufności, nawet po zakończeniu współpracy."
+          ]
+        },
+        {
+          "heading": "5. Środki bezpieczeństwa",
+          "content": [
+            "Biorąc pod uwagę aktualny stan techniki oraz koszty wdrożenia, firma SDK Enterprises stosuje odpowiednie środki techniczne i organizacyjne, w tym: szyfrowanie danych w trakcie przesyłania oraz odpowiednie szyfrowanie danych przechowywanych; ścisłą kontrolę dostępu opartą na zasadzie „wiedzy niezbędnej”; segregację środowisk dzierżawców; środki zapewniające dostępność i odporność, w tym kopie zapasowe i procedury odzyskiwania danych; wykrywanie nadużyć i ograniczanie częstotliwości operacji; rejestrowanie zdarzeń związanych z bezpieczeństwem w sposób uniemożliwiający manipulację; oraz regularny przegląd tych środków w miarę rozwoju Usługi. Przegląd tych środków napisany prostym językiem został opublikowany pod adresem /security."
+          ]
+        },
+        {
+          "heading": "6. Podwykonawcy przetwarzania danych",
+          "content": [
+            "Klient udziela ogólnego pisemnego upoważnienia do angażowania podwykonawców przetwarzających dane, których tożsamość, role i lokalizacje są opublikowane pod adresem /legal/subprocessors. SDK Enterprises nakłada na każdego podwykonawcę przetwarzającego dane, na piśmie, obowiązki w zakresie ochrony danych, których poziom ochrony nie jest niższy niż ten określony w niniejszym aneksie, oraz ponosi odpowiedzialność wobec Klienta za uchybienia podwykonawców przetwarzających dane. Co najmniej czternaście (14) dni przed rozpoczęciem przetwarzania danych osobowych przez nowego podwykonawcę SDK Enterprises aktualizuje opublikowaną listę, dając Klientowi możliwość zgłoszenia sprzeciwu z uzasadnionych powodów związanych z ochroną danych; jeżeli sprzeciwu nie da się w rozsądny sposób rozstrzygnąć, Klient może wypowiedzieć tę część Usługi, której dotyczy sprzeciw."
+          ]
+        },
+        {
+          "heading": "7. Pomoc dla klienta",
+          "content": [
+            [
+              "Wnioski osób, których dane dotyczą (dostęp, sprostowanie, usunięcie, ograniczenie przetwarzania, sprzeciw, przenoszenie danych): SDK Enterprises udziela pomocy bez zbędnej zwłoki, w miarę możliwości korzystając z dostępnych narzędzi dla najemców.",
+              "Oceny skutków dla ochrony danych i konsultacje wstępne: SDK Enterprises zawiera dostępne w rozsądnym zakresie informacje na temat Usługi.",
+              "Incydenty związane z bezpieczeństwem: SDK Enterprises powiadamia Klienta bez zbędnej zwłoki po stwierdzeniu naruszenia bezpieczeństwa danych osobowych dotyczących danych Klienta, przekazuje informacje niezbędne do wypełnienia przez Klienta jego własnych obowiązków oraz współpracuje przy zarządzaniu incydentem."
+            ]
+          ]
+        },
+        {
+          "heading": "8. Przelewy międzynarodowe",
+          "content": [
+            "W przypadku przekazywania danych osobowych poza Europejski Obszar Gospodarczy do kraju, w odniesieniu do którego nie wydano decyzji o odpowiednim poziomie ochrony, firma SDK Enterprises zapewnia wprowadzenie odpowiednich zabezpieczeń — przede wszystkim standardowych klauzul umownych przyjętych przez Komisję Europejską, zawartych między odpowiednim podmiotem przekazującym a podmiotem odbierającym dane — a także, w razie potrzeby, dodatkowych środków technicznych. Aktualne lokalizacje przekazywania danych opisano na stronie poświęconej podwykonawcom przetwarzającym dane."
+          ]
+        },
+        {
+          "heading": "9. Odpowiedzialność i kontrole",
+          "content": [
+            "SDK Enterprises prowadzi ewidencję czynności przetwarzania wchodzących w zakres niniejszego załącznika oraz udostępnia dokumentację potwierdzającą zgodność z jego postanowieniami. Klient może zwrócić się o udostępnienie takich informacji raz w roku, a także w przypadku naruszenia bezpieczeństwa danych osobowych lub uzasadnionych obaw dotyczących zgodności. Audyty na miejscu, o ile zostaną zatwierdzone, odbywają się na koszt Klienta, po uprzednim powiadomieniu z odpowiednim wyprzedzeniem oraz z zachowaniem poufności i środków ochrony należnych innym klientom."
+          ]
+        },
+        {
+          "heading": "10. Zwrot i usunięcie",
+          "content": [
+            "W momencie wygaśnięcia Umowy firma SDK Enterprises udostępnia dane osobowe Klienta do eksportu, a następnie je usuwa, w tym z systemów podwykonawców przetwarzających dane, w terminie uzasadnionym z handlowego punktu widzenia — z wyjątkiem sytuacji, w których przechowywanie danych jest wymagane przez prawo; w takim przypadku dane pozostają objęte ochroną na mocy niniejszego aneksu do momentu, gdy ich usunięcie stanie się możliwe."
+          ]
+        },
+        {
+          "heading": "11. Odpowiedzialność, prawo i spory",
+          "content": [
+            "Odpowiedzialność wynikająca z niniejszego aneksu jest rozdzielona i ograniczona zgodnie z postanowieniami warunków świadczenia usług. Niniejszy aneks podlega prawu francuskiemu, a spory rozstrzygane są zgodnie z ustalonym w nim mechanizmem rozstrzygania sporów."
+          ]
+        },
+        {
+          "heading": "12. Prawa do prywatności w Kalifornii",
+          "content": [
+            "W odniesieniu do danych osobowych podlegających przepisom kalifornijskiej ustawy o ochronie prywatności konsumentów (California Consumer Privacy Act) wraz z późniejszymi zmianami, firma SDK Enterprises pełni rolę usługodawcy: nie sprzedaje ani nie udostępnia danych osobowych, nie przechowuje ich, nie wykorzystuje ani nie ujawnia poza bezpośrednią relacją biznesową, z wyjątkiem przypadków dozwolonych przez prawo, a także nie łączy ich z danymi osobowymi otrzymanymi z innych źródeł."
+          ]
+        },
+        {
+          "heading": "13. Hierarchia i zmiany",
+          "content": [
+            "Jeżeli poszczególne postanowienia niniejszego załącznika są sprzeczne ze standardowymi klauzulami umownymi włączonymi na mocy sekcji 8, w odniesieniu do przekazywania danych, których dotyczą, pierwszeństwo mają te klauzule. Możemy wprowadzać zmiany do niniejszego załącznika z mocą przyszłą w celu uwzględnienia zmian w Usłudze lub przepisach prawnych, ogłaszając istotne zmiany na tej stronie przed ich wejściem w życie."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Cookies & tracking",
+        "description": "The complete list of what Auth sets in your browser — and why it is shorter than almost any site you have visited."
+      },
+      "title": "Cookies & tracking",
+      "description": "Auth surfaces are built to work without tracking you. This page lists every cookie and every analytics mechanism, which is a very short list.",
+      "updated": "August 23, 2026",
+      "sections": [
+        {
+          "heading": "1. Cookies we set",
+          "content": [
+            {
+              "columns": [
+                "Name",
+                "Where",
+                "Purpose"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Auth dashboard",
+                  "Essential. Keeps you signed in to your tenant dashboard; signed, http-only, expires with the session."
+                ],
+                [
+                  "(tenant session cookie)",
+                  "Universal login",
+                  "Essential. Issued only when you sign in to a product that uses Auth, scoped to that product's authentication."
+                ]
+              ]
+            },
+            "There is no consent banner because there is nothing to consent to: no advertising cookies, no cross-site trackers, no social widgets, and no fingerprinting scripts run on auth.sdk.enterprises or on hosted login pages."
+          ]
+        },
+        {
+          "heading": "2. Analytics",
+          "content": [
+            "The marketing pages use Vercel Analytics, which is cookieless: it counts page views in aggregate without storing identifiers or building profiles of individuals. No analytics runs on universal login pages, API endpoints, or inside tenants' applications."
+          ]
+        },
+        {
+          "heading": "3. Server-side records",
+          "content": [
+            "Like any web server we log requests for security operations (abuse detection, rate limiting, audit evidence) under our retention rules in the privacy policy. These logs are not used to profile visitors of this marketing site."
+          ]
+        },
+        {
+          "heading": "4. Questions",
+          "content": [
+            "Write to hello@sdk.enterprises if anything here is unclear."
+          ]
+        }
+      ]
+    }
+  }
+}

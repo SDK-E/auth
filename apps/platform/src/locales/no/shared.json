@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Plattform",
+    "quickstart": "Hurtigstart",
+    "pricing": "Priser",
+    "security": "Sikkerhet",
+    "status": "Status",
+    "signIn": "Logg inn"
+  },
+  "footer": {
+    "tagline": "Infrastruktur for autentisering av flere brukere utviklet av SDK Enterprises.",
+    "productTitle": "Produkt",
+    "productLinks": [
+      "Plattform",
+      "Hurtigstart",
+      "Priser",
+      "Tjenestestatus"
+    ],
+    "trustTitle": "Tillit",
+    "trustLinks": [
+      "Sikkerhet",
+      "Personvernerklæring",
+      "Databehandling (DPA)",
+      "Underleverandører",
+      "Informasjonskapsler og sporing"
+    ],
+    "legalTitle": "Juridisk",
+    "legalLinks": [
+      "Brukervilkår",
+      "Juridisk merknad"
+    ],
+    "companyTitle": "Selskap",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Kontakt"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "underlagt fransk lov",
+    "languageLabel": "Språk"
+  },
+  "statusBadges": {
+    "available": "Tilgjengelig",
+    "rollingOut": "Utrulling",
+    "recommended": "Anbefalt"
+  },
+  "legalShell": {
+    "brandContext": "autentisering · Juridisk",
+    "effectiveLine": "Gjeldende {date} · underlagt fransk lovgivning",
+    "documentsLabel": "Dokumenter",
+    "securityOverview": "Sikkerhetsoversikt",
+    "docs": [
+      "Personvernerklæring",
+      "Brukervilkår",
+      "Tillegg om databehandling",
+      "Underleverandører",
+      "Informasjonskapsler og sporing",
+      "Juridisk merknad"
+    ]
+  }
+}

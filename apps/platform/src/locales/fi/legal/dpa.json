@@ -1,0 +1,104 @@
+{
+  "legal": {
+    "dpa": {
+      "meta": {
+        "title": "Tietojenkäsittelyä koskeva liite",
+        "description": "Liite, jonka nojalla SDK Enterprises käsittelee loppukäyttäjien henkilötietoja Auth-asiakkaiden puolesta GDPR:n 28 artiklan mukaisesti."
+      },
+      "title": "Tietojenkäsittelyä koskeva liite",
+      "description": "Tässä liitteessä määritellään ehdot, joiden mukaisesti SDK Enterprises käsittelee henkilötietoja Auth-palvelun vuokralaisten puolesta. Liite noudattaa tietosuojalainsäädännön mukaisia, tietojenkäsittelijöihin sovellettavia vaatimuksia, mukaan lukien yleisen tietosuoja-asetuksen 28 artikla.",
+      "updated": "23. elokuuta 2026",
+      "sections": [
+        {
+          "heading": "1. Osapuolet ja roolit",
+          "content": [
+            "Tämä liite on solmittu sinun (rekisterinpitäjä, ”asiakas”) ja SDK Enterprises:n (tietojen käsittelijä) välillä. Se koskee henkilötietoja, joita SDK Enterprises käsittelee puolestasi, kun käytät Palvelua loppukäyttäjiesi tunnistamiseen. Se on osa Sopimusta ja sillä on etusija tietosuoja-asioissa."
+          ]
+        },
+        {
+          "heading": "2. Käsittelyn yksityiskohdat",
+          "content": [
+            [
+              "Aihe: asiakassovellusten todennus- ja identiteettipalvelut.",
+              "Kesto: sopimuksen voimassaoloaika sekä jäljempänä kuvatut säilytysvelvollisuudet.",
+              "Luonne ja tarkoitus: kirjautumisprosessien toteuttaminen, henkilöllisyyden vahvistaminen kertakäyttöisillä koodeilla, istuntojen ja tunnisteiden myöntäminen ja hallinta, väärinkäytön estäminen, turvallisuuslokien kirjaaminen sekä niihin liittyvä tuki.",
+              "Rekisteröityjen ryhmät: Asiakkaan loppukäyttäjät sekä asiakkaan henkilöstö, joka hallinnoi vuokraajaa.",
+              "Henkilötietojen luokat: tunnistetiedot (erityisesti sähköpostiosoitteet), todennus- ja käyttötiedot, tekniset metatiedot, kuten IP-osoite ja käyttäjäagentti, turvallisuus- ja tarkastustiedot sekä väliaikaiset väärinkäytön eston indikaattorit.",
+              "Erityisryhmät: niitä ei vaadita eikä odoteta; asiakkaan ei tule toimittaa niitä."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Käsittelijän velvollisuudet",
+          "content": [
+            "SDK Enterprises käsittelee henkilötietoja ainoastaan asiakkaan kirjallisten ohjeiden mukaisesti – jotka muodostuvat tästä liitteestä ja asiakkaan palvelun konfiguraatiosta – ellei unionin tai jäsenvaltion lainsäädännössä toisin vaadita, jolloin SDK Enterprises ilmoittaa asiakkaalle kyseisestä lakisääteisestä vaatimuksesta ennen käsittelyä, ellei se ole laissa kielletty. SDK Enterprises ilmoittaa asiakkaalle viipymättä, jos se katsoo, että ohje rikkoo sovellettavaa tietosuojalainsäädäntöä."
+          ]
+        },
+        {
+          "heading": "4. Luottamuksellisuus",
+          "content": [
+            "Henkilöt, joilla on valtuudet käsitellä henkilötietoja, tekevät niin vain siinä laajuudessa kuin se on palvelun kannalta tarpeen, ja heitä sitovat salassapitovelvollisuudet, jotka ovat voimassa myös heidän työsuhteensa päättymisen jälkeen."
+          ]
+        },
+        {
+          "heading": "5. Turvatoimenpiteet",
+          "content": [
+            "Ottaen huomioon alan nykytilan ja toteutuskustannukset SDK Enterprises ylläpitää asianmukaisia teknisiä ja organisatorisia toimenpiteitä, joihin kuuluvat muun muassa: siirrettävien tietojen salaus ja asianmukainen tallennettujen tietojen salaus; tiukka pääsynhallinta, joka perustuu tiedonsaantitarpeeseen; asiakasympäristöjen erottelu; käytettävyyttä ja vikasietoisuutta koskevat toimenpiteet, mukaan lukien varmuuskopiointi ja palautusmenettelyt; väärinkäytön havaitseminen ja käyttörajoitukset; turvallisuuteen liittyvien tapahtumien väärentämisen estävä lokitallennus; sekä näiden toimenpiteiden säännöllinen tarkistaminen palvelun kehittyessä. Selkokielinen yleiskatsaus on julkaistu osoitteessa /security."
+          ]
+        },
+        {
+          "heading": "6. Alikäsittelijät",
+          "content": [
+            "Asiakas myöntää yleisen kirjallisen valtuutuksen alihankkijoiden käyttämiseen; näiden henkilöllisyydet, roolit ja sijainnit on julkaistu osoitteessa /legal/subprocessors. SDK Enterprises asettaa jokaiselle alihankkijalle kirjallisesti tietosuojavelvoitteet, jotka tarjoavat vähintään yhtä korkean suojan kuin tässä liitteessä määritellyt velvoitteet, ja on edelleen vastuussa Asiakkaalle alihankkijoiden laiminlyönneistä. Vähintään neljätoista (14) päivää ennen kuin uusi alihankkija alkaa käsitellä henkilötietoja, SDK Enterprises päivittää julkaistun luettelon ja antaa asiakkaalle mahdollisuuden esittää vastalauseen perustelluista, tietosuojaan liittyvistä syistä; jos vastalausetta ei voida kohtuudella ratkaista, asiakas voi irtisanoa kyseisen palvelun osan."
+          ]
+        },
+        {
+          "heading": "7. Asiakastuki",
+          "content": [
+            [
+              "Rekisteröityjen pyynnöt (oikeus saada pääsy tietoihin, tietojen oikaiseminen, poistaminen, käsittelyn rajoittaminen, vastustaminen, siirrettävyys): SDK Enterprises auttaa pyynnöissä ilman aiheetonta viivytystä ja käyttää siinä mahdollisuuksien mukaan käytettävissä olevia vuokralaistyökaluja.",
+              "Tietosuojavaikutusten arvioinnit ja ennakkokuulemiset: SDK Enterprises tarjoaa kohtuullisesti saatavilla olevaa tietoa palvelusta.",
+              "Tietoturvaloukkaukset: SDK Enterprises ilmoittaa asiakkaalle viipymättä saatuaan tiedon asiakkaan tietoja koskevasta henkilötietojen tietoturvaloukkauksesta, toimittaa asiakkaalle tämän velvoitteiden täyttämiseksi kohtuudella tarvittavat tiedot ja toimii yhteistyössä loukkauksen hallinnoinnissa."
+            ]
+          ]
+        },
+        {
+          "heading": "8. Kansainväliset siirrot",
+          "content": [
+            "Jos henkilötietoja siirretään Euroopan talousalueen ulkopuolelle maahan, jonka osalta ei ole tehty tietosuojan riittävyyttä koskevaa päätöstä, SDK Enterprises varmistaa, että käytössä on asianmukaiset suojatoimenpiteet – pääasiassa Euroopan komission hyväksymät vakiomuotoiset sopimuslausekkeet, jotka on solmittu asianomaisen tietojen viejän ja tuojan välillä – sekä tarvittaessa täydentävät tekniset toimenpiteet. Nykyiset siirtokohteet on kuvattu alihankkijoiden sivulla."
+          ]
+        },
+        {
+          "heading": "9. Vastuullisuus ja tilintarkastukset",
+          "content": [
+            "SDK Enterprises pitää kirjaa sen soveltamisalaan kuuluvista käsittelytoimista ja asettaa saataville asiakirjat, jotka osoittavat tämän liitteen noudattamisen. Asiakas voi pyytää tällaisia tietoja kerran vuodessa sekä lisäksi henkilötietoturvaloukkauksen tai perustellun vaatimustenmukaisuuteen liittyvän huolenaiheen jälkeen. Paikan päällä tehtävät tarkastukset, jos niihin suostutaan, toteutetaan asiakkaan kustannuksella, kohtuullisella ennakkoilmoituksella sekä noudattaen salassapitovelvollisuutta ja muille asiakkaille kuuluvaa suojaa."
+          ]
+        },
+        {
+          "heading": "10. Palautus ja poisto",
+          "content": [
+            "Sopimuksen päättyessä SDK Enterprises antaa asiakkaan henkilötiedot vientiin ja poistaa ne sen jälkeen, mukaan lukien alihankkijoiden järjestelmissä, kaupallisesti kohtuullisessa ajassa — paitsi jos tietojen säilyttäminen on lain mukaan pakollista, jolloin tiedot pysyvät tämän liitteen mukaisen suojan alaisina, kunnes niiden poistaminen on mahdollista."
+          ]
+        },
+        {
+          "heading": "11. Vastuu, sovellettava laki ja riidat",
+          "content": [
+            "Tämän liitteen mukainen vastuu jaetaan ja rajoitetaan käyttöehtojen mukaisesti. Tähän liitteeseen sovelletaan Ranskan lakia, ja riita-asiat ratkaistaan siinä sovitun menettelyn mukaisesti."
+          ]
+        },
+        {
+          "heading": "12. Kalifornian tietosuojaoikeudet",
+          "content": [
+            "Kalifornian kuluttajien tietosuojalain (California Consumer Privacy Act) muutetun version piiriin kuuluvien henkilötietojen osalta SDK Enterprises toimii palveluntarjoajana: se ei myy eikä jaa henkilötietoja, ei säilytä, käytä tai luovuta niitä suoran liikesuhteen ulkopuolelle, ellei laki sitä salli, eikä yhdistä niitä muista lähteistä saatuihin henkilötietoihin."
+          ]
+        },
+        {
+          "heading": "13. Etusija ja muutokset",
+          "content": [
+            "Mikäli tämän liitteen yksittäiset määräykset ovat ristiriidassa kohdassa 8 mainittujen vakiosopimuslausekkeiden kanssa, sovelletaan kyseisiin tietojen siirtoihin kyseisiä lausekkeita. Voimme muuttaa tätä liitettä tulevaisuudessa palveluun tai lainsäädäntöön tehtyjen muutosten mukaisesti ja ilmoitamme olennaisista muutoksista tällä sivulla ennen niiden voimaantuloa."
+          ]
+        }
+      ]
+    }
+  }
+}

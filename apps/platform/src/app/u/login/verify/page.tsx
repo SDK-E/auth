@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
@@ -20,12 +21,12 @@ export default async function VerifyPage({ searchParams }: { searchParams: Searc
           <p className="text-body text-muted-foreground">
             We need an email address to continue.
           </p>
-          <a
+          <Link
             href="/u/login"
             className="mt-5 inline-block text-label uppercase font-bold text-foreground underline underline-offset-4"
           >
             Back to sign in
-          </a>
+          </Link>
         </div>
       </main>
     );

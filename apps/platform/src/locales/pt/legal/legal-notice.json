@@ -1,0 +1,53 @@
+{
+  "legal": {
+    "legal-notice": {
+      "meta": {
+        "title": "Aviso legal",
+        "description": "Editor, anfitrião e informações legais relativas a auth.sdk.enterprises (mentions légales)."
+      },
+      "title": "Aviso legal",
+      "description": "Informações exigidas pela legislação francesa para o sítio publicado em auth.sdk.enterprises (menções legais), estabelecidas em conformidade com o artigo 6.º, n.º III, da Lei n.º 2004-575, de 21 de junho de 2004 (LCEN).",
+      "updated": "23 de agosto de 2026",
+      "sections": [
+        {
+          "heading": "Editora",
+          "content": [
+            "Este site e o serviço Auth são publicados pela SADDEK Entreprises, que opera sob a denominação comercial SDK Enterprises.",
+            [
+              "SIREN: 850 513 912",
+              "SIRET: 850 513 912 00020",
+              "Sede social: 44 Rue Pasquier, 75008 Paris, France",
+              "Forma jurídica: auto-empresário (empresário individual), sem capital social",
+              "Registo da empresa: RCS Paris 850 513 912",
+              "Diretor de publicação: Hicham SADDEK"
+            ]
+          ]
+        },
+        {
+          "heading": "Contacto",
+          "content": [
+            "As questões relativas a este site ou ao serviço podem ser enviadas para hello@sdk.enterprises. Para comunicações de segurança, consulte a nossa política de divulgação responsável."
+          ]
+        },
+        {
+          "heading": "Alojamento",
+          "content": [
+            "O site e o serviço são alojados pela Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Estados Unidos. As bases de dados das aplicações são geridas pela Neon; os detalhes de todos os fornecedores de infraestruturas estão listados na página dos subcontratantes."
+          ]
+        },
+        {
+          "heading": "Propriedade intelectual",
+          "content": [
+            "A estrutura, os textos, os logótipos e o conteúdo deste site são propriedade da SDK Enterprises. É proibida qualquer reprodução ou representação, total ou parcial, sem autorização prévia, salvo nos casos permitidos pela legislação aplicável."
+          ]
+        },
+        {
+          "heading": "Quadro jurídico",
+          "content": [
+            "Estas notificações regem-se pela legislação francesa. O serviço Auth é prestado ao abrigo dos nossos termos de serviço, e o tratamento de dados pessoais está descrito na nossa política de privacidade e no anexo relativo ao tratamento de dados."
+          ]
+        }
+      ]
+    }
+  }
+}

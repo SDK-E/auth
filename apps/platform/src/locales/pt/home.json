@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — infraestrutura de autenticação multilocatária",
+      "description": "O Auth fornece ao seu produto, logo à partida, os OIDC e OAuth 2.1 — páginas de início de sessão alojadas, gestão de sessões e um API de gestão — para que a sua equipa se concentre no desenvolvimento de funcionalidades, em vez de se ocupar com a infraestrutura de identidades."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Infraestrutura de autenticação multitenant",
+      "title": "Um fluxo de início de sessão para cada inquilino que hospeda.",
+      "lead": "O Auth fornece ao seu produto, logo à partida, os OIDC e OAuth 2.1 — páginas de início de sessão alojadas, gestão de sessões e um API de gestão — para que a sua equipa se concentre no desenvolvimento de funcionalidades, em vez de se ocupar com a infraestrutura de identidades.",
+      "primaryCta": "Começa a construir",
+      "secondaryCta": "Crie o seu inquilino",
+      "securityLink": "Modelo de segurança →",
+      "visual": {
+        "appTitle": "A tua aplicação",
+        "appBody": "Redireciona para /authorize",
+        "loginTitle": "autenticação: início de sessão universal",
+        "loginBody": "Início de sessão com assinatura de código de e-mail alojado",
+        "returnTitle": "Voltar à tua aplicação",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE obrigatório · tokens verificados em relação a JWKS públicos"
+      }
+    },
+    "standards": {
+      "eyebrow": "Normas dentro, sessões fora",
+      "sentence": "Implementamos as especificações à risca: PKCE em todos os códigos de autorização, tokens de atualização rotativos, sessões assinadas revogáveis e chaves de assinatura publicadas."
+    },
+    "features": {
+      "eyebrow": "A plataforma",
+      "title": "Configuração da identidade, resolvida.",
+      "intro": "Tudo o que se segue já está disponível hoje, salvo indicação em contrário — cada cartão indica o mecanismo, porque é isso que está, na verdade, a comprar.",
+      "items": [
+        {
+          "status": "disponível",
+          "title": "Início de sessão universal",
+          "body": "Um fluxo de início de sessão hospedado para o qual os seus utilizadores são redirecionados — códigos únicos enviados por e-mail, sem necessidade de guardar palavras-passe nem de manter uma interface de início de sessão."
+        },
+        {
+          "status": "disponível",
+          "title": "Gestão de sessões",
+          "body": "As sessões são assinadas com RS256 e JWT em cookies «http-only», com validade por inatividade e validade absoluta, revogação do lado do servidor e chaves específicas para cada ambiente."
+        },
+        {
+          "status": "disponível",
+          "title": "Segurança dos tokens",
+          "body": "Os códigos de autorização vêm sempre acompanhados de PKCE. Os tokens de atualização são renovados a cada utilização, e a reutilização de um token revoga toda a sua família."
+        },
+        {
+          "status": "disponível",
+          "title": "Registo de auditoria",
+          "body": "Cada evento de segurança é registado num registo de auditoria com cadeia de hash por ambiente — qualquer adulteração rompe a cadeia, que é então recalculada a partir do início."
+        },
+        {
+          "status": "disponível",
+          "title": "Controlos contra abusos",
+          "body": "Limites de taxa com janela fixa para a entrega de códigos, tentativas de verificação e emissão de tokens. Os bloqueios consomem os códigos pendentes; a cópia permanece inalterada."
+        },
+        {
+          "status": "implementação",
+          "title": "Gestão API",
+          "body": "Uma superfície API para aplicações, utilizadores, sessões e registos em /api/v2, gerida por tokens de máquina com âmbito específico."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "A privacidade em primeiro lugar",
+      "title": "Os dados dos seus inquilinos continuam a ser da sua propriedade.",
+      "intro": "A Auth é uma infraestrutura de identidade — processamos exatamente o que a autenticação exige e divulgamos todos os detalhes. Sem rastreadores de publicidade, sem venda de dados, sem treino de modelos com dados dos utilizadores.",
+      "processedTitle": "O que processamos",
+      "processed": [
+        "E-mail da conta, para o envio de códigos de uso único",
+        "Eventos de autenticação com metadados técnicos, conservados para fins de segurança e auditoria",
+        "Contadores temporários de prevenção de abusos que expiram automaticamente",
+        "As credenciais e as chaves criptográficas são armazenadas apenas de forma protegida"
+      ],
+      "neverTitle": "O que nunca fazemos",
+      "never": [
+        "Vender, alugar ou partilhar dados pessoais — em momento algum, para qualquer fim",
+        "Carregar rastreadores ou píxeis de publicidade de terceiros em interfaces de autenticação",
+        "Treinar modelos com dados de inquilinos ou de utilizadores finais",
+        "Conservar os dados após o encerramento da sua conta, para além dos prazos mínimos previstos na lei"
+      ],
+      "privacyLink": "Política de privacidade →",
+      "dpaLink": "Anexo relativo ao tratamento de dados →",
+      "subprocessorsLink": "Lista de subcontratantes →"
+    },
+    "quickstart": {
+      "eyebrow": "Introdução rápida",
+      "title": "Três tentativas para um login válido.",
+      "intro": "Sem protocolos proprietários, sem dependência de um único fornecedor — tudo o que se segue são os modelos de série OAuth 2.1 e OIDC ligados aos nossos terminais ativos.",
+      "stepLabel": "Passo {index}",
+      "steps": [
+        {
+          "title": "Descubra os nossos terminais",
+          "body": "A sua aplicação lê a descoberta padrão OIDC — não é necessário o SDK, qualquer linguagem funciona."
+        },
+        {
+          "title": "Enviar os utilizadores para /authorize com o código PKCE",
+          "body": "Cria um desafio de programação, redireciona o navegador; nós tratamos do código de login e de e-mail alojado."
+        },
+        {
+          "title": "Trocar o código por fichas",
+          "body": "Verifique o id_token em relação ao nosso JWKS público, guarde o token de atualização e chame a função userinfo sempre que precisar de reivindicações."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Preços",
+      "title": "O preço é definido pelos utilizadores, não pelas fechaduras.",
+      "intro": "Preços de acesso antecipado. Um utilizador ativo mensal é aquele que se autenticou pelo menos uma vez nesse mês; nunca lhe serão cobradas contas armazenadas, mas inativas.",
+      "perMonth": "por mês",
+      "periodFree": "para sempre",
+      "plans": [
+        {
+          "includedMau": "1 000 utilizadores ativos mensais",
+          "features": [
+            "Todos os ambientes (desenvolvimento, teste, produção)",
+            "Número ilimitado de aplicações por ambiente",
+            "Início de sessão com código único por e-mail",
+            "Registo de auditoria e registos de eventos de autenticação",
+            "Apoio da comunidade"
+          ],
+          "cta": "Comece gratuitamente"
+        },
+        {
+          "includedMau": "10 000 utilizadores ativos mensais",
+          "features": [
+            "Tudo de graça",
+            "Domínios personalizados por inquilino",
+            "MFA, chaves de acesso e SSO empresarial tal como são fornecidos",
+            "Período de retenção mais longo das auditorias",
+            "Apoio prioritário"
+          ],
+          "cta": "Comece com o Pro"
+        }
+      ],
+      "note": "A faturação ainda não está automatizada — os utilizadores em acesso antecipado recebem faturas manualmente e podem cancelar a qualquer momento."
+    },
+    "ctaBand": {
+      "title": "A sua página de início de sessão está a um redirecionamento de distância.",
+      "body": "Identifica o ponto em auth.sdk.enterprises e envia o teu primeiro fluxo esta tarde.",
+      "button": "Abrir o painel de controlo"
+    }
+  }
+}

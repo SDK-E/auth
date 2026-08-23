@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Dále zpracovatelé",
+        "description": "Subzpracovatelé, s nimiž společnost SDK Enterprises spolupracuje při provozování služby Auth, role, kterou každý z nich plní, místo, kde působí, a kategorie dotčených údajů."
+      },
+      "title": "Dále zpracovatelé",
+      "description": "Tento seznam průběžně aktualizujeme a nové záznamy zveřejňujeme ještě předtím, než nový subdodavatel začne zpracovávat osobní údaje, čímž dáváme našim zákazníkům možnost vznést námitku z oprávněných důvodů.",
+      "updated": "23. srpna 2026",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Každý subdodavatel působí na základě písemné smlouvy, která mu ukládá povinnosti v oblasti ochrany osobních údajů, jejichž úroveň ochrany není nižší než ta, která je stanovena v našem dodatku o zpracování osobních údajů, a společnost SDK Enterprises nadále nese vůči svým zákazníkům odpovědnost za plnění povinností ze strany subdodavatele. Námitky proti oznámenému doplnění lze vznést do čtrnácti dnů od zveřejnění písemně na adresu hello@sdk.enterprises."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Subdodavatel",
+                "Role",
+                "Umístění",
+                "Kategorie dotčených údajů"
+              ],
+              "rows": [
+                [
+                  "Společnost Vercel, s.r.o.",
+                  "Hostování aplikací a doručování obsahu",
+                  "Spojené státy; globální okrajová síť",
+                  "Veškerý provoz směřující do Služby prochází její sítí; zpracování se omezuje na přenos, ukládání do mezipaměti a poskytování šifrovaných požadavků a odpovědí."
+                ],
+                [
+                  "Neon (společnost Neon Inc.)",
+                  "Poskytovatel spravovaných databází",
+                  "Výběr cloudové oblasti podle nasazení; k dispozici jsou oblasti podporující EEA",
+                  "Nastavení uživatelů, záznamy o účtech, záznamy o ověřování, bezpečnostní a auditní protokoly. Přihlašovací údaje a kryptografické klíče jsou ukládány výhradně v zabezpečené podobě."
+                ],
+                [
+                  "Společnost Upstash, s.r.o.",
+                  "Dočasné ukládání dat za účelem předcházení zneužívání",
+                  "Spojené státy",
+                  "Krátkodobé technické čítače sloužící k detekci zneužívajícího provozu. Uchovávají se pouze po dobu krátké životnosti čítače."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Doručování transakčních e-mailů",
+                  "Spojené státy",
+                  "E-mailová adresa příjemce a metadata o doručení u e-mailů souvisejících se službou, jako jsou například přihlašovací kódy. Obsah zprávy je omezen na to, co je nezbytně nutné."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Seznam změn",
+          "content": [
+            [
+              "Srpen 2026 – První zveřejněný seznam: Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

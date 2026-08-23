@@ -1,0 +1,104 @@
+{
+  "legal": {
+    "dpa": {
+      "meta": {
+        "title": "Aanvulling inzake gegevensverwerking",
+        "description": "Het addendum op grond waarvan SDK Enterprises persoonsgegevens van eindgebruikers verwerkt namens Auth-tenants, overeenkomstig artikel 28 van de GDPR."
+      },
+      "title": "Aanvulling inzake gegevensverwerking",
+      "description": "In dit addendum worden de voorwaarden uiteengezet waaronder SDK Enterprises persoonsgegevens verwerkt namens gebruikers van de Auth-dienst. Het addendum weerspiegelt de vereisten die krachtens de wetgeving inzake gegevensbescherming van toepassing zijn op verwerkers, met inbegrip van artikel 28 van de Algemene Verordening Gegevensbescherming.",
+      "updated": "23 augustus 2026",
+      "sections": [
+        {
+          "heading": "1. Partijen en rollen",
+          "content": [
+            "Deze bijlage is gesloten tussen u (de verwerkingsverantwoordelijke, „Klant”) en SDK Enterprises (de verwerker). Het is van toepassing op persoonsgegevens die SDK Enterprises namens u verwerkt wanneer u de Dienst gebruikt om uw eindgebruikers te authenticeren. Het maakt deel uit van de Overeenkomst en heeft voorrang op de Overeenkomst wat betreft kwesties op het gebied van gegevensbescherming."
+          ]
+        },
+        {
+          "heading": "2. Details over de verwerking",
+          "content": [
+            [
+              "Onderwerp: authenticatie- en identiteitsdiensten voor applicaties van de klant.",
+              "Looptijd: de duur van de overeenkomst, vermeerderd met de hieronder beschreven bewaarplichten.",
+              "Aard en doel: het aanbieden van aanmeldingsprocessen, identiteitsverificatie via eenmalige codes, het toekennen en beheren van sessies en tokens, het voorkomen van misbruik, het bijhouden van beveiligingslogboeken en de bijbehorende ondersteuning.",
+              "Categorieën betrokkenen: Eindgebruikers van de klant en medewerkers van de klant die de tenant beheren.",
+              "Categorieën persoonsgegevens: identificatiegegevens (met name e-mailadressen), authenticatie- en gebruiksgegevens, technische metagegevens zoals IP-adres en user-agent, beveiligings- en auditgegevens, en tijdelijke indicatoren ter voorkoming van misbruik.",
+              "Bijzondere categorieën: er worden geen aangevraagd of verwacht; de klant mag deze niet indienen."
+            ]
+          ]
+        },
+        {
+          "heading": "3. Verplichtingen van de verwerker",
+          "content": [
+            "SDK Enterprises verwerkt persoonsgegevens uitsluitend op basis van gedocumenteerde instructies van de Klant — bestaande uit dit addendum en de configuratie van de Dienst door de Klant — tenzij anders vereist door de wetgeving van de Unie of van een lidstaat; in dat geval stelt SDK Enterprises de Klant vóór de verwerking in kennis van die wettelijke vereiste, tenzij dit wettelijk verboden is. SDK Enterprises stelt de Klant onverwijld op de hoogte indien het van mening is dat een instructie in strijd is met de toepasselijke wetgeving inzake gegevensbescherming."
+          ]
+        },
+        {
+          "heading": "4. Vertrouwelijkheid",
+          "content": [
+            "Personen die bevoegd zijn om persoonsgegevens te verwerken, doen dit uitsluitend voor zover dit noodzakelijk is voor de Dienst en zijn gebonden aan geheimhoudingsverplichtingen die ook na beëindiging van hun dienstverband van kracht blijven."
+          ]
+        },
+        {
+          "heading": "5. Beveiligingsmaatregelen",
+          "content": [
+            "Rekening houdend met de stand van de techniek en de implementatiekosten hanteert SDK Enterprises passende technische en organisatorische maatregelen, waaronder: versleuteling van gegevens tijdens verzending en passende versleuteling in rust; strikte toegangscontrole op basis van het ‘need-to-know’-principe; scheiding van tenantomgevingen; maatregelen voor beschikbaarheid en veerkracht, waaronder back-ups en herstelprocedures; detectie van misbruik en beperking van het aantal verzoeken; fraudebestendige logboekregistratie van beveiligingsrelevante gebeurtenissen; en regelmatige herziening van deze maatregelen naarmate de Dienst zich verder ontwikkelt. Een overzicht in begrijpelijke taal is gepubliceerd op /security."
+          ]
+        },
+        {
+          "heading": "6. Subverwerkers",
+          "content": [
+            "De Klant verleent algemene schriftelijke toestemming voor het inschakelen van subverwerkers, waarvan de identiteit, rol en vestigingsplaatsen zijn gepubliceerd op /legal/subprocessors. SDK Enterprises legt elke subverwerker schriftelijk gegevensbeschermingsverplichtingen op die niet minder strenge bescherming bieden dan die in deze bijlage, en blijft jegens de Klant aansprakelijk voor tekortkomingen van subverwerkers. Ten minste veertien (14) dagen voordat een nieuwe subverwerker persoonsgegevens verwerkt, werkt SDK Enterprises de gepubliceerde lijst bij, waarbij de Klant de gelegenheid krijgt om bezwaar te maken op redelijke, aan gegevensbescherming gerelateerde gronden; indien een bezwaar niet op redelijke wijze kan worden opgelost, kan de Klant het betreffende deel van de Dienst beëindigen."
+          ]
+        },
+        {
+          "heading": "7. Ondersteuning van de klant",
+          "content": [
+            [
+              "Verzoeken van betrokkenen (inzage, rectificatie, verwijdering, beperking, bezwaar, overdraagbaarheid): SDK Enterprises verleent zonder onnodige vertraging medewerking, waar mogelijk via de beschikbare tools voor huurders.",
+              "Effectbeoordelingen inzake gegevensbescherming en voorafgaande raadplegingen: SDK Enterprises biedt redelijkerwijs beschikbare informatie over de Dienst.",
+              "Beveiligingsincidenten: SDK Enterprises stelt de klant onverwijld op de hoogte zodra het bedrijf kennis neemt van een inbreuk op de bescherming van persoonsgegevens die de gegevens van de klant betreft, verstrekt de informatie die redelijkerwijs nodig is voor de nakoming van de verplichtingen van de klant, en werkt mee aan de afhandeling van het incident."
+            ]
+          ]
+        },
+        {
+          "heading": "8. Internationale overboekingen",
+          "content": [
+            "Wanneer persoonsgegevens buiten de Europese Economische Ruimte zouden worden doorgegeven naar een land waarvoor geen adequaatheidsbesluit geldt, zorgt SDK Enterprises ervoor dat er passende waarborgen zijn getroffen — voornamelijk de door de Europese Commissie vastgestelde modelcontractbepalingen, die tussen de betreffende exporteur en importeur worden overeengekomen — in combinatie met aanvullende technische maatregelen waar nodig. De huidige doorgiftebestemmingen worden beschreven op de pagina over subverwerkers."
+          ]
+        },
+        {
+          "heading": "9. Verantwoording en controles",
+          "content": [
+            "SDK Enterprises houdt een register bij van de verwerkingsactiviteiten die onder zijn werkterrein vallen en stelt documentatie ter beschikking waaruit blijkt dat aan dit addendum wordt voldaan. De klant kan eenmaal per jaar om dergelijke informatie verzoeken, en daarnaast na een inbreuk op persoonsgegevens of een gegronde zorg inzake naleving. Audits ter plaatse, voor zover toegestaan, vinden plaats op kosten van de klant, na een redelijke kennisgeving en met inachtneming van de vertrouwelijkheid en de bescherming die aan andere klanten verschuldigd is."
+          ]
+        },
+        {
+          "heading": "10. Teruggave en verwijdering",
+          "content": [
+            "Bij beëindiging van de Overeenkomst stelt SDK Enterprises de persoonsgegevens van de Klant beschikbaar voor export en verwijdert deze vervolgens, ook binnen de systemen van onderverwerkers, binnen een commercieel redelijke termijn — tenzij het bewaren ervan wettelijk verplicht is; in dat geval blijven de gegevens beschermd onder dit addendum totdat verwijdering mogelijk is."
+          ]
+        },
+        {
+          "heading": "11. Aansprakelijkheid, toepasselijk recht en geschillen",
+          "content": [
+            "De aansprakelijkheid uit hoofde van deze bijlage wordt verdeeld en beperkt zoals uiteengezet in de servicevoorwaarden. Op deze bijlage is het Franse recht van toepassing en geschillen worden beslecht volgens de daarin overeengekomen procedure."
+          ]
+        },
+        {
+          "heading": "12. Privacyrechten in Californië",
+          "content": [
+            "Wat betreft persoonsgegevens die onder de California Consumer Privacy Act, zoals gewijzigd, vallen, treedt SDK Enterprises op als dienstverlener: het bedrijf verkoopt of deelt geen persoonsgegevens, bewaart, gebruikt of openbaart deze niet buiten de directe zakelijke relatie, tenzij dit wettelijk is toegestaan, en combineert deze niet met persoonsgegevens die uit andere bronnen zijn verkregen."
+          ]
+        },
+        {
+          "heading": "13. Voorrang en wijzigingen",
+          "content": [
+            "Indien afzonderlijke bepalingen van deze bijlage in strijd zijn met de standaardcontractbepalingen die krachtens artikel 8 zijn opgenomen, prevaleren deze bepalingen voor de gegevensoverdrachten waarop zij van toepassing zijn. Wij kunnen deze bijlage met terugwerkende kracht wijzigen om rekening te houden met wijzigingen in de Dienst of de wetgeving, waarbij we wezenlijke wijzigingen op deze pagina bekendmaken voordat deze van kracht worden."
+          ]
+        }
+      ]
+    }
+  }
+}

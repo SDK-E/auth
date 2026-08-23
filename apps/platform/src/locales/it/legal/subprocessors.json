@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Sottogestori del trattamento",
+        "description": "I sub-responsabili del trattamento SDK Enterprises incaricati di gestire il servizio Auth, il ruolo svolto da ciascuno di essi, il luogo in cui operano e le categorie di dati trattate."
+      },
+      "title": "Sottogestori del trattamento",
+      "description": "Manteniamo aggiornato questo elenco e pubblichiamo le nuove voci prima che un nuovo subappaltatore proceda al trattamento dei dati personali, offrendo così ai nostri clienti la possibilità di opporsi per motivi legittimi.",
+      "updated": "23 agosto 2026",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Ciascun subappaltatore opera in base a un accordo scritto che impone obblighi in materia di protezione dei dati non meno rigorosi di quelli previsti nel nostro allegato sul trattamento dei dati, e SDK Enterprises rimane responsabile nei confronti dei propri clienti per le prestazioni del subappaltatore. Eventuali obiezioni a un’aggiunta annunciata possono essere sollevate entro quattordici giorni dalla pubblicazione scrivendo all’indirizzo hello@sdk.enterprises."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Sottoconsulente",
+                "Ruolo",
+                "Ubicazione",
+                "Categorie di dati interessati"
+              ],
+              "rows": [
+                [
+                  "Vercel S.p.A.",
+                  "Hosting di applicazioni e distribuzione dei contenuti",
+                  "Stati Uniti; rete periferica globale",
+                  "Tutto il traffico diretto al Servizio passa attraverso la sua rete; l'elaborazione si limita alla trasmissione, alla memorizzazione nella cache e alla risposta a richieste e risposte crittografate."
+                ],
+                [
+                  "Neon (Neon Inc.)",
+                  "Fornitore di servizi di gestione database",
+                  "Regione cloud selezionata per ogni distribuzione; sono disponibili regioni compatibili con l’EEA",
+                  "Configurazione degli utenti, record relativi agli account, record di autenticazione, registri di sicurezza e di audit. Le credenziali e le chiavi crittografiche vengono archiviate esclusivamente in forma protetta."
+                ],
+                [
+                  "Upstash S.p.A.",
+                  "Archiviazione temporanea a scopo di prevenzione degli abusi",
+                  "Stati Uniti",
+                  "Contatori tecnici di breve durata utilizzati per individuare il traffico abusivo. Vengono conservati solo per la breve durata del contatore."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Invio di email transazionali",
+                  "Stati Uniti",
+                  "Indirizzo e-mail del destinatario e metadati di consegna relativi alle e-mail di servizio, come i codici di accesso. Il contenuto del messaggio è limitato a quanto strettamente necessario."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Registro delle modifiche",
+          "content": [
+            [
+              "Agosto 2026 — Elenco iniziale pubblicato: Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

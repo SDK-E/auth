@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth – Authentifizierungsinfrastruktur für mehrere Mandanten",
+      "description": "Auth stellt Ihrem Produkt von Haus aus die Komponenten OIDC und OAuth 2.1 zur Verfügung – gehostete Anmeldeseiten, Sitzungsverwaltung und eine Verwaltungskomponente (API) –, sodass sich Ihr Team auf die Entwicklung neuer Funktionen konzentrieren kann, anstatt sich mit der Infrastruktur für die Identitätsverwaltung zu beschäftigen."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Authentifizierungsinfrastruktur für mehrere Mandanten",
+      "title": "Ein Anmeldeablauf für jeden von Ihnen gehosteten Mandanten.",
+      "lead": "Auth stellt Ihrem Produkt von Haus aus die Komponenten OIDC und OAuth 2.1 zur Verfügung – gehostete Anmeldeseiten, Sitzungsverwaltung und eine Verwaltungskomponente (API) –, sodass sich Ihr Team auf die Entwicklung neuer Funktionen konzentrieren kann, anstatt sich mit der Infrastruktur für die Identitätsverwaltung zu beschäftigen.",
+      "primaryCta": "Mit dem Bauen beginnen",
+      "secondaryCta": "Erstellen Sie Ihren Mandanten",
+      "securityLink": "Sicherheitsmodell →",
+      "visual": {
+        "appTitle": "Deine App",
+        "appBody": "Leitet weiter zu /authorize",
+        "loginTitle": "Authentifizierung: Universeller Login",
+        "loginBody": "Anmeldung bei gehosteten E-Mail-Diensten mit Code",
+        "returnTitle": "Zurück zu Ihrer App",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE erforderlich · Tokens wurden anhand öffentlicher JWKS überprüft"
+      }
+    },
+    "standards": {
+      "eyebrow": "Standards rein, Sitzungen raus",
+      "sentence": "Wir setzen die Spezifikationen exakt um: PKCE in jedem Autorisierungscode, rotierende Aktualisierungstoken, widerrufbare signierte Sitzungen, veröffentlichte Signaturschlüssel."
+    },
+    "features": {
+      "eyebrow": "Die Plattform",
+      "title": "Identitäts-Konfiguration – erledigt.",
+      "intro": "Sofern nicht anders angegeben, ist alles, was unten aufgeführt ist, ab heute erhältlich – auf jeder Karte ist der Mechanismus angegeben, denn genau das kaufen Sie ja eigentlich.",
+      "items": [
+        {
+          "status": "verfügbar",
+          "title": "Universelle Anmeldung",
+          "body": "Ein gehosteter Anmeldeprozess, zu dem Ihre Nutzer weitergeleitet werden – Einmalcodes per E-Mail, keine zu speichernden Passwörter, keine zu pflegende Anmeldeseite."
+        },
+        {
+          "status": "verfügbar",
+          "title": "Sitzungsverwaltung",
+          "body": "Sitzungen werden als signierte RS256- und JWT-Cookies in HTTP-Only-Cookies gespeichert, mit Ablauf nach Inaktivität und absolutem Ablaufdatum, serverseitiger Sperrung sowie umgebungsspezifischen Schlüsseln."
+        },
+        {
+          "status": "verfügbar",
+          "title": "Token-Sicherheit",
+          "body": "Autorisierungscodes werden immer zusammen mit PKCE übermittelt. Refresh-Token werden bei jeder Verwendung erneuert, und ein erneut verwendetes Token führt zur Sperrung seiner gesamten Token-Familie."
+        },
+        {
+          "status": "verfügbar",
+          "title": "Prüfungsbuch",
+          "body": "Jedes Sicherheitsereignis wird in einem Hash-verketteten Audit-Protokoll pro Umgebung erfasst – bei Manipulationen wird die Kette unterbrochen, und die Kette wird vom Anfang an neu berechnet."
+        },
+        {
+          "status": "verfügbar",
+          "title": "Maßnahmen zur Missbrauchsbekämpfung",
+          "body": "Festgelegte Ratenbegrenzungen für die Code-Ausgabe, Verifizierungsversuche und die Token-Ausstellung. Bei Sperrungen werden ausstehende Codes verbraucht; die Kopienzahl bleibt unverändert."
+        },
+        {
+          "status": "Einführung",
+          "title": "Management API",
+          "body": "Eine API-Schnittstelle für Anwendungen, Benutzer, Sitzungen und Protokolle unter /api/v2, die auf der Grundlage von bereichsgebundenen Maschinentoken betrieben wird."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Datenschutz geht vor",
+      "title": "Die Daten Ihrer Mieter bleiben Ihr Eigentum.",
+      "intro": "Auth ist eine Identitätsinfrastruktur – wir verarbeiten genau das, was für die Authentifizierung erforderlich ist, und legen jedes Detail offen. Keine Werbe-Tracker, kein Datenverkauf, kein Training von Modellen anhand von Mandantendaten.",
+      "processedTitle": "Was wir verarbeiten",
+      "processed": [
+        "E-Mail-Adresse des Kontos, an die Einmalcodes gesendet werden sollen",
+        "Authentifizierungsereignisse mit technischen Metadaten, die zu Sicherheits- und Prüfungszwecken aufbewahrt werden",
+        "Temporäre Zähler zur Missbrauchsverhinderung, die von selbst ablaufen",
+        "Anmeldedaten und kryptografische Schlüssel werden ausschließlich in geschützter Form gespeichert"
+      ],
+      "neverTitle": "Was wir niemals tun",
+      "never": [
+        "Personenbezogene Daten verkaufen, vermieten oder weitergeben – zu keinem Zeitpunkt und zu keinem Zweck",
+        "Tracker oder Werbepixel von Drittanbietern auf Authentifizierungsseiten laden",
+        "Modelle anhand von Mieter- oder Endnutzerdaten trainieren",
+        "Daten auch nach der Schließung Ihres Kontos über die gesetzlich vorgeschriebenen Mindestfristen hinaus aufbewahren"
+      ],
+      "privacyLink": "Datenschutzerklärung →",
+      "dpaLink": "Nachtrag zur Datenverarbeitung →",
+      "subprocessorsLink": "Liste der Unterauftragnehmer →"
+    },
+    "quickstart": {
+      "eyebrow": "Schnellstart",
+      "title": "Drei Anfragen an ein funktionierendes Login.",
+      "intro": "Kein proprietäres Protokoll, keine Anbieterabhängigkeit – alle unten aufgeführten Daten stammen aus den Serienmodellen OAuth 2.1 und OIDC und wurden mit unseren Live-Endpunkten abgeglichen.",
+      "stepLabel": "Schritt {index}",
+      "steps": [
+        {
+          "title": "Entdecken Sie unsere Endpunkte",
+          "body": "Ihre App liest die Standard-OIDC-Erkennung – SDK ist nicht erforderlich, jede Sprache funktioniert."
+        },
+        {
+          "title": "Benutzer mit dem Code PKCE auf die Seite „/authorize“ weiterleiten",
+          "body": "Erstellen Sie eine Code-Challenge, leiten Sie den Browser weiter – wir kümmern uns um die gehostete Anmeldung und den E-Mail-Code."
+        },
+        {
+          "title": "Den Code gegen Token einlösen",
+          "body": "Überprüfen Sie das id_token anhand unserer öffentlichen JWKS, bewahren Sie das Refresh-Token auf und rufen Sie „userinfo“ auf, wenn Sie Claims benötigen."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Preise",
+      "title": "Der Preis richtet sich nach der Anzahl der Nutzer, nicht nach der Anzahl der Schlösser.",
+      "intro": "Preise für den Early-Access-Zugang. Ein monatlich aktiver Nutzer ist ein Nutzer, der sich in diesem Monat mindestens einmal angemeldet hat; für gespeicherte, aber inaktive Konten fallen Ihnen keinerlei Kosten an.",
+      "perMonth": "pro Monat",
+      "periodFree": "für immer",
+      "plans": [
+        {
+          "includedMau": "1.000 aktive Nutzer pro Monat",
+          "features": [
+            "Alle Umgebungen (Entwicklung, Staging, Produktion)",
+            "Unbegrenzte Anzahl von Anwendungen pro Umgebung",
+            "Anmeldung per E-Mail mit Einmalcode",
+            "Prüfungsjournal und Protokoll der Autorisierungsereignisse",
+            "Unterstützung durch die Gemeinschaft"
+          ],
+          "cta": "Kostenlos starten"
+        },
+        {
+          "includedMau": "10.000 aktive Nutzer pro Monat",
+          "features": [
+            "Alles kostenlos",
+            "Benutzerdefinierte Domains pro Mandant",
+            "MFA, Passkeys und Enterprise-SSO in der Auslieferungsversion",
+            "Längere Aufbewahrungsfrist für Prüfungsunterlagen",
+            "Vorrangiger Support"
+          ],
+          "cta": "Mit „Pro“ beginnen"
+        }
+      ],
+      "note": "Die Rechnungsstellung ist noch nicht automatisiert – Teilnehmer des Early-Access-Programms erhalten manuelle Rechnungen und können jederzeit aussteigen."
+    },
+    "ctaBand": {
+      "title": "Ihre Anmeldeseite ist nur einen Weiterleitungsschritt entfernt.",
+      "body": "Finde den Punkt bei auth.sdk.enterprises und sende deinen ersten Flow noch heute Nachmittag ab.",
+      "button": "Das Dashboard öffnen"
+    }
+  }
+}

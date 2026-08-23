@@ -1,0 +1,58 @@
+{
+  "legal": {
+    "cookies": {
+      "meta": {
+        "title": "Cookies y seguimiento",
+        "description": "La lista completa de lo que Auth almacena en tu navegador, y por qué es más corta que la de casi cualquier otra página web que hayas visitado."
+      },
+      "title": "Cookies y seguimiento",
+      "description": "Las plataformas de Auth están diseñadas para funcionar sin realizar un seguimiento de ti. En esta página se enumeran todas las cookies y todos los mecanismos de análisis, lo cual supone una lista muy breve.",
+      "updated": "23 de agosto de 2026",
+      "sections": [
+        {
+          "heading": "1. Las cookies que instalamos",
+          "content": [
+            {
+              "columns": [
+                "Nombre",
+                "Dónde",
+                "Objetivo"
+              ],
+              "rows": [
+                [
+                  "sdk_e_session",
+                  "Panel de control de Auth",
+                  "Imprescindible. Mantiene la sesión abierta en el panel de control de tu inquilino; firmada, solo HTTP, caduca con la sesión."
+                ],
+                [
+                  "(cookie de sesión del inquilino)",
+                  "Inicio de sesión universal",
+                  "Imprescindible. Se emite únicamente al iniciar sesión en un producto que utilice Auth, y su ámbito de aplicación se limita a la autenticación de dicho producto."
+                ]
+              ]
+            },
+            "No hay ningún banner de consentimiento porque no hay nada a lo que dar el consentimiento: ni cookies publicitarias, ni rastreadores entre sitios, ni widgets sociales, ni scripts de identificación digital que se ejecuten en auth.sdk.enterprises o en las páginas de inicio de sesión alojadas."
+          ]
+        },
+        {
+          "heading": "2. Análisis",
+          "content": [
+            "Las páginas de marketing utilizan Vercel Analytics, que no utiliza cookies: cuenta las visitas a las páginas de forma agregada sin almacenar identificadores ni crear perfiles de usuarios individuales. No se ejecutan análisis en las páginas de inicio de sesión universal, en los puntos finales API ni dentro de las aplicaciones de los clientes."
+          ]
+        },
+        {
+          "heading": "3. Registros del lado del servidor",
+          "content": [
+            "Al igual que cualquier servidor web, registramos las solicitudes con fines de seguridad (detección de abusos, limitación de frecuencia, pruebas de auditoría) de acuerdo con nuestras normas de conservación recogidas en la política de privacidad. Estos registros no se utilizan para elaborar perfiles de los visitantes de este sitio web de marketing."
+          ]
+        },
+        {
+          "heading": "4. Preguntas",
+          "content": [
+            "Si hay algo que no te quede claro, escribe a hello@sdk.enterprises."
+          ]
+        }
+      ]
+    }
+  }
+}

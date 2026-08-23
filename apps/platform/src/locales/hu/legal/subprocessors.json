@@ -1,0 +1,68 @@
+{
+  "legal": {
+    "subprocessors": {
+      "meta": {
+        "title": "Alvállalkozók",
+        "description": "Azok az alvállalkozók, akiket a SDK Enterprises az Auth szolgáltatás üzemeltetésére von be, az egyes alvállalkozók szerepe, a tevékenységük helyszíne, valamint az érintett adatkategóriák."
+      },
+      "title": "Alvállalkozók",
+      "description": "Ezt a listát folyamatosan frissítjük, és az új alvállalkozók személyes adatok feldolgozásának megkezdése előtt közzétesszük a kiegészítéseket, így ügyfeleinknek lehetőségük nyílik arra, hogy ésszerű indokok alapján kifogást emeljenek.",
+      "updated": "2026. augusztus 23.",
+      "sections": [
+        {
+          "heading": "",
+          "content": [
+            "Minden alvállalkozó írásbeli megállapodás alapján működik, amely az adatvédelmi kötelezettségeket legalább olyan szigorú feltételek mellett írja elő, mint az adatfeldolgozási kiegészítésünkben foglaltak, és a SDK Enterprises továbbra is felelősséggel tartozik ügyfelei felé az alvállalkozók teljesítményéért. A bejelentett kiegészítéssel kapcsolatos kifogásokat a közzétételtől számított tizennégy napon belül lehet benyújtani, írásban a hello@sdk.enterprises címre."
+          ]
+        },
+        {
+          "heading": "",
+          "content": [
+            {
+              "columns": [
+                "Alvállalkozó",
+                "Szerep",
+                "Helyszín",
+                "Az érintett adatok kategóriái"
+              ],
+              "rows": [
+                [
+                  "Vercel Kft.",
+                  "Alkalmazás-tárolás és tartalomszolgáltatás",
+                  "Egyesült Államok; globális perifériás hálózat",
+                  "A Szolgáltatáshoz irányuló összes forgalom a hálózatán halad át; a feldolgozás kizárólag az átvitelre, a gyorsítótárazásra, valamint a titkosított kérések és válaszok kiszolgálására korlátozódik."
+                ],
+                [
+                  "Neon (Neon Inc.)",
+                  "Kezelett adatbázis-szolgáltató",
+                  "Telepítésenként kiválasztott felhőrégió; EGT-kompatibilis régiók állnak rendelkezésre",
+                  "Bérlői beállítások, fiókadatok, hitelesítési adatok, biztonsági és ellenőrzési naplófájlok. A hitelesítő adatok és a kriptográfiai kulcsok kizárólag védett formában kerülnek tárolásra."
+                ],
+                [
+                  "Upstash Kft.",
+                  "Ideiglenes tárolás a visszaélések megelőzése érdekében",
+                  "Egyesült Államok",
+                  "Rövid élettartamú technikai számlálók, amelyek a visszaélésszerű forgalom észlelésére szolgálnak. Csak a számláló rövid élettartama alatt kerülnek tárolásra."
+                ],
+                [
+                  "Resend (Resend Technologies, Inc.)",
+                  "Tranzakciós e-mailek kézbesítése",
+                  "Egyesült Államok",
+                  "A szolgáltatási e-mailek – például a bejelentkezési kódok – címzettjének e-mail-címe és a kézbesítési metaadatok. Az üzenet tartalma a feltétlenül szükségesre korlátozódik."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Változásnapló",
+          "content": [
+            [
+              "2026. augusztus — Első közzétett lista: Vercel, Neon, Upstash, Resend."
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

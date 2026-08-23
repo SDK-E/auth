@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — authenticatie-infrastructuur voor meerdere tenants",
+      "description": "Auth biedt je product OIDC en OAuth 2.1 direct bij levering — gehoste inlogpagina’s, sessiebeheer en een beheerplatform API — zodat je team zich kan richten op het ontwikkelen van functies in plaats van op de technische infrastructuur voor identiteitsbeheer."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Authenticatie-infrastructuur voor meerdere tenants",
+      "title": "Eén aanmeldingsproces voor elke tenant die u host.",
+      "lead": "Auth biedt je product OIDC en OAuth 2.1 direct bij levering — gehoste inlogpagina’s, sessiebeheer en een beheerplatform API — zodat je team zich kan richten op het ontwikkelen van functies in plaats van op de technische infrastructuur voor identiteitsbeheer.",
+      "primaryCta": "Begin met bouwen",
+      "secondaryCta": "Maak je tenant aan",
+      "securityLink": "Beveiligingsmodel →",
+      "visual": {
+        "appTitle": "Jouw app",
+        "appBody": "Verwijst door naar /authorize",
+        "loginTitle": "auth. universele aanmelding",
+        "loginBody": "Aanmelden via gehoste e-mailcode",
+        "returnTitle": "Terug naar je app",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE verplicht · tokens geverifieerd aan de hand van openbare JWKS"
+      }
+    },
+    "standards": {
+      "eyebrow": "Standaarden erin, sessies eruit",
+      "sentence": "We houden ons strikt aan de specificaties: PKCE bij elke autorisatiecode, roterende vernieuwingstokens, herroepbare ondertekende sessies en gepubliceerde ondertekeningssleutels."
+    },
+    "features": {
+      "eyebrow": "Het platform",
+      "title": "Identiteitsproblemen opgelost.",
+      "intro": "Alles hieronder is vandaag beschikbaar, tenzij anders aangegeven — op elke kaart staat het mechanisme vermeld, want dat is wat je in feite koopt.",
+      "items": [
+        {
+          "status": "beschikbaar",
+          "title": "Universele aanmelding",
+          "body": "Een gehoste aanmeldprocedure waarnaar uw gebruikers worden doorgestuurd — eenmalige codes via e-mail, geen wachtwoorden die moeten worden opgeslagen, geen aanmeldinterface die moet worden onderhouden."
+        },
+        {
+          "status": "beschikbaar",
+          "title": "Sessiebeheer",
+          "body": "Sessies worden ondertekend met RS256 en JWT in http-only-cookies, met een vervaltermijn op basis van inactiviteit en een absolute vervaltermijn, intrekking aan de serverzijde en sleutels per omgeving."
+        },
+        {
+          "status": "beschikbaar",
+          "title": "Tokenbeveiliging",
+          "body": "Autorisatiecodes gaan altijd gepaard met PKCE. Vernieuwingstokens worden bij elk gebruik vernieuwd, en als een token opnieuw wordt gebruikt, wordt de hele reeks ingetrokken."
+        },
+        {
+          "status": "beschikbaar",
+          "title": "Controleboek",
+          "body": "Elke beveiligingsgebeurtenis wordt per omgeving vastgelegd in een auditlogboek met een hash-keten — bij manipulatie wordt de keten onderbroken en wordt deze vanaf het begin opnieuw berekend."
+        },
+        {
+          "status": "beschikbaar",
+          "title": "Maatregelen tegen misbruik",
+          "body": "Vaste limieten voor het aantal codeverzendingen, verificatiepogingen en de uitgifte van tokens. Bij een blokkering worden nog openstaande codes verbruikt; het aantal kopieën blijft ongewijzigd."
+        },
+        {
+          "status": "uitrol",
+          "title": "Beheer API",
+          "body": "Eén API-interface voor applicaties, gebruikers, sessies en logbestanden op /api/v2, aangestuurd door machine-tokens met een beperkt bereik."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Privacy staat voorop",
+      "title": "De gegevens van uw huurders blijven uw eigendom.",
+      "intro": "Auth is een identiteitsinfrastructuur — we verwerken precies wat nodig is voor authenticatie en maken elk detail openbaar. Geen advertentietrackers, geen verkoop van gegevens, geen training van modellen op basis van klantgegevens.",
+      "processedTitle": "Wat wij verwerken",
+      "processed": [
+        "E-mailadres van het account, voor het versturen van eenmalige codes",
+        "Authenticatiegebeurtenissen met technische metagegevens, bewaard voor beveiligings- en auditdoeleinden",
+        "Tijdelijke tellers ter voorkoming van misbruik die vanzelf verlopen",
+        "Inloggegevens en cryptografische sleutels worden uitsluitend in beveiligde vorm opgeslagen"
+      ],
+      "neverTitle": "Wat we nooit doen",
+      "never": [
+        "Persoonsgegevens verkopen, verhuren of delen — nooit, voor welk doel dan ook",
+        "Trackers of advertentiepixels van derden laden op authenticatiepagina’s",
+        "Train modellen op basis van gegevens van huurders of eindgebruikers",
+        "Bewaar gegevens ook na het opzeggen van je account, langer dan de wettelijk vereiste minimumtermijn"
+      ],
+      "privacyLink": "Privacybeleid →",
+      "dpaLink": "Aanvulling inzake gegevensverwerking →",
+      "subprocessorsLink": "Lijst met onderaannemers →"
+    },
+    "quickstart": {
+      "eyebrow": "Snelstart",
+      "title": "Drie pogingen om in te loggen.",
+      "intro": "Geen eigen protocol, geen afhankelijkheid van één leverancier — alles hieronder betreft standaard OAuth 2.1- en OIDC-apparaten die zijn gekoppeld aan onze live-eindpunten.",
+      "stepLabel": "Stap {index}",
+      "steps": [
+        {
+          "title": "Ontdek onze eindpunten",
+          "body": "Je app herkent standaard OIDC-detectie — SDK is niet nodig, elke taal is geschikt."
+        },
+        {
+          "title": "Stuur gebruikers naar /authorize met PKCE",
+          "body": "Maak een code-uitdaging aan, leid de browser om; wij zorgen voor de gehoste aanmelding en de e-mailcode."
+        },
+        {
+          "title": "Wissel de code in voor tokens",
+          "body": "Controleer het id_token aan de hand van onze openbare JWKS, bewaar het refresh-token en roep userinfo aan wanneer je claims nodig hebt."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Prijzen",
+      "title": "De prijs wordt bepaald door gebruikers, niet door sloten.",
+      "intro": "Prijzen voor vroege toegang. Een maandelijks actieve gebruiker is een gebruiker die zich die maand minstens één keer heeft aangemeld; er worden nooit kosten in rekening gebracht voor opgeslagen maar inactieve accounts.",
+      "perMonth": "per maand",
+      "periodFree": "voor altijd",
+      "plans": [
+        {
+          "includedMau": "1.000 maandelijkse actieve gebruikers",
+          "features": [
+            "Alle omgevingen (ontwikkeling, staging, productie)",
+            "Onbeperkt aantal toepassingen per omgeving",
+            "Inloggen met een eenmalige code via e-mail",
+            "Controleer het grootboek en de logboeken van authenticatiegebeurtenissen",
+            "Steun van de gemeenschap"
+          ],
+          "cta": "Gratis beginnen"
+        },
+        {
+          "includedMau": "10.000 maandelijkse actieve gebruikers",
+          "features": [
+            "Alles gratis",
+            "Aangepaste domeinen per tenant",
+            "MFA, toegangscodes en SSO voor bedrijven zoals deze worden geleverd",
+            "Langere bewaartermijn voor auditgegevens",
+            "Prioritaire ondersteuning"
+          ],
+          "cta": "Begin met Pro"
+        }
+      ],
+      "note": "De facturering is nog niet geautomatiseerd — gebruikers met vroege toegang krijgen handmatig een factuur en kunnen op elk moment opzeggen."
+    },
+    "ctaBand": {
+      "title": "Je bent nog één omleiding verwijderd van je inlogpagina.",
+      "body": "Zoek het punt op bij auth.sdk.enterprises en verstuur je eerste flow vanmiddag.",
+      "button": "Open het dashboard"
+    }
+  }
+}

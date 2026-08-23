@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Platform",
+    "quickstart": "Quickstart",
+    "pricing": "Pricing",
+    "security": "Security",
+    "status": "Status",
+    "signIn": "Sign in"
+  },
+  "footer": {
+    "tagline": "Multi-tenant authentication infrastructure by SDK Enterprises.",
+    "productTitle": "Product",
+    "productLinks": [
+      "Platform",
+      "Quickstart",
+      "Pricing",
+      "Service status"
+    ],
+    "trustTitle": "Trust",
+    "trustLinks": [
+      "Security",
+      "Privacy policy",
+      "Data processing (DPA)",
+      "Subprocessors",
+      "Cookies & tracking"
+    ],
+    "legalTitle": "Legal",
+    "legalLinks": [
+      "Terms of service",
+      "Legal notice"
+    ],
+    "companyTitle": "Company",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Contact"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "governed by French law",
+    "languageLabel": "Language"
+  },
+  "statusBadges": {
+    "available": "Available",
+    "rollingOut": "Rolling out",
+    "recommended": "Recommended"
+  },
+  "legalShell": {
+    "brandContext": "auth. · Legal",
+    "effectiveLine": "Effective {date} · governed by French law",
+    "documentsLabel": "Documents",
+    "securityOverview": "Security overview",
+    "docs": [
+      "Privacy policy",
+      "Terms of service",
+      "Data processing addendum",
+      "Subprocessors",
+      "Cookies & tracking",
+      "Legal notice"
+    ]
+  }
+}

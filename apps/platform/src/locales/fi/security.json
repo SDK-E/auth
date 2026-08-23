@@ -1,0 +1,79 @@
+{
+  "security": {
+    "meta": {
+      "title": "Turvallisuus",
+      "description": "Miten Auth turvaa todennusinfrastruktuurin: tunnusarkkitehtuuri, avainten kierrätys, käyttörajoitukset, hash-ketjutettu tarkastusrekisteri sekä haavoittuvuuden ilmoittaminen."
+    },
+    "hero": {
+      "eyebrow": "Luottamus",
+      "title": "Turvallisuus on mekanismiluettelo.",
+      "lead": "Emme pyydä sinua luottamaan markkinointiväitteisiin — jokaisessa alla mainitussa suojausmekanismissa kerrotaan tarkasti, miten se toimii ja missä se on käytössä. Jos emme pysty kuvaamaan mekanismia, emme esitä kyseistä väitettä."
+    },
+    "layers": [
+      {
+        "title": "Token-arkkitehtuuri",
+        "points": [
+          "Valtuuskoodeissa on käytettävä koodia PKCE (S256) jokaisessa pyynnössä, ja ne ovat kertakäyttöisiä ja voimassa vain lyhyen ajan.",
+          "Päivitystunnukset vaihtuvat jokaisen käytön yhteydessä; käytetyn tunnuksen esittäminen mitätöi koko tunnussarjan.",
+          "Pääsy- ja tunnistustunnukset ovat ympäristökohtaisesti allekirjoitettuja RS256 ja JWT; julkiset avaimet on julkaistu osoitteessa /.well-known/jwks.json.",
+          "Päivitystunnusten peruuttaminen on mahdollista osoitteessa /oauth/revoke."
+        ]
+      },
+      {
+        "title": "Istunnot",
+        "points": [
+          "Istuntokeksit ovat http-only-tyyppisiä, SameSite=Lax, tuotantoympäristössä suojattuja ja sisältävät allekirjoitettuja RS256-istuntokoodeja JWT.",
+          "Jokaisella istunnolla on sekä odotusaika että absoluuttinen voimassaolon päättymisaika.",
+          "Istunnot voidaan peruuttaa palvelinpuolella; uloskirjautuminen peruuttaa ne välittömästi."
+        ]
+      },
+      {
+        "title": "Avaimet ja salaisuudet",
+        "points": [
+          "RS256-allekirjoitusavaimet ympäristökohtaisesti; yksityiset avaimet salataan kirjekuorimenetelmällä tallennettuna (AES-256-GCM), eikä niitä koskaan tallenneta lokiin.",
+          "Kierrätys poistaa aktiiviset avaimet käytöstä, mutta pitää ne edelleen julkaistuina, jotta voimassa olevat tunnukset voidaan tarkistaa niiden luonnolliseen voimassaolon päättymiseen asti.",
+          "Asiakkaan salaisuudet tallennetaan ainoastaan salatussa muodossa; niiden todentaminen tapahtuu salauksen purkamisen jälkeen vakioajassa."
+        ]
+      },
+      {
+        "title": "Väärinkäytön hallinta",
+        "points": [
+          "Kiinteät aikarajat: koodien toimitus sähköpostia ja IP-osoitetta kohti, vahvistusvirheet sähköpostia kohti, tunnusten myöntäminen asiakasta ja IP-osoitetta kohti.",
+          "Liian monet todennusvirheet kuluttavat kaikki kyseisen osoitteen jäljellä olevat kertakäyttöiset koodit.",
+          "Käyttäjälle näkyvä virheilmoitus on neutraali; yksityiskohdat tallennetaan ainoastaan palvelimen lokitiedostoihin."
+        ]
+      },
+      {
+        "title": "Tarkastettavuus",
+        "points": [
+          "Turvallisuustapahtumat kirjataan ympäristökohtaiseen, hash-ketjutettuun tilikirjaan: jokainen merkintä linkitetään edeltäjäänsä tunnisteella SHA-256.",
+          "Ketju voidaan laskea uudelleen alusta alkaen milloin tahansa; mikä tahansa takautuva muokkaus katkaisee sen.",
+          "Tavalliset todennustapahtumat (kirjautumiset, tunnisteiden myöntäminen, uudelleenkäytön havaitseminen, peruuttaminen, avainten luominen) kirjataan tilikirjaan."
+        ]
+      },
+      {
+        "title": "Tietojen käsittely",
+        "points": [
+          "Vuokralaisten tiedot sijaitsevat Neon-nimisessä Postgres-tietokannassa käyttöönottoon valitulla alueella; tietokantaan pääsy edellyttää salattua tiedonsiirtoa.",
+          "Salaisuudet salataan kirjekuoritasolla ennen tallennusta; pääavain säilytetään tietokannan ulkopuolella.",
+          "Autentikointipinnoilla ei käytetä kolmansien osapuolten seurantalaitteita tai mainospikseleitä; tämän markkinointisivuston analytiikka on evästeetöntä ja aggregoitua."
+        ]
+      }
+    ],
+    "complianceNote": "Vaatimustenmukaisuuden tilanne, rehellisesti sanottuna: Auth on alusta lähtien toteuttanut SOC 2 -kriteerien mukaisia valvontatoimenpiteitä, mutta sertifiointitarkastusta ei ole vielä suoritettu. Julkaisemme tulokset täällä, kun tilanne muuttuu.",
+    "disclosure": {
+      "eyebrow": "Vastuullinen tietojen paljastaminen",
+      "title": "Löysitkö virheen? Kerro siitä meille.",
+      "items": [
+        "Lähetä sähköpostia osoitteeseen hello@sdk.enterprises ja kirjoita otsikkokenttään [security].",
+        "Liitä mukaan toistamisohjeet; vahvistamme ilmoitukset kahden työpäivän kuluessa.",
+        "Välttäkää tuotantoympäristön automaattista skannausta ja älkää tarkastelko muita tietoja kuin niitä, jotka tarvitaan ongelman todentamiseen.",
+        "Tämän toimintaperiaatteen mukainen vilpittömässä mielessä tehty tutkimus on suojattu oikeustoimilta; mainitsemme lähteet, elleivät he halua pysyä nimettöminä.",
+        "Koneellisesti luettava käytäntö: /.well-known/security.txt"
+      ],
+      "privacyLink": "Tietosuojakäytäntö →",
+      "dpaLink": "DPA →",
+      "subprocessorsLink": "Alikäsittelijät →"
+    }
+  }
+}

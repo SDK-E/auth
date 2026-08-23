@@ -1,0 +1,145 @@
+{
+  "home": {
+    "meta": {
+      "title": "Auth — infrastructure d'authentification multi-locataires",
+      "description": "Auth fournit d'emblée à votre produit les fonctionnalités OIDC et OAuth 2.1 — pages de connexion hébergées, gestion des sessions et interface d'administration API — afin que votre équipe puisse se concentrer sur le développement de fonctionnalités plutôt que sur l'infrastructure d'authentification."
+    },
+    "hero": {
+      "eyebrow": "SDK Enterprises · Infrastructure d'authentification multi-locataires",
+      "title": "Un processus de connexion unique pour chaque locataire que vous hébergez.",
+      "lead": "Auth fournit d'emblée à votre produit les fonctionnalités OIDC et OAuth 2.1 — pages de connexion hébergées, gestion des sessions et interface d'administration API — afin que votre équipe puisse se concentrer sur le développement de fonctionnalités plutôt que sur l'infrastructure d'authentification.",
+      "primaryCta": "Commencez à créer",
+      "secondaryCta": "Créer votre locataire",
+      "securityLink": "Modèle de sécurité →",
+      "visual": {
+        "appTitle": "Votre application",
+        "appBody": "Redirige vers /authorize",
+        "loginTitle": "authentification : connexion universelle",
+        "loginBody": "Connexion via la signature de code de messagerie hébergée",
+        "returnTitle": "Retour à votre application",
+        "returnBody": "callback?code=… → POST /oauth/token → access_token · id_token · refresh_token",
+        "footnote": "PKCE obligatoire · jetons vérifiés par rapport aux JWKS publics"
+      }
+    },
+    "standards": {
+      "eyebrow": "Les normes, oui ; les séances, non",
+      "sentence": "Nous respectons scrupuleusement les spécifications : PKCE pour chaque code d'autorisation, jetons de rafraîchissement à rotation, sessions signées révocables, clés de signature publiées."
+    },
+    "features": {
+      "eyebrow": "La plateforme",
+      "title": "Problèmes d'identité, réglés.",
+      "intro": "Sauf indication contraire, tous les produits ci-dessous sont disponibles dès aujourd'hui — chaque fiche produit mentionne le mécanisme, car c'est bien ce que vous achetez en réalité.",
+      "items": [
+        {
+          "status": "disponible",
+          "title": "Connexion universelle",
+          "body": "Un processus de connexion hébergé vers lequel vos utilisateurs sont redirigés : codes à usage unique envoyés par e-mail, aucun mot de passe à enregistrer, aucune interface de connexion à gérer."
+        },
+        {
+          "status": "disponible",
+          "title": "Gestion des sessions",
+          "body": "Les sessions sont signées à l'aide de clés RS256 et JWT dans des cookies « http-only », avec une durée de validité en cas d'inactivité et une date d'expiration absolue, une révocation côté serveur et des clés propres à chaque environnement."
+        },
+        {
+          "status": "disponible",
+          "title": "Sécurité des jetons",
+          "body": "Les codes d'autorisation sont toujours accompagnés de PKCE. Les jetons d'actualisation changent à chaque utilisation, et la réutilisation d'un jeton entraîne la révocation de toute sa famille."
+        },
+        {
+          "status": "disponible",
+          "title": "Registre d'audit",
+          "body": "Chaque événement de sécurité est consigné dans un journal d'audit à chaîne de hachages spécifique à chaque environnement : toute altération brise la chaîne, qui est alors recalculée depuis le début."
+        },
+        {
+          "status": "disponible",
+          "title": "Mesures de lutte contre les abus",
+          "body": "Limites de débit à fenêtre fixe pour la délivrance des codes, les tentatives de vérification et l'émission de jetons. Les blocages consomment les codes en circulation ; la copie reste inchangée."
+        },
+        {
+          "status": "déploiement",
+          "title": "Direction API",
+          "body": "Une interface API pour les applications, les utilisateurs, les sessions et les journaux accessible à l'adresse /api/v2, gérée par des jetons machine à portée limitée."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "La confidentialité avant tout",
+      "title": "Les données de vos locataires restent votre propriété.",
+      "intro": "Auth est une infrastructure d'identité : nous traitons strictement les données nécessaires à l'authentification et publions toutes les informations en détail. Pas de traceurs publicitaires, pas de vente de données, pas d'entraînement de modèles sur les données des clients.",
+      "processedTitle": "Les données que nous traitons",
+      "processed": [
+        "Adresse e-mail du compte, pour l'envoi de codes à usage unique",
+        "Événements d'authentification accompagnés de métadonnées techniques, conservés à des fins de sécurité et d'audit",
+        "Compteurs temporaires de prévention des abus qui expirent automatiquement",
+        "Les identifiants et les clés cryptographiques sont stockés uniquement sous une forme sécurisée"
+      ],
+      "neverTitle": "Ce que nous ne faisons jamais",
+      "never": [
+        "Vendre, louer ou partager des données à caractère personnel — à aucun moment, à quelque fin que ce soit",
+        "Charger des traceurs ou des pixels publicitaires tiers sur les interfaces d'authentification",
+        "Entraîner des modèles à partir des données des locataires ou des utilisateurs finaux",
+        "Conserver les données après la fermeture de votre compte, au-delà des délais légaux minimaux"
+      ],
+      "privacyLink": "Politique de confidentialité →",
+      "dpaLink": "Annexe relative au traitement des données →",
+      "subprocessorsLink": "Liste des sous-traitants →"
+    },
+    "quickstart": {
+      "eyebrow": "Guide de démarrage rapide",
+      "title": "Trois demandes pour un identifiant valide.",
+      "intro": "Pas de protocole propriétaire, pas de dépendance vis-à-vis d'un fournisseur : tout ce qui suit concerne les modèles OAuth 2.1 et OIDC de série, testés sur nos terminaux en production.",
+      "stepLabel": "Étape {index}",
+      "steps": [
+        {
+          "title": "Découvrez nos terminaux",
+          "body": "Votre application prend en charge la découverte standard OIDC — pas besoin de SDK, toutes les langues sont prises en charge."
+        },
+        {
+          "title": "Rediriger les utilisateurs vers /authorize avec le code PKCE",
+          "body": "Créez un défi de programmation, redirigez le navigateur ; nous nous chargeons de la connexion hébergée et du code de l'e-mail."
+        },
+        {
+          "title": "Échangez le code contre des jetons",
+          "body": "Vérifiez l'id_token à l'aide de notre JWKS public, conservez le jeton d'actualisation et appelez la méthode userinfo lorsque vous avez besoin de revendications."
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Tarifs",
+      "title": "Le prix est fixé par les utilisateurs, et non par les verrous.",
+      "intro": "Tarifs de l'accès anticipé. Un utilisateur actif mensuel est un utilisateur qui s'est connecté au moins une fois au cours du mois ; les comptes stockés mais inactifs ne vous sont jamais facturés.",
+      "perMonth": "par mois",
+      "periodFree": "pour toujours",
+      "plans": [
+        {
+          "includedMau": "1 000 utilisateurs actifs par mois",
+          "features": [
+            "Tous les environnements (développement, préproduction, production)",
+            "Nombre illimité d'applications par environnement",
+            "Connexion par e-mail avec code à usage unique",
+            "Registre d'audit et journaux d'événements d'authentification",
+            "Soutien de la communauté"
+          ],
+          "cta": "Commencez gratuitement"
+        },
+        {
+          "includedMau": "10 000 utilisateurs actifs par mois",
+          "features": [
+            "Tout est gratuit",
+            "Domaines personnalisés par locataire",
+            "MFA, clés d'accès et authentification unique (SSO) d'entreprise tels qu'ils sont fournis",
+            "Allongement de la durée de conservation des documents d'audit",
+            "Assistance prioritaire"
+          ],
+          "cta": "Commencez avec Pro"
+        }
+      ],
+      "note": "La facturation n'est pas encore automatisée : les locataires bénéficiant d'un accès anticipé sont facturés manuellement et peuvent résilier leur contrat à tout moment."
+    },
+    "ctaBand": {
+      "title": "Votre page de connexion n'est plus qu'à un clic.",
+      "body": "Identifiez le point auth.sdk.enterprises et envoyez votre premier flux cet après-midi.",
+      "button": "Ouvrir le tableau de bord"
+    }
+  }
+}

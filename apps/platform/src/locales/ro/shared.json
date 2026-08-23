@@ -1,0 +1,60 @@
+{
+  "header": {
+    "platform": "Platformă",
+    "quickstart": "Ghid de pornire rapidă",
+    "pricing": "Prețuri",
+    "security": "Securitate",
+    "status": "Stare",
+    "signIn": "Autentificare"
+  },
+  "footer": {
+    "tagline": "Infrastructură de autentificare multi-tenant realizată de SDK Enterprises.",
+    "productTitle": "Produs",
+    "productLinks": [
+      "Platformă",
+      "Ghid de pornire rapidă",
+      "Prețuri",
+      "Starea serviciului"
+    ],
+    "trustTitle": "Încredere",
+    "trustLinks": [
+      "Securitate",
+      "Politica de confidențialitate",
+      "Prelucrarea datelor (DPA)",
+      "Subcontractanți",
+      "Cookie-uri și urmărire"
+    ],
+    "legalTitle": "Informații juridice",
+    "legalLinks": [
+      "Condiții de utilizare",
+      "Notă legală"
+    ],
+    "companyTitle": "Companie",
+    "companyLinks": [
+      "SDK Enterprises",
+      "Contact"
+    ],
+    "entityLine": "SDK Enterprises · SIREN 850 513 912 · RCS Paris",
+    "frenchLawLine": "sub incidența legislației franceze",
+    "languageLabel": "Limba"
+  },
+  "statusBadges": {
+    "available": "Disponibil",
+    "rollingOut": "Lansare",
+    "recommended": "Recomandat"
+  },
+  "legalShell": {
+    "brandContext": "autorizare · Aspecte juridice",
+    "effectiveLine": "Valabil {date} · se supune legislației franceze",
+    "documentsLabel": "Documente",
+    "securityOverview": "Prezentare generală privind securitatea",
+    "docs": [
+      "Politica de confidențialitate",
+      "Condiții de utilizare",
+      "Anexă privind prelucrarea datelor",
+      "Subcontractanți",
+      "Cookie-uri și urmărire",
+      "Notă legală"
+    ]
+  }
+}
