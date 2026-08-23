@@ -122,6 +122,8 @@ importers:
         specifier: ^5.9.2
         version: 5.9.3
 
+  packages/brand: {}
+
   packages/db:
     dependencies:
       '@sdk-e/shared':

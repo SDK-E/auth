@@ -43,4 +43,4 @@ Next.js 16 (App Router, src dir) · React 19 · Tailwind CSS v4 · TypeScript st
 - **Analytics**: `<Analytics />` mounted in root layout (`@vercel/analytics`).
 - **Workflows**: Workflow SDK (`workflow`) via `withWorkflow(nextConfig)`; durable functions live in `apps/platform/src/workflows/**` with `"use workflow"` / `"use step"`. Fluid compute required on the project.
 - **Sandbox**: `@vercel/sandbox` isolated behind `@sdk-e/actions-runtime`; consumed by milestone-7 Actions runtime, not by app code directly.
-- **Resend**: intentionally deferred until production launch (decision 2026-08).
+- **Resend live since M2 (sendMail auto-selects via RESEND_API_KEY; smtp sink locally).
