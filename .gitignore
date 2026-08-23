@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# builds
+.next/
+out/
+dist/
+*.tsbuildinfo
+.turbo/
+
+# env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# vercel
+.vercel/
+
+# testing
+coverage/
+
+# misc
+.DS_Store
+*.pem
+*.p12
+.idea/
+.vscode/*
+!.vscode/extensions.json
