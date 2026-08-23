@@ -22,14 +22,15 @@ export function encryptSecret(plaintext: string): string {
 }
 
 export function decryptSecret(payload: string): string {
-  const [version, ivPart, tagPart, dataPart] = payload.split(".");
-  if (version !== VERSION_PREFIX || !ivPart || !tagPart || !dataPart) {
+  const parts = payload.split(".");
+  const [version, ivPart, tagPart, dataPart] = parts;
+  if (parts.length !== 4 || version !== VERSION_PREFIX || !ivPart || !tagPart) {
     throw new Error("invalid encrypted payload format");
   }
   const decipher = createDecipheriv("aes-256-gcm", masterKey(), Buffer.from(ivPart, "base64url"));
   decipher.setAuthTag(Buffer.from(tagPart, "base64url"));
   return Buffer.concat([
-    decipher.update(Buffer.from(dataPart, "base64url")),
+    decipher.update(Buffer.from(dataPart ?? "", "base64url")),
     decipher.final(),
   ]).toString("utf8");
 }

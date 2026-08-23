@@ -8,31 +8,35 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@sdk-e/db": "workspace:*",
+    "@sdk-e/emails": "workspace:*",
+    "@sdk-e/engine": "workspace:*",
     "@sdk-e/shared": "workspace:*",
     "@upstash/redis": "^1.38.2",
     "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
+    "jose": "^6.2.10",
     "next": "16.3.2",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "tailwind-merge": "^3.3.1",
-    "workflow": "^4.8.4",
-    "jose": "^6.2.10",
-    "@sdk-e/engine": "workspace:*",
-    "@sdk-e/emails": "workspace:*"
+    "workflow": "^4.8.4"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.5",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/coverage-v8": "^4.1.11",
     "eslint": "^9",
     "eslint-config-next": "16.3.2",
     "tailwindcss": "^4",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vitest": "^4.1.11"
   }
 }

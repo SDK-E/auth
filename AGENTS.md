@@ -9,6 +9,7 @@ Next.js 16 (App Router, src dir) · React 19 · Tailwind CSS v4 · TypeScript st
 - Install: `pnpm install`
 - Dev (all): `pnpm dev`; platform only: `pnpm --filter @sdk-e/platform dev`
 - Build/lint/typecheck: `pnpm build` / `pnpm lint` / `pnpm typecheck`
+- Tests: `pnpm test` (vitest per package; coverage floors enforced on every run). Platform integration tests run Postgres in-memory via PGlite through a vitest alias shim of `@sdk-e/db` — no DATABASE_URL needed; rate-limit tests use a fake Upstash REST server started by the vitest setup.
 - DB migrations: edit `packages/db/src/schema/**` then `pnpm db:generate` (offline SQL gen), apply with `pnpm db:migrate`
 - Signing-key rotation: `pnpm keys:rotate [development|staging|production]` (targets the platform tenant env; run with that branch's DATABASE_URL + AUTH_ENCRYPTION_KEY sourced). Policy: rotate every 90 days, manual trigger today — Vercel Cron candidate deferred to M9+. Retired keys stay published in JWKS (last 3 by createdAt) so outstanding JWTs verify until natural expiry.
 - Mail sink (dev email capture, SMTP :1025 / HTTP :1080): `pnpm mail` to run, `pnpm mail:list|mail:read|mail:wait|mail:clear|mail:health` to inspect; MCP server via `pnpm mail:mcp`. `pnpm dev` runs platform + sink + inbox UI together via concurrently (`mail:ui` reopens the UI at http://localhost:1080); a failing process kills the stack, the one-shot UI opener exiting does not. Sends go through `@sdk-e/emails` `sendMail` using `MAIL_SMTP_URL`/`MAIL_FROM`.
