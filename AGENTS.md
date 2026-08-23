@@ -32,3 +32,9 @@ Next.js 16 (App Router, src dir) · React 19 · Tailwind CSS v4 · TypeScript st
 - Vercel team: `SDK Enterprises` (slug `sdk-enterprises`). Single Next.js project for `apps/platform`: **`auth`** (Neon integration connected; `DATABASE_URL` injected).
 - Production domain `auth.sdk.enterprises`; preview URLs for branches.
 - `DATABASE_URL`, `AUTH_BASE_DOMAIN`, etc. configured per environment in Vercel project settings.
+
+## Vercel products in use
+- **Analytics**: `<Analytics />` mounted in root layout (`@vercel/analytics`).
+- **Workflows**: Workflow SDK (`workflow`) via `withWorkflow(nextConfig)`; durable functions live in `apps/platform/src/workflows/**` with `"use workflow"` / `"use step"`. Fluid compute required on the project.
+- **Sandbox**: `@vercel/sandbox` isolated behind `@sdk-e/actions-runtime`; consumed by milestone-7 Actions runtime, not by app code directly.
+- **Resend**: intentionally deferred until production launch (decision 2026-08).

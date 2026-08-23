@@ -27,7 +27,7 @@ packages/
   db/              Drizzle schema v1 + client + migrations
   engine/          OIDC provider, tokens/sessions          (milestone 2+)
   connections/     Social/SAML/OIDC/LDAP/SCIM adapters     (milestone 6)
-  actions-runtime/ Vercel Sandbox runner + warm pool       (milestone 7)
+  actions-runtime/ Vercel Sandbox facade + warm pool            (runner: milestone 7)
   emails/          React Email templates                   (milestone 3+)
   sdk-js|sdk-nextjs|sdk-react|sdk-node|sdk-python|sdk-go   (milestone 11)
 ```
