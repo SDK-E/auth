@@ -1,8 +1,10 @@
 import { eq, sql } from "drizzle-orm";
 import { getDb, users } from "@sdk-e/db";
 import { AuthError, resolveAuthContext } from "@/lib/auth/context";
+import { recordAudit } from "@/lib/auth/audit";
 import { recordAuthEvent } from "@/lib/auth/events";
-import { consumeEmailOtp, safeReturnTo } from "@/lib/auth/login-flow";
+import { consumeEmailOtp, consumeOutstandingEmailOtps, safeReturnTo } from "@/lib/auth/login-flow";
+import { enforceRateLimit, resetRateLimit } from "@/lib/auth/rate-limit";
 import {
   createSession,
   loadActiveSession,
@@ -10,6 +12,9 @@ import {
 } from "@/lib/auth/sessions";
 
 export const dynamic = "force-dynamic";
+
+const VERIFY_FAILURE_LIMIT = 5;
+const VERIFY_FAILURE_WINDOW_SECONDS = 15 * 60;
 
 function redirectTo(request: Request, pathWithQuery: string): Response {
   return Response.redirect(new URL(pathWithQuery, new URL(request.url).origin), 303);
@@ -42,6 +47,36 @@ export async function POST(request: Request) {
       code,
     });
     if (!userId) {
+      const identifier = email.toLowerCase();
+      const failures = await enforceRateLimit(
+        "otp_verify_fail",
+        `${ctx.environment.id}:${identifier}`,
+        VERIFY_FAILURE_LIMIT,
+        VERIFY_FAILURE_WINDOW_SECONDS,
+      );
+      const lockedOut = failures.count >= VERIFY_FAILURE_LIMIT;
+      if (lockedOut) {
+        await consumeOutstandingEmailOtps({ environmentId: ctx.environment.id, email });
+      }
+      await recordAuthEvent({
+        ctx,
+        eventType: "login_failure",
+        result: "failure",
+        failureReason: lockedOut ? "verify_rate_limited" : "invalid_code",
+        ip: request.headers.get("x-forwarded-for"),
+        userAgent: request.headers.get("user-agent"),
+        details: { method: "email_otp" },
+      });
+      await recordAudit({
+        ctx,
+        actorType: "user",
+        actorId: identifier,
+        actionType: "login_failure",
+        targetType: "email_otp",
+        payload: { reason: lockedOut ? "rate_limited_outstanding_otps_consumed" : "invalid_code" },
+        ip: request.headers.get("x-forwarded-for"),
+        userAgent: request.headers.get("user-agent"),
+      });
       return redirectTo(
         request,
         `/u/login/verify?email=${encodeURIComponent(email)}&return_to=${encodeURIComponent(returnTo)}&error=${encodeURIComponent("That code is invalid or expired. Request a new one.")}`,
@@ -54,6 +89,8 @@ export async function POST(request: Request) {
       return redirectTo(request, `/u/login?error=${encodeURIComponent("This account is blocked.")}`);
     }
 
+    await resetRateLimit("otp_verify_fail", `${ctx.environment.id}:${email.toLowerCase()}`);
+
     const session = await createSession({
       userId,
       environmentId: ctx.environment.id,
@@ -62,6 +99,7 @@ export async function POST(request: Request) {
       amr: ["email_otp"],
     });
 
+    const isNewUser = user.loginCount === 0;
     await db
       .update(users)
       .set({ lastLoginAt: new Date(), loginCount: sql`${users.loginCount} + 1` })
@@ -70,11 +108,23 @@ export async function POST(request: Request) {
     await recordAuthEvent({
       ctx,
       userId,
-      eventType: user.loginCount === 0 ? "signup" : "login_success",
+      eventType: isNewUser ? "signup" : "login_success",
       result: "success",
       ip: session.ip,
       userAgent: session.userAgent,
       details: { method: "email_otp" },
+    });
+
+    await recordAudit({
+      ctx,
+      actorType: "user",
+      actorId: userId,
+      actionType: "login_success",
+      targetType: "session",
+      targetId: session.id,
+      payload: { method: "email_otp", kind: isNewUser ? "signup" : "login" },
+      ip: session.ip,
+      userAgent: session.userAgent,
     });
 
     return await sessionCookieResponse({

@@ -1,4 +1,4 @@
-import { and, eq } from "drizzle-orm";
+import { and, eq, isNull } from "drizzle-orm";
 import { encryptSecret, sha256Hex } from "@sdk-e/engine";
 import { connections, getDb, users, verificationTokens } from "@sdk-e/db";
 import { TOKEN_LIFETIMES_SECONDS } from "@sdk-e/shared";
@@ -85,6 +85,25 @@ export async function issueEmailOtp(params: {
     expiresAt: new Date(Date.now() + TOKEN_LIFETIMES_SECONDS.verificationToken * 1000),
   });
   return code;
+}
+
+export async function consumeOutstandingEmailOtps(params: {
+  environmentId: string;
+  email: string;
+}): Promise<void> {
+  const db = getDb();
+  const identifier = params.email.trim().toLowerCase();
+  await db
+    .update(verificationTokens)
+    .set({ consumedAt: new Date() })
+    .where(
+      and(
+        eq(verificationTokens.environmentId, params.environmentId),
+        eq(verificationTokens.purpose, "email_otp"),
+        eq(verificationTokens.identifier, identifier),
+        isNull(verificationTokens.consumedAt),
+      ),
+    );
 }
 
 export async function consumeEmailOtp(params: {

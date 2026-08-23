@@ -33,7 +33,7 @@ export const auditLogs = pgTable(
     userAgent: text(),
     previousHash: text(),
     entryHash: text().notNull(),
-    occurredAt: timestamp().notNull().defaultNow(),
+    occurredAt: timestamp({ withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [
     uniqueIndex("audit_logs_id_idx").on(t.id),

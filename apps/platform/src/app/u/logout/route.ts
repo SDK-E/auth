@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { AuthError, resolveAuthContext } from "@/lib/auth/context";
+import { recordAudit } from "@/lib/auth/audit";
 import { loadActiveSession, revokeSession, clearSessionCookie } from "@/lib/auth/sessions";
 import { recordAuthEvent } from "@/lib/auth/events";
 
@@ -15,6 +16,16 @@ export async function GET(request: Request) {
         userId: auth.session.userId,
         eventType: "logout",
         result: "success",
+      });
+      await recordAudit({
+        ctx,
+        actorType: "user",
+        actorId: auth.session.userId,
+        actionType: "logout",
+        targetType: "session",
+        targetId: auth.session.id,
+        ip: request.headers.get("x-forwarded-for"),
+        userAgent: request.headers.get("user-agent"),
       });
     } catch (error) {
       if (!(error instanceof AuthError)) throw error;

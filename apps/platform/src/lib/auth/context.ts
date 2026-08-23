@@ -11,11 +11,11 @@ export type AuthContext = {
 };
 
 export class AuthError extends Error {
-  constructor(
-    public code: string,
-    message: string,
-  ) {
+  code: string;
+
+  constructor(code: string, message: string) {
     super(message);
+    this.code = code;
   }
 }
 
@@ -49,22 +49,36 @@ export async function resolveAuthContext(request: Request): Promise<AuthContext>
   const slug = slugHeader ?? PLATFORM_TENANT_SLUG;
   const environmentKey = resolveEnvironmentKey(hostKind);
 
-  const [tenant] = await db.select().from(tenants).where(eq(tenants.slug, slug)).limit(1);
-  if (!tenant) throw new AuthError("unknown_tenant", `tenant ${slug} not found`);
-
-  const envs = await db.select().from(environments).where(eq(environments.tenantId, tenant.id));
-  const environment =
-    envs.find((e) => e.key === environmentKey) ?? envs.find((e) => e.isDefault) ?? envs[0];
-  if (!environment) throw new AuthError("unknown_environment", "tenant has no environments");
-
+  const { tenant, environment } = await resolveTenantEnvironment(slug, environmentKey);
   return { tenant, environment, issuer: issuerFromRequest(request), hostKind };
 }
 
-function resolveEnvironmentKey(hostKind: HostKind): "development" | "staging" | "production" {
+export function resolveEnvironmentKey(hostKind: HostKind): "development" | "staging" | "production" {
   if (hostKind === "local") return "development";
   const vercelEnv = process.env.VERCEL_ENV;
   if (vercelEnv === "production") return "production";
   if (vercelEnv === "preview") return "staging";
   if (process.env.NODE_ENV === "production") return "production";
   return "development";
+}
+
+export type TenantEnvironment = {
+  tenant: typeof tenants.$inferSelect;
+  environment: typeof environments.$inferSelect;
+};
+
+export async function resolveTenantEnvironment(
+  slug: string,
+  key: "development" | "staging" | "production",
+): Promise<TenantEnvironment> {
+  const db = getDb();
+  const [tenant] = await db.select().from(tenants).where(eq(tenants.slug, slug)).limit(1);
+  if (!tenant) throw new AuthError("unknown_tenant", `tenant ${slug} not found`);
+
+  const envs = await db.select().from(environments).where(eq(environments.tenantId, tenant.id));
+  const environment =
+    envs.find((e) => e.key === key) ?? envs.find((e) => e.isDefault) ?? envs[0];
+  if (!environment) throw new AuthError("unknown_environment", "tenant has no environments");
+
+  return { tenant, environment };
 }

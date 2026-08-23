@@ -4,7 +4,8 @@ import type { JWK } from "jose";
 import { applications, refreshTokens, users, getDb } from "@sdk-e/db";
 import { TOKEN_LIFETIMES_SECONDS } from "@sdk-e/shared";
 import type { AuthContext } from "./context";
-import { getActivePrivateJwk } from "./keys";
+import { recordAudit } from "./audit.ts";
+import { getActivePrivateJwk } from "./keys.ts";
 
 export type ApplicationRow = typeof applications.$inferSelect;
 export type UserRow = typeof users.$inferSelect;
@@ -132,6 +133,8 @@ export async function rotateRefreshToken(params: {
   ctx: AuthContext;
   app: ApplicationRow;
   refreshToken: string;
+  ip?: string | null;
+  userAgent?: string | null;
 }): Promise<NonNullable<Awaited<ReturnType<typeof issueTokens>>> & { userId: string; sessionId: string | null }> {
   const db = getDb();
   const hash = sha256Hex(params.refreshToken);
@@ -146,6 +149,17 @@ export async function rotateRefreshToken(params: {
 
   if (existing.consumedAt) {
     await revokeFamily(existing.familyId, existing.userId, "refresh_token_reuse");
+    await recordAudit({
+      ctx: params.ctx,
+      actorType: "client",
+      actorId: params.app.clientId,
+      actionType: "refresh_reuse_detected",
+      targetType: "refresh_family",
+      targetId: existing.familyId,
+      payload: { userId: existing.userId, reason: "refresh_token_reuse" },
+      ip: params.ip ?? null,
+      userAgent: params.userAgent ?? null,
+    });
     throw new TokenError("invalid_grant", "refresh token reuse detected; family revoked", 400);
   }
 

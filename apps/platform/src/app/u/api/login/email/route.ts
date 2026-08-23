@@ -2,8 +2,15 @@ import { NextResponse } from "next/server";
 import { sendMail } from "@sdk-e/emails";
 import { AuthError, resolveAuthContext } from "@/lib/auth/context";
 import { findOrCreateUserByEmail, issueEmailOtp } from "@/lib/auth/login-flow";
+import { enforceRateLimit, requestClientIp } from "@/lib/auth/rate-limit";
 
 export const dynamic = "force-dynamic";
+
+const OTP_PER_EMAIL_LIMIT = 3;
+const OTP_PER_EMAIL_WINDOW_SECONDS = 10 * 60;
+const OTP_PER_IP_LIMIT = 20;
+const OTP_PER_IP_WINDOW_SECONDS = 60 * 60;
+const RATE_LIMIT_MESSAGE = "Too many attempts. Try again shortly.";
 
 function redirectTo(request: Request, pathWithQuery: string, status = 303): NextResponse {
   const origin = new URL(request.url).origin;
@@ -21,6 +28,22 @@ export async function POST(request: Request) {
 
   try {
     const ctx = await resolveAuthContext(request);
+    const identifier = email.toLowerCase();
+    const [emailLimit, ipLimit] = await Promise.all([
+      enforceRateLimit(
+        "otp_request_email",
+        `${ctx.environment.id}:${identifier}`,
+        OTP_PER_EMAIL_LIMIT,
+        OTP_PER_EMAIL_WINDOW_SECONDS,
+      ),
+      enforceRateLimit("otp_request_ip", requestClientIp(request), OTP_PER_IP_LIMIT, OTP_PER_IP_WINDOW_SECONDS),
+    ]);
+    if (!emailLimit.ok || !ipLimit.ok) {
+      return redirectTo(
+        request,
+        `/u/login?error=${encodeURIComponent(RATE_LIMIT_MESSAGE)}`,
+      );
+    }
     const { userId } = await findOrCreateUserByEmail({
       environmentId: ctx.environment.id,
       email,

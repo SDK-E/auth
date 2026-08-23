@@ -157,7 +157,6 @@ async function main() {
   const tenant = await ensureTenantAndEnvironments();
 
   for (const key of ["development", "staging", "production"] as const) {
-    if (key === "staging") continue;
     const { secret } = await ensurePlatformApps(tenant.id, key);
     await ensureOwnerUser(tenant.id, key);
     if (secret) {

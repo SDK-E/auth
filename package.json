@@ -15,6 +15,7 @@
     "db:generate": "pnpm --filter @sdk-e/db generate",
     "db:migrate": "pnpm --filter @sdk-e/db migrate",
     "db:seed": "node scripts/db/seed.ts",
+    "keys:rotate": "node scripts/db/rotate-keys.ts",
     "db:studio": "pnpm --filter @sdk-e/db studio",
     "mail": "node scripts/mail/mail-sink.ts",
     "mail:ui": "node scripts/mail/mail-open.ts",

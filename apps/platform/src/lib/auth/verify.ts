@@ -1,5 +1,5 @@
 import { importJWK, jwtVerify } from "jose";
-import { importPublicKey } from "./keys";
+import { importPublicKey } from "./keys.ts";
 
 export async function verifySignedJwt(token: string): Promise<Record<string, unknown>> {
   const [headerPart] = token.split(".");

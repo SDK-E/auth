@@ -9,23 +9,20 @@ import {
   rotateRefreshToken,
   verifyClientSecret,
 } from "@/lib/auth/tokens";
+import { recordAudit } from "@/lib/auth/audit";
 import { recordAuthEvent } from "@/lib/auth/events";
+import { enforceRateLimit, requestClientIp } from "@/lib/auth/rate-limit";
 
 export const dynamic = "force-dynamic";
+
+const TOKEN_LIMIT = 60;
+const TOKEN_WINDOW_SECONDS = 60;
 
 function oauthError(error: string, description: string, status = 400) {
   return Response.json({ error, error_description: description }, { status });
 }
 
 export async function POST(request: Request) {
-  let ctx;
-  try {
-    ctx = await resolveAuthContext(request);
-  } catch (error) {
-    if (error instanceof AuthError) return oauthError(error.code, error.message);
-    throw error;
-  }
-
   const form = await request.formData();
   const raw = Object.fromEntries(form.entries() as Iterable<[string, string]>);
   const parsed = tokenRequestSchema.safeParse(raw);
@@ -39,6 +36,28 @@ export async function POST(request: Request) {
   const clientSecret = basic.clientSecret;
 
   if (!clientId) return oauthError("invalid_client", "client_id is required", 401);
+
+  const limit = await enforceRateLimit(
+    "oauth_token",
+    `${clientId}|${requestClientIp(request)}`,
+    TOKEN_LIMIT,
+    TOKEN_WINDOW_SECONDS,
+  );
+  if (!limit.ok) {
+    console.error("token_endpoint_rate_limited", { clientId });
+    return Response.json(
+      { error: "too_many_requests", error_description: "Too many attempts. Try again shortly." },
+      { status: 429, headers: { "retry-after": String(limit.retryAfterSec) } },
+    );
+  }
+
+  let ctx;
+  try {
+    ctx = await resolveAuthContext(request);
+  } catch (error) {
+    if (error instanceof AuthError) return oauthError(error.code, error.message);
+    throw error;
+  }
 
   const db = getDb();
   const [app] = await db
@@ -128,6 +147,18 @@ async function handleAuthorizationCodeGrant(params: {
     details: { grant: "authorization_code", scope: code.scope },
   });
 
+  await recordAudit({
+    ctx: params.ctx,
+    actorType: "client",
+    actorId: params.app.clientId,
+    actionType: "token_issued",
+    targetType: "user",
+    targetId: user.id,
+    payload: { grant: "authorization_code", scope: code.scope, sessionId: code.sessionId },
+    ip: params.request.headers.get("x-forwarded-for"),
+    userAgent: params.request.headers.get("user-agent"),
+  });
+
   return Response.json(tokens, {
     headers: {
       "cache-control": "no-store",
@@ -148,6 +179,8 @@ async function handleRefreshGrant(params: {
     ctx: params.ctx,
     app: params.app,
     refreshToken: params.refreshToken,
+    ip: params.request.headers.get("x-forwarded-for"),
+    userAgent: params.request.headers.get("user-agent"),
   });
 
   await recordAuthEvent({
@@ -156,6 +189,18 @@ async function handleRefreshGrant(params: {
     applicationId: params.app.id,
     eventType: "token_refreshed",
     result: "success",
+    ip: params.request.headers.get("x-forwarded-for"),
+    userAgent: params.request.headers.get("user-agent"),
+  });
+
+  await recordAudit({
+    ctx: params.ctx,
+    actorType: "client",
+    actorId: params.app.clientId,
+    actionType: "token_refreshed",
+    targetType: "user",
+    targetId: rotated.userId,
+    payload: { grant: "refresh_token", sessionId: rotated.sessionId },
     ip: params.request.headers.get("x-forwarded-for"),
     userAgent: params.request.headers.get("user-agent"),
   });

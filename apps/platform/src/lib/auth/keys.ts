@@ -3,6 +3,7 @@ import type { JWK } from "jose";
 import { decryptSecret, generateSigningKey, encryptSecret, type KeyMaterial } from "@sdk-e/engine";
 import { getDb, signingKeys } from "@sdk-e/db";
 import { createId, idPrefixes } from "@sdk-e/shared";
+import { auditContextForEnvironment, recordAudit } from "./audit.ts";
 
 export type StoredSigningKey = typeof signingKeys.$inferSelect;
 
@@ -35,6 +36,18 @@ export async function ensureActiveSigningKey(environmentId: string): Promise<Sto
   const created = createdRows[0];
   if (!created) throw new Error("failed to persist signing key");
   jwkCache.delete(kid);
+  const auditCtx = await auditContextForEnvironment(environmentId);
+  if (auditCtx) {
+    await recordAudit({
+      ctx: auditCtx,
+      actorType: "system",
+      actorId: "signing_keys",
+      actionType: "signing_key_created",
+      targetType: "signing_key",
+      targetId: created.kid,
+      payload: { algorithm: created.algorithm },
+    });
+  }
   return created;
 }
 

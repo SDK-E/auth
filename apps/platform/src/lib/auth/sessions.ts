@@ -4,8 +4,8 @@ import { NextResponse } from "next/server";
 import { randomToken, sha256Hex } from "@sdk-e/engine";
 import { getDb, sessions } from "@sdk-e/db";
 import { SESSION_COOKIE_NAME, TOKEN_LIFETIMES_SECONDS } from "@sdk-e/shared";
-import { getActivePrivateJwk } from "./keys";
-import { verifySignedJwt } from "./verify";
+import { getActivePrivateJwk } from "./keys.ts";
+import { verifySignedJwt } from "./verify.ts";
 
 export type SessionRow = typeof sessions.$inferSelect;
 
