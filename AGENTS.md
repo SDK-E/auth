@@ -3,7 +3,7 @@
 Guidance for AI agents working in this repo.
 
 ## Stack
-Next.js 16 (App Router, src dir) · React 19 · Tailwind CSS v4 · TypeScript strict · Drizzle ORM + Postgres (Neon) · Turborepo · pnpm 11 · Node >= 26
+Next.js 16 (App Router, src dir) · React 19 · Tailwind CSS v4 · TypeScript strict · Drizzle ORM + Postgres (Neon) · Turborepo · pnpm 11 · Node >= 24 (local dev standard: 26; Vercel builder runs 24.x)
 
 ## Commands
 - Install: `pnpm install`
