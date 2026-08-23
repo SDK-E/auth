@@ -88,12 +88,6 @@ export function SiteFooter(params: { t: FooterStrings; base: string; locale: Loc
           </span>
           <span>auth.sdk.enterprises — {params.t.frenchLawLine}</span>
         </div>
-        <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6 text-micro uppercase text-muted-foreground">
-          <span>
-            © {new Date().getFullYear()} {params.t.entityLine}
-          </span>
-          <span>auth.sdk.enterprises — {params.t.frenchLawLine}</span>
-        </div>
       </div>
     </footer>
   );
