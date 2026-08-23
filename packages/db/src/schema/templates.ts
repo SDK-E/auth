@@ -10,9 +10,9 @@ import {
 import {
   emailTemplateKeyEnum,
   integrationProviderEnum,
-} from "./_enums";
-import { timestamps } from "./_shared";
-import { environments } from "./tenancy";
+} from "./_enums.ts";
+import { timestamps } from "./_shared.ts";
+import { environments } from "./tenancy.ts";
 
 export const emailTemplates = pgTable(
   "email_templates",

@@ -8,9 +8,10 @@ import {
   uniqueIndex,
   type AnyPgColumn,
 } from "drizzle-orm/pg-core";
-import type { DeviceInfo } from "./_shared";
-import { environments } from "./tenancy";
-import { users } from "./users";
+import type { DeviceInfo } from "./_shared.ts";
+import { emptyTextArray } from "./_shared.ts";
+import { environments } from "./tenancy.ts";
+import { users } from "./users.ts";
 
 export const sessions = pgTable(
   "sessions",
@@ -72,6 +73,36 @@ export const refreshTokens = pgTable(
     uniqueIndex("refresh_tokens_hash_idx").on(t.tokenHash),
     index("refresh_tokens_family_idx").on(t.familyId),
     index("refresh_tokens_user_app_idx").on(t.userId, t.applicationId),
+  ],
+);
+
+export const authorizationCodes = pgTable(
+  "authorization_codes",
+  {
+    id: text()
+      .primaryKey()
+      .$defaultFn(() => createId("acode")),
+    environmentId: text()
+      .notNull()
+      .references(() => environments.id, { onDelete: "cascade" }),
+    applicationId: text().notNull(),
+    userId: text().references(() => users.id, { onDelete: "cascade" }),
+    sessionId: text().references((): AnyPgColumn => sessions.id, {
+      onDelete: "set null",
+    }),
+    redirectUri: text().notNull(),
+    scope: text().array().notNull().default(emptyTextArray),
+    nonce: text(),
+    codeChallenge: text().notNull(),
+    codeChallengeMethod: text().notNull().default("S256"),
+    tokenHash: text().notNull(),
+    expiresAt: timestamp().notNull(),
+    consumedAt: timestamp(),
+    createdAt: timestamp().notNull().defaultNow(),
+  },
+  (t) => [
+    uniqueIndex("authorization_codes_hash_idx").on(t.tokenHash),
+    index("authorization_codes_env_user_idx").on(t.environmentId, t.userId),
   ],
 );
 

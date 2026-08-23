@@ -1,5 +1,6 @@
 export const SESSION_COOKIE_NAME = "sdk_e_session";
 export const DEFAULT_BASE_DOMAIN = "auth.sdk.enterprises";
+export const PLATFORM_TENANT_SLUG = "sdk-e";
 
 export const TOKEN_LIFETIMES_SECONDS = {
   authorizationCode: 60,

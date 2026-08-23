@@ -11,9 +11,21 @@ importers:
       '@modelcontextprotocol/sdk':
         specifier: ^1.30.0
         version: 1.30.0(supports-color@10.2.2)(zod@4.4.3)
+      '@sdk-e/db':
+        specifier: workspace:*
+        version: link:packages/db
+      '@sdk-e/engine':
+        specifier: workspace:*
+        version: link:packages/engine
+      '@sdk-e/shared':
+        specifier: workspace:*
+        version: link:packages/shared
       '@types/nodemailer':
         specifier: ^8.0.1
         version: 8.0.1
+      drizzle-orm:
+        specifier: ^0.45.2
+        version: 0.45.2(@upstash/redis@1.38.2)(postgres@3.4.9)
       nodemailer:
         specifier: ^9.0.5
         version: 9.0.5
@@ -35,6 +47,12 @@ importers:
       '@sdk-e/db':
         specifier: workspace:*
         version: link:../../packages/db
+      '@sdk-e/emails':
+        specifier: workspace:*
+        version: link:../../packages/emails
+      '@sdk-e/engine':
+        specifier: workspace:*
+        version: link:../../packages/engine
       '@sdk-e/shared':
         specifier: workspace:*
         version: link:../../packages/shared
@@ -47,6 +65,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      jose:
+        specifier: ^6.2.10
+        version: 6.2.10
       next:
         specifier: 16.3.2
         version: 16.3.2(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -138,6 +159,22 @@ importers:
       nodemailer:
         specifier: ^9.0.5
         version: 9.0.5
+      typescript:
+        specifier: ^5.9.2
+        version: 5.9.3
+
+  packages/engine:
+    dependencies:
+      '@sdk-e/shared':
+        specifier: workspace:*
+        version: link:../shared
+      jose:
+        specifier: ^6.2.10
+        version: 6.2.10
+    devDependencies:
+      '@types/node':
+        specifier: ^24
+        version: 24.13.3
       typescript:
         specifier: ^5.9.2
         version: 5.9.3
@@ -3369,6 +3406,9 @@ packages:
 
   jose@5.10.0:
     resolution: {integrity: sha512-s+3Al/p9g32Iq+oqXxkW//7jk2Vig6FF1CFqzVXoTUXt2qz89YWbL+OwS17NFYEvxC35n0FKeGO2LGYSxeM2Gg==}
+
+  jose@6.2.10:
+    resolution: {integrity: sha512-iiW7J9qRFlGxvCOIBDBDxFePQSn7ZMAnrYGhrrOo6siO/MIqwfyilLR27pkfDgUk+raLuzADS8A3S/KLBisc0g==}
 
   jose@6.2.3:
     resolution: {integrity: sha512-YYVDInQKFJfR/xa3ojUTl8c2KoTwiL1R5Wg9YCydwH0x0B9grbzlg5HC7mMjCtUJjbQ/YnGEZIhI5tCgfTb4Hw==}
@@ -7988,6 +8028,8 @@ snapshots:
   jiti@2.7.0: {}
 
   jose@5.10.0: {}
+
+  jose@6.2.10: {}
 
   jose@6.2.3: {}
 

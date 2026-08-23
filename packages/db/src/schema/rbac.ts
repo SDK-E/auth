@@ -8,9 +8,9 @@ import {
   timestamp,
   uniqueIndex,
 } from "drizzle-orm/pg-core";
-import { timestamps } from "./_shared";
-import { environments } from "./tenancy";
-import { users } from "./users";
+import { timestamps } from "./_shared.ts";
+import { environments } from "./tenancy.ts";
+import { users } from "./users.ts";
 
 export const roles = pgTable(
   "roles",

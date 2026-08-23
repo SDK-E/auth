@@ -8,9 +8,9 @@ import {
   timestamp,
   uniqueIndex,
 } from "drizzle-orm/pg-core";
-import { connectionStrategyEnum } from "./_enums";
-import { emptyJsonb, timestamps } from "./_shared";
-import { environments } from "./tenancy";
+import { connectionStrategyEnum } from "./_enums.ts";
+import { emptyJsonb, timestamps } from "./_shared.ts";
+import { environments } from "./tenancy.ts";
 
 export const connections = pgTable(
   "connections",

@@ -47,6 +47,7 @@ export const verificationPurposeEnum = pgEnum("verification_purpose", [
   "password_reset",
   "magic_link",
   "email_otp",
+  "authorization_code",
 ]);
 
 export const invitationStatusEnum = pgEnum("invitation_status", [

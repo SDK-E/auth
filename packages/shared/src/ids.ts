@@ -30,6 +30,7 @@ export const idPrefixes = {
   refreshTokenFamily: "rfam",
   grant: "grant",
   authorizationCode: "acode",
+  signingKey: "skey",
   action: "action",
   actionVersion: "actver",
   webhookEndpoint: "hook",

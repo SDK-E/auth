@@ -8,10 +8,10 @@ import {
   timestamp,
   uniqueIndex,
 } from "drizzle-orm/pg-core";
-import { authEventResultEnum, authEventTypeEnum } from "./_enums";
-import { emptyJsonb } from "./_shared";
-import { environments, tenants } from "./tenancy";
-import { users } from "./users";
+import { authEventResultEnum, authEventTypeEnum } from "./_enums.ts";
+import { emptyJsonb } from "./_shared.ts";
+import { environments, tenants } from "./tenancy.ts";
+import { users } from "./users.ts";
 
 export const authEvents = pgTable(
   "auth_events",

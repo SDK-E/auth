@@ -1,0 +1,20 @@
+{
+  "name": "@sdk-e/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sdk-e/shared": "workspace:*",
+    "jose": "^6.2.10"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "typescript": "^5.9.2"
+  }
+}

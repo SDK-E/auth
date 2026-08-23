@@ -8,9 +8,9 @@ import {
   timestamp,
   uniqueIndex,
 } from "drizzle-orm/pg-core";
-import { actionTriggerEnum } from "./_enums";
-import { timestamps } from "./_shared";
-import { environments } from "./tenancy";
+import { actionTriggerEnum } from "./_enums.ts";
+import { timestamps } from "./_shared.ts";
+import { environments } from "./tenancy.ts";
 
 export const actions = pgTable(
   "actions",

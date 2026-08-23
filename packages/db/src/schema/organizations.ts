@@ -10,16 +10,16 @@ import {
   timestamp,
   uniqueIndex,
 } from "drizzle-orm/pg-core";
-import { scimProviderEnum } from "./_enums";
+import { scimProviderEnum } from "./_enums.ts";
 import {
   emptyJsonb,
   emptyTextArray,
   timestamps,
   type BrandingConfig,
-} from "./_shared";
-import { connections } from "./connections";
-import { environments } from "./tenancy";
-import { users } from "./users";
+} from "./_shared.ts";
+import { connections } from "./connections.ts";
+import { environments } from "./tenancy.ts";
+import { users } from "./users.ts";
 
 export const organizations = pgTable(
   "organizations",

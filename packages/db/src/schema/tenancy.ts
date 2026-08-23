@@ -11,7 +11,7 @@ import {
   timestamp,
   uniqueIndex,
 } from "drizzle-orm/pg-core";
-import type { EnvironmentSettings } from "./_shared";
+import type { EnvironmentSettings } from "./_shared.ts";
 import {
   domainKindEnum,
   environmentKeyEnum,
@@ -19,7 +19,7 @@ import {
   subscriptionStatusEnum,
   tenantStatusEnum,
   usageMetricEnum,
-} from "./_enums";
+} from "./_enums.ts";
 
 export const plans = pgTable("plans", {
   key: text().primaryKey(),

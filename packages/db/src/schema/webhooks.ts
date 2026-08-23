@@ -8,9 +8,9 @@ import {
   text,
   timestamp,
 } from "drizzle-orm/pg-core";
-import { deliveryStatusEnum } from "./_enums";
-import { emptyJsonb, timestamps } from "./_shared";
-import { environments } from "./tenancy";
+import { deliveryStatusEnum } from "./_enums.ts";
+import { emptyJsonb, timestamps } from "./_shared.ts";
+import { environments } from "./tenancy.ts";
 
 export const webhookEndpoints = pgTable(
   "webhook_endpoints",

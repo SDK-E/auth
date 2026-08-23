@@ -19,7 +19,10 @@
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "tailwind-merge": "^3.3.1",
-    "workflow": "^4.8.4"
+    "workflow": "^4.8.4",
+    "jose": "^6.2.10",
+    "@sdk-e/engine": "workspace:*",
+    "@sdk-e/emails": "workspace:*"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -15,10 +15,10 @@ import {
   mfaFactorTypeEnum,
   verificationPurposeEnum,
   webauthnDeviceTypeEnum,
-} from "./_enums";
-import { emptyJsonb, emptyTextArray, timestamps } from "./_shared";
-import { connections } from "./connections";
-import { environments } from "./tenancy";
+} from "./_enums.ts";
+import { emptyJsonb, emptyTextArray, timestamps } from "./_shared.ts";
+import { connections } from "./connections.ts";
+import { environments } from "./tenancy.ts";
 
 export const users = pgTable(
   "users",

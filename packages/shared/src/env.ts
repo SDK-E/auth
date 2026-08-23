@@ -1,10 +1,14 @@
 import { z } from "zod";
-import { DEFAULT_BASE_DOMAIN } from "./constants";
+import { DEFAULT_BASE_DOMAIN } from "./constants.ts";
 
 export const serverEnvSchema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
   DATABASE_URL: z.string().min(1, "DATABASE_URL is required"),
   AUTH_BASE_DOMAIN: z.string().min(1).default(DEFAULT_BASE_DOMAIN),
+  AUTH_ENCRYPTION_KEY: z
+    .string()
+    .min(16)
+    .default("dev-only-insecure-envelope-key-change-me"),
 });
 
 export type ServerEnv = z.infer<typeof serverEnvSchema>;

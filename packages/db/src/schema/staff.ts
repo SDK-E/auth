@@ -7,7 +7,7 @@ import {
   timestamp,
   uniqueIndex,
 } from "drizzle-orm/pg-core";
-import { timestamps } from "./_shared";
+import { timestamps } from "./_shared.ts";
 
 export const staffUsers = pgTable("staff_users", {
   id: text()

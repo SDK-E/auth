@@ -8,9 +8,9 @@ import {
   timestamp,
   uniqueIndex,
 } from "drizzle-orm/pg-core";
-import { actorTypeEnum } from "./_enums";
-import { emptyJsonb } from "./_shared";
-import { environments, tenants } from "./tenancy";
+import { actorTypeEnum } from "./_enums.ts";
+import { emptyJsonb } from "./_shared.ts";
+import { environments, tenants } from "./tenancy.ts";
 
 export const auditLogs = pgTable(
   "audit_logs",
