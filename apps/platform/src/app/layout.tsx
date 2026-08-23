@@ -12,6 +12,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://auth.sdk.enterprises"),
   applicationName: "Auth",
   title: {
     default: "Auth",
