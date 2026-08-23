@@ -4,111 +4,142 @@ import { LegalShell } from "@/components/site/legal-shell";
 export const metadata: Metadata = {
   title: "Data processing addendum",
   description:
-    "The DPA under which SDK Enterprises processes end-user personal data on behalf of Auth tenants.",
+    "The addendum under which SDK Enterprises processes end-user personal data on behalf of Auth tenants, in line with Article 28 of the GDPR.",
 };
 
 export default function DpaPage() {
   return (
     <LegalShell
       title="Data processing addendum"
-      description="This addendum governs SDK Enterprises' processing of personal data on behalf of tenants who use Auth to authenticate their own users. It incorporates the European Commission's standard contractual clauses where transfers require them."
+      description="This addendum sets out the terms on which SDK Enterprises processes personal data on behalf of tenants of the Auth service. It reflects the requirements applicable to processors under data protection law, including Article 28 of the General Data Protection Regulation."
       updated="August 23, 2026"
       activeHref="/legal/dpa"
     >
-      <h2>1. Roles and scope</h2>
+      <h2>1. Parties and roles</h2>
       <p>
-        You (the tenant) are the controller of your end users&apos; personal data.
-        SDK Enterprises (&quot;processor&quot;) processes that data solely to provide
-        the Auth service: delivering one-time codes, authenticating sign-ins,
-        issuing and rotating tokens, maintaining sessions, enforcing abuse
-        controls, and writing audit records. This addendum forms part of the
-        terms of service.
+        This addendum is between you (the controller, &quot;Customer&quot;) and
+        SDK Enterprises (the processor). It applies to personal data that SDK
+        Enterprises processes on your behalf when you use the Service to
+        authenticate your end users. It forms part of the Agreement and prevails
+        over it on matters of data protection.
       </p>
 
-      <h2>2. Documented instructions</h2>
-      <p>
-        Your instructions to us are: process end-user account emails,
-        authentication event records (including IP addresses), rate-limit
-        counters, and audit ledger entries, for the sole purpose of operating
-        the authentication service. We will inform you if an instruction
-        infringes data protection law. Any additional processing requires a
-        documented agreement between us.
-      </p>
-
-      <h2>3. Confidentiality and people</h2>
-      <p>
-        Our personnel access personal data only as needed to operate the
-        service, under confidentiality obligations that survive termination.
-      </p>
-
-      <h2>4. Security measures</h2>
+      <h2>2. Details of processing</h2>
       <ul>
-        <li>TLS-encrypted transport for all authentication traffic.</li>
-        <li>AES-256-GCM envelope encryption for client secrets and signing keys at rest; master key stored outside the database.</li>
-        <li>Short-lived tokens; PKCE-mandatory authorization codes; refresh token rotation with family revocation.</li>
-        <li>Fixed-window rate limiting per email, IP, and client.</li>
-        <li>Per-environment SHA-256 hash-chained audit ledger, recomputable from genesis.</li>
+        <li><strong>Subject matter:</strong> authentication and identity services for Customer applications.</li>
+        <li><strong>Duration:</strong> the term of the Agreement, plus retention duties described below.</li>
+        <li><strong>Nature and purpose:</strong> delivery of sign-in flows, verification of identity through one-time codes, issuance and management of sessions and tokens, abuse prevention, security logging, and associated support.</li>
+        <li><strong>Categories of data subjects:</strong> Customer&apos;s end users, and Customer personnel administering the tenant.</li>
+        <li><strong>Categories of personal data:</strong> identification data (notably email addresses), authentication and usage records, technical metadata such as IP address and user-agent, security and audit records, and transient abuse-prevention indicators.</li>
+        <li><strong>Special categories:</strong> none are requested or expected; Customer must not submit them.</li>
       </ul>
-      <p>The full mechanism list is published at /security and kept current.</p>
 
-      <h2>5. Subprocessors</h2>
+      <h2>3. Processor obligations</h2>
       <p>
-        We engage the subprocessors listed at /legal/subprocessors under written
-        agreements imposing data-protection obligations no less protective than
-        this addendum, and we remain responsible for their performance. We give
-        at least 14 days&apos; notice of new subprocessors by updating that page;
-        you may object on legitimate grounds within that window, and the parties
-        will work in good faith to resolve the objection — failing which you may
-        terminate the affected service.
+        SDK Enterprises processes personal data only on documented instructions
+        from Customer — constituted by this addendum and Customer&apos;s
+        configuration of the Service — unless required otherwise by Union or
+        Member State law, in which case SDK Enterprises informs Customer of that
+        legal requirement before processing unless legally prohibited. SDK
+        Enterprises informs Customer without delay if it believes an instruction
+        infringes applicable data protection law.
       </p>
 
-      <h2>6. Data subject requests</h2>
+      <h2>4. Confidentiality</h2>
       <p>
-        We assist you in answering access, correction, deletion, export, and
-        objection requests from your end users without undue delay, using the
-        management tooling available for your tenant.
+        Persons authorised to process personal data do so only as necessary for
+        the Service and are bound by confidentiality obligations that survive
+        the end of their engagement.
       </p>
 
-      <h2>7. Personal data breaches</h2>
+      <h2>5. Security measures</h2>
       <p>
-        We notify you without undue delay, and no later than 72 hours after
-        becoming aware of a personal data breach affecting your tenant data,
-        with the information reasonably required for your own notification
-        duties. Our security contact is hello@sdk.enterprises.
+        Taking into account the state of the art and the costs of
+        implementation, SDK Enterprises maintains appropriate technical and
+        organisational measures, including: encryption of data in transit and
+        appropriate encryption at rest; strict access control on a need-to-know
+        basis; segregation of tenant environments; measures for availability and
+        resilience, including backups and recovery procedures; abuse detection
+        and rate limiting; tamper-evident logging of security-relevant events;
+        and regular review of these measures as the Service evolves. A
+        plain-language overview is published at /security.
       </p>
 
-      <h2>8. Transfers</h2>
+      <h2>6. Subprocessors</h2>
       <p>
-        Where processing takes place outside the EEA or involves transfer from
-        the EEA, it relies on appropriate safeguards — including the standard
-        contractual clauses adopted by the European Commission, incorporated
-        here by reference with you as exporter and us (or the relevant
-        subprocessor) as importer. The subprocessor page lists each
-        processor&apos;s location.
+        Customer grants general written authorisation to engage subprocessors,
+        whose identities, roles, and locations are published at
+        /legal/subprocessors. SDK Enterprises imposes on each subprocessor, in
+        writing, data protection obligations no less protective than those in
+        this addendum and remains liable to Customer for subprocessor failures.
+        At least fourteen (14) days before a new subprocessor processes personal
+        data, SDK Enterprises updates the published list, giving Customer the
+        opportunity to object on reasonable, data-protection-related grounds; if
+        an objection cannot reasonably be resolved, Customer may terminate the
+        affected part of the Service.
       </p>
 
-      <h2>9. Audits</h2>
+      <h2>7. Assistance to Customer</h2>
+      <ul>
+        <li>Requests from data subjects (access, rectification, erasure, restriction, objection, portability): SDK Enterprises assists without undue delay, through available tenant tooling where possible.</li>
+        <li>Data protection impact assessments and prior consultations: SDK Enterprises provides reasonably available information about the Service.</li>
+        <li>Security incidents: SDK Enterprises notifies Customer without undue delay after becoming aware of a personal data breach affecting Customer&apos;s data, provides information reasonably required for Customer&apos;s own obligations, and cooperates in managing the incident.</li>
+      </ul>
+
+      <h2>8. International transfers</h2>
       <p>
-        On reasonable request, and at most once per year except after a breach,
-        we provide the information needed to demonstrate compliance with this
-        addendum — mechanism documentation, audit-chain verification results,
-        and summaries of our own reviews.
+        Where personal data would be transferred outside the European Economic
+        Area to a country not benefiting from an adequacy decision, SDK
+        Enterprises ensures appropriate safeguards are in place — principally
+        the standard contractual clauses adopted by the European Commission,
+        entered into between the relevant exporter and importer — together with
+        supplementary technical measures where needed. Current transfer
+        locations are described on the subprocessors page.
       </p>
 
-      <h2>10. Deletion</h2>
+      <h2>9. Accountability and audits</h2>
       <p>
-        On termination of your tenant we delete or return end-user personal
-        data on request, subject to retention of audit evidence required by law,
-        which remains protected under this addendum&apos;s terms.
+        SDK Enterprises keeps records of processing activities within its scope
+        and makes available documentation demonstrating compliance with this
+        addendum. Customer may request such information once per year, and
+        additionally following a personal data breach or a substantiated
+        compliance concern. On-site audits, where granted, take place at
+        Customer&apos;s cost, on reasonable notice, and subject to
+        confidentiality and the protections owed to other customers.
       </p>
 
-      <h2>11. California (CCPA/CPRA)</h2>
+      <h2>10. Return and deletion</h2>
       <p>
-        For personal data subject to California law we act as a service
-        provider: we do not sell or share personal data, do not retain, use, or
-        disclose it outside the direct business relationship, and do not combine
-        it with personal data received from other sources, except as permitted
-        by law.
+        On termination of the Agreement, SDK Enterprises makes Customer&apos;s
+        personal data available for export and then deletes it, including within
+        subprocessor systems, within a commercially reasonable period — save
+        where retention is required by law, in which case the data remains
+        protected under this addendum until deletion becomes possible.
+      </p>
+
+      <h2>11. Liability, law, and disputes</h2>
+      <p>
+        Liability under this addendum is allocated and limited as set out in the
+        terms of service. This addendum is governed by French law, and disputes
+        follow the resolution mechanism agreed there.
+      </p>
+
+      <h2>12. California privacy rights</h2>
+      <p>
+        For personal data subject to the California Consumer Privacy Act as
+        amended, SDK Enterprises acts as a service provider: it does not sell or
+        share personal data, does not retain, use, or disclose it outside the
+        direct business relationship except as permitted by law, and does not
+        combine it with personal data received from other sources.
+      </p>
+
+      <h2>13. Precedence and amendments</h2>
+      <p>
+        If individual provisions of this addendum conflict with the standard
+        contractual clauses incorporated under section 8, the clauses prevail for
+        the transfers they govern. We may amend this addendum prospectively to
+        reflect changes in the Service or law, announcing material changes on
+        this page before they take effect.
       </p>
     </LegalShell>
   );

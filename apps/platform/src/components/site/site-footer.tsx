@@ -1,13 +1,15 @@
 import Link from "next/link";
 
-const GROUPS: Array<{ title: string; links: Array<{ label: string; href: string; external?: boolean }> }> = [
+type FooterLink = { label: string; href: string; kind?: "route" | "anchor" | "external" };
+
+const GROUPS: Array<{ title: string; links: FooterLink[] }> = [
   {
     title: "Product",
     links: [
-      { label: "Platform", href: "/#platform" },
-      { label: "Quickstart", href: "/#quickstart" },
-      { label: "Pricing", href: "/#pricing" },
-      { label: "Service status", href: "/api/health" },
+      { label: "Platform", href: "/#platform", kind: "anchor" },
+      { label: "Quickstart", href: "/#quickstart", kind: "anchor" },
+      { label: "Pricing", href: "/#pricing", kind: "anchor" },
+      { label: "Service status", href: "/api/health", kind: "external" },
     ],
   },
   {
@@ -30,11 +32,32 @@ const GROUPS: Array<{ title: string; links: Array<{ label: string; href: string;
   {
     title: "Company",
     links: [
-      { label: "SDK Enterprises", href: "https://sdk.enterprises", external: true },
-      { label: "Contact", href: "mailto:hello@sdk.enterprises" },
+      { label: "SDK Enterprises", href: "https://sdk.enterprises", kind: "external" },
+      { label: "Contact", href: "mailto:hello@sdk.enterprises", kind: "external" },
     ],
   },
 ];
+
+function FooterItem(params: { link: FooterLink }) {
+  const className =
+    "text-body text-foreground underline-offset-4 transition-colors duration-150 hover:text-muted-foreground hover:underline";
+  if (params.link.kind === "route") {
+    return (
+      <Link href={params.link.href} className={className}>
+        {params.link.label}
+      </Link>
+    );
+  }
+  return (
+    <a
+      href={params.link.href}
+      rel={params.link.kind === "external" ? "noopener noreferrer" : undefined}
+      className={className}
+    >
+      {params.link.label}
+    </a>
+  );
+}
 
 export function SiteFooter() {
   return (
@@ -53,22 +76,7 @@ export function SiteFooter() {
               <ul className="mt-4 space-y-2.5">
                 {group.links.map((link) => (
                   <li key={link.label}>
-                    {link.external ? (
-                      <a
-                        href={link.href}
-                        rel="noopener noreferrer"
-                        className="text-body text-foreground underline-offset-4 transition-colors duration-150 hover:text-muted-foreground hover:underline"
-                      >
-                        {link.label}
-                      </a>
-                    ) : (
-                      <Link
-                        href={link.href}
-                        className="text-body text-foreground underline-offset-4 transition-colors duration-150 hover:text-muted-foreground hover:underline"
-                      >
-                        {link.label}
-                      </Link>
-                    )}
+                    <FooterItem link={link} />
                   </li>
                 ))}
               </ul>

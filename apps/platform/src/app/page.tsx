@@ -260,9 +260,9 @@ export default function HomePage() {
                 <h3 className="text-h3 font-bold">What we process</h3>
                 <ul className="mt-4 space-y-2 text-body text-muted-foreground">
                   <li>· Account email, to deliver one-time codes</li>
-                  <li>· Auth events (logins, token issues) with IP, for abuse detection and audit</li>
-                  <li>· Rate-limit counters, keyed by email and IP, auto-expiring</li>
-                  <li>· Encrypted client secrets and signing keys, envelope-encrypted at rest</li>
+                  <li>· Authentication events with technical metadata, kept for security and audit</li>
+                  <li>· Transient abuse-prevention counters that expire on their own</li>
+                  <li>· Credentials and cryptographic keys stored only in protected form</li>
                 </ul>
               </div>
               <div className="rounded-lg border border-border bg-card p-6">
