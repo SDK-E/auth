@@ -11,6 +11,7 @@ Next.js 16 (App Router, src dir) · React 19 · Tailwind CSS v4 · TypeScript st
 - Build/lint/typecheck: `pnpm build` / `pnpm lint` / `pnpm typecheck`
 - DB migrations: edit `packages/db/src/schema/**` then `pnpm db:generate` (offline SQL gen), apply with `pnpm db:migrate`
 - Mail sink (dev email capture, SMTP :1025 / HTTP :1080): `pnpm mail` to run, `pnpm mail:list|mail:read|mail:wait|mail:clear|mail:health` to inspect; MCP server via `pnpm mail:mcp`. Sends go through `@sdk-e/emails` `sendMail` using `MAIL_SMTP_URL`/`MAIL_FROM`.
+- Redis (local dev): `pnpm redis` runs a first-party Upstash-REST-compatible in-memory server on :8000 (token `upstash`) — no external services; Vercel Preview/Prod inject real Upstash creds automatically. `KV_REST_API_URL`/`KV_REST_API_TOKEN` default to the local pair.
 - Port conflicts: `pnpm ports:list|ports:find|ports:check|ports:kill` (portkiller)
 - Ported tooling origin: `github.com/SDK-E/app` scripts/mail + scripts/portkiller. Deferred from there until needed: i18n translation pipeline (scripts/i18n — adopt at milestone 11), background remover (scripts/images).
 

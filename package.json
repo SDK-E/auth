@@ -22,6 +22,7 @@
     "mail:clear": "node scripts/mail/mail-cli.ts clear",
     "mail:health": "node scripts/mail/mail-cli.ts health",
     "mail:mcp": "node scripts/mail/mail-mcp.ts",
+    "redis": "node scripts/redis/local-server.ts",
     "ports:list": "node scripts/portkiller/portkiller.ts list",
     "ports:find": "node scripts/portkiller/portkiller.ts find",
     "ports:check": "node scripts/portkiller/portkiller.ts check",
