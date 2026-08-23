@@ -1,0 +1,21 @@
+{
+  "name": "@sdk-e/emails",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sdk-e/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/nodemailer": "^8.0.1",
+    "nodemailer": "^9.0.5",
+    "typescript": "^5.9.2"
+  }
+}

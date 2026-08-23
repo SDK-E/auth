@@ -24,3 +24,17 @@ export function tryServerEnv(): ServerEnv | { error: z.ZodError } {
     throw error;
   }
 }
+
+export const mailEnvSchema = z.object({
+  MAIL_SMTP_URL: z.string().default("smtp://localhost:1025"),
+  MAIL_FROM: z.string().default("SDK-E Auth <no-reply@sdk.enterprises>"),
+});
+
+export type MailEnv = z.infer<typeof mailEnvSchema>;
+
+let mailCached: MailEnv | undefined;
+
+export function mailEnv(): MailEnv {
+  mailCached ??= mailEnvSchema.parse(process.env);
+  return mailCached;
+}

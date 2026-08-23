@@ -10,6 +10,9 @@ Next.js 16 (App Router, src dir) · React 19 · Tailwind CSS v4 · TypeScript st
 - Dev (all): `pnpm dev`; platform only: `pnpm --filter @sdk-e/platform dev`
 - Build/lint/typecheck: `pnpm build` / `pnpm lint` / `pnpm typecheck`
 - DB migrations: edit `packages/db/src/schema/**` then `pnpm db:generate` (offline SQL gen), apply with `pnpm db:migrate`
+- Mail sink (dev email capture, SMTP :1025 / HTTP :1080): `pnpm mail` to run, `pnpm mail:list|mail:read|mail:wait|mail:clear|mail:health` to inspect; MCP server via `pnpm mail:mcp`. Sends go through `@sdk-e/emails` `sendMail` using `MAIL_SMTP_URL`/`MAIL_FROM`.
+- Port conflicts: `pnpm ports:list|ports:find|ports:check|ports:kill` (portkiller)
+- Ported tooling origin: `github.com/SDK-E/app` scripts/mail + scripts/portkiller. Deferred from there until needed: i18n translation pipeline (scripts/i18n — adopt at milestone 11), background remover (scripts/images).
 
 ## Layout rules
 - Apps live in `apps/*`, libraries in `packages/*`. Package scope is `@sdk-e/*`.

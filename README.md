@@ -25,11 +25,14 @@ apps/
 packages/
   shared/          Zod env validation, prefixed IDs, host parsing, constants
   db/              Drizzle schema v1 + client + migrations
+  emails/          Transactional mail transport (dev sink now, Resend at launch)
   engine/          OIDC provider, tokens/sessions          (milestone 2+)
   connections/     Social/SAML/OIDC/LDAP/SCIM adapters     (milestone 6)
   actions-runtime/ Vercel Sandbox facade + warm pool            (runner: milestone 7)
-  emails/          React Email templates                   (milestone 3+)
   sdk-js|sdk-nextjs|sdk-react|sdk-node|sdk-python|sdk-go   (milestone 11)
+scripts/
+  mail/            Dev mail sink (SMTP :1025) + CLI + MCP server
+  portkiller/      Listening-port inspector/killer for dev
 ```
 
 ## Commands

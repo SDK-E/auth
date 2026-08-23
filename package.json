@@ -1,6 +1,7 @@
 {
   "name": "sdk-e-auth",
   "private": true,
+  "type": "module",
   "packageManager": "pnpm@11.22.0",
   "engines": {
     "node": ">=26"
@@ -13,10 +14,28 @@
     "test": "turbo run test",
     "db:generate": "pnpm --filter @sdk-e/db generate",
     "db:migrate": "pnpm --filter @sdk-e/db migrate",
-    "db:studio": "pnpm --filter @sdk-e/db studio"
+    "db:studio": "pnpm --filter @sdk-e/db studio",
+    "mail": "node scripts/mail/mail-sink.ts",
+    "mail:list": "node scripts/mail/mail-cli.ts list",
+    "mail:read": "node scripts/mail/mail-cli.ts read",
+    "mail:wait": "node scripts/mail/mail-cli.ts wait",
+    "mail:clear": "node scripts/mail/mail-cli.ts clear",
+    "mail:health": "node scripts/mail/mail-cli.ts health",
+    "mail:mcp": "node scripts/mail/mail-mcp.ts",
+    "ports:list": "node scripts/portkiller/portkiller.ts list",
+    "ports:find": "node scripts/portkiller/portkiller.ts find",
+    "ports:check": "node scripts/portkiller/portkiller.ts check",
+    "ports:pid": "node scripts/portkiller/portkiller.ts pid",
+    "ports:kill": "node scripts/portkiller/portkiller.ts kill",
+    "ports:kill-force": "node scripts/portkiller/portkiller.ts kill-force"
   },
   "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@types/nodemailer": "^8.0.1",
+    "nodemailer": "^9.0.5",
+    "smtp-tester": "^2.1.0",
     "turbo": "^2.10.11",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "zod": "^4.4.3"
   }
 }
