@@ -38,3 +38,15 @@ export function mailEnv(): MailEnv {
   mailCached ??= mailEnvSchema.parse(process.env);
   return mailCached;
 }
+
+export const kvEnvSchema = z.object({
+  KV_REST_API_URL: z.url(),
+  KV_REST_API_TOKEN: z.string().min(1),
+});
+
+export type KvEnv = z.infer<typeof kvEnvSchema>;
+
+export function tryKvEnv(): KvEnv | undefined {
+  const parsed = kvEnvSchema.safeParse(process.env);
+  return parsed.success ? parsed.data : undefined;
+}

@@ -12,6 +12,7 @@
   "dependencies": {
     "@sdk-e/db": "workspace:*",
     "@sdk-e/shared": "workspace:*",
+    "@upstash/redis": "^1.38.2",
     "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
     "next": "16.3.2",
