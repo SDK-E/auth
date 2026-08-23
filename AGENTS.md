@@ -29,6 +29,6 @@ Next.js 16 (App Router, src dir) · React 19 · Tailwind CSS v4 · TypeScript st
 - Commits: conventional commits (`feat:`, `fix:`, `chore:`…).
 
 ## Deployment
-- Vercel team: `SDK Enterprises` (slug `sdk-enterprises`). Single Next.js project for `apps/platform`.
+- Vercel team: `SDK Enterprises` (slug `sdk-enterprises`). Single Next.js project for `apps/platform`: **`auth`** (Neon integration connected; `DATABASE_URL` injected).
 - Production domain `auth.sdk.enterprises`; preview URLs for branches.
 - `DATABASE_URL`, `AUTH_BASE_DOMAIN`, etc. configured per environment in Vercel project settings.

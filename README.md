@@ -4,7 +4,7 @@ Multi-tenant authentication infrastructure — an Auth0-class product by SDK Ent
 
 - **Domain**: `auth.sdk.enterprises` (single domain serves the dashboard **and** the auth plane; tenants get `{slug}.auth.sdk.enterprises` plus custom domains)
 - **Repo**: [github.com/SDK-E/auth](https://github.com/SDK-E/auth) · npm scope `@sdk-e/*`
-- **Deploy**: Vercel team `SDK Enterprises` → project `sdk-e-auth-platform` (root dir `apps/platform`), auto-deploys on push
+- **Deploy**: Vercel team `SDK Enterprises` → project `auth` (root dir `apps/platform`, Neon connected), auto-deploys on push
 
 ## Architecture — one app, four planes (host + path routed)
 
