@@ -46,26 +46,6 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   el: "Ελληνικά",
 };
 
-export const LOCALE_FLAGS: Record<Locale, string> = {
-  en: "🇬🇧",
-  fr: "🇫🇷",
-  de: "🇩🇪",
-  es: "🇪🇸",
-  pt: "🇵🇹",
-  it: "🇮🇹",
-  nl: "🇳🇱",
-  sv: "🇸🇪",
-  no: "🇳🇴",
-  da: "🇩🇰",
-  fi: "🇫🇮",
-  pl: "🇵🇱",
-  cs: "🇨🇿",
-  hu: "🇭🇺",
-  ro: "🇷🇴",
-  bg: "🇧🇬",
-  el: "🇬🇷",
-};
-
 export const LOCALE_COOKIE = "sdk_e_locale";
 
 export function parseAcceptLanguage(header: string | null): string[] {
