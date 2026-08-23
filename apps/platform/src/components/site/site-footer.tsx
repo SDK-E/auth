@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { LOCALE_LABELS, locales, type Locale } from "@/i18n";
+import { LocaleSwitcher } from "@/components/site/locale-switcher";
+import type { Locale } from "@/i18n";
 import type { FooterStrings } from "@/i18n/types";
 
 export function SiteFooter(params: { t: FooterStrings; base: string; locale: Locale }) {
@@ -75,25 +76,17 @@ export function SiteFooter(params: { t: FooterStrings; base: string; locale: Loc
             </nav>
           ))}
         </div>
-        <div className="mt-10 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-6">
-          <span className="text-micro uppercase text-muted-foreground">{params.t.languageLabel}</span>
-          <ul className="flex flex-wrap gap-x-3 gap-y-1">
-            {locales.map((locale) => (
-              <li key={locale}>
-                <a
-                  href={locale === "en" ? "/" : `/${locale}`}
-                  hrefLang={locale}
-                  className={
-                    locale === params.locale
-                      ? "text-micro uppercase font-bold text-foreground underline underline-offset-4"
-                      : "text-micro uppercase text-muted-foreground transition-colors duration-150 hover:text-foreground"
-                  }
-                >
-                  {LOCALE_LABELS[locale]}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="mt-10 border-t border-border pt-6">
+          <p className="text-micro uppercase text-muted-foreground">{params.t.languageLabel}</p>
+          <div className="mt-3">
+            <LocaleSwitcher current={params.locale} />
+          </div>
+        </div>
+        <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6 text-micro uppercase text-muted-foreground">
+          <span>
+            © {new Date().getFullYear()} {params.t.entityLine}
+          </span>
+          <span>auth.sdk.enterprises — {params.t.frenchLawLine}</span>
         </div>
         <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6 text-micro uppercase text-muted-foreground">
           <span>

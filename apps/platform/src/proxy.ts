@@ -1,10 +1,11 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { SESSION_COOKIE_NAME, classifyHost, HEADER_HOST_KIND, HEADER_TENANT_SLUG } from "@sdk-e/shared";
-import { locales } from "@/i18n";
+import { LOCALE_COOKIE, isLocale, locales, matchLocale, parseAcceptLanguage } from "@/i18n";
 import { verifySignedJwt } from "@/lib/auth/verify";
 
 const PUBLIC_PATHS = new Set(["/", "/u/login", "/u/login/verify", "/u/logout", "/security", "/sitemap.xml"]);
 const PUBLIC_PREFIXES = ["/u/", "/authorize", "/oauth/", "/api/health", "/.well-known/", "/legal/"];
+const NEGOTIABLE_PATH = /^\/(?:$|security$|legal\/[a-z-]+$)/;
 
 function isPublicPath(pathname: string): boolean {
   const segments = pathname.split("/");
@@ -40,6 +41,20 @@ export default async function proxy(request: NextRequest) {
   }
 
   const pathname = request.nextUrl.pathname;
+
+  if (request.method === "GET" && NEGOTIABLE_PATH.test(pathname)) {
+    const cookieLocale = readCookie(request.headers.get("cookie"), LOCALE_COOKIE);
+    const preferred =
+      cookieLocale && isLocale(cookieLocale)
+        ? cookieLocale
+        : matchLocale(parseAcceptLanguage(request.headers.get("accept-language")));
+    if (preferred && preferred !== "en") {
+      const target = new URL(`/${preferred}${pathname === "/" ? "" : pathname}`, request.url);
+      const negotiation = NextResponse.redirect(target, 307);
+      negotiation.headers.set("vary", "accept-language");
+      return negotiation;
+    }
+  }
 
   if (!isPublicPath(pathname)) {
     const token = readCookie(request.headers.get("cookie"), SESSION_COOKIE_NAME);
