@@ -30,6 +30,7 @@ Next.js 16 (App Router, src dir) · React 19 · Tailwind CSS v4 · TypeScript st
 - Validate all external input with Zod schemas defined in `@sdk-e/shared` or route-local schema files.
 - Never log secrets; tenant secrets are encrypted with envelope encryption before touching the DB.
 - Commits: conventional commits (`feat:`, `fix:`, `chore:`…).
+- Owner/admin identity: `hicham@sdk.enterprises` — first staff superadmin (M4), Stripe account contact (M9).
 
 ## Deployment
 - Vercel team: `SDK Enterprises` (slug `sdk-enterprises`). Single Next.js project for `apps/platform`: **`auth`** (Neon integration connected; `DATABASE_URL` injected).
