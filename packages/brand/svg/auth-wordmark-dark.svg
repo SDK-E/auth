@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 72" role="img" aria-label="auth">
-  <title>Auth wordmark, light surface variant</title>
-  <g fill="none" stroke="#082003" stroke-width="9">
+  <title>Auth wordmark, dark surface variant</title>
+  <g fill="none" stroke="#d7e8d3" stroke-width="9">
     <g transform="translate(8 66)">
       <circle cx="21" cy="-20.5" r="16.5"/>
       <path d="M37.5 -42L37.5 0"/>

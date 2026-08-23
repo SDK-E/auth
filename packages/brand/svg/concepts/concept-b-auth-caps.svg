@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 122" role="img" aria-label="Concept B — AUTH caps wordmark">
+  <title>Concept B — AUTH. uppercase geometric caps</title>
+  <g transform="translate(0 14)">
+    <g fill="none" stroke="#d7e8d3" stroke-width="13">
+      <path d="M9 100L50 7L91 100" stroke-linejoin="miter"/>
+      <path d="M29 64L71 64"/>
+      <g transform="translate(113 0)">
+        <path d="M10 0L10 55A40 40 0 0 0 90 55L90 0"/>
+      </g>
+      <g transform="translate(226 0)">
+        <path d="M50 0L50 100"/>
+        <path d="M6 0L94 0"/>
+      </g>
+      <g transform="translate(342 0)">
+        <path d="M10 0L10 100"/>
+        <path d="M90 0L90 100"/>
+        <path d="M10 50L90 50"/>
+      </g>
+    </g>
+    <circle cx="494" cy="99" r="15" fill="#2cdb16"/>
+  </g>
+</svg>

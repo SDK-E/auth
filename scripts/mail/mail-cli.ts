@@ -1,3 +1,5 @@
+import "./load-env.ts";
+
 interface SinkMessage {
   id: string;
   receivedAt: string;
@@ -8,7 +10,8 @@ interface SinkMessage {
   html: string | null;
 }
 
-const HTTP_URL = process.env.MAIL_HTTP_URL ?? "http://localhost:1080";
+const HTTP_URL =
+  process.env.MAIL_HTTP_URL ?? `http://localhost:${process.env.MAIL_HTTP_PORT ?? 1080}`;
 
 async function fetchJson(path: string, init?: RequestInit): Promise<unknown> {
   const res = await fetch(`${HTTP_URL}${path}`, init);

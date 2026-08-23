@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Mail sink — SDK Enterprises (local)</title>
+    <link rel="icon" type="image/png" href="/brand/sdk-mark-dark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --dark: #082003;
+        --dark-deep: #2d4b28;
+        --brand: #2cdb16;
+        --light: #d7e8d3;
+        --paper: #f8fbf7;
+        --fog: #abc4a6;
+        --line: #9db497;
+        --muted-fg: #536b4f;
+        --radius-card: 10px;
+        --radius-control: 8px;
+        --radius-nav: 7px;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--light);
+        color: var(--dark);
+        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 14px;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+      button,
+      input {
+        font: inherit;
+        color: inherit;
+      }
+      :focus-visible {
+        outline: 2px solid var(--dark);
+        outline-offset: 2px;
+      }
+      .topbar :focus-visible,
+      .pane-list :focus-visible {
+        outline-color: var(--brand);
+      }
+      .hidden {
+        display: none !important;
+      }
+      .topbar {
+        flex: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 64px;
+        padding: 0 24px;
+        background: var(--dark);
+        color: var(--light);
+        border-bottom: 1px solid var(--dark-deep);
+      }
+      .topbar img.logo {
+        display: block;
+        height: 22px;
+        width: auto;
+      }
+      .eyebrow {
+        font-size: 11px;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--fog);
+      }
+      .divider-v {
+        width: 1px;
+        height: 24px;
+        background: var(--dark-deep);
+      }
+      .spacer {
+        flex: 1;
+      }
+      .status {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--brand);
+      }
+      .dot.down {
+        background: transparent;
+        border: 1px solid var(--line);
+      }
+      @keyframes dot-pulse {
+        50% {
+          opacity: 0.35;
+        }
+      }
+      .dot.pulse {
+        animation: dot-pulse 1s ease-in-out 1;
+      }
+      .count {
+        font-size: 10px;
+        line-height: 1;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: var(--fog);
+      }
+      .btn {
+        appearance: none;
+        border: 1px solid transparent;
+        border-radius: var(--radius-control);
+        padding: 12px 16px;
+        font-size: 11px;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition:
+          opacity 150ms ease,
+          background-color 150ms ease,
+          color 150ms ease;
+      }
+      .btn-primary {
+        background: var(--brand);
+        color: var(--dark);
+      }
+      .btn-primary:hover {
+        background: rgba(44, 203, 22, 0.9);
+      }
+      .btn-outline-dark {
+        background: var(--paper);
+        color: var(--dark);
+        border-color: var(--dark);
+      }
+      .btn-outline-dark:hover {
+        opacity: 0.7;
+      }
+      .btn-outline-light {
+        background: transparent;
+        color: var(--light);
+        border-color: var(--dark-deep);
+      }
+      .btn-outline-light:hover {
+        opacity: 0.7;
+      }
+      .btn[disabled] {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+      .shell {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 380px minmax(0, 1fr);
+        min-height: 0;
+      }
+      .pane-list {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        background: var(--dark);
+        color: var(--light);
+        border-right: 1px solid var(--dark-deep);
+      }
+      .search-wrap {
+        flex: none;
+        padding: 16px;
+        border-bottom: 1px solid var(--dark-deep);
+      }
+      .search-wrap input {
+        width: 100%;
+        padding: 10px 12px;
+        background: transparent;
+        color: var(--light);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-control);
+      }
+      .search-wrap input::placeholder {
+        color: var(--fog);
+      }
+      .msg-list {
+        flex: 1;
+        overflow-y: auto;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .msg-row {
+        display: block;
+        width: 100%;
+        padding: 14px 16px;
+        text-align: left;
+        background: none;
+        border: 0;
+        border-bottom: 1px solid var(--dark-deep);
+        color: inherit;
+        cursor: pointer;
+        transition: background-color 150ms ease;
+      }
+      .msg-row:hover {
+        background: var(--dark-deep);
+      }
+      .row-top {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .subject {
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .new-dot {
+        flex: none;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--brand);
+      }
+      .row-meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        margin-top: 2px;
+      }
+      .from {
+        min-width: 0;
+        font-size: 10px;
+        line-height: 1.4;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: var(--fog);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .time {
+        flex: none;
+        font-size: 10px;
+        line-height: 1.4;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: var(--fog);
+      }
+      .msg-row.is-active {
+        background: var(--dark-deep);
+      }
+      .msg-row.is-active .subject {
+        color: var(--brand);
+      }
+      .list-empty-wrap {
+        padding: 16px;
+      }
+      .empty {
+        background: var(--paper);
+        border: 1px dashed var(--line);
+        border-radius: var(--radius-card);
+        padding: 32px 20px;
+        text-align: center;
+        color: var(--muted-fg);
+      }
+      .empty h3 {
+        margin: 0;
+        color: var(--dark);
+        font-size: 16px;
+        line-height: 1.12;
+        font-weight: 700;
+      }
+      .empty p {
+        margin: 8px 0 0;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+      .pane-viewer {
+        min-width: 0;
+        overflow-y: auto;
+        padding: 24px;
+      }
+      .viewer-inner {
+        max-width: 980px;
+        margin: 0 auto;
+      }
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      .seg {
+        display: inline-flex;
+        gap: 2px;
+        padding: 2px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-control);
+      }
+      .seg button {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        border-radius: var(--radius-nav);
+        padding: 8px 12px;
+        font-size: 11px;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted-fg);
+        cursor: pointer;
+        transition:
+          background-color 150ms ease,
+          color 150ms ease;
+      }
+      .seg button:hover {
+        color: var(--dark);
+      }
+      .seg button[aria-selected="true"],
+      .seg button[aria-pressed="true"] {
+        background: var(--dark);
+        color: var(--light);
+      }
+      .seg button[disabled] {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+      .card {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-card);
+        padding: 24px;
+      }
+      .meta-card h2 {
+        margin: 0 0 12px;
+        max-width: 65ch;
+        font-size: 23px;
+        line-height: 1.12;
+        font-weight: 700;
+        overflow-wrap: anywhere;
+      }
+      .meta-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 32px;
+      }
+      .meta-item {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        min-width: 0;
+        max-width: 100%;
+      }
+      .meta-label {
+        flex: none;
+        font-size: 10px;
+        line-height: 1.4;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: var(--muted-fg);
+      }
+      .meta-value {
+        font-size: 14px;
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+      .preview-card {
+        margin-top: 16px;
+      }
+      .frame-wrap {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-control);
+        overflow: hidden;
+        transition: max-width 200ms ease;
+      }
+      .frame-wrap iframe {
+        display: block;
+        width: 100%;
+        height: min(70vh, 900px);
+        border: 0;
+        background: #ffffff;
+      }
+      .bodyview {
+        margin: 0;
+        max-width: 75ch;
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 1.7;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+      }
+      .banner {
+        position: fixed;
+        left: 50%;
+        bottom: 24px;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: min(720px, calc(100vw - 48px));
+        padding: 16px 20px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-card);
+      }
+      .banner-title {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .banner-desc {
+        margin: 2px 0 0;
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--muted-fg);
+      }
+      .err-label {
+        display: block;
+        font-size: 10px;
+        line-height: 1;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: var(--muted-fg);
+        margin-bottom: 4px;
+      }
+      @media (max-width: 900px) {
+        .shell {
+          grid-template-columns: minmax(0, 1fr);
+          grid-template-rows: minmax(240px, 45vh) minmax(0, 1fr);
+        }
+        .pane-list {
+          border-right: 0;
+          border-bottom: 1px solid var(--dark-deep);
+        }
+        .banner {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <img class="logo" src="/brand/sdk-logo-dark.png" alt="SDK Enterprises" />
+      <div class="divider-v"></div>
+      <span class="eyebrow">Mail sink · local dev</span>
+      <div class="spacer"></div>
+      <div class="status">
+        <span id="dot" class="dot" aria-hidden="true"></span>
+        <span id="count" class="count">connecting…</span>
+      </div>
+      <button id="clear-btn" type="button" class="btn btn-outline-light">Clear all</button>
+    </header>
+
+    <main class="shell">
+      <aside class="pane-list">
+        <div class="search-wrap">
+          <input
+            id="search"
+            type="search"
+            placeholder="Filter subject, from, to…"
+            aria-label="Filter messages"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+        <ul id="msg-list" class="msg-list"></ul>
+        <div class="list-empty-wrap">
+          <div id="empty-none" class="empty hidden">
+            <h3>Inbox zero</h3>
+            <p>
+              No email yet. Trigger a send from the app — in dev everything lands here instead of
+              Resend.
+            </p>
+          </div>
+          <div id="empty-filter" class="empty hidden">
+            <h3>No matches</h3>
+            <p>No message matches the current filter.</p>
+          </div>
+        </div>
+      </aside>
+
+      <section class="pane-viewer">
+        <div class="viewer-inner">
+          <div id="viewer-empty" class="empty">
+            <h3>Select a message</h3>
+            <p>
+              Pick an email on the left to preview how it renders — HTML, plain text or raw source,
+              at desktop, tablet or phone width.
+            </p>
+          </div>
+
+          <div id="viewer-main" class="hidden">
+            <div class="toolbar">
+              <div class="seg" role="tablist" aria-label="Message view">
+                <button id="tab-html" role="tab" type="button" aria-selected="true">
+                  HTML preview
+                </button>
+                <button id="tab-text" role="tab" type="button" aria-selected="false">
+                  Plain text
+                </button>
+                <button id="tab-raw" role="tab" type="button" aria-selected="false">
+                  Raw source
+                </button>
+              </div>
+              <div class="seg" role="group" aria-label="Preview width">
+                <button id="w-full" type="button" aria-pressed="true">Desktop</button>
+                <button id="w-640" type="button" aria-pressed="false">640</button>
+                <button id="w-375" type="button" aria-pressed="false">375</button>
+              </div>
+            </div>
+
+            <div class="card meta-card">
+              <h2 id="d-subject"></h2>
+              <div class="meta-grid">
+                <div class="meta-item">
+                  <span class="meta-label">From</span>
+                  <span id="d-from" class="meta-value"></span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">To</span>
+                  <span id="d-to" class="meta-value"></span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Received</span>
+                  <span id="d-date" class="meta-value"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card preview-card">
+              <div id="frame-wrap" class="frame-wrap"></div>
+              <pre id="text-view" class="bodyview hidden"></pre>
+              <pre id="raw-view" class="bodyview hidden"></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="banner" class="banner hidden" role="alert">
+      <div>
+        <span class="err-label">Error</span>
+        <span class="banner-title">Mail sink unreachable</span>
+        <p class="banner-desc">
+          The UI can't reach the sink API. Start it with
+          <code>pnpm dev</code> or <code>pnpm mail</code>.
+        </p>
+      </div>
+      <button id="retry-btn" type="button" class="btn btn-outline-dark">Retry</button>
+    </div>
+
+    <script>
+      (() => {
+        "use strict";
+        const $ = (id) => document.getElementById(id);
+        const listEl = $("msg-list");
+        const searchEl = $("search");
+        const emptyNone = $("empty-none");
+        const emptyFilter = $("empty-filter");
+        const viewerEmpty = $("viewer-empty");
+        const viewerMain = $("viewer-main");
+        const frameWrap = $("frame-wrap");
+        const textView = $("text-view");
+        const rawView = $("raw-view");
+        const dot = $("dot");
+        const countEl = $("count");
+        const clearBtn = $("clear-btn");
+        const banner = $("banner");
+        const retryBtn = $("retry-btn");
+        const tabs = { html: $("tab-html"), text: $("tab-text"), raw: $("tab-raw") };
+        const widths = { full: $("w-full"), 640: $("w-640"), 375: $("w-375") };
+
+        const state = {
+          messages: [],
+          detail: null,
+          selected: null,
+          seen: new Set(),
+          firstLoad: true,
+          connected: null,
+          order: [],
+          tab: "html",
+          width: "full",
+        };
+
+        function el(tag, cls, text) {
+          const node = document.createElement(tag);
+          if (cls) node.className = cls;
+          if (text !== undefined) node.textContent = text;
+          return node;
+        }
+
+        function fmtListTime(iso) {
+          const d = new Date(iso);
+          if (Number.isNaN(d.getTime())) return "";
+          const time = d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+          if (d.toDateString() === new Date().toDateString()) return time;
+          return d.toLocaleDateString([], { month: "short", day: "numeric" }) + " " + time;
+        }
+
+        function filtered() {
+          const q = searchEl.value.trim().toLowerCase();
+          if (!q) return state.messages;
+          return state.messages.filter(
+            (m) =>
+              m.subject.toLowerCase().includes(q) ||
+              m.from.toLowerCase().includes(q) ||
+              m.to.join(" ").toLowerCase().includes(q)
+          );
+        }
+
+        function renderCount() {
+          countEl.textContent =
+            state.connected === false
+              ? "offline"
+              : state.count + (state.count === 1 ? " message" : " messages");
+        }
+
+        function renderList() {
+          const rows = filtered();
+          state.order = rows.map((m) => m.id);
+          listEl.replaceChildren();
+          for (const m of rows) {
+            const btn = el("button", "msg-row");
+            btn.type = "button";
+            if (m.id === state.selected) btn.classList.add("is-active");
+            const top = el("span", "row-top");
+            if (!state.seen.has(m.id)) top.append(el("span", "new-dot"));
+            top.append(el("span", "subject", m.subject || "(no subject)"));
+            const meta = el("span", "row-meta");
+            meta.append(el("span", "from", m.from));
+            meta.append(el("time", "time", fmtListTime(m.receivedAt)));
+            btn.append(top, meta);
+            btn.addEventListener("click", () => select(m.id));
+            const li = el("li");
+            li.append(btn);
+            listEl.append(li);
+          }
+          emptyNone.classList.toggle("hidden", !(rows.length === 0 && state.messages.length === 0));
+          emptyFilter.classList.toggle("hidden", !(rows.length === 0 && state.messages.length > 0));
+        }
+
+        async function select(id) {
+          state.selected = id;
+          state.seen.add(id);
+          renderList();
+          try {
+            const res = await fetch("/api/email/" + id);
+            if (!res.ok) throw new Error(String(res.status));
+            state.detail = await res.json();
+          } catch {
+            state.detail = null;
+          }
+          renderViewer();
+        }
+
+        function mountFrame(html) {
+          frameWrap.replaceChildren();
+          const frame = document.createElement("iframe");
+          frame.setAttribute("sandbox", "");
+          frame.title = "Email HTML preview";
+          frame.srcdoc = html;
+          frameWrap.append(frame);
+        }
+
+        function applyTab() {
+          for (const [name, btn] of Object.entries(tabs)) {
+            btn.setAttribute("aria-selected", String(state.tab === name));
+          }
+          tabs.html.disabled = !(state.detail && state.detail.html);
+          tabs.text.disabled = !(state.detail && state.detail.text != null);
+          frameWrap.classList.toggle("hidden", state.tab !== "html");
+          textView.classList.toggle("hidden", state.tab !== "text");
+          rawView.classList.toggle("hidden", state.tab !== "raw");
+        }
+
+        function applyWidth() {
+          for (const [name, btn] of Object.entries(widths)) {
+            btn.setAttribute("aria-pressed", String(state.width === name));
+          }
+          frameWrap.style.maxWidth = state.width === "full" ? "100%" : state.width + "px";
+        }
+
+        function renderViewer() {
+          if (!state.selected || !state.detail) {
+            if (state.selected && !state.detail) state.selected = null;
+            viewerEmpty.classList.remove("hidden");
+            viewerMain.classList.add("hidden");
+            return;
+          }
+          const d = state.detail;
+          $("d-subject").textContent = d.subject || "(no subject)";
+          $("d-from").textContent = d.from;
+          $("d-to").textContent = d.to.join(", ");
+          $("d-date").textContent = new Date(d.receivedAt).toLocaleString();
+          textView.textContent = d.text ?? "(no plain-text version)";
+          rawView.textContent = d.raw ?? "(raw source unavailable)";
+          mountFrame(d.html ?? "");
+          state.tab = d.html ? "html" : "text";
+          applyTab();
+          applyWidth();
+          viewerEmpty.classList.add("hidden");
+          viewerMain.classList.remove("hidden");
+        }
+
+        function pulse() {
+          dot.classList.remove("pulse");
+          void dot.offsetWidth;
+          dot.classList.add("pulse");
+        }
+
+        function setConnected(ok) {
+          if (state.connected !== ok) {
+            state.connected = ok;
+            banner.classList.toggle("hidden", ok);
+            dot.classList.toggle("down", !ok);
+            renderCount();
+          }
+        }
+
+        function apply(data) {
+          data.sort((a, b) => Number(b.id) - Number(a.id));
+          let arrived = 0;
+          if (state.firstLoad) {
+            for (const m of data) state.seen.add(m.id);
+            state.firstLoad = false;
+          } else {
+            for (const m of data) if (!state.seen.has(m.id)) arrived++;
+          }
+          state.messages = data;
+          state.count = data.length;
+          if (arrived > 0) pulse();
+          renderCount();
+          renderList();
+          if (state.selected && !data.some((m) => m.id === state.selected)) {
+            state.selected = null;
+            state.detail = null;
+            renderViewer();
+          }
+        }
+
+        async function poll() {
+          try {
+            const res = await fetch("/api/email");
+            if (!res.ok) throw new Error(String(res.status));
+            apply(await res.json());
+            setConnected(true);
+          } catch {
+            setConnected(false);
+          }
+        }
+
+        clearBtn.addEventListener("click", async () => {
+          if (state.count === 0 || !state.connected) return;
+          const label = state.count + (state.count === 1 ? " message" : " messages");
+          if (!window.confirm("Clear " + label + " from the local mail sink?")) return;
+          await fetch("/api/email/all", { method: "DELETE" });
+          poll();
+        });
+
+        retryBtn.addEventListener("click", () => poll());
+        searchEl.addEventListener("input", () => renderList());
+
+        for (const [name, btn] of Object.entries(tabs)) {
+          btn.addEventListener("click", () => {
+            state.tab = name;
+            applyTab();
+          });
+        }
+        for (const [name, btn] of Object.entries(widths)) {
+          btn.addEventListener("click", () => {
+            state.width = name;
+            applyWidth();
+          });
+        }
+
+        listEl.addEventListener("keydown", (event) => {
+          if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
+          event.preventDefault();
+          if (state.order.length === 0) return;
+          const current = state.order.indexOf(state.selected);
+          const next =
+            current === -1
+              ? 0
+              : Math.min(
+                  Math.max(current + (event.key === "ArrowDown" ? 1 : -1), 0),
+                  state.order.length - 1
+                );
+          select(state.order[next]);
+          listEl.querySelector(".is-active")?.focus();
+        });
+
+        poll();
+        setInterval(poll, 2000);
+      })();
+    </script>
+  </body>
+</html>

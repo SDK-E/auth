@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Auth brand pattern tile for dark surfaces">
+  <title>Auth pattern tile, dark surfaces</title>
+  <circle cx="120" cy="120" r="54" fill="none" stroke="#d7e8d3" stroke-opacity="0.07" stroke-width="12"/>
+  <g fill="#2cdb16" fill-opacity="0.4">
+    <circle cx="0" cy="0" r="10"/>
+    <circle cx="240" cy="0" r="10"/>
+    <circle cx="0" cy="240" r="10"/>
+    <circle cx="240" cy="240" r="10"/>
+  </g>
+</svg>

@@ -1,4 +1,6 @@
+import "./load-env.ts";
 import { createServer, type IncomingMessage, type ServerResponse } from "node:http";
+import { readFile } from "node:fs/promises";
 import smtpTester from "smtp-tester";
 
 interface StoredMessage {
@@ -14,6 +16,11 @@ interface StoredMessage {
 
 const SMTP_PORT = Number(process.env.MAIL_SMTP_PORT ?? 1025);
 const HTTP_PORT = Number(process.env.MAIL_HTTP_PORT ?? 1080);
+
+if (process.env.NODE_ENV === "production") {
+  console.error("mail sink: refusing to start — local development tooling only");
+  process.exit(1);
+}
 
 const messages: StoredMessage[] = [];
 
@@ -50,14 +57,64 @@ function publicMessage(message: StoredMessage) {
   };
 }
 
+const BRAND_ASSETS = new Set(["sdk-logo-dark.png", "sdk-mark-dark.png"]);
+
+async function brandAsset(name: string): Promise<Buffer | null> {
+  if (!BRAND_ASSETS.has(name)) return null;
+  const url = new URL(`../../public/brand/${name}`, import.meta.url);
+  try {
+    return await readFile(url);
+  } catch {
+    return null;
+  }
+}
+
+async function uiHtml(): Promise<string | null> {
+  try {
+    return await readFile(new URL("./mail-ui.html", import.meta.url), "utf8");
+  } catch {
+    return null;
+  }
+}
+
 function sendJson(res: ServerResponse, status: number, body: unknown): void {
   res.writeHead(status, { "Content-Type": "application/json; charset=utf-8" });
   res.end(JSON.stringify(body, null, 2));
 }
 
-const httpServer = createServer((req: IncomingMessage, res: ServerResponse) => {
+const httpServer = createServer(async (req: IncomingMessage, res: ServerResponse) => {
   const url = new URL(req.url ?? "/", `http://localhost:${HTTP_PORT}`);
   const { pathname } = url;
+
+  if (req.method === "GET" && pathname === "/") {
+    const html = await uiHtml();
+    if (!html) {
+      sendJson(res, 500, { error: "mail-ui.html not found" });
+      return;
+    }
+    res.writeHead(200, {
+      "Content-Type": "text/html; charset=utf-8",
+      "X-Content-Type-Options": "nosniff",
+    });
+    res.end(html);
+    return;
+  }
+
+  const brandMatch = pathname.match(/^\/brand\/([a-z0-9.-]+\.png)$/);
+  if (req.method === "GET" && brandMatch) {
+    const png = await brandAsset(brandMatch[1]);
+    if (!png) {
+      sendJson(res, 404, { error: "not found" });
+      return;
+    }
+    res.writeHead(200, {
+      "Content-Type": "image/png",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff",
+    });
+    res.end(png);
+    return;
+  }
 
   if (req.method === "GET" && pathname === "/api/health") {
     sendJson(res, 200, {
@@ -81,7 +138,7 @@ const httpServer = createServer((req: IncomingMessage, res: ServerResponse) => {
       sendJson(res, 404, { error: "message not found" });
       return;
     }
-    sendJson(res, 200, publicMessage(message));
+    sendJson(res, 200, { ...publicMessage(message), raw: message.raw });
     return;
   }
 
@@ -94,8 +151,10 @@ const httpServer = createServer((req: IncomingMessage, res: ServerResponse) => {
   sendJson(res, 404, { error: "not found" });
 });
 
-httpServer.listen(HTTP_PORT, () => {
-  console.log(`mail sink: SMTP on :${SMTP_PORT}, HTTP API on http://localhost:${HTTP_PORT}`);
+httpServer.listen(HTTP_PORT, "127.0.0.1", () => {
+  console.log(
+    `mail sink: SMTP on :${SMTP_PORT}, inbox UI http://localhost:${HTTP_PORT} (local only)`
+  );
 });
 
 for (const signal of ["SIGINT", "SIGTERM"] as const) {

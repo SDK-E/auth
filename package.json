@@ -7,7 +7,7 @@
     "node": ">=24"
   },
   "scripts": {
-    "dev": "turbo run dev",
+    "dev": "concurrently --kill-others-on-fail -n next,mail,mailui -c blue,green,yellow \"pnpm --filter @sdk-e/platform dev\" \"node scripts/mail/mail-sink.ts\" \"node scripts/mail/mail-open.ts\"",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
@@ -17,6 +17,7 @@
     "db:seed": "node scripts/db/seed.ts",
     "db:studio": "pnpm --filter @sdk-e/db studio",
     "mail": "node scripts/mail/mail-sink.ts",
+    "mail:ui": "node scripts/mail/mail-open.ts",
     "mail:list": "node scripts/mail/mail-cli.ts list",
     "mail:read": "node scripts/mail/mail-cli.ts read",
     "mail:wait": "node scripts/mail/mail-cli.ts wait",
@@ -37,6 +38,7 @@
     "@sdk-e/engine": "workspace:*",
     "@sdk-e/shared": "workspace:*",
     "@types/nodemailer": "^8.0.1",
+    "concurrently": "^10.0.5",
     "drizzle-orm": "^0.45.2",
     "nodemailer": "^9.0.5",
     "smtp-tester": "^2.1.0",

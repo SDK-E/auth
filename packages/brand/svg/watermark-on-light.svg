@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Auth watermark for light surfaces">
+  <title>Auth watermark, light surfaces</title>
+  <g fill="none" stroke="#082003" stroke-opacity="0.1" stroke-width="9">
+    <g transform="translate(10 69)">
+      <circle cx="21" cy="-20.5" r="16.5"/>
+      <path d="M37.5 -42L37.5 0"/>
+    </g>
+  </g>
+  <circle cx="75" cy="60" r="9" fill="#2cdb16" fill-opacity="0.35"/>
+</svg>

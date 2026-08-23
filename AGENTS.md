@@ -10,11 +10,16 @@ Next.js 16 (App Router, src dir) · React 19 · Tailwind CSS v4 · TypeScript st
 - Dev (all): `pnpm dev`; platform only: `pnpm --filter @sdk-e/platform dev`
 - Build/lint/typecheck: `pnpm build` / `pnpm lint` / `pnpm typecheck`
 - DB migrations: edit `packages/db/src/schema/**` then `pnpm db:generate` (offline SQL gen), apply with `pnpm db:migrate`
-- Mail sink (dev email capture, SMTP :1025 / HTTP :1080): `pnpm mail` to run, `pnpm mail:list|mail:read|mail:wait|mail:clear|mail:health` to inspect; MCP server via `pnpm mail:mcp`. Sends go through `@sdk-e/emails` `sendMail` using `MAIL_SMTP_URL`/`MAIL_FROM`.
+- Mail sink (dev email capture, SMTP :1025 / HTTP :1080): `pnpm mail` to run, `pnpm mail:list|mail:read|mail:wait|mail:clear|mail:health` to inspect; MCP server via `pnpm mail:mcp`. `pnpm dev` runs platform + sink + inbox UI together via concurrently (`mail:ui` reopens the UI at http://localhost:1080); a failing process kills the stack, the one-shot UI opener exiting does not. Sends go through `@sdk-e/emails` `sendMail` using `MAIL_SMTP_URL`/`MAIL_FROM`.
 - Redis (local dev): `pnpm redis` runs a first-party Upstash-REST-compatible in-memory server on :8000 (token `upstash`) — no external services; Vercel Preview/Prod inject real Upstash creds automatically. `KV_REST_API_URL`/`KV_REST_API_TOKEN` default to the local pair.
 - Port conflicts: `pnpm ports:list|ports:find|ports:check|ports:kill` (portkiller)
 - OIDC endpoints live at `/authorize`, `/oauth/*`, `/.well-known/*` (tenant host aware via `x-sdk-e-*`); universal login pages under `/u/**`; auth domain logic in `apps/platform/src/lib/auth/**`, crypto primitives in `@sdk-e/engine`. E2E flow check: boot `pnpm redis` + `pnpm mail` + platform, then `node scripts/dev/e2e-m2.ts`.
 - Ported tooling origin: `github.com/SDK-E/app` scripts/mail + scripts/portkiller. Deferred from there until needed: i18n translation pipeline (scripts/i18n — adopt at milestone 11), background remover (scripts/images).
+
+## Brand
+- Auth is a sub-brand of SDK Enterprises ("SDK."); canonical guideline: `packages/brand/BRAND.md` (extends parent `sdk-e/app/docs/design/brand.md` + `design-system.md`). Every agent MUST follow it.
+- Logo assets are fixed SVGs in `packages/brand/svg/` — never re-type or re-draw the wordmark/mark; the green period `#2cdb16` is mandatory on every mark.
+- Palette/type/motion tokens: machine-readable source in `packages/brand/tokens/brand.json`, wired into `apps/platform/src/app/globals.css`; change both together. Visual reference sheet: open `packages/brand/preview.html`.
 
 ## Layout rules
 - Apps live in `apps/*`, libraries in `packages/*`. Package scope is `@sdk-e/*`.

@@ -28,3 +28,6 @@ coverage/
 .idea/
 .vscode/*
 !.vscode/extensions.json
+
+# local plans (private, never committed to public repo)
+.opencode/

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auth — brand preview</title>
+<style>
+  :root {
+    --dark: #082003; --brand: #2cdb16; --light: #d7e8d3; --paper: #f8fbf7;
+    --muted: #536b4f; --fog: #abc4a6; --line: #9db497;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--light); color: var(--dark); }
+  .wrap { max-width: 1220px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1 { font-size: 23px; letter-spacing: -0.02em; }
+  .sub { font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin-top: 8px; }
+  section { border-top: 1px solid var(--line); padding: 40px 0; }
+  section:first-of-type { border-top: 0; }
+  .eyebrow { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin-bottom: 20px; }
+  .grid { display: grid; gap: 14px; }
+  .cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; min-height: 160px; }
+  .card figcaption, .cap { font-size: 10px; letter-spacing: 0.11em; text-transform: uppercase; color: var(--muted); text-align: center; }
+  .panel-dark { background: var(--dark); border-radius: 10px; padding: 24px; border: 1px solid #2d4b28; }
+  .panel-dark .card { background: #0c2b07; border-color: #2d4b28; }
+  .panel-dark .card figcaption, .panel-dark .cap { color: var(--fog); }
+  img.logo { height: 56px; }
+  img.mark { width: 96px; height: 96px; }
+  .pattern-strip { height: 120px; border-radius: 10px; border: 1px solid var(--line); overflow: hidden; position: relative; }
+  .pattern-strip.dark { border-color: #2d4b28; }
+  .pattern-strip::before { content: ""; position: absolute; inset: -120px; background-repeat: repeat; }
+  .strip-light::before { background-image: url("svg/pattern-on-light.svg"); }
+  .strip-dark::before { background-image: url("svg/pattern-on-dark.svg"); }
+  .wm-demo { position: relative; min-height: 180px; }
+  .wm-demo img { position: absolute; right: 16px; bottom: 16px; width: 96px; opacity: 1; }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+  .swatch { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--paper); }
+  .swatch .chip { height: 64px; border-bottom: 1px solid var(--line); }
+  .swatch .meta { padding: 10px 12px; font-size: 10px; letter-spacing: 0.08em; line-height: 1.6; }
+  .type-spec { display: grid; gap: 10px; }
+  .t-display { font-size: 76px; line-height: 0.95; letter-spacing: -0.065em; font-weight: 800; }
+  .t-title { font-size: 52px; line-height: 1; letter-spacing: -0.05em; font-weight: 800; }
+  .t-h3 { font-size: 23px; line-height: 1.12; font-weight: 700; }
+  .t-body { font-size: 14px; line-height: 1.7; max-width: 65ch; }
+  .t-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 800; }
+  .t-micro { font-size: 10px; letter-spacing: 0.11em; color: var(--muted); }
+  .misuse { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .misuse figure { position: relative; }
+  .misuse .no::after { content: "✕ not allowed"; position: absolute; inset: auto 12px 12px 12px; font-size: 10px; letter-spacing: 0.11em; text-transform: uppercase; color: #f8fbf7; background: #9a3412; padding: 4px 8px; border-radius: 8px; align-self: start; }
+  .stretched img { transform: scaleX(1.7); transform-origin: left; }
+  footer { font-size: 10px; letter-spacing: 0.11em; color: var(--muted); padding-top: 32px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="padding: 24px 0 40px;">
+    <img src="svg/auth-wordmark-light.svg" alt="auth." class="logo">
+    <p class="sub">Brand preview · SDK Enterprises · open alongside BRAND.md</p>
+  </header>
+
+  <section>
+    <p class="eyebrow">01 — Light surface assets</p>
+    <div class="grid cols-4">
+      <figure class="card"><img src="svg/auth-wordmark-light.svg" class="logo" alt="wordmark light"><figcaption>wordmark / light surface</figcaption></figure>
+      <figure class="card"><img src="svg/auth-mark-light.svg" class="mark" alt="mark light"><figcaption>compact mark a. / light canvas</figcaption></figure>
+      <figure class="card wm-demo"><img src="svg/watermark-on-light.svg" alt="watermark light" class="mark"><figcaption>watermark @ 10% / on paper</figcaption></figure>
+      <figure class="card" style="padding: 0; overflow: hidden;"><div class="pattern-strip strip-light" style="height: 100%; min-height: 160px;"></div><figcaption style="padding: 10px;">pattern tile / light</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="panel-dark">
+    <p class="eyebrow cap">02 — Dark surface assets</p>
+    <div class="grid cols-4">
+      <figure class="card"><img src="svg/auth-wordmark-dark.svg" class="logo" alt="wordmark dark"><figcaption>wordmark / dark surface</figcaption></figure>
+      <figure class="card"><img src="svg/auth-mark-dark.svg" class="mark" alt="mark dark"><figcaption>compact mark a. / dark canvas</figcaption></figure>
+      <figure class="card wm-demo"><img src="svg/watermark-on-dark.svg" alt="watermark dark" class="mark"><figcaption>watermark @ 12% / on forest</figcaption></figure>
+      <figure class="card" style="padding: 0; overflow: hidden;"><div class="pattern-strip strip-dark" style="height: 100%; min-height: 160px;"></div><figcaption style="padding: 10px;">pattern tile / dark</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">03 — Concepts (A selected — do not ship B/C)</p>
+    <div class="grid cols-3">
+      <figure class="card panel-dark" style="border-radius: 10px;">
+        <div style="background:#082003;border-radius:10px;padding:24px;width:100%;display:flex;justify-content:center;"><img src="svg/auth-wordmark-dark.svg" class="logo" alt="concept A"></div>
+        <figcaption>A — auth. lowercase geometric · selected</figcaption>
+      </figure>
+      <figure class="card panel-dark" style="border-radius: 10px;">
+        <div style="background:#082003;border-radius:10px;padding:24px;width:100%;display:flex;justify-content:center;"><img src="svg/concepts/concept-b-auth-caps.svg" style="height:44px;" alt="concept B"></div>
+        <figcaption>B — AUTH. caps sibling · rejected</figcaption>
+      </figure>
+      <figure class="card panel-dark" style="border-radius: 10px;">
+        <div style="background:#082003;border-radius:10px;padding:24px;width:100%;display:flex;justify-content:center;"><img src="svg/concepts/concept-c-aperture.svg" style="width:88px;height:88px;" alt="concept C"></div>
+        <figcaption>C — aperture mark · rejected</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">04 — Palette</p>
+    <div class="swatches">
+      <div class="swatch"><div class="chip" style="background:#082003"></div><div class="meta">dark<br>#082003</div></div>
+      <div class="swatch"><div class="chip" style="background:#2cdb16"></div><div class="meta">brand<br>#2cdb16</div></div>
+      <div class="swatch"><div class="chip" style="background:#d7e8d3"></div><div class="meta">light<br>#d7e8d3</div></div>
+      <div class="swatch"><div class="chip" style="background:#f8fbf7"></div><div class="meta">paper<br>#f8fbf7</div></div>
+      <div class="swatch"><div class="chip" style="background:#536b4f"></div><div class="meta">muted<br>#536b4f</div></div>
+      <div class="swatch"><div class="chip" style="background:#abc4a6"></div><div class="meta">fog<br>#abc4a6</div></div>
+      <div class="swatch"><div class="chip" style="background:#9db497"></div><div class="meta">line<br>#9db497</div></div>
+      <div class="swatch"><div class="chip" style="background:#2d4b28"></div><div class="meta">line-dark<br>#2d4b28</div></div>
+      <div class="swatch"><div class="chip" style="background:#166534"></div><div class="meta">success<br>#166534</div></div>
+      <div class="swatch"><div class="chip" style="background:#92400e"></div><div class="meta">warning<br>#92400e</div></div>
+      <div class="swatch"><div class="chip" style="background:#9a3412"></div><div class="meta">destructive<br>#9a3412</div></div>
+      <div class="swatch"><div class="chip" style="background:#0c2b07"></div><div class="meta">card-dark<br>#0c2b07</div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">05 — Type ramp (JetBrains Mono)</p>
+    <div class="type-spec card" style="align-items: flex-start;">
+      <div class="t-display">Ship identity, not plumbing.</div>
+      <div class="t-title">One login flow, every tenant.</div>
+      <div class="t-h3">Sessions are signed and revocable.</div>
+      <p class="t-body">Auth gives your product OIDC and OAuth 2.1 out of the box — hosted login pages, session management, and a management API — so your team ships features instead of identity plumbing.</p>
+      <span class="t-label">Label · eyebrow · button</span>
+      <span class="t-micro">Micro meta caption tag · auth.sdk.enterprises</span>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">06 — Misuse (never ship these)</p>
+    <div class="misuse">
+      <figure class="card no stretched"><img src="svg/auth-wordmark-dark.svg" class="logo" alt="stretched"><figcaption>stretched</figcaption></figure>
+      <figure class="card no"><img src="svg/auth-mark-dark.svg" class="mark" alt="recolored" style="filter:hue-rotate(200deg);"><figcaption>recoloring the period or letters</figcaption></figure>
+      <figure class="card no panel-dark" style="border-radius:10px;"><div style="position:relative;"><img src="svg/watermark-on-dark.svg" class="mark" alt="second dot"><span style="position:absolute;left:-18px;top:50%;width:18px;height:18px;background:#2cdb16;border-radius:50%;opacity:.45;"></span></div><figcaption>a second dot</figcaption></figure>
+      <figure class="card no" style="overflow:hidden;"><img src="svg/auth-wordmark-light.svg" class="logo" style="transform:rotate(-8deg);" alt="rotated"><figcaption>rotation / tilt</figcaption></figure>
+    </div>
+  </section>
+
+  <footer>Canonical sources: packages/brand/BRAND.md · packages/brand/tokens/brand.json · parent system in sdk-e/app/docs/design/brand.md + design-system.md</footer>
+</div>
+</body>
+</html>
