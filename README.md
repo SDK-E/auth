@@ -3,8 +3,8 @@
 Multi-tenant authentication infrastructure — an Auth0-class product by SDK Enterprises.
 
 - **Domain**: `auth.sdk.enterprises` (single domain serves the dashboard **and** the auth plane; tenants get `{slug}.auth.sdk.enterprises` plus custom domains)
-- **Stack**: Next.js 16 monolith on Vercel · Neon Postgres + Drizzle · Turborepo/pnpm
-- **Org**: `github.com/SDK-E/auth` · npm scope `@sdk-e/*`
+- **Repo**: [github.com/SDK-E/auth](https://github.com/SDK-E/auth) · npm scope `@sdk-e/*`
+- **Deploy**: Vercel team `SDK Enterprises` → project `sdk-e-auth-platform` (root dir `apps/platform`), auto-deploys on push
 
 ## Architecture — one app, four planes (host + path routed)
 

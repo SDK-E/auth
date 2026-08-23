@@ -20,7 +20,7 @@ export default function HomePage() {
         SDK Enterprises
       </p>
       <h1 className="mt-2 text-4xl font-semibold tracking-tight text-balance">
-        SDK-E Auth Platform
+        SDK Enterprises Auth Platform
       </h1>
       <p className="mt-4 text-lg text-muted-foreground">
         Multi-tenant authentication infrastructure. One domain, every plane:
